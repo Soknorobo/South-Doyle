@@ -1,0 +1,622 @@
+/*This is a css for the South Doyle Robotics Website
+ created by the students from scratch
+*/
+
+body, html {
+  height: 100%;
+}
+
+/*this body tag is the body of the web page*/
+
+body {
+  /*background-color:#222;*/
+  position: relative;
+  overflow-x: hidden;
+  /*background-color: #000000;*/
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+}
+
+/*this is the body under header and above footer*/
+
+#body {
+  padding: 0;
+  margin: 0;
+}
+
+/*scroll to the top funciton*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #212F3C;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 100px;
+  transition: all 500ms ease;
+  /*font-size: 18px;*/
+}
+
+/*hover over the scroll to the top function*/
+
+#myBtn:hover {
+  background-color: black;
+  color: red;
+  border-radius: 10px;
+  transform: scale(.9);
+  transition: all 500ms ease;
+  box-shadow: 0 0 10px 5px rgb(61, 71, 82);
+}
+#myBtn:hover #up_scroll{
+  transform:translateY(-2px);
+  transition: all 500ms ease;
+
+}
+
+/*the header of the page (SDHA Robotics)*/
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 4.5rem;
+  font-family: 'Russo One', sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #fff;
+  padding: 0 15% 0 15%;
+  cursor: pointer;
+}
+
+/*this is also the header of the page*/
+
+#heading {
+  background-color: #6cfbfb;
+  overflow: hidden;
+  width: 100%;
+  height: 10.31rem;
+  padding: 10px 0 100px 0;
+  text-shadow: -5px 5px 0px #00e6e6, -10px 10px 0px #01cccc, -15px 15px 0px #00bdbd;
+}
+
+
+/*this is the subtitile of the pages ex. welcome, social*/
+
+h3 {
+  color: #222244;
+  font-family: Trebuchet MS;
+}
+
+/*all links*/
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+/*this is a divider that holds the home image*/
+
+.home-image {
+  width: 100px;
+  margin: 0 auto;
+  transition: all 500ms ease;
+}
+
+/*hover over the home image*/
+
+.home-image:hover {
+  /*transform: scale(1.05);*/
+  transition: all 500ms ease;
+}
+
+/*this is the home image*/
+
+#profile {
+  display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+  width: 7.5rem;
+  height: 7.5rem;
+  transition: all 500ms ease;
+}
+
+/*same as the home-image*/
+
+#profile:hover {
+  background-color: #289E9E;
+  box-shadow: 0 0 7px 5px rgb(61, 71, 82);
+  transform: scale(.9);
+  transition: all 500ms ease;
+}
+
+#info_header {
+  color: #EEEEFF;
+}
+
+#info_text {
+  color: #CCBBBB;
+  text-align: center;
+}
+
+.info {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.info_sub {
+  text-align: center;
+}
+
+/*this is the text on the home tab under the video*/
+
+#achievement {
+  text-align: justify;
+  color: black;
+}
+
+#info-content {
+  margin: 0 auto;
+  max-width: 700px;
+  /*background-color: grey;*/
+  padding: 0 0 0 0;
+  min-width: 300px;
+  border-radius: 10px 40px 10px 40px;
+  border-style: hidden;
+  padding: 15px 15px 15px 15px;
+  background: #2f3238;
+  /*background-color: black;
+    color: white;*/
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*images for the cards*/
+
+#trophie {
+  width: 100%;
+  border-radius: 10px 30px 10px 40px;
+}
+
+/*tags that identify the tabs within the tab container*/
+
+/*home / welcome*/
+
+#menu0 {
+  /*background: linear-gradient(141deg, #6A6A88 0%, #6A6AAb 25%, #6A6ACC 50%);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  /*Background-color:#CCD1D1;*/
+  /*radiz*/
+}
+
+/*social*/
+
+#menu1 {
+  /*background: linear-gradient(141deg, #6A6A99 0%, #6A6AAA 25%, #6A6ACC 50%);*/
+  /*background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 0.625rem;
+    padding: 1.25rem;*/
+  /*Background-color:#CCD1D1;*/
+}
+
+#twitter-embed {
+  min-width: 300px;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 70px 25px 0px 25px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/*About*/
+
+#menu2 {
+  /*background: linear-gradient(141deg, #6A6A88 0%, #6A6AAA 25%, #6A6ACC 50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  Background-color:#CCD1D1;*/
+  padding: 10% 0 10 0;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+/*Donate*/
+
+#menu3 {
+  /*background: linear-gradient(141deg, #6A6A88 0%, #6A6AAA 25%, #6A6ACC 50%);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+}
+
+/*the team*/
+
+#menu4 {
+  /*background: linear-gradient(141deg, #6A6A88 0%, #6A6AAA 25%, #6A6ACC 50%);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+}
+
+div.gallery {
+  /*border: 1px solid #E7E4E7;*/
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 1px;
+}
+
+#gallery-image:hover {
+  transform: scale(1.1);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 6px 8px;
+  float: left;
+  width: 33.3333333333%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**/
+
+/**/
+
+/**/
+
+.raw .column {
+  padding: 0 5px;
+}
+
+.raw:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 70%;
+  max-width: 1000px;
+  min-width: 300px;
+}
+
+/* The Close Button */
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  transition: all 500ms ease;
+}
+
+.close:hover, .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: all 500ms ease;
+  color: red;
+}
+
+/*.fa-times-circle:hover{
+  color: red;
+}*/
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev:hover {
+  transform: translate(-5px);
+}
+
+.next:hover {
+  transform: translate(5px);
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+#gallery-image {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: .5;
+  padding: 5px;
+  transition: all 500ms ease;
+}
+
+.active, .demo:hover {
+  opacity: .8;
+  transition: all 500ms ease;
+}
+
+#gallery-image.hover-shadow {
+  transition: 0.3s;
+  border: none;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*join*/
+
+#menu5 {
+  /*background: linear-gradient(141deg, #6A6A88 0%, #6A6AAA 25%, #6A6ACC 50%);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+}
+
+#email_join {
+  text-align: center;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+  border-radius: 4px;
+}
+
+#msg {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  height: 100px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+  border-radius: 4px;
+}
+
+button[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  /*outline: none;*/
+  float: right;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+button[type=submit]:active {
+  transform: translateY(0.125rem);
+}
+
+button[type=submit]:hover .fa {
+  transform: rotate(360deg);
+  transition: all 500ms ease;
+}
+
+button[type=reset] {
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  /*outline: none;*/
+  font-size: 20px;
+}
+
+button[type=reset]:active {
+  transform: translateY(0.125rem);
+}
+
+button[type=reset]:hover .fa {
+  transform: rotate(360deg);
+  transition: all 500ms ease;
+}
+
+/*footer and other information*/
+
+#footer {
+  /*Background-image: url(...);*/
+  position: static;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  opacity: 90%;
+  background: linear-gradient(0deg, #00e6e6 0%, #FFFFFF 100%);
+}
+
+/*video example */
+
+.video-responsive {
+  position: relative;
+  padding-top: 25%;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 900px) {
+  #ytvid {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/*resizes the video to fit in the info divider*/
+
+.video-responsive iframe, .video-responsive object, .video-responsive embed, .video-responsive video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 75%;
+  padding: 0;
+}
+
+/*-------------------------------*/
+
+/*             footer            */
+
+/*-------------------------------*/
+
+/* inline block adds only necessary amount of sapcing,
+  If this is not present there will be unecessary space between the sentences.*/
+
+#address, #phone {
+  display: inline-block;
+}
+
+#address, #footer-title {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* This is to have both paragraphs in one line*/
+
+#phone, #fax {
+  display: inline;
+}
+
+/*sapce between paragraphs while in the same line*/
+
+#fax {
+  padding-left: 1.15rem;
+}

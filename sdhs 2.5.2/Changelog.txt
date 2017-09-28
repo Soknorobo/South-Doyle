@@ -1,0 +1,139 @@
+This is the *change-log* of the SD-HS Website
+
+###########################################
+
+Version 2.0
+1. added a gradient to the color in the header
+2. added comment
+3. cleaned up the code to make it easier to understand
+
+#############################################
+
+Version 2.1
+1. Added a footer
+2. changed all px to rem to make it responsive to resizing.
+
+#############################################
+
+Version 2.2
+1. Fixed a technical error, it's South-Doyle,
+	not South Doyle
+2. Added a new tab menu of "Join"
+3. added icon for the site
+
+#############################################
+
+Version 2.3
+* Minor update *
+1. Added comments to clarify
+2. Removed redundant codes
+
+#############################################
+
+Version 2.3.1
+1. added the functionality of tooltip
+2. added a change-log file to the package
+
+#############################################
+
+Version 2.3.2
+1. Added links in the footer
+2. Added a change-log file in the package
+
+#############################################
+
+Version 2.3.3
+1. Fixed the footer not sticking to the bottom when more content is added.
+
+#############################################
+
+Version 2.3.4
+1. Padding to the bottom of the page.
+
+#############################################
+
+Version 2.4
+1. Added an example iframe, Working properly.
+	(completely resizable)
+
+#############################################
+
+Version 2.4.1
+
+1. Added a text-shadow attribute to the page header.
+2. Put in a better placeholder video for the home tab.
+
+#############################################
+
+Version 2.4.2
+
+1. Fixed Adam’s discoloration thing
+
+#############################################
+
+Version 2.4.3
+
+1. Made the comments more readable
+
+#############################################
+
+Version 2.4.4
+
+1. added a fancy sidebar, completely working
+2. changed the header to have cool shadows
+3. clicking on the profile opens up the sidebar
+2. added a js and css folder to hold all the similar kind of files.
+
+#############################################
+
+Version 2.4.5
+*small update*
+1. Changed the video to no longer auto play for convenience and not
+		figuring out how to stop the video when switching tabs.
+2. fixed the tooltip from floating to the right side of the site.
+
+#############################################
+
+Version 2.4.6
+
+1. Added a konami Code easter egg
+2. Changed the home to not have a tab divider
+3. fixed the video having black bars.
+4. Set the header weight to 'over 900'.
+
+#############################################
+
+Version 2.4.7
+1. Added links to social media in social tab
+2. cleaned up home and made it clear to understand
+
+#############################################
+
+Version 2.4.8
+1. Added awesome icons
+
+#############################################
+
+Version 2.4.9
+1. Added teardrop borders with shadows to home tab, and images in home tab.
+
+#############################################
+
+Version 2.5.0
+1. No mo snapchat on social :(
+2. Added a gallery with replacement images
+3. Added twitter feed
+
+#############################################
+
+Version 2.5.1
+1. fixed the gallery navigation
+2. auto play on youtube fixed  🤡
+
+#############################################
+
+Version 2.5.2
+1. Fixed scrolling issue
+2. Added school to the top function
+
+#############################################
