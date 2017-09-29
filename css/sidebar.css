@@ -187,7 +187,7 @@
 
 /*-------------------------------*/
 
-.hamburger {
+#hamburger {
   position: fixed;
   top: 20px;
   z-index: 999;
@@ -195,9 +195,12 @@
   width: 32px;
   height: 32px;
   margin-left: 15px;
+  padding: 0 10px;
   background: transparent;
   border: none;
 }
+
+#
 
 .hamburger:hover, .hamburger:focus, .hamburger:active {
   outline: none;

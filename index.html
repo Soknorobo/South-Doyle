@@ -67,8 +67,7 @@ Joel Smith - AP CSP teacher
 
 		<!--profile image-->
 		<div class="home-image">
-			<img d data-toggle="tab" href="#Home" onclick="topFunction()" 
-			     title="South Doyle Robotics" id="profile" src="images/img.jpg" />
+			<img d data-toggle="tab" href="#Home" onclick="topFunction()" title="South Doyle Robotics" id="profile" src="images/img.jpg" />
 			<br>
 		</div>
 
@@ -171,8 +170,8 @@ Joel Smith - AP CSP teacher
 							</p>
 							<!-- story text -->
 							<p id="achievement">
-								The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot
-								at the World Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
+								The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot at the World
+								Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
 							</p>
 							<img id="trophie" src="images/team.jpg" alt="Can't load image...">
 
@@ -186,8 +185,8 @@ Joel Smith - AP CSP teacher
 							</p>
 							<!-- achievement text -->
 							<p id="achievement">
-								Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running
-								to help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
+								Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running to
+								help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
 							</p>
 							<img id="trophie" src="images/trophies.jpg" alt="Can't load image...">
 						</div>
@@ -224,12 +223,13 @@ Joel Smith - AP CSP teacher
 
 							<!-- embeded twitter feed-->
 							<div id="twitter-embed">
+								<!-- the follow us twitter button -->
+								<a href="https://twitter.com/SDHS_Robotics" class="twitter-follow-button" data-show-count="false">Follow @SDHS_Robotics</a>
 								<!-- dark theme -->
 								<!-- <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/SDHS_Robotics">Tweets by SDHS_Robotics</a> -->
 								<!-- light theme -->
 								<a class="twitter-timeline" href="https://twitter.com/SDHS_Robotics">Tweets by SDHS_Robotics</a>
-								<!-- the follow us twitter button -->
-								<a href="https://twitter.com/SDHS_Robotics" class="twitter-follow-button" data-show-count="false">Follow @SDHS_Robotics</a>
+
 
 							</div>
 						</div>
@@ -548,67 +548,47 @@ Joel Smith - AP CSP teacher
 		<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
 			<ul class="nav sidebar-nav" data-toggle="offcanvas">
 				<li class="sidebar-brand">
-					<a href="#" id="sidebar_Robotics">
+					<a href="#" id="sidebar_Robotics" class="hamburger is-closed">
 						<i class="fa fa-smile-o" style="color:green;" aria-hidden="true"></i>
 						Robotics
 					</a></li>
 				<!-- active tab -->
 				<!-- same as navbar-nav -->
-				<li id="sidebar-items" class="active"><span onclick="topFunction()"><a data-toggle="tab" href="#Home" id='resume'>
+				<li id="sidebar-items" class="active"><span onclick="topFunction()"><a data-toggle="tab" href="#Home" id='resume' class="hamburger is-closed">
 						<i class="fa fa-home" aria-hidden="true"></i>
 						Home</a></span></li>
 
 				<!-- Inactive tabs -->
-				<li id="sidebar-items"><span onclick="topFunction()"><a data-toggle="tab" href="#Social" id='pause'>
+				<li id="sidebar-items"><span onclick="topFunction()"><a data-toggle="tab" href="#Social" id='pause' class="hamburger is-closed">
 							<i class="fa fa-share-square-o" aria-hidden="true"></i>
 							Social</a></span></li>
-				<li id="sidebar-items"><span onclick="topFunction()"><a data-toggle="tab" href="#About" id='pause_1'>
+				<li id="sidebar-items"><span onclick="topFunction()"><a data-toggle="tab" href="#About" id='pause_1' class="hamburger is-closed">
 								<i class="fa fa-info-circle" aria-hidden="true"></i>
 								About</a></span></li>
-				<li id="sidebar-items"><span onclick="topFunction()"><a data-toggle="tab" href="#Donate" id='pause_2'>
+				<li id="sidebar-items"><span onclick="topFunction()"><a data-toggle="tab" href="#Donate" id='pause_2' class="hamburger is-closed">
 									<i class="fa fa-money" aria-hidden="true"></i>
 									Donate</a></span></li>
-				<li id="sidebar-items"><span onclick="topFunction()"><a data-toggle="tab" href="#Team" id='pause_3'>
+				<li id="sidebar-items"><span onclick="topFunction()"><a data-toggle="tab" href="#Team" id='pause_3' class="hamburger is-closed">
 										<i class="fa fa-users" aria-hidden="true"></i>
 										The team</a></span></li>
-				<li id="sidebar-items"><span onclick="topFunction()"><a data-toggle="tab" href="#Join" id='pause_4'>
+				<li id="sidebar-items"><span onclick="topFunction()"><a data-toggle="tab" href="#Join" id='pause_4' class="hamburger is-closed">
 											<i class="fa fa-sign-in" aria-hidden="true"></i>
 											Join</a></span></li>
 			</ul>
 
-
-			<!-- this adds a dropdown menu to the sidebar -->
-			<!-- <li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
-										<ul class="dropdown-menu" role="menu">
-										<li class="dropdown-header">Dropdown heading</li>
-										<li><a href="#">Action</a></li>
-										<li><a href="#">Another action</a></li>
-										<li><a href="#">Something else here</a></li>
-										<li><a href="#">Separated link</a></li>
-										<li><a href="#">One more separated link</a></li>
-										</ul>
-								</li>
-								<li>
-								<a href="#">Services</a>
-							</li>
-							<li>
-							<a href="#">Contact</a>
-						</li>
-						<li>
-						<a>Follow us</a>
-					</li> -->
 			</ul>
 		</nav>
 		<!-- /#sidebar-wrapper -->
 
 		<div id="page-content-wrapper">
 			<!-- <button type="button" class="hamburger is-closed" data-toggle="offcanvas"> -->
-			<button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+			<div id="menu_button">
+				<button type="button" id="hamburger" class="hamburger is-closed" data-toggle="offcanvas">
 					<span class="hamb-top"></span>
 					<span class="hamb-middle"></span>
 					<span class="hamb-bottom"></span>
 				</button>
+			</div>
 		</div>
 
 		<!-- /#page-content-wrapper -->
@@ -644,7 +624,9 @@ Joel Smith - AP CSP teacher
 
 			// When the user clicks on the button, scroll to the top of the document
 			function topFunction() {
-				$("html, body").animate({ scrollTop: 0 }, "slow");
+				$("html, body").animate({
+					scrollTop: 0
+				}, "slow");
 				// document.body.scrollTop = 0;
 				// document.documentElement.scrollTop = 0;
 			}
