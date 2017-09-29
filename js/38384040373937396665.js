@@ -38,7 +38,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 function activateCheats() {
-  document.body.style.backgroundImage = "url('http://24.media.tumblr.com/1607f379b33f71afd67c55aedd79f344/tumblr_n4uhzpRpcV1suvw3go1_400.gif')";
+  document.body.style.backgroundImage = "url(images/IMG_4862.JPG)";
   //
   // var audio = new Audio('audio/pling.mp3');
   // audio.play();

@@ -4,6 +4,7 @@
 
 body, html {
   height: 100%;
+
 }
 
 /*this body tag is the body of the web page*/
@@ -16,6 +17,8 @@ body {
   height: 100%;
   width: 100%;
   background: #FFF;
+  background-size: cover;
+
 }
 
 /*this is the body under header and above footer*/
@@ -337,7 +340,7 @@ div.desc {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 10px;
   left: 0;
   top: 0;
   width: 100%;
@@ -442,6 +445,7 @@ div.desc {
 
 #gallery-image {
   margin-bottom: -4px;
+  object-fit: cover;
 }
 
 .caption-container {
