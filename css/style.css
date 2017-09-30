@@ -4,21 +4,17 @@
 
 body, html {
   height: 100%;
-
 }
 
 /*this body tag is the body of the web page*/
 
 body {
-  /*background-color:#222;*/
   position: relative;
   overflow-x: hidden;
-  /*background-color: #000000;*/
   height: 100%;
   width: 100%;
   background: #FFF;
   background-size: cover;
-
 }
 
 /*this is the body under header and above footer*/
@@ -44,7 +40,6 @@ body {
   padding: 10px 15px;
   border-radius: 100px;
   transition: all 500ms ease;
-  /*font-size: 18px;*/
 }
 
 /*hover over the scroll to the top function*/
@@ -57,10 +52,10 @@ body {
   transition: all 500ms ease;
   box-shadow: 0 0 10px 5px rgb(61, 71, 82);
 }
-#myBtn:hover #up_scroll{
-  transform:translateY(-2px);
-  transition: all 500ms ease;
 
+#myBtn:hover #up_scroll {
+  transform: translateY(-2px);
+  transition: all 500ms ease;
 }
 
 /*the header of the page (SDHA Robotics)*/
@@ -74,7 +69,6 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: #fff;
   padding: 0 15% 0 15%;
-  cursor: pointer;
 }
 
 /*this is also the header of the page*/
@@ -86,8 +80,8 @@ h1 {
   height: 10.31rem;
   padding: 10px 0 100px 0;
   text-shadow: -5px 5px 0px #00e6e6, -10px 10px 0px #01cccc, -15px 15px 0px #00bdbd;
+  cursor: default;
 }
-
 
 /*this is the subtitile of the pages ex. welcome, social*/
 
@@ -115,7 +109,6 @@ a {
 /*hover over the home image*/
 
 .home-image:hover {
-  /*transform: scale(1.05);*/
   transition: all 500ms ease;
 }
 
@@ -168,15 +161,12 @@ a {
 #info-content {
   margin: 0 auto;
   max-width: 700px;
-  /*background-color: grey;*/
   padding: 0 0 0 0;
   min-width: 300px;
   border-radius: 10px 40px 10px 40px;
   border-style: hidden;
   padding: 15px 15px 15px 15px;
   background: #2f3238;
-  /*background-color: black;
-    color: white;*/
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -187,12 +177,15 @@ a {
   border-radius: 10px 30px 10px 40px;
 }
 
+.nav {
+  padding-bottom: 20px;
+}
+
 /*tags that identify the tabs within the tab container*/
 
 /*home / welcome*/
 
 #menu0 {
-  /*background: linear-gradient(141deg, #6A6A88 0%, #6A6AAb 25%, #6A6ACC 50%);*/
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -205,13 +198,8 @@ a {
 /*social*/
 
 #menu1 {
-  /*background: linear-gradient(141deg, #6A6A99 0%, #6A6AAA 25%, #6A6ACC 50%);*/
-  /*background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border-radius: 0.625rem;
-    padding: 1.25rem;*/
-  /*Background-color:#CCD1D1;*/
+  /**/
+  /**/
 }
 
 #twitter-embed {
@@ -226,13 +214,6 @@ a {
 /*About*/
 
 #menu2 {
-  /*background: linear-gradient(141deg, #6A6A88 0%, #6A6AAA 25%, #6A6ACC 50%);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border-radius: 0.625rem;
-  padding: 1.25rem;
-  Background-color:#CCD1D1;*/
   padding: 10% 0 10 0;
 }
 
@@ -244,7 +225,6 @@ a {
 /*Donate*/
 
 #menu3 {
-  /*background: linear-gradient(141deg, #6A6A88 0%, #6A6AAA 25%, #6A6ACC 50%);*/
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -255,7 +235,6 @@ a {
 /*the team*/
 
 #menu4 {
-  /*background: linear-gradient(141deg, #6A6A88 0%, #6A6AAA 25%, #6A6ACC 50%);*/
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -264,14 +243,13 @@ a {
 }
 
 div.gallery {
-  /*border: 1px solid #E7E4E7;*/
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   margin: 1px;
 }
 
 #gallery-image:hover {
-  transform: scale(1.1);
-  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transform: scale(1.09);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 div.gallery img {
@@ -291,7 +269,7 @@ div.desc {
 .responsive {
   padding: 6px 8px;
   float: left;
-  width: 33.3333333333%;
+  width: 33.33333%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -317,8 +295,6 @@ div.desc {
 
 /**/
 
-/**/
-
 .raw .column {
   padding: 0 5px;
 }
@@ -331,7 +307,13 @@ div.desc {
 
 .column {
   float: left;
-  width: 20%;
+  width: 8.33333%;
+}
+
+@media only screen and (max-width: 550px) {
+  .column {
+    width: 25%;
+  }
 }
 
 /* The Modal (background) */
@@ -357,8 +339,15 @@ div.desc {
   margin: auto;
   padding: 0;
   width: 70%;
-  max-width: 1000px;
+  max-width: 780px;
   min-width: 300px;
+}
+
+@media only screen and (max-width: 550px){
+  .modal-content{
+    margin-top: 50px;
+    width: 100%;
+  }
 }
 
 /* The Close Button */
@@ -381,10 +370,6 @@ div.desc {
   transition: all 500ms ease;
   color: red;
 }
-
-/*.fa-times-circle:hover{
-  color: red;
-}*/
 
 .mySlides {
   display: none;
@@ -456,7 +441,7 @@ div.desc {
 }
 
 .demo {
-  opacity: .5;
+  opacity: .3;
   padding: 5px;
   transition: all 500ms ease;
 }
@@ -471,6 +456,10 @@ div.desc {
   border: none;
 }
 
+.gallery {
+  object-fit: cover;
+}
+
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
@@ -478,7 +467,6 @@ div.desc {
 /*join*/
 
 #menu5 {
-  /*background: linear-gradient(141deg, #6A6A88 0%, #6A6AAA 25%, #6A6ACC 50%);*/
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -516,7 +504,6 @@ input[type=text] {
 button[type=submit] {
   background-color: #4CAF50;
   border: none;
-  /*outline: none;*/
   float: right;
   font-size: 20px;
   border-radius: 5px;
@@ -553,7 +540,6 @@ button[type=reset]:hover .fa {
 /*footer and other information*/
 
 #footer {
-  /*Background-image: url(...);*/
   position: static;
   bottom: 0;
   width: 100%;

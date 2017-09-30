@@ -59,6 +59,7 @@ function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
 
+// prev and next button function
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -69,6 +70,22 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
+document.addEventListener("keyup",function(e){
+   var key = e.which||e.keyCode;
+   switch(key){
+      //left arrow
+      case 37:
+         document.getElementById("prev").click();
+      break;
+      //right arrow
+      case 39:
+         document.getElementById("next").click();
+      break;
+   }
+});
+
+
 
 function showSlides(n) {
   var i;
@@ -93,8 +110,10 @@ function showSlides(n) {
 }
 
 // touch
-$('body').bind('touchstart', function() {});
-
+document.addEventListener('touchstart', function addtouchclass(e){ // first time user touches the screen
+    document.documentElement.classList.add('is-touch') // add "can-touch" class to document root using classList API
+    document.removeEventListener('touchstart', addtouchclass, false) // de-register touchstart event
+}, false)
 // scroll
 
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
