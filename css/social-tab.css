@@ -55,19 +55,19 @@
 }
 
 .twitter {
-  background: #1a9ec4;
+  background: linear-gradient(to left, #7474bf, #348ac7);
   left: 50%;
   top: 0%;
 }
 
 .facebook {
-  background: #155b9d;
+ background: linear-gradient(to left, #00c6ff, #0072ff);
   bottom: 0;
   left: 25%;
 }
 
 .instagram {
-  background: linear-gradient(50deg, #bc2a8d 20%, #fbad50 25%, #e95950 50%);
+  background: linear-gradient(to right, #c04848, #480048);
   bottom: 0;
   left: 75%;
 }

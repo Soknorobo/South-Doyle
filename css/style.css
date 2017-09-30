@@ -488,6 +488,16 @@ input[type=text] {
   color: white;
   border-radius: 4px;
 }
+#mail{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+  border-radius: 4px;
+}
 
 #msg {
   width: 100%;
@@ -536,6 +546,8 @@ button[type=reset]:hover .fa {
   transform: rotate(360deg);
   transition: all 500ms ease;
 }
+
+
 
 /*footer and other information*/
 
