@@ -1,3 +1,0 @@
-# Soknorobo
-
-Hello World!
