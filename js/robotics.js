@@ -114,8 +114,7 @@ function showSlides(n) {
 //
 
 // scroll
-// mobile
-document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
+
 // desktop
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
