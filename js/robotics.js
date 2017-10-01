@@ -110,10 +110,9 @@ function showSlides(n) {
 }
 
 // touch
-document.addEventListener('touchstart', function addtouchclass(e){ // first time user touches the screen
-    document.documentElement.classList.add('is-touch') // add "can-touch" class to document root using classList API
-    document.removeEventListener('touchstart', addtouchclass, false) // de-register touchstart event
-}, false)
+//
+// 
+
 // scroll
 
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
