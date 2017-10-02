@@ -2,20 +2,10 @@
  created by the students from scratch
 */
 
-/*preload*/
+/*preloading all the images*/
+
 :root:before {
-  content: url(../images/IMG_4622.JPG)
-           url(../images/IMG_4556.JPG)
-           url(../images/IMG_4574.JPG)
-           url(../images/IMG_4581.JPG)
-           url(../images/IMG_4717.JPG)
-           url(../images/IMG_4618.JPG)
-           url(../images/IMG_4718.JPG)
-           url(../images/IMG_4527.JPG)
-           url(../images/IMG_4684.JPG)
-           url(../images/IMG_4749.JPG)
-           url(../images/IMG_4654.JPG)
-           url(../images/IMG_4657.JPG);
+  content: url(../images/IMG_4622.JPG) url(../images/IMG_4556.JPG) url(../images/IMG_4574.JPG) url(../images/IMG_4581.JPG) url(../images/IMG_4717.JPG) url(../images/IMG_4618.JPG) url(../images/IMG_4718.JPG) url(../images/IMG_4527.JPG) url(../images/IMG_4684.JPG) url(../images/IMG_4749.JPG) url(../images/IMG_4654.JPG) url(../images/IMG_4657.JPG);
   background-image: url(../images/IMG_4657.JPG);
   visibility: hidden;
   height: 1px;
@@ -235,6 +225,7 @@ a {
 }
 
 /*About*/
+
 #About_big_img #top_down_SDHS {
   width: 99%;
   height: 400px;
@@ -288,7 +279,7 @@ a {
 /*the team*/
 
 #gallery {
-/*margin-bottom: 2000px;*/
+  /*margin-bottom: 2000px;*/
 }
 
 div.gallery {
@@ -519,23 +510,16 @@ div.desc {
 
 /*join*/
 
-#menu5 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border-radius: 0.625rem;
-  padding: 1.25rem;
-}
-
 #email_join {
   text-align: center;
-
 }
-#Join_email{
+
+#Join_email {
   padding: 10px;
   max-width: 900px;
   margin: 0 auto;
 }
+
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
@@ -562,7 +546,7 @@ input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  height: 100px;
+  height: 150px;
   box-sizing: border-box;
   border: none;
   background-color: #3CBC8D;
@@ -570,31 +554,25 @@ input[type=text] {
   border-radius: 4px;
 }
 
-button[type=submit] {
-  background-color: #4CAF50;
-  border: none;
-  float: right;
-  font-size: 20px;
-  border-radius: 5px;
-  padding: 10px 10px;
-}
-
 button[type=submit]:active {
-  transform: translateY(0.125rem);
+  transform: translateY(100px;);
 }
 
-button[type=submit]:hover .fa {
+button[type=submit]:hover .fa{
   transform: rotate(360deg);
-  transition: all 500ms ease;
+  color: green;
+  transition: all 900ms ease;
 }
 
 button[type=reset] {
   background-color: #ff7700;
   border: none;
-  border-radius: 5px;
-  padding: 10px 10px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: black;
   /*outline: none;*/
   font-size: 20px;
+  transition: all 3s ease;
 }
 
 button[type=reset]:active {
@@ -602,8 +580,34 @@ button[type=reset]:active {
 }
 
 button[type=reset]:hover .fa {
-  transform: rotate(360deg);
-  transition: all 500ms ease;
+  color:#ff7700;
+  transform: rotate(-360deg);
+  transition: all 800ms ease;
+}
+
+button[type=reset]:hover{
+  background: rgba(0,0,0,0);
+  color: #ff7700;
+  box-shadow: inset 0 0 0 3px brown;
+  transition: all 3s ease;
+}
+
+button[type=submit]{
+  background-color: #4CAF50;
+  color: black;
+  border: none;
+  float: right;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 10px;
+  transition: all 3s ease;
+}
+
+button[type=submit]:hover {
+  background: rgba(0,0,0,0);
+  color: green;
+  box-shadow: inset 0 0 0 3px #4CAF50;
+  transition: all 3s ease;
 }
 
 /*footer and other information*/
