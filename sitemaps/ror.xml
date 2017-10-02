@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://soknorobo.com/</title>
+  <link>http://soknorobo.com/</link>
+
+<item>
+     <link>http://soknorobo.com/</link>
+     <title>Robotics</title>
+     <description>Robotics</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://soknorobo.com/pages/social.html</link>
+     <title>Robotics</title>
+     <description>Robotics</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://soknorobo.com/pages/about.html</link>
+     <title>Robotics</title>
+     <description>Robotics</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://soknorobo.com/pages/donate.html</link>
+     <title>Robotics</title>
+     <description>Robotics</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://soknorobo.com/pages/team.html</link>
+     <title>Robotics</title>
+     <description>Robotics</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://soknorobo.com/pages/join.html</link>
+     <title>Robotics</title>
+     <description>Robotics</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>http://soknorobo.com/index.html</link>
+     <title>Robotics</title>
+     <description>Robotics</description>
+     <ror:updatePeriod>daily</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
