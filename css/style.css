@@ -2,6 +2,28 @@
  created by the students from scratch
 */
 
+/*preload*/
+:root:before {
+  content: url(../images/IMG_4622.JPG)
+           url(../images/IMG_4556.JPG)
+           url(../images/IMG_4574.JPG)
+           url(../images/IMG_4581.JPG)
+           url(../images/IMG_4717.JPG)
+           url(../images/IMG_4618.JPG)
+           url(../images/IMG_4718.JPG)
+           url(../images/IMG_4527.JPG)
+           url(../images/IMG_4684.JPG)
+           url(../images/IMG_4749.JPG)
+           url(../images/IMG_4654.JPG)
+           url(../images/IMG_4657.JPG);
+  background-image: url(../images/IMG_4657.JPG);
+  visibility: hidden;
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  left: -999em;
+}
+
 body, html {
   height: 100%;
 }
@@ -567,7 +589,7 @@ button[type=submit]:hover .fa {
 }
 
 button[type=reset] {
-  background-color: red;
+  background-color: #ff7700;
   border: none;
   border-radius: 5px;
   padding: 10px 10px;
