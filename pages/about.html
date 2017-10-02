@@ -34,8 +34,6 @@ Joel Smith - AP CSP teacher
   <link rel="stylesheet" type="text/css" href="../css/style.css" />
   <!-- this css is for the sidebar -->
   <link rel="stylesheet" type="text/css" href="../css/sidebar.css" />
-  <!-- this css is for the social tab -->
-  <link rel="stylesheet" type="text/css" href="../css/social-tab.css" />
   <!-- this css adds icons which can be found by googling awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -64,15 +62,15 @@ Joel Smith - AP CSP teacher
   <div id="body">
 
     <!--profile image-->
-    <a href="../index">
+    <div class="hover-active">
       <div class="hover-active">
-        <div class="hover-active">
-          <div class="home-image">
-            <img href="../index" title="Robotics/Home" id="profile" src="../images/img.jpg" />
-            <br>
-          </div>
+        <div class="home-image">
+          <a href="../index">
+            <img title="Robotics/Home" id="profile" src="../images/img.jpg" />
+          </a>
+          <br>
         </div>
-    </a>
+      </div>
 
 
 
@@ -124,28 +122,28 @@ Joel Smith - AP CSP teacher
 					</a></li>
           <!-- active tab -->
           <!-- same as navbar-nav -->
-          <li id="sidebar-items" class="active" title="Robotics/Home"><span><a href="../index" id='resume' class="hamburger is-closed">
+          <li id="sidebar-items" class="active" title="Robotics/Home"><span><a href="../index" class="hamburger is-closed">
 						<i class="fa fa-home" aria-hidden="true"></i>
 						Home</a></span></li>
 
           <!-- Inactive tabs -->
-          <li id="sidebar-items" title="Robotics/Social"><span><a href="../pages/social" id='pause' class="hamburger is-closed">
+          <li id="sidebar-items" title="Robotics/Social"><span><a href="../pages/social" class="hamburger is-closed">
 							<i class="fa fa-share-square-o" aria-hidden="true"></i>
 							Social</a></span></li>
 
-          <li id="sidebar-items" title="Robotics/About"><span onclick="topFunction()"><a href="#" id='pause_1' class="hamburger is-closed">
+          <li id="sidebar-items" title="Robotics/About"><span onclick="topFunction()"><a href="#" class="hamburger is-closed">
 								<i class="fa fa-info-circle" aria-hidden="true"></i>
 								About</a></span></li>
 
-          <li id="sidebar-items" title="Robotics/Donate"><span><a href="../pages/donate" id='pause_2' class="hamburger is-closed">
+          <li id="sidebar-items" title="Robotics/Donate"><span><a href="../pages/donate" class="hamburger is-closed">
 									<i class="fa fa-money" aria-hidden="true"></i>
 									Donate</a></span></li>
 
-          <li id="sidebar-items" title="Robotics/The Team"><span><a href="../pages/team" id='pause_3' class="hamburger is-closed">
+          <li id="sidebar-items" title="Robotics/The Team"><span><a href="../pages/team" class="hamburger is-closed">
 										<i class="fa fa-users" aria-hidden="true"></i>
 										The Team</a></span></li>
 
-          <li id="sidebar-items" title="Robotics/Join"><span><a href="../pages/join" id='pause_4' class="hamburger is-closed">
+          <li id="sidebar-items" title="Robotics/Join"><span><a href="../pages/join" class="hamburger is-closed">
 											<i class="fa fa-sign-in" aria-hidden="true"></i>
 											Join</a></span></li>
         </ul>
@@ -231,10 +229,6 @@ Joel Smith - AP CSP teacher
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- twitter -->
-    <script src="https://platform.twitter.com/widgets.js" async></script>
-
-
     <!-- hmmm.... I don't know maybe you'll need to find out yourself-->
     <script src="../js/38384040373937396665.js"></script>
 

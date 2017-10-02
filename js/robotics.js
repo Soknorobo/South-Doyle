@@ -16,6 +16,7 @@ $(document).ready(function() {
 //   });
 
 
+
 // the sidebar
 $(document).ready(function() {
   var trigger = $('.hamburger'),

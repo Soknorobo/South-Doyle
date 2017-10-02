@@ -34,8 +34,6 @@ Joel Smith - AP CSP teacher
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<!-- this css is for the sidebar -->
 	<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
-	<!-- this css is for the social tab -->
-	<link rel="stylesheet" type="text/css" href="css/social-tab.css" />
 	<!-- this css adds icons which can be found by googling awesome icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -121,55 +119,8 @@ Joel Smith - AP CSP teacher
 				<div class="video-responsive">
 					<div id="player"></div>
 
-					<!-- YouTube player <script> -->
-					<script>
-						// 2. This code loads the IFrame Player API code asynchronously.
-						var tag = document.createElement('script');
-						tag.src = "https://www.youtube.com/player_api";
-						var firstScriptTag = document.getElementsByTagName('script')[0];
-						firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-						// 3. This function creates an <iframe> (and YouTube player)
-						//    after the API code downloads.
-						var player;
-
-						function onYouTubePlayerAPIReady() {
-							player = new YT.Player('player', {
-								height: '315',
-								width: '560',
-								videoId: '53J_WNPmnRw',
-								playerVars: {
-									'autoplay': 1,
-									'showinfo': 0,
-									'end': 151
-								}
-							});
-							// clicking home resumes the ytvideo
-							document.getElementById('resume').onclick = function() {
-								player.playVideo();
-							};
-							// pauses the video when social is clicked
-							document.getElementById('pause').onclick = function() {
-								player.pauseVideo();
-							};
-							// pauses the video when About is clicked
-							document.getElementById('pause_1').onclick = function() {
-								player.pauseVideo();
-							};
-							// pauses the video when donate is clicked
-							document.getElementById('pause_2').onclick = function() {
-								player.pauseVideo();
-							};
-							// pauses the video when the team is clicked
-							document.getElementById('pause_3').onclick = function() {
-								player.pauseVideo();
-							};
-							// pauses the video when join is clicked
-							document.getElementById('pause_4').onclick = function() {
-								player.pauseVideo();
-							};
-						}
-					</script>
+					<!-- YouTube player -->
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/53J_WNPmnRw?rel=0&autoplay=1&showinfo=0&end=151&cc_load_policy=0&disablekb=0&modestbranding=0c" frameborder="0" allowfullscreen></iframe>
 
 				</div>
 			</div>
@@ -228,28 +179,28 @@ Joel Smith - AP CSP teacher
 				</a></li>
 					<!-- active tab -->
 					<!-- same as navbar-nav -->
-					<li id="sidebar-items" class="active" title="Robotics/Home"><span onclick="topFunction()"><a href="#" id='resume' class="hamburger is-closed">
+					<li id="sidebar-items" class="active" title="Robotics/Home"><span onclick="topFunction()"><a href="#" class="hamburger is-closed">
 					<i class="fa fa-home" aria-hidden="true"></i>
 					Home</a></span></li>
 
 					<!-- Inactive tabs -->
-					<li id="sidebar-items" title="Robotics/Social"><span><a href="pages/social" id='pause' class="hamburger is-closed">
+					<li id="sidebar-items" title="Robotics/Social"><span><a href="pages/social" class="hamburger is-closed">
 						<i class="fa fa-share-square-o" aria-hidden="true"></i>
 						Social</a></span></li>
 
-					<li id="sidebar-items" title="Robotics/About"><span><a href="pages/about" id='pause_1' class="hamburger is-closed">
+					<li id="sidebar-items" title="Robotics/About"><span><a href="pages/about" class="hamburger is-closed">
 							<i class="fa fa-info-circle" aria-hidden="true"></i>
 							About</a></span></li>
 
-					<li id="sidebar-items" title="Robotics/Donate"><span><a href="pages/donate" id='pause_2' class="hamburger is-closed">
+					<li id="sidebar-items" title="Robotics/Donate"><span><a href="pages/donate" class="hamburger is-closed">
 								<i class="fa fa-money" aria-hidden="true"></i>
 								Donate</a></span></li>
 
-					<li id="sidebar-items" title="Robotics/The Team"><span><a href="pages/team" id='pause_3' class="hamburger is-closed">
+					<li id="sidebar-items" title="Robotics/The Team"><span><a href="pages/team" class="hamburger is-closed">
 									<i class="fa fa-users" aria-hidden="true"></i>
 									The Team</a></span></li>
 
-					<li id="sidebar-items" title="Robotics/Join"><span><a href="pages/join" id='pause_4' class="hamburger is-closed">
+					<li id="sidebar-items" title="Robotics/Join"><span><a href="pages/join" class="hamburger is-closed">
 										<i class="fa fa-sign-in" aria-hidden="true"></i>
 										Join</a></span></li>
 				</ul>
@@ -309,11 +260,6 @@ Joel Smith - AP CSP teacher
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<!-- twitter -->
-		<script src="https://platform.twitter.com/widgets.js" async></script>
-
-
-		<!-- hmmm.... I don't know maybe you'll need to find out yourself-->
 		<script src="js/38384040373937396665.js"></script>
 
 		<!-- all other javascript by us -->

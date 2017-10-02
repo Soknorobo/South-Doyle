@@ -45,6 +45,7 @@ body {
   right: 20px;
   z-index: 99;
   border: none;
+  opacity: .6;
   outline: none;
   background-color: #212F3C;
   color: white;
@@ -58,6 +59,7 @@ body {
 
 #myBtn:hover {
   background: black;
+  opacity: 1;
   color: red;
   border-radius: 10px;
   transform: scale(.9);
@@ -555,10 +557,11 @@ input[type=text] {
 }
 
 button[type=submit]:active {
-  transform: translateY(100px;);
+  transform: translateY(100px;
+  );
 }
 
-button[type=submit]:hover .fa{
+button[type=submit]:hover .fa {
   transform: rotate(360deg);
   color: green;
   transition: all 900ms ease;
@@ -580,19 +583,19 @@ button[type=reset]:active {
 }
 
 button[type=reset]:hover .fa {
-  color:#ff7700;
+  color: #ff7700;
   transform: rotate(-360deg);
   transition: all 800ms ease;
 }
 
-button[type=reset]:hover{
-  background: rgba(0,0,0,0);
+button[type=reset]:hover {
+  background: rgba(0, 0, 0, 0);
   color: #ff7700;
   box-shadow: inset 0 0 0 3px brown;
   transition: all 3s ease;
 }
 
-button[type=submit]{
+button[type=submit] {
   background-color: #4CAF50;
   color: black;
   border: none;
@@ -604,7 +607,7 @@ button[type=submit]{
 }
 
 button[type=submit]:hover {
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   color: green;
   box-shadow: inset 0 0 0 3px #4CAF50;
   transition: all 3s ease;
