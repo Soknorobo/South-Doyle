@@ -1,0 +1,246 @@
+<!-- Website made by:
+Mohammad Islam
+Brandon Walters
+Adam Mcdaniel
+Mike Soare
+Logan Wrinkle
+
+With the support and help of
+Joel Smith - AP CSP teacher
+
+*A South Doyle High School owned website* -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic needs
+=========================================================================== -->
+  <!--Tab Icon-->
+  <link rel="icon" href="../images/SDorgicon.png">
+  <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+
+
+  <!-- CSS
+========================================================================== -->
+
+  <!-- this css is for bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- this css is for the whole site made by us -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <!-- this css is for the sidebar -->
+  <link rel="stylesheet" type="text/css" href="../css/sidebar.css" />
+  <!-- this css is for the social tab -->
+  <link rel="stylesheet" type="text/css" href="../css/social-tab.css" />
+  <!-- this css adds icons which can be found by googling awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- Tab Titile
+========================================================================== -->
+  <title>Robotics</title>
+
+</head>
+
+<body>
+
+  <!-- Header
+========================================================================== -->
+
+  <div id="heading">
+    <h1>
+			SDHS Robotics
+		</h1>
+  </div>
+
+
+  <!-- Body Class
+========================================================================== -->
+
+  <div id="body">
+
+    <!--profile image-->
+    <a href="../index.html">
+      <div class="hover-active">
+        <div class="hover-active">
+          <div class="home-image">
+            <img href="../index.html" title="Robotics/Home" id="profile" src="../images/img.jpg" />
+            <br>
+          </div>
+        </div>
+    </a>
+
+
+
+    <!-- About Us
+    ========================================================================== -->
+    <div id="About">
+
+      <div class="info">
+        <h3 class="info_sub">About Us</h3>
+      </div>
+
+
+      <div id="About_big_img">
+        <img id="top_down_SDHS" src="../images/top_down_SDHS.jpg" alt="opps...">
+        <div id="school_website">
+
+          <a href="https://www.knoxschools.org/southdoylehs">
+    								<span id="learn_more_school">Learn more about our school <i class="scllnk fa fa-angle-double-right" aria-hidden="true"></i> </span>
+    							</a>
+        </div>
+      </div>
+
+      <!-- Maps
+    		========================================================================== -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7245.477571896917!2d-83.88618167063207!3d35.88883818937322!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885c1900acf8ac13%3A0xc782739cb7dc6c0c!2s2020+Tipton+Station+Rd%2C+Knoxville%2C+TN+37920!5e0!3m2!1sen!2sus!4v1506145806747"
+        frameborder="0" style="border:0" allowfullscreen id="map"></iframe>
+
+
+    </div>
+
+    <!-- #/About Us
+    ========================================================================== -->
+
+
+    <!--fancy-sidebar
+	==========================================================================-->
+
+    <!-- sidebar navigation -->
+    <div id="wrapper">
+      <div class="overlay hamburger is-closed" data-toggle="offcanvas"></div>
+
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav" data-toggle="offcanvas">
+          <li class="sidebar-brand">
+            <a href="#" id="sidebar_Robotics" class="hamburger is-closed">
+						<i class="fa fa-smile-o" style="color:green;" aria-hidden="true"></i>
+						Robotics
+					</a></li>
+          <!-- active tab -->
+          <!-- same as navbar-nav -->
+          <li id="sidebar-items" class="active" title="Robotics/Home"><span><a href="../index.html" id='resume' class="hamburger is-closed">
+						<i class="fa fa-home" aria-hidden="true"></i>
+						Home</a></span></li>
+
+          <!-- Inactive tabs -->
+          <li id="sidebar-items" title="Robotics/Social"><span><a href="../pages/social.html" id='pause' class="hamburger is-closed">
+							<i class="fa fa-share-square-o" aria-hidden="true"></i>
+							Social</a></span></li>
+
+          <li id="sidebar-items" title="Robotics/About"><span onclick="topFunction()"><a href="#" id='pause_1' class="hamburger is-closed">
+								<i class="fa fa-info-circle" aria-hidden="true"></i>
+								About</a></span></li>
+
+          <li id="sidebar-items" title="Robotics/Donate"><span><a href="../pages/donate.html" id='pause_2' class="hamburger is-closed">
+									<i class="fa fa-money" aria-hidden="true"></i>
+									Donate</a></span></li>
+
+          <li id="sidebar-items" title="Robotics/The Team"><span><a href="../pages/team.html" id='pause_3' class="hamburger is-closed">
+										<i class="fa fa-users" aria-hidden="true"></i>
+										The Team</a></span></li>
+
+          <li id="sidebar-items" title="Robotics/Join"><span><a href="../pages/join.html" id='pause_4' class="hamburger is-closed">
+											<i class="fa fa-sign-in" aria-hidden="true"></i>
+											Join</a></span></li>
+        </ul>
+
+        </ul>
+      </nav>
+      <!-- /#sidebar-wrapper -->
+
+      <div id="page-content-wrapper">
+        <!-- <button type="button" class="hamburger is-closed" data-toggle="offcanvas"> -->
+        <div id="menu_button">
+          <button type="button" id="hamburger" class="hamburger is-closed" data-toggle="offcanvas">
+					<span class="hamb-top"></span>
+					<span class="hamb-middle"></span>
+					<span class="hamb-bottom"></span>
+				</button>
+        </div>
+      </div>
+
+      <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!--/#fancy-sidebar
+==========================================================================-->
+
+
+    <!--Footer
+	==========================================================================-->
+    <div id="footer">
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-2x" id="up_scroll" aria-hidden="true"></i>
+</button>
+      <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+          scrollFunction()
+        };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          $("html, body").animate({
+            scrollTop: 0
+          }, "slow");
+          // document.body.scrollTop = 0;
+          // document.documentElement.scrollTop = 0;
+        }
+      </script>
+
+
+      <a href="https://www.knoxschools.org/southdoylehs">
+        <h3 title="Navigate to South Doyle Homepage" id="footer-title">South-Doyle High School</h3>
+      </a>
+      <p id="address">
+        <a href="https://goo.gl/maps/YqMqu23H3eJ2">
+					<span title="Open map" id="address"><b>Physical Address:</b> 2020 Tipton Station Road, Knoxville, TN 37920</span>
+				</a>
+      </p>
+      <br>
+      <span id='phone'>
+				<b>Main Phone: </b> <a href="tel:8655774475">865.577.4475</a>
+				<span id='fax'>
+					<b>Fax: </b> <a href="tel:8655774540">865.577.4540</a>
+				</span>
+      </span>
+    </div>
+    <!--/#Footer
+	==========================================================================-->
+
+
+
+
+    <!-- All scripts goes here
+	==========================================================================-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- twitter -->
+    <script src="https://platform.twitter.com/widgets.js" async></script>
+
+
+    <!-- hmmm.... I don't know maybe you'll need to find out yourself-->
+    <script src="../js/38384040373937396665.js"></script>
+
+    <!-- all other javascript by us -->
+    <script src="../js/robotics.js"></script>
+
+</body>
+
+</html>

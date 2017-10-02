@@ -113,9 +113,7 @@ function showSlides(n) {
 //
 //
 
-// scroll
-
-// desktop
+// desktop scroll
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
 function preventDefault(e) {

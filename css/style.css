@@ -265,12 +265,8 @@ a {
 
 /*the team*/
 
-#menu4 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border-radius: 0.625rem;
-  padding: 1.25rem;
+#gallery {
+/*margin-bottom: 2000px;*/
 }
 
 div.gallery {

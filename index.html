@@ -14,7 +14,8 @@ Joel Smith - AP CSP teacher
 <html lang="en">
 
 <head>
-
+	<!-- Basic needs
+=========================================================================== -->
 	<!--Tab Icon-->
 	<link rel="icon" href="images/SDorgicon.png">
 	<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
@@ -23,9 +24,9 @@ Joel Smith - AP CSP teacher
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<!--  										 -->
-	<!--All CSS links goes here-->
-	<!--  										 -->
+
+	<!-- CSS
+========================================================================== -->
 
 	<!-- this css is for bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -39,16 +40,16 @@ Joel Smith - AP CSP teacher
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-	<!--Tab title-->
+	<!-- Tab Titile
+========================================================================== -->
 	<title>Robotics</title>
 
 </head>
 
 <body>
 
-	<!--  														-->
-	<!-- 						Header						-->
-	<!--  														-->
+	<!-- Header
+========================================================================== -->
 
 	<div id="heading">
 		<h1>
@@ -57,695 +58,261 @@ Joel Smith - AP CSP teacher
 	</div>
 
 
-
-
-
-	<!--  														-->
-	<!-- 					Body Class					-->
-	<!--  														-->
+	<!-- Body Class
+========================================================================== -->
 
 	<div id="body">
 
 		<!--profile image-->
 		<div class="hover-active">
 			<div class="home-image">
-				<img d data-toggle="tab" href="#Home" title="Robotics/Home" id="profile" src="images/img.jpg" />
+				<img class="hamburger is-closed" data-toggle="offcanvas" title="Robotics/Home" id="profile" src="images/img.jpg"/>
 				<br>
 			</div>
 		</div>
 
 
-		<!--  														-->
-		<!-- 				Navigation tabs				-->
-		<!--  														-->
 
-		<!-- NAVIGATION TABS
-		Container for all of the tabs  -->
-
-		<!-- Creates list of tabs  -->
-		<ul class="nav nav-tabs">
-
-			<!-- Tab contents -->
-
-			<div class="tab-content">
-
-
-
-				<!--  														-->
-				<!-- 						Home-tab					-->
-				<!--  														-->
-				<div id="Home" class="tab-pane fade in active">
-					<h3 class="info_sub">
+		<!-- Home-tab
+========================================================================== -->
+		<div id="Home" class="tab-pane fade in active">
+			<h3 class="info_sub">
 						<!-- <i class="fa fa-angle-double-left" aria-hidden="true"></i> -->
 						WELCOME
 						<!-- <i class="fa fa-angle-double-right" aria-hidden="true"></i> -->
 					</h3>
-					<p id="info_text">Robotics Home Page</p>
+			<p id="info_text">Robotics Home Page</p>
 
 
-					<!--  														-->
-					<!-- 				<VIDEO></VIDEO> 			-->
-					<!--  														-->
+			<!-- YouTube Video
+		========================================================================== -->
+			<div id='ytvid'>
+				<div class="video-responsive">
+					<div id="player"></div>
 
-					<div id='ytvid'>
-						<div class="video-responsive">
-							<div id="player"></div>
+					<!-- YouTube player <script> -->
+					<script>
+						// 2. This code loads the IFrame Player API code asynchronously.
+						var tag = document.createElement('script');
+						tag.src = "https://www.youtube.com/player_api";
+						var firstScriptTag = document.getElementsByTagName('script')[0];
+						firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-							<!-- YouTube player <script> -->
-							</script>
-							<script>
-								// 2. This code loads the IFrame Player API code asynchronously.
-								var tag = document.createElement('script');
-								tag.src = "https://www.youtube.com/player_api";
-								var firstScriptTag = document.getElementsByTagName('script')[0];
-								firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+						// 3. This function creates an <iframe> (and YouTube player)
+						//    after the API code downloads.
+						var player;
 
-								// 3. This function creates an <iframe> (and YouTube player)
-								//    after the API code downloads.
-								var player;
-
-								function onYouTubePlayerAPIReady() {
-									player = new YT.Player('player', {
-										height: '315',
-										width: '560',
-										videoId: '53J_WNPmnRw',
-										playerVars: {
-											'autoplay': 1,
-											'showinfo': 0,
-											'end': 151
-										}
-									});
-									// clicking home resumes the ytvideo
-									document.getElementById('resume').onclick = function() {
-										player.playVideo();
-									};
-									// pauses the video when social is clicked
-									document.getElementById('pause').onclick = function() {
-										player.pauseVideo();
-									};
-									// pauses the video when About is clicked
-									document.getElementById('pause_1').onclick = function() {
-										player.pauseVideo();
-									};
-									// pauses the video when donate is clicked
-									document.getElementById('pause_2').onclick = function() {
-										player.pauseVideo();
-									};
-									// pauses the video when the team is clicked
-									document.getElementById('pause_3').onclick = function() {
-										player.pauseVideo();
-									};
-									// pauses the video when join is clicked
-									document.getElementById('pause_4').onclick = function() {
-										player.pauseVideo();
-									};
+						function onYouTubePlayerAPIReady() {
+							player = new YT.Player('player', {
+								height: '315',
+								width: '560',
+								videoId: '53J_WNPmnRw',
+								playerVars: {
+									'autoplay': 1,
+									'showinfo': 0,
+									'end': 151
 								}
-							</script>
-
-						</div>
-					</div>
-
-
-					<div id="info-content">
-						<!-- story card -->
-						<p id="info_text">
-							Story
-						</p>
-						<!-- story text -->
-						<p id="achievement">
-							The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot at the World
-							Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
-						</p>
-						<img id="trophie" src="images/team.jpg" alt="Can't load image...">
-
-					</div>
-					<br>
-
-					<!-- achievement card -->
-					<div id="info-content">
-						<p id="info_text">
-							Our Achievements
-						</p>
-						<!-- achievement text -->
-						<p id="achievement">
-							Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running to
-							help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
-						</p>
-						<img id="trophie" src="images/trophies.jpg" alt="Can't load image...">
-					</div>
-				</div>
-				<!--  														-->
-				<!-- 					/#Home-tab					-->
-				<!--  														-->
-
-
-				<!--  														-->
-				<!-- 					Social-Tab					-->
-				<!--  														-->
-
-				<div id="Social" class="tab-pane fade">
-					<div class="info">
-						<h3 class="info_sub">Social</h3>
-						<p id="info_text">
-							Robotics Social Pages
-						</p>
-						<div id="social-vertical-img">
-							<div class="container">
-
-								<!-- social three icon -->
-								<ul class="social">
-									<!-- social twitter icon -->
-									<li class="twitter"><a href="https://twitter.com/sdhs_robotics?lang=en"><i class="fa fa-twitter fa-3x"></i></a></li>
-									<!-- social facebook icon -->
-									<li class="facebook"><a href="https://www.facebook.com/pages/South-Doyle-High-School/109536089065212"><i class="fa fa fa-facebook fa-3x"></i></a></li>
-									<!-- social instagram icon -->
-									<li class="instagram"><a href="https://www.instagram.com/southdoylerobotics/?hl=en"><i class="fa fa-instagram fa-3x"></i></a></li>
-								</ul>
-
-							</div>
-						</div>
-
-						<!-- embeded twitter feed-->
-						<div id="twitter-embed">
-							<!-- the follow us twitter button -->
-							<!-- <a href="https://twitter.com/SDHS_Robotics" class="twitter-follow-button" data-show-count="false">Follow @SDHS_Robotics</a> -->
-							<!-- dark theme -->
-							<!-- <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/SDHS_Robotics">Tweets by SDHS_Robotics</a> -->
-							<!-- light theme -->
-							<a class="twitter-timeline" href="https://twitter.com/SDHS_Robotics">Tweets by SDHS_Robotics</a>
-
-
-						</div>
-					</div>
-				</div>
-				<br>
-				<!--  														-->
-				<!-- 				/#Social-Tab					-->
-				<!--  														-->
-
-
-
-				<!--  														-->
-				<!-- 					About-Us						-->
-				<!--  														-->
-				<div id="About" class="tab-pane fade">
-
-					<div class="info">
-						<h3 class="info_sub">About Us</h3>
-					</div>
-
-
-					<div id="About_big_img">
-						<img id="top_down_SDHS" src="images/top_down_SDHS.jpg" alt="opps...">
-						<div id="school_website">
-
-							<a href="https://www.knoxschools.org/southdoylehs">
-								<span id="learn_more_school">Learn more about our school <i class="scllnk fa fa-angle-double-right" aria-hidden="true"></i> </span>
-							</a>
-						</div>
-					</div>
-
-					<!-- maps -->
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7245.477571896917!2d-83.88618167063207!3d35.88883818937322!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885c1900acf8ac13%3A0xc782739cb7dc6c0c!2s2020+Tipton+Station+Rd%2C+Knoxville%2C+TN+37920!5e0!3m2!1sen!2sus!4v1506145806747"
-					  frameborder="0" style="border:0" allowfullscreen id="map"></iframe>
-
+							});
+							// clicking home resumes the ytvideo
+							document.getElementById('resume').onclick = function() {
+								player.playVideo();
+							};
+							// pauses the video when social is clicked
+							document.getElementById('pause').onclick = function() {
+								player.pauseVideo();
+							};
+							// pauses the video when About is clicked
+							document.getElementById('pause_1').onclick = function() {
+								player.pauseVideo();
+							};
+							// pauses the video when donate is clicked
+							document.getElementById('pause_2').onclick = function() {
+								player.pauseVideo();
+							};
+							// pauses the video when the team is clicked
+							document.getElementById('pause_3').onclick = function() {
+								player.pauseVideo();
+							};
+							// pauses the video when join is clicked
+							document.getElementById('pause_4').onclick = function() {
+								player.pauseVideo();
+							};
+						}
+					</script>
 
 				</div>
-				<!--  														-->
-				<!-- 				/#About-Us						-->
-				<!--  														-->
+			</div>
 
-
-
-
-				<!--  														-->
-				<!-- 					Donate-Tab					-->
-				<!--  														-->
-				<div id="Donate" class="tab-pane fade">
-					<div class="info">
-						<h3 class="info_sub">Donate</h3>
-						<p id="info_text">
-							Optionally, support us. Fundraiser or other danation services.
-						</p>
-						<!-- go fund me donation embed -->
-						<embed height="600px" width="100%" noscroll="true" src="https://www.gofundme.com/mvc.php?route=widgets/mediawidget&fund=help-fund-the-sdhs-robotics-team&image=1&coinfo=1&preview=1" type="text/html"></embed>
-
-					</div>
-				</div>
-				<!--  														-->
-				<!-- 				/#Donate-Tab					-->
-				<!--  														-->
-
-
-
-
-				<!--  														-->
-				<!-- 				The team Tab					-->
-				<!--  														-->
-				<div id="Team" class="tab-pane fade">
-					<div class="info">
-
-						<h2 class="info_sub">Gallery</h2>
-
-
-						<!-- Gallery -->
-						<!-- 1 -->
-
-						<div class="responsive raw">
-							<div class="gallery">
-								<img id="gallery-image" src="images/IMG_4622.JPG" alt="the team" width="300" height="200" onclick="openModal();currentSlide(1);disableScroll()" class="hover-shadow cursor">
-								<!--<div class="desc">Add a description of the image here</div>-->
-							</div>
-						</div>
-
-						<!-- 2 -->
-						<div class="responsive raw">
-							<div class="gallery">
-								<img id="gallery-image" src="images/IMG_4556.JPG" alt="trophie" width="600" height="400" onclick="openModal();currentSlide(2);disableScroll()" class="hover-shadow cursor">
-								<!--<div class="desc">Add a description of the image here</div>-->
-							</div>
-						</div>
-
-						<!-- 3 -->
-						<div class="responsive">
-							<div class="gallery">
-								<img id="gallery-image" src="images/IMG_4574.JPG" alt="The team" width="600" height="400" onclick="openModal();currentSlide(3);disableScroll()" class="hover-shadow cursor">
-								<!--<div class="desc">Add a description of the image here</div>-->
-							</div>
-						</div>
-
-						<!-- 4 -->
-						<div class="responsive raw">
-							<div class="gallery">
-								<img id="gallery-image" src="images/IMG_4581.JPG" alt="trophie" width="600" height="400" onclick="openModal();currentSlide(4);disableScroll()" class="hover-shadow cursor">
-								<!--<div class="desc">Add a description of the image here</div>-->
-							</div>
-						</div>
-
-						<!-- 5 -->
-						<div class="responsive raw">
-							<div class="gallery">
-								<img id="gallery-image" src="images/IMG_4717.JPG" alt="The team" width="600" height="400" onclick="openModal();currentSlide(5);disableScroll()" class="hover-shadow cursor">
-								<!--<div class="desc">Add a description of the image here</div>-->
-							</div>
-						</div>
-
-						<!-- 6 -->
-						<div class="responsive raw">
-							<div class="gallery">
-								<img id="gallery-image" src="images/IMG_4618.JPG" alt="The team" width="600" height="400" onclick="openModal();currentSlide(6);disableScroll()" class="hover-shadow cursor">
-								<!--<div class="desc">Add a description of the image here</div>-->
-							</div>
-						</div>
-
-						<!-- 7 -->
-						<div class="responsive raw">
-							<div class="gallery">
-								<img id="gallery-image" src="images/IMG_4718.JPG" alt="The team" width="600" height="400" onclick="openModal();currentSlide(7);disableScroll()" class="hover-shadow cursor">
-								<!--<div class="desc">Add a description of the image here</div>-->
-							</div>
-						</div>
-
-						<!-- 8 -->
-						<div class="responsive raw">
-							<div class="gallery">
-								<img id="gallery-image" src="images/IMG_4527.JPG" alt="The team" width="600" height="400" onclick="openModal();currentSlide(8);disableScroll()" class="hover-shadow cursor">
-								<!--<div class="desc">Add a description of the image here</div>-->
-							</div>
-						</div>
-
-						<!-- 9 -->
-						<div class="responsive raw">
-							<div class="gallery">
-								<img id="gallery-image" src="images/IMG_4684.JPG" alt="The team" width="600" height="400" onclick="openModal();currentSlide(9);disableScroll()" class="hover-shadow cursor">
-								<!--<div class="desc">Add a description of the image here</div>-->
-							</div>
-						</div>
-
-						<!-- 10 -->
-						<div class="responsive raw">
-							<div class="gallery">
-								<img id="gallery-image" src="images/IMG_4749.JPG" alt="The team" width="600" height="400" onclick="openModal();currentSlide(10);disableScroll()" class="hover-shadow cursor">
-								<!--<div class="desc">Add a description of the image here</div>-->
-							</div>
-						</div>
-
-						<!-- 11 -->
-						<div class="responsive raw">
-							<div class="gallery">
-								<img id="gallery-image" src="images/IMG_4654.JPG" alt="The team" width="600" height="400" onclick="openModal();currentSlide(11);disableScroll()" class="hover-shadow cursor">
-								<!--<div class="desc">Add a description of the image here</div>-->
-							</div>
-						</div>
-
-						<!-- 12 -->
-						<div class="responsive raw">
-							<div class="gallery">
-								<img id="gallery-image" src="images/IMG_4657.JPG" alt="The team" width="600" height="400" onclick="openModal();currentSlide(12);disableScroll()" class="hover-shadow cursor">
-								<!--<div class="desc">Add a description of the image here</div>-->
-							</div>
-						</div>
-
-
-
-						<!-- the slideshow preview -->
-						<!-- THE CLOSE BUTTON -->
-						<div id="myModal" class="modal">
-							<span class="close cursor" onclick="closeModal();enableScroll()"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
-							<div class="modal-content">
-
-								<!-- slide 1 -->
-								<div class="mySlides">
-									<div class="numbertext">1 / 12</div>
-									<img src="images/IMG_4622.JPG" style="width:100%">
-								</div>
-
-								<!-- slide 2 -->
-								<div class="mySlides">
-									<div class="numbertext">2 / 12</div>
-									<img src="images/IMG_4556.JPG" style="width:100%">
-								</div>
-
-								<!-- slide 3 -->
-								<div class="mySlides">
-									<div class="numbertext">3 / 12</div>
-									<img src="images/IMG_4574.JPG" style="width:100%">
-								</div>
-
-								<!-- slide 4 -->
-								<div class="mySlides">
-									<div class="numbertext">4 / 12</div>
-									<img src="images/IMG_4581.JPG" style="width:100%">
-								</div>
-
-								<!-- slide 5 -->
-								<div class="mySlides">
-									<div class="numbertext">5 / 12</div>
-									<img src="images/IMG_4717.JPG" style="width:100%">
-								</div>
-
-								<!-- slide 6 -->
-								<div class="mySlides">
-									<div class="numbertext">6 / 12</div>
-									<img src="images/IMG_4618.JPG" style="width:100%">
-								</div>
-
-								<!-- slide 7 -->
-								<div class="mySlides">
-									<div class="numbertext">7 / 12</div>
-									<img src="images/IMG_4718.JPG" style="width:100%">
-								</div>
-
-								<!-- slide 8 -->
-								<div class="mySlides">
-									<div class="numbertext">8 / 12</div>
-									<img src="images/IMG_4527.JPG" style="width:100%">
-								</div>
-
-								<!-- slide 9 -->
-								<div class="mySlides">
-									<div class="numbertext">9 / 12</div>
-									<img src="images/IMG_4684.JPG" style="width:100%">
-								</div>
-
-								<!-- slide 10 -->
-								<div class="mySlides">
-									<div class="numbertext">10 / 12</div>
-									<img src="images/IMG_4749.JPG" style="width:100%">
-								</div>
-
-								<!-- slide 11 -->
-								<div class="mySlides">
-									<div class="numbertext">11 / 12</div>
-									<img src="images/IMG_4654.JPG" style="width:100%">
-								</div>
-
-								<!-- slide 12 -->
-								<div class="mySlides">
-									<div class="numbertext">12 / 12</div>
-									<img src="images/IMG_4657.JPG" style="width:100%">
-								</div>
-
-								<!-- left and right buttons -->
-								<a class="prev" id="prev" onclick="plusSlides(-1)"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
-								<a class="next" id="next" onclick="plusSlides(1)"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
-
-								<div class="caption-container">
-									<p id="caption"></p>
-								</div>
-
-								<!-- thumbnail preview -->
-								<!-- slide thumbnail 1 -->
-								<div class="column">
-									<img class="demo cursor" src="images/IMG_4622.JPG" style="width:100%" onclick="currentSlide(1)" alt="team">
-								</div>
-								<!-- slide thumbnail 2 -->
-
-								<div class="column">
-									<img class="demo cursor" src="images/IMG_4556.JPG" style="width:100%" onclick="currentSlide(2)" alt="team">
-								</div>
-
-								<!-- slide thumbnail 3 -->
-								<div class="column">
-									<img class="demo cursor" src="images/IMG_4574.JPG" style="width:100%" onclick="currentSlide(3)" alt="team">
-								</div>
-
-								<!-- slide thumbnail 4 -->
-								<div class="column">
-									<img class="demo cursor" src="images/IMG_4581.JPG" style="width:100%" onclick="currentSlide(4)" alt="team">
-								</div>
-
-								<!-- slide thumbnail 5 -->
-								<div class="column">
-									<img class="demo cursor" src="images/IMG_4717.JPG" style="width:100%" onclick="currentSlide(5)" alt="team">
-								</div>
-
-								<!-- slide thumbnail 6 -->
-								<div class="column">
-									<img class="demo cursor" src="images/IMG_4618.JPG" style="width:100%" onclick="currentSlide(6)" alt="team">
-								</div>
-
-								<!-- slide thumbnail 7 -->
-								<div class="column">
-									<img class="demo cursor" src="images/IMG_4718.JPG" style="width:100%" onclick="currentSlide(7)" alt="team">
-								</div>
-
-								<!-- slide thumbnail 8 -->
-								<div class="column">
-									<img class="demo cursor" src="images/IMG_4527.JPG" style="width:100%" onclick="currentSlide(8)" alt="team">
-								</div>
-
-								<!-- slide thumbnail 9 -->
-								<div class="column">
-									<img class="demo cursor" src="images/IMG_4684.JPG" style="width:100%" onclick="currentSlide(9)" alt="team">
-								</div>
-
-								<!-- slide thumbnail 10 -->
-								<div class="column">
-									<img class="demo cursor" src="images/IMG_4749.JPG" style="width:100%" onclick="currentSlide(10)" alt="team">
-								</div>
-
-								<!-- slide thumbnail 11 -->
-								<div class="column">
-									<img class="demo cursor" src="images/IMG_4654.JPG" style="width:100%" onclick="currentSlide(11)" alt="team">
-								</div>
-
-								<!-- slide thumbnail 12 -->
-								<div class="column">
-									<img class="demo cursor" src="images/IMG_4657.JPG" style="width:100%" onclick="currentSlide(12)" alt="team">
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-				<!--  														-->
-				<!-- 			/#The team Tab					-->
-				<!--  														-->
-
-
-				<!--  														-->
-				<!-- 					Join Us Tab					-->
-				<!--  														-->
-				<div id="Join" href="#Join" class="tab-pane fade">
-					<div class="info">
-						<h3 class="info_sub">How to get involved in the program</h3>
-						<div id="Join_email">
-							<h4 id="email_join">Send e-mail to joel.smith@knoxschools.org:</h4>
-
-							<form action="mailto:joel.smith@knoxschools.org" method="post" enctype="text/plain">
-								<div>
-									<label for="name">Name:</label>
-									<input type="text" id="name" name="user_name" required>
-								</div>
-								<div>
-									<label for="mail">E-mail you want to be contaced:</label>
-									<input type="text" id="mail" name="user_mail" required>
-								</div>
-								<div>
-									<label for="msg">How do you want to help us?</label>
-									<textarea id="msg" name="Message" required></textarea>
-								</div>
-
-								<button type="submit"><i class="fa fa-check" aria-hidden="true"></i>Submit</button>
-								<button type="reset"><i class="fa fa-times" aria-hidden="true"></i>Reset</button>
-
-							</form>
-
-						</div>
-					</div>
-				</div>
-
-				<!--  														-->
-				<!-- 				/#Join Us Tab					-->
-				<!--  														-->
+			<!-- Home Cards
+		========================================================================== -->
+			<div id="info-content">
+				<!-- story card -->
+				<p id="info_text">
+					Story
+				</p>
+				<!-- story text -->
+				<p id="achievement">
+					The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot at the World
+					Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
+				</p>
+				<img id="trophie" src="images/team.jpg" alt="Can't load image...">
 
 			</div>
-			<!--Tab content ends here-->
-			<!--div content ends here-->
-	</div>
-	<!-- ###Navigation Ends here###-->
+			<br>
+
+			<!-- achievement card -->
+			<div id="info-content">
+				<p id="info_text">
+					Our Achievements
+				</p>
+				<!-- achievement text -->
+				<p id="achievement">
+					Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running to
+					help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
+				</p>
+				<img id="trophie" src="images/trophies.jpg" alt="Can't load image...">
+			</div>
+		</div>
+
+
+		<!-- #HOME
+========================================================================== -->
 
 
 
-	<!--																									 -->
-	<!-- 								fancy-sidebar											 -->
-	<!-- 																									 -->
+		<!--fancy-sidebar
+	==========================================================================-->
 
-	<!-- sidebar navigation -->
-	<div id="wrapper">
-		<div class="overlay hamburger is-closed" data-toggle="offcanvas"></div>
+		<!-- sidebar navigation -->
+		<div id="wrapper">
+			<div class="overlay hamburger is-closed" data-toggle="offcanvas"></div>
 
-		<!-- Sidebar -->
-		<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-			<ul class="nav sidebar-nav" data-toggle="offcanvas">
-				<li class="sidebar-brand">
-					<a href="#" id="sidebar_Robotics" class="hamburger is-closed">
-						<i class="fa fa-smile-o" style="color:green;" aria-hidden="true"></i>
-						Robotics
-					</a></li>
-				<!-- active tab -->
-				<!-- same as navbar-nav -->
-				<li id="sidebar-items" class="active" title="Robotics/Home"><span onclick="topFunction()"><a data-toggle="tab" href="#Home" id='resume' class="hamburger is-closed">
-						<i class="fa fa-home" aria-hidden="true"></i>
-						Home</a></span></li>
+			<!-- Sidebar -->
+			<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+				<ul class="nav sidebar-nav" data-toggle="offcanvas">
+					<li class="sidebar-brand">
+						<a href="#" id="sidebar_Robotics" class="hamburger is-closed">
+					<i class="fa fa-smile-o" style="color:green;" aria-hidden="true"></i>
+					Robotics
+				</a></li>
+					<!-- active tab -->
+					<!-- same as navbar-nav -->
+					<li id="sidebar-items" class="active" title="Robotics/Home"><span onclick="topFunction()"><a href="#" id='resume' class="hamburger is-closed">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					Home</a></span></li>
 
-				<!-- Inactive tabs -->
-				<li id="sidebar-items" title="Robotics/Social"><span onclick="topFunction()"><a data-toggle="tab" href="#Social" id='pause' class="hamburger is-closed">
-							<i class="fa fa-share-square-o" aria-hidden="true"></i>
-							Social</a></span></li>
+					<!-- Inactive tabs -->
+					<li id="sidebar-items" title="Robotics/Social"><span><a href="pages/social.html" id='pause' class="hamburger is-closed">
+						<i class="fa fa-share-square-o" aria-hidden="true"></i>
+						Social</a></span></li>
 
-				<li id="sidebar-items" title="Robotics/About"><span onclick="topFunction()"><a data-toggle="tab" href="#About" id='pause_1' class="hamburger is-closed">
-								<i class="fa fa-info-circle" aria-hidden="true"></i>
-								About</a></span></li>
+					<li id="sidebar-items" title="Robotics/About"><span><a href="pages/about.html" id='pause_1' class="hamburger is-closed">
+							<i class="fa fa-info-circle" aria-hidden="true"></i>
+							About</a></span></li>
 
-				<li id="sidebar-items" title="Robotics/Donate"><span onclick="topFunction()"><a data-toggle="tab" href="#Donate" id='pause_2' class="hamburger is-closed">
-									<i class="fa fa-money" aria-hidden="true"></i>
-									Donate</a></span></li>
+					<li id="sidebar-items" title="Robotics/Donate"><span><a href="pages/donate.html" id='pause_2' class="hamburger is-closed">
+								<i class="fa fa-money" aria-hidden="true"></i>
+								Donate</a></span></li>
 
-				<li id="sidebar-items" title="Robotics/The Team"><span onclick="topFunction()"><a data-toggle="tab" href="#Team" id='pause_3' class="hamburger is-closed">
-										<i class="fa fa-users" aria-hidden="true"></i>
-										The Team</a></span></li>
+					<li id="sidebar-items" title="Robotics/The Team"><span><a href="pages/team.html" id='pause_3' class="hamburger is-closed">
+									<i class="fa fa-users" aria-hidden="true"></i>
+									The Team</a></span></li>
 
-				<li id="sidebar-items" title="Robotics/Join"><span onclick="topFunction()"><a data-toggle="tab" href="#Join" id='pause_4' class="hamburger is-closed">
-											<i class="fa fa-sign-in" aria-hidden="true"></i>
-											Join</a></span></li>
-			</ul>
+					<li id="sidebar-items" title="Robotics/Join"><span><a href="pages/join.html" id='pause_4' class="hamburger is-closed">
+										<i class="fa fa-sign-in" aria-hidden="true"></i>
+										Join</a></span></li>
+				</ul>
 
-			</ul>
-		</nav>
-		<!-- /#sidebar-wrapper -->
+				</ul>
+			</nav>
+			<!-- /#sidebar-wrapper -->
 
-		<div id="page-content-wrapper">
-			<!-- <button type="button" class="hamburger is-closed" data-toggle="offcanvas"> -->
-			<div id="menu_button">
-				<button type="button" id="hamburger" class="hamburger is-closed" data-toggle="offcanvas">
+			<div id="page-content-wrapper">
+				<!-- <button type="button" class="hamburger is-closed" data-toggle="offcanvas"> -->
+				<div id="menu_button">
+					<button type="button" id="hamburger" class="hamburger is-closed" data-toggle="offcanvas">
 					<span class="hamb-top"></span>
 					<span class="hamb-middle"></span>
 					<span class="hamb-bottom"></span>
 				</button>
+				</div>
 			</div>
+
+			<!-- /#page-content-wrapper -->
+
 		</div>
+		<!-- /#wrapper -->
 
-		<!-- /#page-content-wrapper -->
-
-	</div>
-	<!-- /#wrapper -->
-
-	<!--																									 -->
-	<!-- 							/#fancy-sidebar											 -->
-	<!-- 																									 -->
+		<!--/#fancy-sidebar
+==========================================================================-->
 
 
-
-	<!--  														-->
-	<!-- 						Footer 						-->
-	<!--  														-->
-	<div id="footer">
-		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-2x" id="up_scroll" aria-hidden="true"></i>
+		<!--Footer
+	==========================================================================-->
+		<div id="footer">
+			<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-2x" id="up_scroll" aria-hidden="true"></i>
 </button>
-		<script>
-			// When the user scrolls down 20px from the top of the document, show the button
-			window.onscroll = function() {
-				scrollFunction()
-			};
+			<script>
+				// When the user scrolls down 20px from the top of the document, show the button
+				window.onscroll = function() {
+					scrollFunction()
+				};
 
-			function scrollFunction() {
-				if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-					document.getElementById("myBtn").style.display = "block";
-				} else {
-					document.getElementById("myBtn").style.display = "none";
+				function scrollFunction() {
+					if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+						document.getElementById("myBtn").style.display = "block";
+					} else {
+						document.getElementById("myBtn").style.display = "none";
+					}
 				}
-			}
 
-			// When the user clicks on the button, scroll to the top of the document
-			function topFunction() {
-				$("html, body").animate({
-					scrollTop: 0
-				}, "slow");
-				// document.body.scrollTop = 0;
-				// document.documentElement.scrollTop = 0;
-			}
-		</script>
+				// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+					$("html, body").animate({
+						scrollTop: 0
+					}, "slow");
+					// document.body.scrollTop = 0;
+					// document.documentElement.scrollTop = 0;
+				}
+			</script>
 
 
-		<a href="https://www.knoxschools.org/southdoylehs">
-			<h3 title="Navigate to South Doyle Homepage" id="footer-title">South-Doyle High School</h3>
-		</a>
-		<p id="address">
-			<a href="https://goo.gl/maps/YqMqu23H3eJ2">
+			<a href="https://www.knoxschools.org/southdoylehs">
+				<h3 title="Navigate to South Doyle Homepage" id="footer-title">South-Doyle High School</h3>
+			</a>
+			<p id="address">
+				<a href="https://goo.gl/maps/YqMqu23H3eJ2">
 					<span title="Open map" id="address"><b>Physical Address:</b> 2020 Tipton Station Road, Knoxville, TN 37920</span>
 				</a>
-		</p>
-		<br>
-		<span id='phone'>
+			</p>
+			<br>
+			<span id='phone'>
 				<b>Main Phone: </b> <a href="tel:8655774475">865.577.4475</a>
 				<span id='fax'>
 					<b>Fax: </b> <a href="tel:8655774540">865.577.4540</a>
 				</span>
-		</span>
-	</div>
-	<!--  														-->
-	<!-- 					/#Footer 						-->
-	<!--  														-->
+			</span>
+		</div>
+		<!--/#Footer
+	==========================================================================-->
 
 
 
 
-	<!-- 											-->
-	<!-- All scripts goes here-->
-	<!--  										-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!-- twitter -->
-	<script src="https://platform.twitter.com/widgets.js" async></script>
+		<!-- All scripts goes here
+	==========================================================================-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- twitter -->
+		<script src="https://platform.twitter.com/widgets.js" async></script>
 
 
-	<!-- hmmm.... I don't know maybe you'll need to find out yourself-->
-	<script src="js/38384040373937396665.js"></script>
+		<!-- hmmm.... I don't know maybe you'll need to find out yourself-->
+		<script src="js/38384040373937396665.js"></script>
 
-	<!-- all other javascript by us -->
-	<script src="js/robotics.js"></script>
+		<!-- all other javascript by us -->
+		<script src="js/robotics.js"></script>
 
 </body>
 
