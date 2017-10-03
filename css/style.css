@@ -511,6 +511,9 @@ div.desc {
 }
 
 /*join*/
+/*#join{
+  padding-bottom: 20%;
+}*/
 
 #email_join {
   text-align: center;
@@ -548,7 +551,9 @@ input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  height: 130px;
+  height: 200px;
+  min-width: 100%;
+  min-height: 80px;
   box-sizing: border-box;
   border: none;
   background-color: #3CBC8D;
