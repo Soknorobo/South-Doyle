@@ -364,7 +364,7 @@ div.desc {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 10px;
+  padding-top: 5px;
   left: 0;
   top: 0;
   width: 100%;
@@ -381,7 +381,7 @@ div.desc {
   margin: auto;
   padding: 0;
   width: 70%;
-  max-width: 780px;
+  max-width: 760px;
   min-width: 300px;
 }
 
