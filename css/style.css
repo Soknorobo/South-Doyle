@@ -74,7 +74,7 @@ body {
 
 /*the header of the page (SDHA Robotics)*/
 
-h1 {
+#logo {
   text-align: center;
   margin: 0 auto;
   font-weight: 900;
