@@ -478,13 +478,13 @@ div.desc {
   margin-bottom: -4px;
   object-fit: cover;
 }
-
+/*
 .caption-container {
   text-align: center;
   background-color: black;
   padding: 2px 16px;
   color: white;
-}
+}*/
 
 .demo {
   opacity: .3;
