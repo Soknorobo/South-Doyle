@@ -93,7 +93,7 @@ body {
 /*this is also the header of the page*/
 
 #heading {
-  background-color: #6cfbfb;
+  background: linear-gradient(0deg, #FFFFFF 0%, #6cfbfb 100%);
   overflow: hidden;
   width: 100%;
   height: 10.31rem;
@@ -159,6 +159,8 @@ a {
 #info_text {
   color: #CCBBBB;
   text-align: center;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 .info {
@@ -175,7 +177,7 @@ a {
 
 #achievement {
   text-align: justify;
-  color: black;
+  color: white;
 }
 
 #info-content {
@@ -578,110 +580,10 @@ div.desc {
 /*#join{
   padding-bottom: 20%;
 }*/
-
-#email_join {
-  text-align: center;
-}
-
-#Join_email {
-  padding: 10px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-input[type=text] {
+#form{
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  background-color: #3CBC8D;
-  color: white;
-  border-radius: 4px;
+  height: 995px;
 }
-
-#mail {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  background-color: #3CBC8D;
-  color: white;
-  border-radius: 4px;
-}
-
-#msg {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  height: 200px;
-  min-width: 100%;
-  min-height: 80px;
-  box-sizing: border-box;
-  border: none;
-  background-color: #3CBC8D;
-  color: white;
-  border-radius: 4px;
-}
-
-button[type=submit]:active {
-  transform: translateY(100px;
-  );
-}
-
-button[type=submit]:hover .fa {
-  transform: rotate(360deg);
-  color: green;
-  transition: all 900ms ease;
-}
-
-button[type=reset] {
-  background-color: #ff7700;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 15px;
-  color: black;
-  /*outline: none;*/
-  font-size: 20px;
-  transition: all 3s ease;
-}
-
-button[type=reset]:active {
-  transform: translateY(0.125rem);
-}
-
-button[type=reset]:hover .fa {
-  color: #ff7700;
-  transform: rotate(-360deg);
-  transition: all 800ms ease;
-}
-
-button[type=reset]:hover {
-  background: rgba(0, 0, 0, 0);
-  color: #ff7700;
-  box-shadow: inset 0 0 0 3px brown;
-  transition: all 3s ease;
-}
-
-button[type=submit] {
-  background-color: #4CAF50;
-  color: black;
-  border: none;
-  float: right;
-  font-size: 20px;
-  border-radius: 20px;
-  padding: 10px 10px;
-  transition: all 3s ease;
-}
-
-button[type=submit]:hover {
-  background: rgba(0, 0, 0, 0);
-  color: green;
-  box-shadow: inset 0 0 0 3px #4CAF50;
-  transition: all 3s ease;
-}
-
 /*footer and other information*/
 
 #footer {

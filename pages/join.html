@@ -37,6 +37,11 @@ Joel Smith - AP CSP teacher
   <!-- this css adds icons which can be found by googling awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <style>
+    #footer {
+      background: linear-gradient(0deg, #00e6e6 0%, #EBF7DE 100%);
+    }
+  </style>
 
   <!-- Tab Titile
 ========================================================================== -->
@@ -80,30 +85,8 @@ Joel Smith - AP CSP teacher
       <div id="Join" href="#Join">
         <div class="info">
           <h3 class="info_sub">How to get involved in the program</h3>
-          <div id="Join_email">
-            <h4 id="email_join">Send e-mail to joel.smith@knoxschools.org:</h4>
-
-            <form action="mailto:joel.smith@knoxschools.org" method="post" enctype="text/plain">
-              <div>
-                <hr>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" required>
-              </div>
-              <div>
-                <label for="mail">E-mail you want to be contacted at:</label>
-                <input type="text" id="mail" name="user_mail" required>
-              </div>
-              <div>
-                <label for="msg">How do you want to help us?</label>
-                <textarea id="msg" name="Message" required></textarea>
-              </div>
-
-              <button id='submit' type="submit"><i class="fa fa-check" aria-hidden="true"></i>Submit</button>
-
-              <button id='reset' type="reset"><i class="fa fa-times" aria-hidden="true"></i>Reset</button>
-              <hr>
-            </form>
-
+          <div id="form-main">
+            <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLScil3459dYeXBFao0_zhoyzR4X7ZEupTAMemypyntDlA5KVMw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
           </div>
         </div>
       </div>
