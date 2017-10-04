@@ -17,12 +17,17 @@
 body, html {
   height: 100%;
 }
+html {
+    overflow: hidden;
+    height: 100%;
+}
 
 /*this body tag is the body of the web page*/
 
 body {
   position: relative;
   overflow-x: hidden;
+  overflow: auto;
   height: 100%;
   width: 100%;
   background: #FFF;
