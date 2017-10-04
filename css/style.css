@@ -93,13 +93,13 @@ body {
 /*this is also the header of the page*/
 
 #heading {
-  background: linear-gradient(0deg, #FFFFFF 0%, #6cfbfb 100%);
   overflow: hidden;
   width: 100%;
   height: 10.31rem;
   padding: 10px 0 100px 0;
   text-shadow: -5px 5px 0px #00e6e6, -10px 10px 0px #01cccc, -15px 15px 0px #00bdbd;
   cursor: default;
+  background: linear-gradient(0deg, #FFFFFF 0%, #6cfbfb 100%);
 }
 
 /*this is the subtitile of the pages ex. welcome, social*/
