@@ -475,6 +475,37 @@ Joel Smith - AP CSP teacher
 
 
 
+		<!-- scroll up button
+	========================================================================== -->
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-2x" id="up_scroll" aria-hidden="true"></i>
+		</button>
+		<script>
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {
+				scrollFunction()
+			};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+					document.getElementById("myBtn").style.display = "block";
+					document.getElementById("hamburger").style.visibility = "hidden";
+				} else {
+					document.getElementById("myBtn").style.display = "none";
+					document.getElementById("hamburger").style.visibility = "visible";
+				}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				$("html, body").animate({
+					scrollTop: 0
+				}, "slow");
+				// document.body.scrollTop = 0;
+				// document.documentElement.scrollTop = 0;
+			}
+		</script>
+
 
     <!--  														-->
     <!-- 						Footer 						-->

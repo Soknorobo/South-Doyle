@@ -178,7 +178,13 @@ Joel Smith - AP CSP teacher
 	==========================================================================-->
       <div id="footer">
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-2x" id="up_scroll" aria-hidden="true"></i>
-</button>
+      </button>
+
+        <!-- scroll up button
+      	========================================================================== -->
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-2x" id="up_scroll" aria-hidden="true"></i>
+      		</button>
         <script>
           // When the user scrolls down 20px from the top of the document, show the button
           window.onscroll = function() {
@@ -188,8 +194,10 @@ Joel Smith - AP CSP teacher
           function scrollFunction() {
             if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
               document.getElementById("myBtn").style.display = "block";
+              document.getElementById("hamburger").style.visibility = "hidden";
             } else {
               document.getElementById("myBtn").style.display = "none";
+              document.getElementById("hamburger").style.visibility = "visible";
             }
           }
 
@@ -202,7 +210,6 @@ Joel Smith - AP CSP teacher
             // document.documentElement.scrollTop = 0;
           }
         </script>
-
 
         <a href="https://www.knoxschools.org/southdoylehs">
           <h3 title="Navigate to South Doyle Homepage" id="footer-title">South-Doyle High School</h3>
