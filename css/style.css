@@ -17,11 +17,10 @@
 body, html {
   height: 100%;
 }
-html {
+/*html {
     overflow: hidden;
     height: 100%;
-}
-
+}*/
 /*this body tag is the body of the web page*/
 
 body {
@@ -30,13 +29,14 @@ body {
   overflow: auto;
   height: 100%;
   width: 100%;
-  background: #FFF;
+  background: #6cfbfb;
   background-size: cover;
 }
 
 /*this is the body under header and above footer*/
 
 #body {
+  background: #fff;
   padding: 0;
   margin: 0;
 }
