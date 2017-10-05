@@ -37,10 +37,24 @@ Joel Smith - AP CSP teacher
   <!-- this css adds icons which can be found by googling awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <style>
+    #footer {
+      background: linear-gradient(0deg, #00e6e6 0%, #EBF7DE 100%);
+    }
+
+    #body {
+      background: #EBF7DE;
+    }
+
+    #heading {
+      background: linear-gradient(0deg, #EBF7DE 0%, #6cfbfb 100%);
+    }
+  </style>
 
   <!-- Tab Titile
 ========================================================================== -->
-  <title>Robotics/Donate</title>
+  <title>Robotics/Contact-us</title>
+
 
 </head>
 
@@ -52,7 +66,7 @@ Joel Smith - AP CSP teacher
   <div id="heading">
     <h1 id="logo">
     SDHS Robotics
-  </h1>
+    </h1>
   </div>
 
 
@@ -74,20 +88,17 @@ Joel Smith - AP CSP teacher
 
 
 
-      <!-- Donate Tab
-    ========================================================================== -->
-      <div id="Donate">
+
+      <!--Contact-us Us Tab
+    ==========================================================================-->
+      <div id="Contact-us" href="#Contact-us">
         <div class="info">
-          <h3 class="info_sub">Donate</h3>
-          <p id="info_text">
-            Optionally, support us. Fundraiser or other danation services.
-          </p>
-          <!-- go fund me donation embed -->
-          <embed height="600px" width="100%" noscroll="true" src="https://www.gofundme.com/mvc.php?route=widgets/mediawidget&fund=help-fund-the-sdhs-robotics-team&image=1&coinfo=1&preview=1" type="text/html"></embed>
+          <h3 class="info_sub">How to get involved in the program</h3>
+          <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLScil3459dYeXBFao0_zhoyzR4X7ZEupTAMemypyntDlA5KVMw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
         </div>
       </div>
 
-      <!-- /#Donate-Tab
+      <!--/#Contact-us Us Tab
     ==========================================================================-->
 
 
@@ -110,42 +121,60 @@ Joel Smith - AP CSP teacher
             <!-- same as navbar-nav -->
             <li id="sidebar-items" class="active" title="Robotics/Home"><span><a href="../index" class="hamburger is-closed">
 						<i class="fa fa-home" aria-hidden="true"></i>
-						Home</a></span></li>
+						Home
+          </a>
+          </span>
+            </li>
 
             <!-- Inactive tabs -->
             <li id="sidebar-items" title="Robotics/Social"><span><a href="../pages/social" class="hamburger is-closed">
 							<i class="fa fa-share-square-o" aria-hidden="true"></i>
-							Social</a></span></li>
+							Social
+            </a>
+          </span>
+            </li>
 
             <li id="sidebar-items" title="Robotics/About"><span><a href="../pages/about" class="hamburger is-closed">
 								<i class="fa fa-info-circle" aria-hidden="true"></i>
-								About</a></span></li>
+								About
+              </a>
+            </span>
+            </li>
 
             <li id="sidebar-items" title="Robotics/About"><span><a href="../pages/first" class="hamburger is-closed">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i>
-                  First
-                </a>
-              </span>
+								<i class="fa fa-info-circle" aria-hidden="true"></i>
+								First
+              </a>
+            </span>
             </li>
 
             <li id="sidebar-items" title="Robotics/About"><span><a href="../pages/sponsors" class="hamburger is-closed">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i>
-                  Sponsors
-                </a>
-              </span>
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                Sponsors
+              </a>
+            </span>
             </li>
 
-            <li id="sidebar-items" title="Robotics/Donate"><span onclick="topFunction()"><a href="#" class="hamburger is-closed">
-									<i class="fa fa-money" aria-hidden="true"></i>
-									Donate</a></span></li>
+            <li id="sidebar-items" title="Robotics/Donate"><span><a href="../pages/donate" class="hamburger is-closed">
+  							<i class="fa fa-money" aria-hidden="true"></i>
+  							Donate
+              </a>
+            </span>
+            </li>
 
             <li id="sidebar-items" title="Robotics/The Team"><span><a href="../pages/team" class="hamburger is-closed">
-										<i class="fa fa-users" aria-hidden="true"></i>
-										The Team</a></span></li>
+								<i class="fa fa-users" aria-hidden="true"></i>
+								The Team
+              </a>
+            </span>
+            </li>
 
-            <li id="sidebar-items" title="Robotics/Contact Us"><span><a href="../pages/Contact-us" class="hamburger is-closed">
-											<i class="fa fa-sign-in" aria-hidden="true"></i>
-											Contact US</a></span></li>
+            <li id="sidebar-items" title="Robotics/Contact Us"><span onclick="topFunction()"><a href="#" class="hamburger is-closed">
+								<i class="fa fa-sign-in" aria-hidden="true"></i>
+								Contact Us
+              </a>
+            </span>
+            </li>
           </ul>
 
           </ul>

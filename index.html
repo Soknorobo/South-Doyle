@@ -47,6 +47,13 @@ Joel Smith - AP CSP teacher
 </head>
 
 <body>
+	<script>
+		window.onload = function() {
+			setTimeout(function() {
+				scrollTo(0, 0);
+			}); //100ms for example
+		}
+	</script>
 
 	<div id="heading">
 		<h1 id="logo">
@@ -58,264 +65,276 @@ Joel Smith - AP CSP teacher
 		<input id="clickScroll" type="checkbox" class="clickScroll"></input>
 		<div class="imageSplash" id="imageSplash">
 			<div id="overlay"></div>
-			<h1>SOUTH DOYLE ROBOTICS</h1>
-			<label for="clickScroll">
-				<div id="fa-splash">
-				<i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i>
+			<h1>SOUTH-DOYLE ROBOTICS</h1>
+			<div id="fa-splash">
+				<label for="clickScroll">
+				<i class="fa fa-angle-double-down fa-4x" aria-hidden="true"></i>
 				</div>
-	</label>
-		</div>
-	</div>
-
-	<!-- Header
-========================================================================== -->
-
-
-	<!-- Body Class
-========================================================================== -->
-
-	<div id="body">
-
-		<!--profile image-->
-		<div class="hover-active">
-			<div class="home-image">
-				<img class="hamburger is-closed" data-toggle="offcanvas" title="Robotics/Home" id="profile" src="images/img.jpg" />
-				<br>
+			</label>
 			</div>
 		</div>
+		<script>
+			// splash screen
+			var splash = document.getElementById("imageSplash");
+			splash.addEventListener("mousewheel", MouseWheelHandler, false);
+			splash.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+
+			function MouseWheelHandler(e) {
+				document.getElementById("clickScroll").checked = true;
+				return false;
+			}
+		</script>
 
 
-
-		<!-- Home-tab
+		<!-- Header
 ========================================================================== -->
-		<div id="Home" class="tab-pane fade in active">
-			<h3 class="info_sub">
+
+
+		<!-- Body Class
+========================================================================== -->
+
+		<div id="body">
+
+			<!--profile image-->
+			<div class="hover-active">
+				<div class="home-image">
+					<img class="hamburger is-closed" data-toggle="offcanvas" title="Robotics/Home" id="profile" src="images/img.jpg" />
+					<br>
+				</div>
+			</div>
+
+
+
+			<!-- Home-tab
+========================================================================== -->
+			<div id="Home" class="tab-pane fade in active">
+				<h3 class="info_sub">
 						<!-- <i class="fa fa-angle-double-left" aria-hidden="true"></i> -->
 						WELCOME
 						<!-- <i class="fa fa-angle-double-right" aria-hidden="true"></i> -->
 					</h3>
-			<p id="info_text">Robotics Home Page</p>
+				<p id="info_text">Robotics Home Page</p>
 
 
-			<!-- YouTube Video
+				<!-- YouTube Video
 		========================================================================== -->
-			<div id='ytvid'>
-				<div class="video-responsive">
+				<div id='ytvid'>
+					<div class="video-responsive">
 
-					<!-- YouTube player -->
-					<div style="text-align: center">
-						<div class="video-container">
-							<iframe id="player" src="https://www.youtube-nocookie.com/embed/53J_WNPmnRw?rel=0&autoplay=0&showinfo=0&end=151&cc_load_policy=0&disablekb=0&modestbranding=0c" frameborder="0" allowfullscreen></iframe>
+						<!-- YouTube player -->
+						<div style="text-align: center">
+							<div class="video-container">
+								<iframe id="player" src="https://www.youtube-nocookie.com/embed/53J_WNPmnRw?rel=0&autoplay=0&showinfo=0&end=151&cc_load_policy=0&disablekb=0&modestbranding=0c" frameborder="0" allowfullscreen></iframe>
+							</div>
 						</div>
+
 					</div>
+					<h3 id="yt-title">First Worlds Robotics Competition Houston</h3>
+					<span id="yt-info">L&N Stem's and South Doyle High School's journey to the FRC Worlds FIRST Robotics competition in Houston, Texas.</span>
+				</div>
+
+				<!-- Home Cards
+		========================================================================== -->
+				<div id="info-content">
+					<!-- story card -->
+					<p id="info_text">
+						Story
+					</p>
+					<!-- story text -->
+					<p id="achievement">
+						The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot at the World
+						Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
+					</p>
+					<img id="trophie" src="images/team.jpg" alt="Can't load image...">
 
 				</div>
-				<h3 id="yt-title">First Worlds Robotics Competition Houston</h3>
-				<span id="yt-info">L&N Stem's and South Doyle High School's journey to the FRC Worlds FIRST Robotics competition in Houston, Texas.</span>
+				<br>
+
+				<!-- achievement card -->
+				<div id="info-content">
+					<p id="info_text">
+						Our Achievements
+					</p>
+					<!-- achievement text -->
+					<p id="achievement">
+						Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running to
+						help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
+					</p>
+					<img id="trophie" src="images/trophies.jpg" alt="Can't load image...">
+				</div>
 			</div>
 
-			<!-- Home Cards
-		========================================================================== -->
-			<div id="info-content">
-				<!-- story card -->
-				<p id="info_text">
-					Story
-				</p>
-				<!-- story text -->
-				<p id="achievement">
-					The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot at the World
-					Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
-				</p>
-				<img id="trophie" src="images/team.jpg" alt="Can't load image...">
 
-			</div>
-			<br>
-
-			<!-- achievement card -->
-			<div id="info-content">
-				<p id="info_text">
-					Our Achievements
-				</p>
-				<!-- achievement text -->
-				<p id="achievement">
-					Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running to
-					help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
-				</p>
-				<img id="trophie" src="images/trophies.jpg" alt="Can't load image...">
-			</div>
-		</div>
-
-
-		<!-- #HOME
+			<!-- #HOME
 ========================================================================== -->
 
 
 
-		<!--fancy-sidebar
+			<!--fancy-sidebar
 ==========================================================================-->
 
-		<!-- sidebar navigation -->
-		<div id="wrapper">
-			<div class="overlay hamburger is-closed" data-toggle="offcanvas"></div>
+			<!-- sidebar navigation -->
+			<div id="wrapper">
+				<div class="overlay hamburger is-closed" data-toggle="offcanvas"></div>
 
-			<!-- Sidebar -->
-			<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-				<ul class="nav sidebar-nav" data-toggle="offcanvas">
-					<li class="sidebar-brand">
-						<a href="#" id="sidebar_Robotics" class="hamburger is-closed">
+				<!-- Sidebar -->
+				<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+					<ul class="nav sidebar-nav" data-toggle="offcanvas">
+						<li class="sidebar-brand">
+							<a href="#" id="sidebar_Robotics" class="hamburger is-closed">
 			<i class="fa fa-smile-o" style="color:green;" aria-hidden="true"></i>
 			Robotics
 		</a></li>
-					<!-- active tab -->
-					<!-- same as navbar-nav -->
-					<li id="sidebar-items" class="active" title="Robotics/Home"><span><a href="../index" class="hamburger is-closed">
+						<!-- active tab -->
+						<!-- same as navbar-nav -->
+						<li id="sidebar-items" class="active" title="Robotics/Home"><span onclick="topFunction()"><a href="#" class="hamburger is-closed">
 			<i class="fa fa-home" aria-hidden="true"></i>
 			Home
 		</a>
 		</span>
-					</li>
+						</li>
 
-					<!-- Inactive tabs -->
-					<li id="sidebar-items" title="Robotics/Social"><span><a href="../pages/social" class="hamburger is-closed">
+						<!-- Inactive tabs -->
+						<li id="sidebar-items" title="Robotics/Social"><span><a href="../pages/social" class="hamburger is-closed">
 				<i class="fa fa-share-square-o" aria-hidden="true"></i>
 				Social
 			</a>
 		</span>
-					</li>
+						</li>
 
-					<li id="sidebar-items" title="Robotics/About"><span><a href="../pages/about" class="hamburger is-closed">
+						<li id="sidebar-items" title="Robotics/About"><span><a href="../pages/about" class="hamburger is-closed">
 					<i class="fa fa-info-circle" aria-hidden="true"></i>
 					About
 				</a>
 			</span>
-					</li>
+						</li>
 
-					<li id="sidebar-items" title="Robotics/About"><span><a href="../pages/first" class="hamburger is-closed">
+						<li id="sidebar-items" title="Robotics/About"><span><a href="../pages/first" class="hamburger is-closed">
 					<i class="fa fa-info-circle" aria-hidden="true"></i>
 					First
 				</a>
 			</span>
-					</li>
+						</li>
 
-					<li id="sidebar-items" title="Robotics/About"><span><a href="../pages/sponsors" class="hamburger is-closed">
+						<li id="sidebar-items" title="Robotics/About"><span><a href="../pages/sponsors" class="hamburger is-closed">
 					<i class="fa fa-info-circle" aria-hidden="true"></i>
 					Sponsors
 				</a>
 			</span>
-					</li>
+						</li>
 
-					<li id="sidebar-items" title="Robotics/Donate"><span><a href="../pages/donate" class="hamburger is-closed">
+						<li id="sidebar-items" title="Robotics/Donate"><span><a href="../pages/donate" class="hamburger is-closed">
 					<i class="fa fa-money" aria-hidden="true"></i>
 					Donate
 				</a>
 			</span>
-					</li>
+						</li>
 
-					<li id="sidebar-items" title="Robotics/The Team"><span><a href="../pages/team" class="hamburger is-closed">
+						<li id="sidebar-items" title="Robotics/The Team"><span><a href="../pages/team" class="hamburger is-closed">
 					<i class="fa fa-users" aria-hidden="true"></i>
 					The Team
 				</a>
 			</span>
-					</li>
+						</li>
 
-					<li id="sidebar-items" title="Robotics/Join"><span onclick="topFunction()"><a href="#" class="hamburger is-closed">
+						<li id="sidebar-items" title="Robotics/Contact-us"><span><a href="../pages/contact-us" class="hamburger is-closed">
 					<i class="fa fa-sign-in" aria-hidden="true"></i>
-					Join
+					Contact us
 				</a>
 			</span>
-					</li>
-				</ul>
+						</li>
+					</ul>
 
-				</ul>
-			</nav>
-			<!-- /#sidebar-wrapper -->
+					</ul>
+				</nav>
+				<!-- /#sidebar-wrapper -->
 
-			<div id="page-content-wrapper">
-				<!-- <button type="button" class="hamburger is-closed" data-toggle="offcanvas"> -->
-				<div id="menu_button">
-					<button type="button" id="hamburger" class="hamburger is-closed" data-toggle="offcanvas">
+				<div id="page-content-wrapper">
+					<!-- <button type="button" class="hamburger is-closed" data-toggle="offcanvas"> -->
+					<div id="menu_button">
+						<button type="button" id="hamburger" class="hamburger is-closed" data-toggle="offcanvas">
 		<span class="hamb-top"></span>
 		<span class="hamb-middle"></span>
 		<span class="hamb-bottom"></span>
 	</button>
+					</div>
 				</div>
+
+				<!-- /#page-content-wrapper -->
+
 			</div>
+			<!-- /#wrapper -->
 
-			<!-- /#page-content-wrapper -->
-
-		</div>
-		<!-- /#wrapper -->
-
-		<!--/#fancy-sidebar
+			<!--/#fancy-sidebar
 ==========================================================================-->
 
-		<!--Footer
+			<!--Footer
 	==========================================================================-->
 
-		<!-- scroll up button
+			<!-- scroll up button
 	========================================================================== -->
 
-		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-2x" id="up_scroll" aria-hidden="true"></i>
+			<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-2x" id="up_scroll" aria-hidden="true"></i>
 		</button>
-		<script>
-			// When the user scrolls down 20px from the top of the document, show the button
-			window.onscroll = function() {
-				scrollFunction()
-			};
+			<script>
+				// When the user scrolls down 20px from the top of the document, show the button
+				window.onscroll = function() {
+					scrollFunction()
+				};
 
-			function scrollFunction() {
-				if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-					document.getElementById("myBtn").style.display = "block";
-					document.getElementById("hamburger").style.visibility = "hidden";
-				} else {
-					document.getElementById("myBtn").style.display = "none";
-					document.getElementById("hamburger").style.visibility = "visible";
+				function scrollFunction() {
+					if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+						document.getElementById("myBtn").style.display = "block";
+						document.getElementById("hamburger").style.visibility = "hidden";
+					} else {
+						document.getElementById("myBtn").style.display = "none";
+						document.getElementById("hamburger").style.visibility = "visible";
+					}
 				}
-			}
 
-			// When the user clicks on the button, scroll to the top of the document
-			function topFunction() {
-				$("html, body").animate({
-					scrollTop: 0
-				}, "slow");
-				// document.body.scrollTop = 0;
-				// document.documentElement.scrollTop = 0;
-			}
-		</script>
+				// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+					$("html, body").animate({
+						scrollTop: 0
+					}, "slow");
+					// document.body.scrollTop = 0;
+					// document.documentElement.scrollTop = 0;
+				}
+			</script>
 
-		<div id="footer">
+			<div id="footer">
 
-			<a href="https://www.knoxschools.org/southdoylehs">
-				<h3 title="Navigate to South Doyle Homepage" id="footer-title">South-Doyle High School</h3>
-			</a>
-			<p id="address">
-				<a href="https://goo.gl/maps/YqMqu23H3eJ2">
+				<a href="https://www.knoxschools.org/southdoylehs">
+					<h3 title="Navigate to South Doyle Homepage" id="footer-title">South-Doyle High School</h3>
+				</a>
+				<p id="address">
+					<a href="https://goo.gl/maps/YqMqu23H3eJ2">
 					<span title="Open map" id="address"><b>Physical Address:</b> 2020 Tipton Station Road, Knoxville, TN 37920</span>
 				</a>
-			</p>
-			<br>
-			<span id='phone'>
+				</p>
+				<br>
+				<span id='phone'>
 				<b>Main Phone: </b> <a href="tel:8655774475">865.577.4475</a>
 				<span id='fax'>
 					<b>Fax: </b> <a href="tel:8655774540">865.577.4540</a>
 				</span>
-			</span>
-		</div>
-		<!--/#Footer
+				</span>
+			</div>
+			<!--/#Footer
 	==========================================================================-->
 
 
 
 
-		<!-- All scripts goes here
+			<!-- All scripts goes here
 	==========================================================================-->
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="js/38384040373937396665.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="js/38384040373937396665.js"></script>
 
-		<!-- all other javascript by us -->
-		<script src="js/robotics.js"></script>
+			<!-- all other javascript by us -->
+			<script src="js/robotics.js"></script>
 
 </body>
 

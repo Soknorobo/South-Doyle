@@ -46,14 +46,3 @@ $(document).ready(function() {
     $('#wrapper').toggleClass('toggled');
   });
 });
-
-
-// splash screen
-var splash = document.getElementById("imageSplash");
-splash.addEventListener("mousewheel", MouseWheelHandler, false);
-splash.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
-
-function MouseWheelHandler(e) {
-  document.getElementById("clickScroll").checked = true;
-  return false;
-}

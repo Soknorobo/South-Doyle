@@ -2,11 +2,6 @@
  created by the students from scratch
 */
 
-
-#splash-screen{
-  position:statics;
-}
-
 .imageSplash {
   position: absolute;
   top: 0;
@@ -45,9 +40,16 @@ label {
   font-size: 3em;
   position: absolute;
   bottom: 0%;
-  left: 50%;
+  left: 45.5%;
   z-index: 3;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+  label{
+    bottom: 0%;
+    left: 40%;
+  }
 }
 
 input[type=checkbox]:checked~.imageSplash {
@@ -609,9 +611,9 @@ div.desc {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-/*join*/
+/*Contact-us*/
 
-/*#join{
+/*#Contact-us{
   padding-bottom: 20%;
 }*/
 
