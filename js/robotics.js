@@ -23,7 +23,7 @@ $(document).ready(function() {
     isClosed = false;
 
 
-  trigger.click(function () {
+  trigger.click(function() {
     hamburger_cross();
   });
 
@@ -48,6 +48,12 @@ $(document).ready(function() {
 });
 
 
-// touch
-//
-//
+// splash screen
+var splash = document.getElementById("imageSplash");
+splash.addEventListener("mousewheel", MouseWheelHandler, false);
+splash.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+
+function MouseWheelHandler(e) {
+  document.getElementById("clickScroll").checked = true;
+  return false;
+}

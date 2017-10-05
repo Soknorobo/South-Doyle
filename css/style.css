@@ -2,6 +2,58 @@
  created by the students from scratch
 */
 
+
+#splash-screen{
+  position:statics;
+}
+
+.imageSplash {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  right: 0;
+  background-image: url('https://pre01.deviantart.net/eea2/th/pre/f/2013/193/e/9/grinner_by_ekud-d6d4xp0.jpg');
+  background-size: cover;
+  transition: all 0.5s ease;
+  z-index: 3;
+  background-attachment: fixed;
+}
+
+.imageSplash h1 {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+  font-size: 10vw;
+  z-index: 3;
+  text-shadow: 0 2px 10px #000;
+}
+
+.clickScroll {
+  z-index: 3;
+  opacity: 0;
+  height: 0px;
+  position: absolute;
+}
+
+label {
+  color: #FFF;
+  font-size: 3em;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked~.imageSplash {
+  transform: translateY(-100%);
+}
+
 /*preloading all the images*/
 
 :root:before {
@@ -211,10 +263,7 @@ a {
 
 /*home / welcome*/
 
-
 /*social*/
-
-
 
 #social-vertical-img {
   padding: 100px 0 100px 0;
@@ -326,7 +375,6 @@ a {
 }
 
 /*Donate*/
-
 
 /*the team*/
 
@@ -612,6 +660,7 @@ div.desc {
 }
 
 #ytvid {
+  /*visibility: hidden;*/
   border: 15px solid white;
   border-radius: 5px;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
@@ -624,12 +673,12 @@ div.desc {
   }
 }
 
-#yt-info{
-  color:#888;
+#yt-info {
+  color: #888;
   font-size: 14px;
 }
 
-#yt-title{
+#yt-title {
   font-family: 'Germania One', cursive;
 }
 
