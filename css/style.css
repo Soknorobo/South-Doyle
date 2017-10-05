@@ -17,10 +17,12 @@
 body, html {
   height: 100%;
 }
+
 /*html {
     overflow: hidden;
     height: 100%;
 }*/
+
 /*this body tag is the body of the web page*/
 
 body {
@@ -157,6 +159,7 @@ a {
 }
 
 #info_text {
+  font-family: 'Germania One', cursive;
   color: #CCBBBB;
   text-align: center;
   font-weight: 900;
@@ -187,6 +190,7 @@ a {
   min-width: 300px;
   border-radius: 10px 40px 10px 40px;
   border-style: hidden;
+  margin-top: 100px;
   padding: 15px 15px 15px 15px;
   background: #2f3238;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
@@ -207,22 +211,11 @@ a {
 
 /*home / welcome*/
 
-#menu0 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  /*Background-color:#CCD1D1;*/
-  /*radiz*/
-}
 
 /*social*/
 
-#menu1 {
-  /**/
-  /**/
-}
+
+
 #social-vertical-img {
   padding: 100px 0 100px 0;
   width: 100%;
@@ -270,7 +263,7 @@ a {
 }
 
 .facebook {
- background: linear-gradient(to left, #00c6ff, #0072ff);
+  background: linear-gradient(to left, #00c6ff, #0072ff);
   bottom: 0;
   left: 25%;
 }
@@ -280,7 +273,6 @@ a {
   bottom: 0;
   left: 75%;
 }
-
 
 #twitter-embed {
   min-width: 300px;
@@ -328,7 +320,6 @@ a {
   /*padding: 10% 0 10 0;*/
 }
 
-
 #map {
   height: 400px;
   width: 100%;
@@ -336,13 +327,6 @@ a {
 
 /*Donate*/
 
-#menu3 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border-radius: 0.625rem;
-  padding: 1.25rem;
-}
 
 /*the team*/
 
@@ -544,6 +528,7 @@ div.desc {
   margin-bottom: -4px;
   object-fit: cover;
 }
+
 /*
 .caption-container {
   text-align: center;
@@ -577,13 +562,22 @@ div.desc {
 }
 
 /*join*/
+
 /*#join{
   padding-bottom: 20%;
 }*/
-#form{
+
+#form {
   width: 100%;
-  height: 995px;
+  height: 1123px;
 }
+
+@media only screen and (max-width: 660px) {
+  #form {
+    height: 1045px;
+  }
+}
+
 /*footer and other information*/
 
 #footer {
@@ -601,12 +595,26 @@ div.desc {
 
 /*video example */
 
-.video-responsive {
+.video-container {
   position: relative;
-  padding-top: 25%;
-  padding-bottom: 50%;
+  padding-bottom: 52.5%;
+  padding-top: 30px;
   height: 0;
   overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#ytvid {
+  border: 15px solid white;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (min-width: 900px) {
@@ -616,16 +624,13 @@ div.desc {
   }
 }
 
-/*resizes the video to fit in the info divider*/
+#yt-info{
+  color:#888;
+  font-size: 14px;
+}
 
-.video-responsive iframe, .video-responsive object, .video-responsive embed, .video-responsive video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-height: 75%;
-  padding: 0;
+#yt-title{
+  font-family: 'Germania One', cursive;
 }
 
 /*-------------------------------*/
