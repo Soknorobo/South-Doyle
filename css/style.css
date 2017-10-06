@@ -11,9 +11,11 @@
   right: 0;
   background-image: url('https://pre01.deviantart.net/eea2/th/pre/f/2013/193/e/9/grinner_by_ekud-d6d4xp0.jpg');
   background-size: cover;
-  transition: all 0.5s ease;
-  z-index: 3;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position:center center;
+  transition: all 1s cubic-bezier(0.04, 0.73, 0.19, 1.07);
+  z-index: 1;
+  /*background-attachment: fixed;*/
 }
 
 .imageSplash h1 {
@@ -43,6 +45,15 @@ label {
   left: 45.5%;
   z-index: 3;
   cursor: pointer;
+}
+
+label:hover{
+  transform: translateY(5px);
+
+}
+
+label:active{
+  transform:scale(1.1);
 }
 
 @media only screen and (max-width: 550px) {
