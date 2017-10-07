@@ -2,6 +2,19 @@
  created by the students from scratch
 */
 
+/*preloading all the images for team tab*/
+
+:root:before {
+  content: url(../images/IMG_4622.JPG) url(../images/IMG_4556.JPG) url(../images/IMG_4574.JPG) url(../images/IMG_4581.JPG) url(../images/IMG_4717.JPG) url(../images/IMG_4618.JPG) url(../images/IMG_4718.JPG) url(../images/IMG_4527.JPG) url(../images/IMG_4684.JPG) url(../images/IMG_4749.JPG) url(../images/IMG_4654.JPG) url(../images/IMG_4657.JPG);
+  background-image: url(../images/IMG_4657.JPG);
+  visibility: hidden;
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  left: -999em;
+}
+
+
 .imageSplash {
   position: absolute;
   top: 0;
@@ -9,7 +22,7 @@
   left: 0;
   height: 100%;
   right: 0;
-  background-image: url('https://pre01.deviantart.net/eea2/th/pre/f/2013/193/e/9/grinner_by_ekud-d6d4xp0.jpg');
+  background-image: url('../images/img.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -98,31 +111,18 @@ label:hover{
 }
 
 label:active {
-  transform: scale(2);
+  transform: scale(1.8);
+}
+label:active .fa{
+  transform: rotate(180deg);
+  transition: 20ms;
 }
 
-/*@media only screen and (max-width: 550px) {
-  label{
-    bottom: 0%;
-    left: 40%;
-  }
-}*/
 
 input[type=checkbox]:checked~.imageSplash {
   transform: translateY(-100%);
 }
 
-/*preloading all the images*/
-
-:root:before {
-  content: url(../images/IMG_4622.JPG) url(../images/IMG_4556.JPG) url(../images/IMG_4574.JPG) url(../images/IMG_4581.JPG) url(../images/IMG_4717.JPG) url(../images/IMG_4618.JPG) url(../images/IMG_4718.JPG) url(../images/IMG_4527.JPG) url(../images/IMG_4684.JPG) url(../images/IMG_4749.JPG) url(../images/IMG_4654.JPG) url(../images/IMG_4657.JPG);
-  background-image: url(../images/IMG_4657.JPG);
-  visibility: hidden;
-  height: 1px;
-  width: 1px;
-  position: absolute;
-  left: -999em;
-}
 
 body, html {
   height: 100%;
