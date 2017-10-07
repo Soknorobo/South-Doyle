@@ -67,15 +67,18 @@ Joel Smith - AP CSP teacher
 			<h1>SOUTH-DOYLE ROBOTICS</h1>
 			<div id="fa-splash">
 				<label for="clickScroll">
-				<i class="fa fa-angle-double-down fa-4x" aria-hidden="true"></i>
-				</div>
+					<div id='rotate' class="rotate">
+					</div>
+				<i class="fa down-splash fa-angle-double-down " aria-hidden="true"></i>
+
 			</label>
 			</div>
 		</div>
 		<script>
 			// splash screen
-			var splash = document.getElementById("imageSplash");
+			var splash = document.getElementById("splash-screen");
 			splash.addEventListener("mousewheel", MouseWheelHandler, false);
+			splash.addEventListener("touchstart", MouseWheelHandler, false);
 			splash.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
 
 			function MouseWheelHandler(e) {
@@ -216,7 +219,7 @@ Joel Smith - AP CSP teacher
 						</li>
 
 						<li id="sidebar-items" title="Robotics/About"><span><a href="../pages/sponsors" class="hamburger is-closed">
-					<i class="fa fa-info-circle" aria-hidden="true"></i>
+					<i class="fa fa-link" aria-hidden="true"></i>
 					Sponsors
 				</a>
 			</span>

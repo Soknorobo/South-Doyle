@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Technical Error</title>
+  <title>SDHS Robotics Error</title>
 
   <style>
     * {
@@ -20,10 +20,34 @@
       text-align: center;
       font-size: 7vw;
     }
-    #goback{
+
+    #goback {
+      text-align: center;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+      outline: none;
+      padding: 5px;
+      border-radius: 10px;
+    }
+
+    button:hover {
+      background-color: lightgreen;
+    }
+
+    button:active {
+      transform: translateY(3px);
+    }
+
+    #directory {
+      margin-top: 20px;
       text-align: center;
     }
   </style>
+
 </head>
 
 <body>
@@ -32,7 +56,17 @@
   </div>
   <div id="goback">
     Go back home
-      <a href="index"><button type="button" name="button">SDHS Robotics</button></a>
+    <a href="index"><button type="button" name="Home">SDHS Robotics</button></a>
+  </div>
+  <div id="directory">
+    Optionally move to another directory:
+    <a href="pages/social"><button>Robotics/Social </button></a>
+    <a href="pages/about"><button>Robotics/About </button></a>
+    <a href="pages/first"><button>Robotics/First </button></a>
+    <a href="pages/sponsors"><button>Robotics/Sponsors </button></a>
+    <a href="pages/donate"><button>Robotics/Donate </button></a>
+    <a href="pages/team"><button>Robotics/team </button></a>
+    <a href="pages/contact-us"><button>Robotics/Contact </button></a>
   </div>
 </body>
 

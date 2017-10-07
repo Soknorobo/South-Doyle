@@ -7,45 +7,48 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://soknorobo.com/</loc>
-  <lastmod>2017-10-02T00:44:22+00:00</lastmod>
+  <loc>https://soknorobo.com/</loc>
+  <lastmod>2017-10-06T05:13:00+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://soknorobo.com/pages/social.html</loc>
-  <lastmod>2017-10-02T00:44:22+00:00</lastmod>
+  <loc>https://soknorobo.com/pages/social</loc>
+  <lastmod>2017-10-06T05:13:00+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://soknorobo.com/pages/about.html</loc>
-  <lastmod>2017-10-02T00:44:22+00:00</lastmod>
+  <loc>https://soknorobo.com/pages/about</loc>
+  <lastmod>2017-10-06T05:13:00+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://soknorobo.com/pages/donate.html</loc>
-  <lastmod>2017-10-02T00:44:22+00:00</lastmod>
+  <loc>https://soknorobo.com/pages/first</loc>
+  <lastmod>2017-10-06T05:13:00+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://soknorobo.com/pages/team.html</loc>
-  <lastmod>2017-10-02T00:44:22+00:00</lastmod>
+  <loc>https://soknorobo.com/pages/sponsors</loc>
+  <lastmod>2017-10-06T05:13:00+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://soknorobo.com/pages/join.html</loc>
-  <lastmod>2017-10-02T00:44:22+00:00</lastmod>
+  <loc>https://soknorobo.com/pages/donate</loc>
+  <lastmod>2017-10-06T05:13:00+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://soknorobo.com/index.html</loc>
-  <lastmod>2017-10-02T00:44:22+00:00</lastmod>
+  <loc>https://soknorobo.com/pages/team</loc>
+  <lastmod>2017-10-06T05:13:00+00:00</lastmod>
   <changefreq>daily</changefreq>
-  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soknorobo.com/pages/contact-us</loc>
+  <lastmod>2017-10-06T05:13:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://soknorobo.com/index</loc>
+  <lastmod>2017-10-06T05:13:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 </urlset>

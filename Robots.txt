@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://soknorobo.com/sitemaps/sitemap.xml

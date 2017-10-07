@@ -12,7 +12,7 @@
   background-image: url('https://pre01.deviantart.net/eea2/th/pre/f/2013/193/e/9/grinner_by_ekud-d6d4xp0.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:center center;
+  background-position: center center;
   transition: all 1s cubic-bezier(0.04, 0.73, 0.19, 1.07);
   z-index: 1;
   /*background-attachment: fixed;*/
@@ -38,30 +38,75 @@
 }
 
 label {
-  color: #FFF;
-  font-size: 3em;
+  color: white;
+  font-size: 50px;
   position: absolute;
-  bottom: 0%;
-  left: 45.5%;
-  z-index: 3;
-  cursor: pointer;
+  bottom: 55px;
+  left: 50%;
+  margin-left: -35px;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  transition: all 0.1s ease-out;
+  animation-delay: 1.5s;
 }
 
+.down-splash {
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 5px 13px 5px 13px;
+  transition: all 2s ease;
+}
+
+/*
 label:hover{
   transform: translateY(5px);
+}*/
 
+/*label:hover .down-splash{
+  border: 5px dotted red;
+  border-radius: 50%;
+  transition: all 3s ease-out;
+  transform: rotate(360deg);
+}*/
+
+#rotate {
+  background: transparent;
+  border: 5px solid blue;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: -6px;
+  margin-top: -4px;
+  transition: all 1s ease-out;
+  position: absolute;
 }
 
-label:active{
-  transform:scale(1.1);
+#rotate:hover {
+  -webkit-animation: rotate 0.5s linear infinite;
+  border: 5px dotted red;
+  transition: all 1s ease-out;
 }
 
-@media only screen and (max-width: 550px) {
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+label:active {
+  transform: scale(2);
+}
+
+/*@media only screen and (max-width: 550px) {
   label{
     bottom: 0%;
     left: 40%;
   }
-}
+}*/
 
 input[type=checkbox]:checked~.imageSplash {
   transform: translateY(-100%);
@@ -171,10 +216,10 @@ body {
 
 /*this is the subtitile of the pages ex. welcome, social*/
 
-h3 {
+/*h3 {
   color: #222244;
   font-family: Trebuchet MS;
-}
+}*/
 
 /*all links*/
 
@@ -182,6 +227,10 @@ a {
   color: inherit;
   text-decoration: none;
   outline: none;
+}
+
+*{
+  box-sizing:border-box;
 }
 
 /*this is a divider that holds the home image*/
@@ -275,6 +324,67 @@ a {
 /*tags that identify the tabs within the tab container*/
 
 /*home / welcome*/
+
+/*sponsors*/
+
+.halfdiv{
+  width: 49.99999%
+  float: left;
+}
+
+#Sponsors{
+  width: 90%;
+  margin: 0 auto;
+  color:white;
+  text-align: center;
+}
+
+#platinumdiv {
+  padding: 0 0 0 0;
+  padding: 15px;
+  margin-top: 20px;
+  background: #2f3238;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.platinum-img {
+display: inline-block;
+margin: 0 auto;
+}
+
+#golddiv{
+  padding: 15px;
+  margin-top: 20px;
+  background: #2f3238;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.gold-img {
+
+}
+
+#silverdiv{
+  margin-top: 20px;
+  padding: 15px;
+  background: #2f3238;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.silver-img {
+  /*width: 100%;*/
+}
+
+#donorsdiv{
+  margin-top: 20px;
+  padding: 15px;
+  background: #2f3238;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.donors-img {
+  /*width: 100%;*/
+}
 
 /*social*/
 
@@ -415,9 +525,9 @@ div.desc {
   text-align: center;
 }
 
-* {
+/** {
   box-sizing: border-box;
-}
+}*/
 
 .responsive {
   padding: 6px 8px;
