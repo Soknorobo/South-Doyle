@@ -80,12 +80,12 @@ Donors: SoKno Market    , Red Arrow Industries LLC. -->
         <h2><center>Platinum Sponsors</center></h2>
 
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h4>Knox County Schools</h4>
+          <h4 id="platinum-font" >Knox County Schools</h4>
           <a href="https://www.knoxschools.org/"><img class="img-responsive platinum-img" src="../sponsors/knoxschools.png"></a>
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h4>Argosy Foundation</h4>
+          <h4 id="platinum-font">Argosy Foundation</h4>
           <a href="http://www.argosyfnd.org/"><img class="img-responsive platinum-img" src="../sponsors/Argosy.png"></a>
           <br>
         </div>
@@ -95,17 +95,17 @@ Donors: SoKno Market    , Red Arrow Industries LLC. -->
         <h2><center>Gold Sponsors</center></h2>
 
         <div class="col-xs-12 col-sm-4 col-md-4">
-          <h3>Consolidated Nuclear Security</h3>
+          <h3 id="gold-font">Consolidated Nuclear Security</h3>
           <a href="http://cns-llc.us/"><img class="img-responsive gold-img" src="../sponsors/CNS.png"></a>
         </div>
 
         <div class="col-xs-12 col-sm-4 col-md-4">
-          <h3>UT-Battelle</h3>
+          <h3 id="gold-font">UT-Battelle</h3>
           <a href="http://www.ut-battelle.org/"><img class="img-responsive gold-img" src="../sponsors/UT_Battelle.png"></a>
         </div>
 
         <div class="col-xs-12 col-sm-4 col-md-4">
-          <h3>TVA</h3>
+          <h3 id="gold-font">TVA</h3>
           <a href="https://www.tva.gov/"><img class="img-responsive gold-img" src="../sponsors/tva.png"></a>
           <br>
         </div>
@@ -115,27 +115,27 @@ Donors: SoKno Market    , Red Arrow Industries LLC. -->
         <h2><center>Silver Sponsors</center></h2>
 
         <div class="col-xs-12 col-sm-4 col-md-4">
-          <h3>Spencer Pro Diesel</h3>
+          <h3 id="silver-font">Spencer Pro Diesel</h3>
           <a href="https://www.spencersprodiesel.com/"><img class="img-responsive silver-img" src="../sponsors/fakespencerlogo.png"></a>
         </div>
 
         <div class="col-xs-12 col-sm-4 col-md-4">
-          <h3>Jupiter Entertainment</h3>
+          <h3 id="silver-font">Jupiter Entertainment</h3>
           <a href="https://www.jupiterent.com/"><img class="img-responsive silver-img" src="../sponsors/jupiter.png"></a>
         </div>
 
         <div class="col-xs-12 col-sm-4 col-md-4">
-          <h3>Aloca</h3>
+          <h3 id="silver-font">Aloca</h3>
           <a href="https://www.alcoa.com/global/en/home.asp"><img class="img-responsive silver-img" src="../sponsors/Alcoa.png"></a>
         </div>
 
         <div class="col-xs-12 col-sm-4 col-md-4">
-          <h3>DeRoyal</h3>
+          <h3 id="silver-font">DeRoyal</h3>
           <a href="http://www.deroyal.com/"><img class="img-responsive silver-img" src="../sponsors/DeRoyal.png"></a>
         </div>
 
         <div class="col-xs-12 col-sm-4 col-md-4">
-          <h3>Ryerson Steel</h3>
+          <h3 id="silver-font">Ryerson Steel</h3>
           <a href="https://www.ryerson.com/en"><img class="img-responsive silver-img" src="../sponsors/Ryerson.png"></a>
         </div>
       </div>
@@ -144,12 +144,12 @@ Donors: SoKno Market    , Red Arrow Industries LLC. -->
         <h2><center>Donors</center></h2>
 
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h3>SoKno Market</h3>
+          <h3 id="donors-font">SoKno Market</h3>
           <a href="http://www.soknomarket.com/"><img class="img-responsive donors-img" src="../sponsors/soknoMarket.png"></a>
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h3>Red Arrow Industries LLC.</h3>
+          <h3 id="donors-font">Red Arrow Industries LLC.</h3>
           <a href="https://redarrowindustries.com/"><img class="img-responsive donors-img"  src="../sponsors/redArrow.png"></a>
         </div>
       </div>
@@ -277,10 +277,10 @@ Donors: SoKno Market    , Red Arrow Industries LLC. -->
       function scrollFunction() {
         if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
           document.getElementById("myBtn").style.display = "block";
-          document.getElementById("hamburger").style.visibility = "hidden";
+          document.getElementById("hamburger").style.transform = "translate(-100px)";
         } else {
           document.getElementById("myBtn").style.display = "none";
-          document.getElementById("hamburger").style.visibility = "visible";
+          document.getElementById("hamburger").style.transform = "translate(0px)";
         }
       }
 

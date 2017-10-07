@@ -1,18 +1,13 @@
 /*this is a the css for the sidebar*/
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+
 
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
   background-color: transparent;
 }
 
-
-/*-------------------------------*/
-
-
 /*           Wrappers            */
-
-
-/*-------------------------------*/
-
 #wrapper {
   padding-left: 0;
   -webkit-transition: all 0.5s ease;
@@ -59,14 +54,7 @@
 }
 
 
-/*-------------------------------*/
-
-
 /*     Sidebar nav styles        */
-
-
-/*-------------------------------*/
-
 .sidebar-nav {
   position: absolute;
   top: 0;
@@ -166,14 +154,7 @@
   line-height: 44px;
 }
 
-/*-------------------------------*/
-
-
 /*       Hamburger-Cross         */
-
-
-/*-------------------------------*/
-
 #hamburger {
   visibility: visible;
   position: fixed;
@@ -187,6 +168,7 @@
   background: transparent;
   border: none;
   outline: none;
+  transition: all .2s ease-out;
 }
 
 .hamburger:hover, .hamburger:focus, .hamburger:active {
@@ -297,13 +279,7 @@
 }
 
 
-/*-------------------------------*/
-
-
 /*            Overlay            */
-
-
-/*-------------------------------*/
 
 .overlay {
   position: fixed;

@@ -1,10 +1,13 @@
 /*This is a css for the South Doyle Robotics Website
  created by the students from scratch
 */
+/*dedicated font*/
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
 
 /*preloading all the images for team tab*/
 
-:root:before {
+:root::after {
   content: url(../images/IMG_4622.JPG) url(../images/IMG_4556.JPG) url(../images/IMG_4574.JPG) url(../images/IMG_4581.JPG) url(../images/IMG_4717.JPG) url(../images/IMG_4618.JPG) url(../images/IMG_4718.JPG) url(../images/IMG_4527.JPG) url(../images/IMG_4684.JPG) url(../images/IMG_4749.JPG) url(../images/IMG_4654.JPG) url(../images/IMG_4657.JPG);
   background-image: url(../images/IMG_4657.JPG);
   visibility: hidden;
@@ -15,6 +18,7 @@
 }
 
 
+
 .imageSplash {
   position: absolute;
   top: 0;
@@ -22,11 +26,11 @@
   left: 0;
   height: 100%;
   right: 0;
-  background-image: url('../images/img.jpg');
+  background-image: url('../images/skull.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  transition: all 1s cubic-bezier(0.04, 0.73, 0.19, 1.07);
+  transition: all .5s ease-out;
   z-index: 1;
   /*background-attachment: fixed;*/
 }
@@ -35,12 +39,12 @@
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
-  color: #FFF;
+  color: #303C88;
   padding: 20px;
   text-align: center;
   font-size: 10vw;
   z-index: 3;
-  text-shadow: 0 2px 10px #000;
+  text-shadow: 0 2px 10px black;
 }
 
 .clickScroll {
@@ -51,7 +55,7 @@
 }
 
 label {
-  color: white;
+  color:#7E1F21;
   font-size: 50px;
   position: absolute;
   bottom: 55px;
@@ -65,27 +69,15 @@ label {
 }
 
 .down-splash {
-  border: 5px solid white;
+  border: 5px solid #DDD1C8;
   border-radius: 50%;
   padding: 5px 13px 5px 13px;
   transition: all 2s ease;
 }
 
-/*
-label:hover{
-  transform: translateY(5px);
-}*/
-
-/*label:hover .down-splash{
-  border: 5px dotted red;
-  border-radius: 50%;
-  transition: all 3s ease-out;
-  transform: rotate(360deg);
-}*/
-
 #rotate {
   background: transparent;
-  border: 5px solid blue;
+  border: 5px solid #303C88;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -96,8 +88,8 @@ label:hover{
 }
 
 #rotate:hover {
-  -webkit-animation: rotate 0.5s linear infinite;
-  border: 5px dotted red;
+  -webkit-animation: rotate 2s linear infinite;
+  border: 5px dashed #7E1F21;
   transition: all 1s ease-out;
 }
 
@@ -110,19 +102,75 @@ label:hover{
   }
 }
 
+#down-splash-arrow {
+  background: linear-gradient(142deg, #246655, #e73333, #5433e9, #33e94f);
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 17s ease infinite;
+  -moz-animation: AnimationName 17s ease infinite;
+  -o-animation: AnimationName 17s ease infinite;
+  animation: AnimationName 17s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 13% 0%
+  }
+  50% {
+    background-position: 88% 100%
+  }
+  100% {
+    background-position: 13% 0%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 13% 0%
+  }
+  50% {
+    background-position: 88% 100%
+  }
+  100% {
+    background-position: 13% 0%
+  }
+}
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 13% 0%
+  }
+  50% {
+    background-position: 88% 100%
+  }
+  100% {
+    background-position: 13% 0%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 13% 0%
+  }
+  50% {
+    background-position: 88% 100%
+  }
+  100% {
+    background-position: 13% 0%
+  }
+}
+
 label:active {
   transform: scale(1.8);
 }
-label:active .fa{
+
+label:active .fa {
   transform: rotate(180deg);
   transition: 20ms;
 }
 
-
 input[type=checkbox]:checked~.imageSplash {
   transform: translateY(-100%);
 }
-
 
 body, html {
   height: 100%;
@@ -141,15 +189,15 @@ body {
   overflow: auto;
   height: 100%;
   width: 100%;
-  background: #6cfbfb;
+  background: #303C88;
   background-size: cover;
 }
 
 /*this is the body under header and above footer*/
 
 #body {
-  background: #fff;
-  padding: 0;
+  background: #778899;
+  padding: 0 0 50px 0;
   margin: 0;
 }
 
@@ -164,8 +212,8 @@ body {
   border: none;
   opacity: .6;
   outline: none;
-  background-color: #212F3C;
-  color: white;
+  background-color: #242842;
+  color: #778899;
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 100px;
@@ -177,7 +225,7 @@ body {
 #myBtn:hover {
   background: black;
   opacity: 1;
-  color: red;
+  color: #7E1F21;
   border-radius: 10px;
   transform: scale(.9);
   transition: all 500ms ease;
@@ -198,7 +246,7 @@ body {
   font-size: 4.5rem;
   font-family: 'Russo One', sans-serif;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #fff;
+  -webkit-text-fill-color: #242842;
   padding: 0 15% 0 15%;
 }
 
@@ -209,28 +257,28 @@ body {
   width: 100%;
   height: 10.31rem;
   padding: 10px 0 100px 0;
-  text-shadow: -5px 5px 0px #00e6e6, -10px 10px 0px #01cccc, -15px 15px 0px #00bdbd;
+  text-shadow: -5px 5px 0px #4b5282, -10px 10px 0px #424b87, -15px 15px 0px #303C88;
   cursor: default;
-  background: linear-gradient(0deg, #FFFFFF 0%, #6cfbfb 100%);
+  background: linear-gradient(0deg, #778899 0%, #303C88 100%);
 }
 
 /*this is the subtitile of the pages ex. welcome, social*/
 
-/*h3 {
-  color: #222244;
-  font-family: Trebuchet MS;
-}*/
 
 /*all links*/
 
 a {
-  color: inherit;
+  color: #DDD1C8;
   text-decoration: none;
   outline: none;
 }
 
-*{
-  box-sizing:border-box;
+a:hover{
+  color: #ADD1C8;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /*this is a divider that holds the home image*/
@@ -262,19 +310,14 @@ a {
 /*same as the home-image*/
 
 #profile:hover {
-  background-color: #289E9E;
-  box-shadow: 0 0 7px 5px rgb(61, 71, 82);
+  box-shadow: 0 0 7px 5px #242842;
   transform: scale(.9);
   transition: all 500ms ease;
 }
 
-#info_header {
-  color: #EEEEFF;
-}
-
 #info_text {
   font-family: 'Germania One', cursive;
-  color: #CCBBBB;
+  color: #7E1F21;
   text-align: center;
   font-weight: 900;
   font-size: 20px;
@@ -288,13 +331,14 @@ a {
 
 .info_sub {
   text-align: center;
+  color: #242842;
 }
 
 /*this is the text on the home tab under the video*/
 
 #achievement {
   text-align: justify;
-  color: white;
+  color: #DDD1C8;
 }
 
 #info-content {
@@ -304,9 +348,10 @@ a {
   min-width: 300px;
   border-radius: 10px 40px 10px 40px;
   border-style: hidden;
-  margin-top: 100px;
+  margin-top: 40px;
   padding: 15px 15px 15px 15px;
-  background: #2f3238;
+  margin-bottom: 20px;
+  background: #242842;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -327,15 +372,14 @@ a {
 
 /*sponsors*/
 
-.halfdiv{
-  width: 49.99999%
-  float: left;
+.halfdiv {
+  width: 49.99999% float: left;
 }
 
-#Sponsors{
+#Sponsors {
   width: 90%;
   margin: 0 auto;
-  color:white;
+  color: #DDD1C8;
   text-align: center;
 }
 
@@ -343,45 +387,45 @@ a {
   padding: 0 0 0 0;
   padding: 15px;
   margin-top: 20px;
-  background: #2f3238;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  background: #242842;
+  box-shadow: 0 0 8px 0 #7E1F21;
   overflow: hidden;
 }
 
 .platinum-img {
-display: inline-block;
-margin: 0 auto;
+  margin: 0 auto;
 }
 
-#golddiv{
+#golddiv {
   padding: 15px;
   margin-top: 20px;
-  background: #2f3238;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  background: #303C88;
+  box-shadow: 0 0 8px 0 #7E1F21;
   overflow: hidden;
 }
-.gold-img {
 
-}
+.gold-img {}
 
-#silverdiv{
+#silverdiv {
   margin-top: 20px;
   padding: 15px;
-  background: #2f3238;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  background: #242842;
+  box-shadow: 0 0 8px 0 #7E1F21;
   overflow: hidden;
 }
+
 .silver-img {
   /*width: 100%;*/
 }
 
-#donorsdiv{
+#donorsdiv {
   margin-top: 20px;
   padding: 15px;
-  background: #2f3238;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  background: #303C88;
+  box-shadow: 0 0 8px 0 #7E1F21;
   overflow: hidden;
 }
+
 .donors-img {
   /*width: 100%;*/
 }
@@ -455,6 +499,10 @@ margin: 0 auto;
   text-align: center;
 }
 
+.timeline-Widget{
+  background-color: #778899;
+}
+
 /*About*/
 
 #About_big_img #top_down_SDHS {
@@ -472,8 +520,8 @@ margin: 0 auto;
   position: absolute;
   bottom: 5px;
   right: 5px;
-  background: blue;
-  color: #FFF;
+  background: #303C88;
+  color: #DDD1C8;
   padding: 5px 10px;
 }
 
@@ -756,15 +804,16 @@ div.desc {
   bottom: 0;
   width: 100%;
   z-index: 1;
+  color: #DDD1C8;
   margin: 0 auto;
   padding-bottom: 10px;
   padding-top: 10px;
   text-align: center;
   opacity: 90%;
-  background: linear-gradient(0deg, #00e6e6 0%, #FFFFFF 100%);
+  background: linear-gradient(0deg, #303C88 0%, #778899 100%);
 }
 
-/*video example */
+/*video youtube iframe*/
 
 .video-container {
   position: relative;
@@ -784,8 +833,9 @@ div.desc {
 
 #ytvid {
   /*visibility: hidden;*/
-  border: 15px solid white;
+  border: 15px outset #7E1F21;
   border-radius: 5px;
+  background: #242842;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -797,12 +847,15 @@ div.desc {
 }
 
 #yt-info {
-  color: #888;
+  color: #DDD1C8;
   font-size: 14px;
+  padding: 0 10px 10px 10px;
 }
 
 #yt-title {
   font-family: 'Germania One', cursive;
+  padding: 10px;
+  color: #DDD1C8;
 }
 
 /*-------------------------------*/
@@ -834,3 +887,14 @@ div.desc {
 #fax {
   padding-left: 1.15rem;
 }
+
+/*
+#7E1F21 - RED
+#778899 GRAY
+#242842 NAVY BLUE
+#303C88 BLUE
+#DDD1C8 WHITISH
+
+The navy and light blue will be used for divs and header/footer elements
+the red is an accent color
+Borders and lines will be the Red*/

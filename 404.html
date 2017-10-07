@@ -10,10 +10,6 @@
   <title>SDHS Robotics Error</title>
 
   <style>
-    * {
-      background: lightblue;
-    }
-
     #title {
       font-family: 'Germania One', cursive;
       font-weight: 900;
@@ -35,7 +31,13 @@
     }
 
     button:hover {
-      background-color: lightgreen;
+      background: linear-gradient(278deg, #00c290, #dacd43, #f43434, #3444f4, #db06f6, #7f08ba, #083eba);
+      background-size: 1400% 1400%;
+
+      -webkit-animation: AnimationName 57s ease infinite;
+      -moz-animation: AnimationName 57s ease infinite;
+      -o-animation: AnimationName 57s ease infinite;
+      animation: AnimationName 57s ease infinite;
     }
 
     button:active {
@@ -45,6 +47,64 @@
     #directory {
       margin-top: 20px;
       text-align: center;
+    }
+
+    body {
+      background: linear-gradient(278deg, #00c290, #dacd43, #f43434, #3444f4, #db06f6, #7f08ba, #083eba);
+      background-size: 1400% 1400%;
+
+      -webkit-animation: AnimationName 57s ease infinite;
+      -moz-animation: AnimationName 57s ease infinite;
+      -o-animation: AnimationName 57s ease infinite;
+      animation: AnimationName 57s ease infinite;
+    }
+
+    @-webkit-keyframes AnimationName {
+      0% {
+        background-position: 0% 52%
+      }
+      50% {
+        background-position: 100% 49%
+      }
+      100% {
+        background-position: 0% 52%
+      }
+    }
+
+    @-moz-keyframes AnimationName {
+      0% {
+        background-position: 0% 52%
+      }
+      50% {
+        background-position: 100% 49%
+      }
+      100% {
+        background-position: 0% 52%
+      }
+    }
+
+    @-o-keyframes AnimationName {
+      0% {
+        background-position: 0% 52%
+      }
+      50% {
+        background-position: 100% 49%
+      }
+      100% {
+        background-position: 0% 52%
+      }
+    }
+
+    @keyframes AnimationName {
+      0% {
+        background-position: 0% 52%
+      }
+      50% {
+        background-position: 100% 49%
+      }
+      100% {
+        background-position: 0% 52%
+      }
     }
   </style>
 
@@ -56,18 +116,19 @@
   </div>
   <div id="goback">
     Go back home
-    <a href="index"><button type="button" name="Home">SDHS Robotics</button></a>
+    <a href="/index"><button type="button" name="Home">SDHS Robotics</button></a>
   </div>
   <div id="directory">
     Optionally move to another directory:
-    <a href="pages/social"><button>Robotics/Social </button></a>
-    <a href="pages/about"><button>Robotics/About </button></a>
-    <a href="pages/first"><button>Robotics/First </button></a>
-    <a href="pages/sponsors"><button>Robotics/Sponsors </button></a>
-    <a href="pages/donate"><button>Robotics/Donate </button></a>
-    <a href="pages/team"><button>Robotics/team </button></a>
-    <a href="pages/contact-us"><button>Robotics/Contact </button></a>
+    <a href="/pages/social"><button>Robotics/Social </button></a>
+    <a href="/pages/about"><button>Robotics/About </button></a>
+    <a href="/pages/first"><button>Robotics/First </button></a>
+    <a href="/pages/sponsors"><button>Robotics/Sponsors </button></a>
+    <a href="/pages/donate"><button>Robotics/Donate </button></a>
+    <a href="/pages/team"><button>Robotics/team </button></a>
+    <a href="/pages/contact-us"><button>Robotics/Contact </button></a>
   </div>
+
 </body>
 
 </html>
