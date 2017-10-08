@@ -7,13 +7,11 @@
 	<!--Tab Icon-->
 	<link rel="icon" href="images/SDorgicon.png">
 	<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
-
+	<link rel="preload" href="./images/skull.jpg" as="image">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="Soknorobo,Soknorobo.com, Sokno, Robotics, SDHS, sdhs,first,first Robotics,competition,robots,south, south Doyle, Doyle, Knoxville,6517,#6517,team6517, team#6517,team #6517,Tweets from South Doyle Robotics,SDHS_Robotics,FIRST Robotics,South Doyle Robotics,Team, TeamFTW,FTW, The Blue Alliance,robot,Knox County Schools,Argosy Foundation,Consolidated Nuclear Security,UT-Battelle,TVA,Spencer Pro Diesel,Jupiter Entertainment,DeRoyal,,Ryerson Steel,SoKno Market,Red Arrow Industries LLC ">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
 	<!-- CSS
 ========================================================================== -->
 	<!-- font -->
@@ -26,39 +24,22 @@
 	<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
 	<!-- this css adds icons which can be found by googling awesome icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 	<!-- Tab Titile
 ========================================================================== -->
 	<title>SDHS Robotics</title>
-
 </head>
 
 <body>
-	<script>
-		window.onload = function() {
-			setTimeout(function() {
-				scrollTo(0, 0);
-			}); //100ms for example
-		}
-	</script>
-
-	<div id="heading">
-		<h1 id="logo">
-			SDHS Robotics
-		</h1>
-	</div>
-
+	<!-- Splash screen  -->
 	<div id="splash-screen">
 		<input id="clickScroll" type="checkbox" class="clickScroll"></input>
 		<div class="imageSplash" id="imageSplash">
-			<h1>SOUTH-DOYLE ROBOTICS</h1>
+			<h1 id="splash-title">SOUTH-DOYLE ROBOTICS</h1>
 			<div id="fa-splash">
 				<label for="clickScroll">
 					<div id='rotate' class="rotate">
 					</div>
 				<i id="down-splash-arrow" class="fa down-splash fa-angle-double-down" aria-hidden="true"></i>
-
 			</label>
 			</div>
 		</div>
@@ -71,25 +52,30 @@
 			window.addEventListener("keypress", MouseWheelHandler, false);
 			// window.addEventListener("keyup", MouseWheelHandler, false);
 			window.addEventListener("keydown", MouseWheelHandler, false);
-
-
-
+			//
 			function MouseWheelHandler(e) {
 				document.getElementById("clickScroll").checked = true;
 				return false;
 			}
 		</script>
-
-
 		<!-- Header
 ========================================================================== -->
-
-
+		<script>
+			window.onload = function() {
+				setTimeout(function() {
+					scrollTo(0, 0);
+				}); //100ms for example
+			}
+		</script>
+		<!-- logo header -->
+		<div id="heading">
+			<h1 id="logo">
+		SDHS Robotics
+	</h1>
+		</div>
 		<!-- Body Class
 ========================================================================== -->
-
 		<div id="body">
-
 			<!--profile image-->
 			<div class="hover-active">
 				<div class="home-image">
@@ -97,38 +83,31 @@
 					<br>
 				</div>
 			</div>
-
 			<!-- Home-tab
 ========================================================================== -->
-			<div id="Home" class="tab-pane fade in active">
+			<div id="Home">
 				<h3 class="info_sub">
 						<!-- <i class="fa fa-angle-double-left" aria-hidden="true"></i> -->
 						WELCOME
 						<!-- <i class="fa fa-angle-double-right" aria-hidden="true"></i> -->
 					</h3>
 				<p id="info_text">Robotics Home Page</p>
-
-
 				<!-- YouTube Video
 		========================================================================== -->
 				<div id='ytvid'>
 					<div class="video-responsive">
-
 						<!-- YouTube player -->
 						<div style="text-align: center">
 							<div class="video-container">
 								<iframe id="player" title="Robotics Youtube Video" src="https://www.youtube-nocookie.com/embed/53J_WNPmnRw?rel=0&autoplay=0&showinfo=0&end=151&cc_load_policy=0&disablekb=0&modestbranding=0c" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
-
 					</div>
 					<h3 id="yt-title">First Worlds Robotics Competition Houston</h3>
-
 					<div id="yt-info">
 						<span>L&N Stem's and South Doyle High School's journey to the FRC Worlds FIRST Robotics competition in Houston, Texas.</span>
 					</div>
 				</div>
-
 				<!-- Home Cards
 		========================================================================== -->
 				<div id="info-content">
@@ -142,10 +121,8 @@
 						Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
 					</p>
 					<img id="trophie" src="images/team.jpg" alt="Can't load image...">
-
 				</div>
 				<br>
-
 				<!-- achievement card -->
 				<div id="info-content">
 					<p id="info_text">
@@ -159,20 +136,13 @@
 					<img id="trophie" src="images/trophies.jpg" alt="Can't load image...">
 				</div>
 			</div>
-
-
 			<!-- #HOME
 ========================================================================== -->
-
-
-
 			<!--fancy-sidebar
 ==========================================================================-->
-
 			<!-- sidebar navigation -->
 			<div id="wrapper">
 				<div class="overlay hamburger is-closed" data-toggle="offcanvas"></div>
-
 				<!-- Sidebar -->
 				<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
 					<ul class="nav sidebar-nav" data-toggle="offcanvas">
@@ -189,7 +159,6 @@
 		</a>
 		</span>
 						</li>
-
 						<!-- Inactive tabs -->
 						<li id="sidebar-items" title="Robotics/Social"><span><a href="./pages/social" class="hamburger is-closed">
 				<i class="fa fa-share-square-o" aria-hidden="true"></i>
@@ -197,54 +166,47 @@
 			</a>
 		</span>
 						</li>
-
 						<li id="sidebar-items" title="Robotics/About"><span><a href="./pages/about" class="hamburger is-closed">
 					<i class="fa fa-info-circle" aria-hidden="true"></i>
 					About
 				</a>
 			</span>
 						</li>
-
 						<li id="sidebar-items" title="Robotics/About"><span><a href="./pages/first" class="hamburger is-closed">
 					<img style="width:15px;" src="sponsors/firstnotext.png" alt="f ">
 					First
 				</a>
 			</span>
 						</li>
-
 						<li id="sidebar-items" title="Robotics/About"><span><a href="./pages/sponsors" class="hamburger is-closed">
 					<i class="fa fa-link" aria-hidden="true"></i>
 					Sponsors
 				</a>
 			</span>
 						</li>
-
 						<li id="sidebar-items" title="Robotics/Donate"><span><a href="./pages/donate" class="hamburger is-closed">
 					<i class="fa fa-money" aria-hidden="true"></i>
 					Donate
 				</a>
 			</span>
 						</li>
-
 						<li id="sidebar-items" title="Robotics/The Team"><span><a href="./pages/team" class="hamburger is-closed">
 					<i class="fa fa-users" aria-hidden="true"></i>
 					The Team
 				</a>
 			</span>
 						</li>
-
-						<li id="sidebar-items" title="Robotics/contact-us"><span><a href="./pages/contact-us" class="hamburger is-closed">
+						<li id="sidebar-items" title="Robotics/contact-us">
+							<span><a href="./pages/contact-us" class="hamburger is-closed">
 					<i class="fa fa-sign-in" aria-hidden="true"></i>
 					Contact us
 				</a>
 			</span>
 						</li>
 					</ul>
-
 					</ul>
 				</nav>
 				<!-- /#sidebar-wrapper -->
-
 				<div id="page-content-wrapper">
 					<!-- <button type="button" class="hamburger is-closed" data-toggle="offcanvas"> -->
 					<div id="menu_button">
@@ -255,21 +217,16 @@
 						</button>
 					</div>
 				</div>
-
 				<!-- /#page-content-wrapper -->
-
 			</div>
 			<!-- /#wrapper -->
 		</div>
 		<!--/#fancy-sidebar
 ==========================================================================-->
-
 		<!--Footer
 	==========================================================================-->
-
 		<!-- scroll up button
 	========================================================================== -->
-
 		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-2x" id="up_scroll" aria-hidden="true"></i>
 		</button>
 		<script>
@@ -277,7 +234,6 @@
 			window.onscroll = function() {
 				scrollFunction()
 			};
-
 			function scrollFunction() {
 				if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
 					document.getElementById("myBtn").style.display = "block";
@@ -287,7 +243,6 @@
 					document.getElementById("hamburger").style.transform = "translate(0px)";
 				}
 			}
-
 			// When the user clicks on the button, scroll to the top of the document
 			function topFunction() {
 				$("html, body").animate({
@@ -297,9 +252,7 @@
 				// document.documentElement.scrollTop = 0;
 			}
 		</script>
-
 		<div id="footer">
-
 			<a href="https://www.knoxschools.org/southdoylehs">
 				<h3 title="Navigate to South Doyle Homepage" id="footer-title">South-Doyle High School</h3>
 			</a>
@@ -318,24 +271,18 @@
 		</div>
 		<!--/#Footer
 	==========================================================================-->
-
-
-
-
 		<!-- All scripts goes here
 	==========================================================================-->
-
+		<!-- jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- bootstrap -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- estregg -->
 		<script src="js/38384040373937396665.js"></script>
-
 		<!-- all other javascript by us -->
 		<script src="js/robotics.js"></script>
-
 </body>
-
 </html>
-
 <!-- Website made by:
 Mohammad Islam
 Brandon Walters

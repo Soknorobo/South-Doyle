@@ -19,44 +19,54 @@
 
     #goback {
       text-align: center;
+      font-size: 30px;
+      font-family: fantasy;
+    }
+
+    #directory {
+      font-size: 20px;
+      margin-top: 20px;
+      text-align: center;
+      font-family: fantasy;
     }
 
     button {
       cursor: pointer;
       border: none;
+      font-size: 20px;
       box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
       outline: none;
-      padding: 5px;
+      padding: 10px;
+      margin: 10px;
       border-radius: 10px;
+      background: linear-gradient(278deg, SlateBlue, MediumSeaGreen, Violet, Gray, DodgerBlue);
+      background-size: 1400% 1400%;
+
+      -webkit-animation: AnimationName 50s ease infinite;
+      -moz-animation: AnimationName 50s ease infinite;
+      -o-animation: AnimationName 50s ease infinite;
+      animation: AnimationName 50s ease infinite;
+      transition: all 1s ease-out;
     }
 
     button:hover {
-      background: linear-gradient(278deg, #00c290, #dacd43, #f43434, #3444f4, #db06f6, #7f08ba, #083eba);
-      background-size: 1400% 1400%;
-
-      -webkit-animation: AnimationName 57s ease infinite;
-      -moz-animation: AnimationName 57s ease infinite;
-      -o-animation: AnimationName 57s ease infinite;
-      animation: AnimationName 57s ease infinite;
+      background: lightgreen;
+      transition: all 1s ease-out;
     }
 
     button:active {
+      content: 'Navigating';
       transform: translateY(3px);
     }
 
-    #directory {
-      margin-top: 20px;
-      text-align: center;
-    }
-
     body {
-      background: linear-gradient(278deg, #00c290, #dacd43, #f43434, #3444f4, #db06f6, #7f08ba, #083eba);
+      background: linear-gradient(250deg, #dacd43, Tomato, #3444f4, #db06f6, #7f08ba, #083eba, DodgerBlue, Green, SlateBlue, Gray, #00c290);
       background-size: 1400% 1400%;
 
-      -webkit-animation: AnimationName 57s ease infinite;
-      -moz-animation: AnimationName 57s ease infinite;
-      -o-animation: AnimationName 57s ease infinite;
-      animation: AnimationName 57s ease infinite;
+      -webkit-animation: AnimationName 120s ease infinite;
+      -moz-animation: AnimationName 120s ease infinite;
+      -o-animation: AnimationName 120s ease infinite;
+      animation: AnimationName 120s ease infinite;
     }
 
     @-webkit-keyframes AnimationName {
