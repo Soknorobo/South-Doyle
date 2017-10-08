@@ -9,7 +9,7 @@
 
 /*preloading all the images for team tab*/
 
-:root::after {
+:root::before {
   content: url(../images/IMG_4622.JPG) url(../images/IMG_4556.JPG) url(../images/IMG_4574.JPG) url(../images/IMG_4581.JPG) url(../images/IMG_4717.JPG) url(../images/IMG_4618.JPG) url(../images/IMG_4718.JPG) url(../images/IMG_4527.JPG) url(../images/IMG_4684.JPG) url(../images/IMG_4749.JPG) url(../images/IMG_4654.JPG) url(../images/IMG_4657.JPG);
   background-image: url(../images/IMG_4657.JPG);
   visibility: hidden;
