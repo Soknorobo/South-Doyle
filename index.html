@@ -68,11 +68,14 @@
 			}
 		</script>
 		<!-- logo header -->
-		<div id="heading">
-			<h1 id="logo">
-		SDHS Robotics
-	</h1>
-		</div>
+
+		<header>
+			<div id="heading">
+				<h1 id="logo">
+	        SDHS Robotics
+	      </h1>
+			</div>
+		</header>
 		<!-- Body Class
 ========================================================================== -->
 		<div id="body">
@@ -234,13 +237,13 @@
 			window.onscroll = function() {
 				scrollFunction()
 			};
+
 			function scrollFunction() {
 				if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-					document.getElementById("myBtn").style.display = "block";
-					document.getElementById("hamburger").style.transform = "translate(-100px)";
+					document.getElementById("myBtn").style.visibility = "visible";
+
 				} else {
-					document.getElementById("myBtn").style.display = "none";
-					document.getElementById("hamburger").style.transform = "translate(0px)";
+					document.getElementById("myBtn").style.visibility = "hidden";
 				}
 			}
 			// When the user clicks on the button, scroll to the top of the document
@@ -282,6 +285,7 @@
 		<!-- all other javascript by us -->
 		<script src="js/robotics.js"></script>
 </body>
+
 </html>
 <!-- Website made by:
 Mohammad Islam
