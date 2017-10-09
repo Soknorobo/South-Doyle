@@ -1,20 +1,6 @@
 /*This is a css for the South Doyle Robotics Website
- created by the students from scratch
-*/
-img {
-  width: 100%;
-  height: 100%;
-  transition: filter .7s ease-in-out;
-}
+ created by the students from scratch*/
 
-img[placeholder] {
-  filter: blur(50px);
-}
-
-/* if there's no javascript executed we don't want to blur the image */
-img[no-js] {
-  filter: blur(0px);
-}
 /*dedicated font*/
 
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
@@ -222,7 +208,7 @@ body {
 
 #body {
   background: #778899;
-  padding: 100px 0 50px 0;
+  padding: 100px 0 0 0;
   margin: 0;
 }
 
@@ -450,6 +436,13 @@ a:hover {
   text-align: center;
 }
 
+#First{
+  width: 90%;
+  margin: 0 auto;
+  color: #DDD1C8;
+  text-align: center;
+}
+
 #platinumdiv {
   padding: 0 0 0 0;
   padding: 15px;
@@ -458,22 +451,30 @@ a:hover {
   -webkit-box-shadow: 0 0 8px 0 #7E1F21;
   box-shadow: 0 0 8px 0 #7E1F21;
   overflow: hidden;
+  padding: 30px;
 }
 
-.platinum-img {
-  margin: 0 auto;
+@media only screen and (max-width: 767px) {
+  .platinum-img {
+    border: 20px solid #e5e4e2;
+  }
 }
 
 #golddiv {
   padding: 15px;
   margin-top: 20px;
-  background: #303C88;
+  background: #242842;
   -webkit-box-shadow: 0 0 8px 0 #7E1F21;
   box-shadow: 0 0 8px 0 #7E1F21;
   overflow: hidden;
+  padding: 30px;
 }
 
-.gold-img {}
+@media only screen and (max-width: 767px) {
+  .gold-img {
+    border: 20px solid #CFB53B;
+  }
+}
 
 #silverdiv {
   margin-top: 20px;
@@ -482,23 +483,67 @@ a:hover {
   -webkit-box-shadow: 0 0 8px 0 #7E1F21;
   box-shadow: 0 0 8px 0 #7E1F21;
   overflow: hidden;
+  padding: 30px;
 }
 
-.silver-img {
-  /*width: 100%;*/
+@media only screen and (max-width: 767px) {
+  .silver-img {
+    border: 20px solid #C0C0C0;
+  }
 }
 
 #donorsdiv {
   margin-top: 20px;
   padding: 15px;
-  background: #303C88;
+  background: #242842;
   -webkit-box-shadow: 0 0 8px 0 #7E1F21;
   box-shadow: 0 0 8px 0 #7E1F21;
   overflow: hidden;
+  padding: 30px;
 }
 
-.donors-img {
-  /*width: 100%;*/
+@media only screen and (max-width: 767px) {
+  .donors-img {
+    border: 20px solid seagreen;
+  }
+}
+
+.platinum-img,.gold-img,.silver-img,.donors-img {
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .platinum-img,.gold-img,.silver-img,.donors-img {
+    border-radius: 100%;
+    background: #DDD1C8;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+/*FIRST*/
+
+.FIRST-img-us{
+  padding: 20px;
+  margin: 0 auto;
+}
+
+#FIRST-info {
+  text-align: justify;
+}
+
+.FIRSTBUTTON{
+  background: #303C88;
+  padding: 10px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
+}
+.FIRSTBUTTON:hover{
+  background: #DDD1C8;
+  transition: all 1s ease-out;
 }
 
 /*social*/
@@ -848,17 +893,17 @@ div.desc {
 }*/
 
 .demo {
--webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   padding: 5px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
 
 .active, .demo:hover {
--webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
- -webkit-transition: all 500ms ease;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
 
@@ -932,7 +977,7 @@ div.desc {
 
 #ytvid {
   /*visibility: hidden;*/
-  border: 15px outset #7E1F21;
+  border: 15px solid rgba(126, 31, 33, .7);
   border-radius: 3px;
   background: #242842;
   -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
@@ -949,18 +994,18 @@ div.desc {
 #yt-info {
   color: #DDD1C8;
   font-size: 1.8rem;
-  padding:10px;
+  padding: 10px;
   margin: 10px 0 10px 10px;
   color: black;
-  border-left: 6px solid red;
+  border-left: 5px solid red;
   background-color: #DDD1C8;
 }
 
 #yt-title {
-  padding:10px;
+  padding: 10px;
   margin: 10px 0 10px 10px;
   color: black;
-  border-left: 6px solid red;
+  border-left: 5px solid red;
   background-color: #DDD1C8;
 }
 

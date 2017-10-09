@@ -76,27 +76,13 @@ $(document).ready(function() {
 });
 
 
-
 // LQIP
-// find element
-const image = document.getElementsByTagName("img")[0];
-// remove no-js attribute as we know js has been exectuted
-image.removeAttribute("no-js");
-// grab the image src before we rewrite it
-const fullSrc = image.src;
-// rewrite the image src with the placeholder base64 string
-image.src = image.getAttribute("placeholder");
-// create a new image
-const fullImage = new Image();
-// assign the saved src to the new image to preload it
-fullImage.src = fullSrc;
-// wait for the full image to load
-fullImage.onload = function() {
-  // add a small timeout to allow the transition when the image is already in memory
-  setTimeout(() => {
-    // replace the placeholder src with the full image src
-    image.src = fullSrc;
-    // remove the placeholder attribute to trigger the css transition
-    image.removeAttribute("placeholder");
-  }, 200);
-};
+function init() {
+  var imgDefer = document.getElementsByTagName('img');
+  for (var i = 0; i < imgDefer.length; i++) {
+    if (imgDefer[i].getAttribute('data-src')) {
+      imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+    }
+  }
+}
+window.onload = init;
