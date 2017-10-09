@@ -15,7 +15,23 @@
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease-out;
 }
+.sidebar-nav .sidebar-brand {
+  height: 65px;
+  font-size: 2.2rem;
+  line-height: 44px;
+}
 
+#sidebar-items{
+  font-size: 1.8rem;
+}
+
+#sidebar_Robotics:hover, #sidebar_Robotics:focus{
+  color:green;
+  font-size:
+}
+#sidebar_Robotics:active{
+  color: red;
+}
 #wrapper.toggled {
   padding-left: 220px;
 }
@@ -144,15 +160,7 @@
   background-color: transparent;
   transition: all 800ms ease;
 }
-#sidebar_Robotics:hover, #sidebar_Robotics:active, #sidebar_Robotics:focus{
-  color:green;
-}
 
-.sidebar-nav>.sidebar-brand {
-  height: 65px;
-  font-size: 20px;
-  line-height: 44px;
-}
 
 /*       Hamburger-Cross         */
 #hamburger {

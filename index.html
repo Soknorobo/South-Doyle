@@ -33,7 +33,9 @@
 	<!-- Splash screen  -->
 	<div id="splash-screen">
 		<input id="clickScroll" type="checkbox" class="clickScroll"></input>
-		<div class="imageSplash" id="imageSplash">
+		<div class="imageSplash">
+			<img id="splashImage" src='./images/skull.jpg' alt="">
+			<div id="blursplash"></div>
 			<h1 id="splash-title">SOUTH-DOYLE ROBOTICS</h1>
 			<div id="fa-splash">
 				<label for="clickScroll">
@@ -46,8 +48,8 @@
 		<script>
 			// splash screen
 			var splash = document.getElementById("splash-screen");
-			splash.addEventListener("mousewheel", MouseWheelHandler, false);
 			splash.addEventListener("touchstart", MouseWheelHandler, false);
+			splash.addEventListener("mousewheel", MouseWheelHandler, false);
 			splash.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
 			window.addEventListener("keypress", MouseWheelHandler, false);
 			// window.addEventListener("keyup", MouseWheelHandler, false);
@@ -123,7 +125,7 @@
 						The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot at the World
 						Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
 					</p>
-					<img id="trophie" src="images/team.jpg" alt="Can't load image...">
+					<a href="./images/team.jpg"><img id="trophie" src="images/team.jpg" alt="Can't load image..."></a>
 				</div>
 				<br>
 				<!-- achievement card -->
@@ -136,7 +138,7 @@
 						Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running to
 						help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
 					</p>
-					<img id="trophie" src="images/trophies.jpg" alt="Can't load image...">
+					<a href="./images/trophies.jpg"><img id="trophie" src="images/trophies.jpg" alt="Can't load image..."></a>
 				</div>
 			</div>
 			<!-- #HOME
