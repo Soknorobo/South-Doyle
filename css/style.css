@@ -1,23 +1,6 @@
 /*This is a css for the South Doyle Robotics Website
  created by the students from scratch*/
 
-/*dedicated font*/
-
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
-/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
-
-/*preloading all the images for team tab*/
-
-/*:root::before {
-  content: url(../images/IMG_4622.JPG) url(../images/IMG_4556.JPG) url(../images/IMG_4574.JPG) url(../images/IMG_4581.JPG) url(../images/IMG_4717.JPG) url(../images/IMG_4618.JPG) url(../images/IMG_4718.JPG) url(../images/IMG_4527.JPG) url(../images/IMG_4684.JPG) url(../images/IMG_4749.JPG) url(../images/IMG_4654.JPG) url(../images/IMG_4657.JPG);
-  background-image: url(../images/IMG_4657.JPG);
-  visibility: hidden;
-  height: 1px;
-  width: 1px;
-  position: absolute;
-  left: -9999em;
-}*/
-
 .imageSplash {
   position: absolute;
   top: 0;
@@ -28,7 +11,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-transition:all .5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
+  -webkit-transition: all .5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
   transition: all .5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
   z-index: 999;
   /*background-image: url('../images/skull.jpg');*/
@@ -215,6 +198,19 @@ body {
   margin: 0;
 }
 
+/*dedicated font*/
+
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+
+/*all fonts*/
+
+* {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
 /*scroll to the top funciton*/
 
 #myBtn {
@@ -315,14 +311,6 @@ a {
 
 a:hover {
   color: #ADD1C8;
-}
-
-/*all fonts*/
-
-* {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box
 }
 
 /*this is a divider that holds the home image*/
@@ -516,6 +504,7 @@ a:hover {
   max-width: 300px;
   padding: 10px;
 }
+
 #platinumdiv, #golddiv, #silverdiv, #donorsdiv {
   padding: 100px 0;
 }
@@ -529,13 +518,12 @@ a:hover {
   }
 }
 
-.sponsorlevel{
+.sponsorlevel {
   font-weight: 900;
   padding-bottom: 50px;
-
 }
 
-.sponsorinfo{
+.sponsorinfo {
   text-align: justify;
   font-size: 20px;
   padding-bottom: 30px;
