@@ -667,7 +667,7 @@ a:hover {
 #learn_more_school {
   position: absolute;
   right: 20px;
-  bottom: 0;
+  bottom: 10px;
   background: #303C88;
   color: #DDD1C8;
   padding: 5px 10px;
