@@ -22,7 +22,7 @@ $(document).on("scroll", function() {
   // when scrolled 5 lines down
   if ($(document).scrollTop() > 5) {
     // the logo resizes to fit in the smaller header
-    document.getElementById("logo").style.fontSize = "40px";
+    document.getElementById("logo").style.fontSize = "25px";
     // the header changes color from radient to blue
     document.getElementById("heading").style.background = "#303C88";
     // makes the header transparent
@@ -30,7 +30,7 @@ $(document).on("scroll", function() {
     // removes the logo shadow
     document.getElementById("logo").style.textShadow = "none";
     // modes the hamburgercross to center on new header
-    document.getElementById("hamburger").style.transform = "translateY(-5px)";
+    document.getElementById("hamburger").style.transform = "translateY(-12px)";
     // moving the logo to he left
     // document.getElementById("logo").style.textAlign = "left";
   } else {

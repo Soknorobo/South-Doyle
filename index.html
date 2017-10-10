@@ -7,7 +7,7 @@
 	<!--Tab Icon-->
 	<link rel="icon" href="images/SDorgicon.png">
 	<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
-	<link rel="preload" href="./images/skull.jpg" as="image">
+	<!-- <link rel="preload" href="./images/South-Doyle V2.gif" as="image"> -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="Soknorobo,Soknorobo.com, Sokno, Robotics, SDHS, sdhs,FIRST,FIRST Robotics,competition,robots,south, south Doyle, Doyle, Knoxville,6517,#6517,team6517, team#6517,team #6517,Tweets from South Doyle Robotics,SDHS_Robotics,FIRST Robotics,South Doyle Robotics,Team, TeamFTW,FTW, The Blue Alliance,robot,Knox County Schools,Argosy Foundation,Consolidated Nuclear Security,UT-Battelle,TVA,Spencer Pro Diesel,Jupiter Entertainment,DeRoyal,,Ryerson Steel,SoKno Market,Red Arrow Industries LLC ">
@@ -27,19 +27,26 @@
 	<!-- Tab Titile
 ========================================================================== -->
 	<title>SDHS Robotics</title>
+
 </head>
 
 <body>
+
+		<script>
+		window.onbeforeunload = function() {window.scrollTo(0,0);}
+
+		</script>
+
 	<!-- Splash screen  -->
 	<div id="splash-screen">
 		<input id="clickScroll" type="checkbox" class="clickScroll"></input>
 		<div class="imageSplash">
 			<!-- background -->
-			<img id="splashImage" src='./images/skull.jpg' alt="">
+			<img id="splashImage" src='./images/South-Doyle V2.gif' alt="SOUTH-DOYLE Robotics" preload>
 			<!-- blurred div on top for future -->
-			<div id="blursplash"></div>
+			<!-- <div id="blursplash"></div> -->
 			<!-- splash title -->
-			<h1 id="splash-title">SOUTH-DOYLE ROBOTICS</h1>
+			<!-- <h1 id="splash-title">SOUTH-DOYLE ROBOTICS</h1> -->
 			<!-- scroll down icon -->
 			<div id="fa-splash">
 				<!-- inner border -->
@@ -154,15 +161,7 @@ Home
 	</div>
 	<!--/#fancy-sidebar
 ==========================================================================-->
-	<script>
-		window.onload = function() {
-			setTimeout(function() {
-				scrollTo(0, 0);
-			}); //100ms for example
-		}
-	</script>
 	<!-- logo header -->
-
 	<header>
 		<div id="heading">
 			<h1 id="logo">
@@ -176,7 +175,8 @@ Home
 		<!--profile image-->
 		<div class="hover-active">
 			<div class="home-image">
-				<img class="hamburger is-closed" data-toggle="offcanvas" title="Robotics/Home" id="profile" src="images/img.jpg" />
+				<img class="hamburger is-closed" data-toggle="offcanvas" title="Robotics/Home" id="profile"
+				data-src="images/img.jpg" src="lowimages/img.jpg" alt="ROBOTICS"/>
 				<br>
 			</div>
 		</div>
@@ -217,7 +217,7 @@ Home
 					The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot at the World
 					Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
 				</p>
-				<a href="./images/team.jpg"><img id="trophie" src="images/team.jpg" alt="Can't load image..."></a>
+				<a href="./images/team.jpg"><img id="trophie" data-src="images/team.jpg" src="lowimages/team.jpg" alt="Can't load image..."></a>
 			</div>
 			<br>
 			<!-- achievement card -->
@@ -230,7 +230,9 @@ Home
 					Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running to
 					help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
 				</p>
-				<a href="./images/trophies.jpg"><img id="trophie" src="images/trophies.jpg" alt="Can't load image..."></a>
+				<a href="./images/trophies.jpg"><img id="trophie"
+					data-src="images/trophies.jpg"
+					src="lowimages/trophies.jpg" alt="Can't load image..."></a>
 			</div>
 		</div>
 		<!-- #HOME

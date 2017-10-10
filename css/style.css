@@ -8,7 +8,7 @@
 
 /*preloading all the images for team tab*/
 
-:root::before {
+/*:root::before {
   content: url(../images/IMG_4622.JPG) url(../images/IMG_4556.JPG) url(../images/IMG_4574.JPG) url(../images/IMG_4581.JPG) url(../images/IMG_4717.JPG) url(../images/IMG_4618.JPG) url(../images/IMG_4718.JPG) url(../images/IMG_4527.JPG) url(../images/IMG_4684.JPG) url(../images/IMG_4749.JPG) url(../images/IMG_4654.JPG) url(../images/IMG_4657.JPG);
   background-image: url(../images/IMG_4657.JPG);
   visibility: hidden;
@@ -16,7 +16,7 @@
   width: 1px;
   position: absolute;
   left: -9999em;
-}
+}*/
 
 .imageSplash {
   position: absolute;
@@ -28,8 +28,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+  -webkit-transition:all .5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
+  transition: all .5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
   z-index: 999;
   /*background-image: url('../images/skull.jpg');*/
 }
@@ -49,7 +49,7 @@
   /*background-repeat: no-repeat;*/
 }
 
-#blursplash {
+/*#blursplash {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -57,7 +57,7 @@
   box-shadow: inset 0 0 0 2000px #242842;
   opacity: .8;
   overflow: hidden;
-}
+}*/
 
 .imageSplash h1 {
   top: 50%;
@@ -87,24 +87,16 @@ label {
   color: #303C88;
   font-size: 50px;
   position: absolute;
-  bottom: 55px;
+  bottom: 30px;
   left: 50%;
-  margin-left: -35px;
-  width: 50px;
-  height: 50px;
+  margin-left: -32px;
+  width: 40px;
+  height: 40px;
   font-weight: bold;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
-}
-
-.down-splash {
-  border: 5px solid #242842;
-  border-radius: 50%;
-  padding: 5px 13px 5px 13px;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
 }
 
 #rotate {
@@ -135,6 +127,17 @@ label {
   to {
     -webkit-transform: rotate(360deg);
   }
+}
+
+.down-splash {
+  border: 5px solid transparent;
+  /*border: 5px solid #242842;*/
+  border-radius: 50%;
+  padding: 5px 13px 5px 13px;
+  /*without border*/
+  /*padding: 5px 13px 5px 19px;*/
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
 }
 
 #down-splash-arrow {
@@ -436,7 +439,7 @@ a:hover {
   text-align: center;
 }
 
-#First{
+#First {
   width: 90%;
   margin: 0 auto;
   color: #DDD1C8;
@@ -508,14 +511,17 @@ a:hover {
   }
 }
 
-.platinum-img,.gold-img,.silver-img,.donors-img {
+.platinum-img, .gold-img, .silver-img, .donors-img {
   margin: 0 auto;
   max-width: 300px;
   padding: 10px;
 }
+#platinumdiv, #golddiv, #silverdiv, #donorsdiv {
+  padding: 100px 0;
+}
 
 @media only screen and (max-width: 767px) {
-  .platinum-img,.gold-img,.silver-img,.donors-img {
+  .platinum-img, .gold-img, .silver-img, .donors-img {
     border-radius: 100%;
     background: #DDD1C8;
     max-width: 200px;
@@ -523,9 +529,21 @@ a:hover {
   }
 }
 
+.sponsorlevel{
+  font-weight: 900;
+  padding-bottom: 50px;
+
+}
+
+.sponsorinfo{
+  text-align: justify;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
 /*FIRST*/
 
-.FIRST-img-us{
+.FIRST-img-us {
   padding: 20px;
   margin: 0 auto;
 }
@@ -534,15 +552,18 @@ a:hover {
   text-align: justify;
 }
 
-.FIRSTBUTTON{
+.FIRSTBUTTON {
   background: #303C88;
   padding: 10px;
   margin-top: 20px;
   text-decoration: none;
+  -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
 }
-.FIRSTBUTTON:hover{
+
+.FIRSTBUTTON:hover {
   background: #DDD1C8;
+  -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
 
@@ -645,11 +666,16 @@ a:hover {
 
 #learn_more_school {
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  right: 20px;
+  bottom: -37px;
   background: #303C88;
   color: #DDD1C8;
   padding: 5px 10px;
+}
+
+.holds-the-iframe {
+  /*height: 400px;*/
+  background: url("../lowimages/map-low.jpg") center center no-repeat;
 }
 
 .scllnk {
@@ -665,8 +691,6 @@ a:hover {
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
 }
-
-/*menu2about*/
 
 #map {
   height: 400px;
