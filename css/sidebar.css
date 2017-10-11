@@ -104,15 +104,18 @@
 
 .sidebar-nav li:first-child a {
   color: #fff;
-  background-color: #1a1a1b;
+  background-color: #212121;
 }
+/*.sidebar-nav li:first-child:before {
+  background-color: #263238;
+}*/
 
 .sidebar-nav li:nth-child(2):before {
-  background-color: #ec1b5a;
+  background-color: #009688;
 }
 
 .sidebar-nav li:nth-child(3):before {
-  background-color: #79aefe;
+  background-color: #E91E63;
 }
 
 .sidebar-nav li:nth-child(4):before {
