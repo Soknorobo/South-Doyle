@@ -11,8 +11,7 @@
 #wrapper {
   padding-left: 0;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 .sidebar-nav .sidebar-brand {
@@ -41,13 +40,11 @@
   left: 220px;
   width: 0;
   height: 100%;
-  margin-left: -220px;
+  margin-left: -220px;s
   overflow-y: auto;
   overflow-x: hidden;
   background: #1a1a1a;
-  -webkit-transition: all 0.9s ease;
-  -moz-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
 }
 
@@ -97,8 +94,6 @@
   width: 3px;
   background-color: #1c1c1c;
   -webkit-transition: width .2s ease-in;
-  -moz-transition: width .2s ease-in;
-  -ms-transition: width .2s ease-in;
   transition: width .2s ease-in;
 }
 
@@ -144,8 +139,6 @@
 .sidebar-nav li:hover:before, .sidebar-nav li.open:hover:before {
   width: 100%;
   -webkit-transition: width .2s ease-in;
-  -moz-transition: width .2s ease-in;
-  -ms-transition: width .2s ease-in;
   transition: width .2s ease-in;
 }
 
@@ -154,6 +147,7 @@
   color: white;
   text-decoration: none;
   padding: 10px 15px 10px 30px;
+  -webkit-transition: all 800ms ease;
   transition: all 800ms ease;
 }
 
@@ -161,6 +155,7 @@
   color: black;
   text-decoration: none;
   background-color: transparent;
+  -webkit-transition: all 800ms ease;
   transition: all 800ms ease;
 }
 
@@ -179,6 +174,7 @@
   background: transparent;
   border: none;
   outline: none;
+  -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
 }
 

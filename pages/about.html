@@ -25,6 +25,75 @@
   <!-- this css adds icons which can be found by googling awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <style>
+    #mySidenav a {
+      position: fixed;
+      left: -140px;
+      transition: 0.3s;
+      padding: 15px;
+      width: 160px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      border-radius: 0 5px 5px 0;
+    }
+
+    #mySidenav a:hover {
+      left: 0;
+    }
+
+
+    #Creators {
+      top: 300px;
+      background-color: #4CAF50;
+    }
+
+    #Teamm {
+      top: 360px;
+      background-color: #2196F3;
+    }
+
+    #People {
+      top: 420px;
+      background-color: #f44336;
+    }
+
+    #Robots {
+      top: 480px;
+      background-color: #555
+    }
+
+    #Teamm,
+    #People,
+    #Robots,
+    #Creators {
+      z-index: 1;
+    }
+
+    .aboutinfo {
+      padding-bottom: 40px;
+    }
+
+    .card {
+      display: block;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      margin-bottom: 40px;
+      border-radius: 5px;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    #crdimg {
+      border-radius: 5px 5px 0 0;
+    }
+
+    .container {
+      padding: 2px 16px;
+    }
+  </style>
 
   <!-- Tab Titile
 ========================================================================== -->
@@ -62,6 +131,44 @@
     </div>
 
 
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" id="Creators">Website Creators</a>
+      <script>
+        $("#Creators").click(function() {
+          $('html,body').animate({
+              scrollTop: $("#menu0").offset().top
+            },
+            'slow');
+        });
+      </script>
+      <a href="javascript:void(0)" id="Teamm">Team members</a>
+      <script>
+        $("#Teamm").click(function() {
+          $('html,body').animate({
+              scrollTop: $("#menu1").offset().top
+            },
+            'slow');
+        });
+      </script>
+      <a href="javascript:void(0)" id="People">Mentors</a>
+      <script>
+        $("#People").click(function() {
+          $('html,body').animate({
+              scrollTop: $("#menu2").offset().top
+            },
+            'slow');
+        });
+      </script>
+      <a href="javascript:void(0)" id="Robots">Robots</a>
+      <script>
+        $("#Robots").click(function() {
+          $('html,body').animate({
+              scrollTop: $("#menu3").offset().top
+            },
+            'slow');
+        });
+      </script>
+    </div>
 
 
     <!-- About Us
@@ -69,16 +176,190 @@
     <div id="About">
 
       <div class="info">
-        <h3 class="info_sub">About Us</h3>
+        <h3 class="info_sub">About us</h3>
       </div>
       <br>
+
+
+      <div class="aboutinfo container">
+        <div id="menu0" class="container">
+          <div id="info">
+            <h3>Website Creators</h3>
+            <div class="col-sm-3 col-xs-6 col-md-3 card">
+              <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+              <div>
+                <h4><b>Mohammad Islam</b></h4>
+                <p>Creates Stuff</p>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6 col-md-3 card">
+              <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+              <div>
+                <h4><b>Brandon Walters</b></h4>
+                <p>Creates Stuff</p>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6 col-md-3 card">
+              <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+              <div>
+                <h4><b>Adam Mcdaniel</b></h4>
+                <p>Creates Stuff</p>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6 col-md-3 card">
+              <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+              <div>
+                <h4><b>Mike Soare</b></h4>
+                <p>Creates Stuff</p>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6 col-md-3 card">
+              <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+              <div>
+                <h4><b>Logan Wrinkle</b></h4>
+                <p>Creates Stuff</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!--  -->
+        <div id="menu1" class="container">
+          <div id="info">
+            <h3>Team Members</h3>
+            <div class="col-sm-3 col-xs-6 col-md-3 card">
+              <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+              <div>
+                <h4><b>**************</b></h4>
+                <p>Creates Stuff</p>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6 col-md-3 card">
+              <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+              <div>
+                <h4><b>**************</b></h4>
+                <p>Creates Stuff</p>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6 col-md-3 card">
+              <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+              <div>
+                <h4><b>**************</b></h4>
+                <p>Creates Stuff</p>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6 col-md-3 card">
+              <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+              <div>
+                <h4><b>**************</b></h4>
+                <p>Creates Stuff</p>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6 col-md-3 card">
+              <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+              <div>
+                <h4><b>**************</b></h4>
+                <p>Creates Stuff</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div id="menu2" class="container">
+          <div id="info">
+            <h3>Mentors</h3>
+            <p id="info_text">
+              <div class="col-sm-3 col-xs-6 col-md-3 card">
+                <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+                <div>
+                  <h4><b>**************</b></h4>
+                  <p>Creates Stuff</p>
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-xs-6 col-md-3 card">
+                <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+                <div>
+                  <h4><b>**************</b></h4>
+                  <p>Creates Stuff</p>
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-xs-6 col-md-3 card">
+                <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+                <div>
+                  <h4><b>**************</b></h4>
+                  <p>Creates Stuff</p>
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-xs-6 col-md-3 card">
+                <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+                <div>
+                  <h4><b>**************</b></h4>
+                  <p>Creates Stuff</p>
+                </div>
+              </div>
+
+              <div class="col-sm-3 col-xs-6 col-md-3 card">
+                <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
+                <div>
+                  <h4><b>**************</b></h4>
+                  <p>Creates Stuff</p>
+                </div>
+              </div>
+
+            </p>
+          </div>
+        </div>
+
+        <!--  -->
+        <div id="menu3" class="container">
+          <div id="info">
+            <h3>Robots</h3>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <!-- <h3 id="FIRST-font">FIRST Logo</h3> -->
+              <a href="http://www.FIRSTinspires.org/"><img class="img-responsive FIRST-img" src="../sponsors/first.png"></a>
+              <br>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <h3 id="FIRST-font">Replacement</h3>
+              <h4 id="FIRST-info">FIRST (For Inspiration and Recognition of Science and Technology) was founded in 1989 to inspire young people's interest and participation in science and technology. Based in Manchester, NH, the 501(c)(3) not-for-profit public charity designs accessible, innovative programs that motivate young people to pursue education and career opportunities in science, technology, engineering, and math, while building self-confidence, knowledge, and life skills.
+              <br>
+              FIRST is More Than Robots. FIRST participation is proven to encourage students to pursue education and careers in STEM-related fields, inspire them to become leaders and innovators, and enhance their 21 st century work-life skills. Read more about the Impact of FIRST.</h4>
+
+              <h3 id="FIRST-font">Mission</h3>
+              <h4 id="FIRST-info">The mission of FIRST is to inspire young people to be science and technology leaders and innovators, by engaging them in exciting Mentor-based programs that build science, engineering, and technology skills, that inspire innovation, and that foster well-rounded life capabilities including self-confidence, communication, and leadership.</h4>
+
+              <h3 id="FIRST-font">Vision</h3>
+              <h4 id="FIRST-info">"To transform our culture by creating a world where science and technology are celebrated and where young people dream of becoming science and technology leaders."  <br>Dean Kamen, Founder</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- <image></image> -->
 
       <div class="container" id="About_big_img">
         <img id="top_down_SDHS" src="../lowimages/top_down_SDHS.jpg" data-src="../images/top_down_SDHS.jpg" alt="opps...">
         <div id="school_website">
-          <a href="https://www.knoxschools.org/southdoylehs">
+          <!-- <a href="https://www.knoxschools.org/southdoylehs">
     								<span id="learn_more_school">Learn more about our school <i class="scllnk fa fa-angle-double-right" aria-hidden="true"></i> </span>
-    							</a>
+    							</a> -->
         </div>
       </div>
 
@@ -113,42 +394,42 @@
           <!-- active tab -->
           <!-- same as navbar-nav -->
           <li id="sidebar-items" class="active" title="Robotics/Home"><span><a href="../index" class="hamburger is-closed">
-						<i class="fa fa-home" aria-hidden="true"></i>
+						<i class="fa fa-home" aria-hidden="true"></i>&nbsp&nbsp&nbsp
 						Home</a></span></li>
 
           <!-- Inactive tabs -->
           <li id="sidebar-items" title="Robotics/Social"><span><a href="../pages/social" class="hamburger is-closed">
-							<i class="fa fa-share-square-o" aria-hidden="true"></i>
+							<i class="fa fa-share-square-o" aria-hidden="true"></i>&nbsp&nbsp&nbsp
 							Social</a></span></li>
 
           <li id="sidebar-items" title="Robotics/About"><span onclick="topFunction()"><a href="#" class="hamburger is-closed">
-								<i class="fa fa-sitemap" aria-hidden="true"></i>
+								<i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp&nbsp&nbsp
 								About</a></span></li>
 
           <li id="sidebar-items" title="Robotics/About"><span><a href="../pages/FIRST" class="hamburger is-closed">
-                  <img style="width:15px;" src="../sponsors/firstnotext.png" alt="f ">
+                  <img style="width:15px;" src="../sponsors/firstnotext.png" alt="f ">&nbsp&nbsp&nbsp
                   FIRST Robotics
                 </a>
               </span>
           </li>
 
           <li id="sidebar-items" title="Robotics/About"><span><a href="../pages/sponsors" class="hamburger is-closed">
-                  <i class="fa fa-link" aria-hidden="true"></i>
+                  <i class="fa fa-link" aria-hidden="true"></i>&nbsp&nbsp&nbsp
                   Sponsors
                 </a>
               </span>
           </li>
 
           <li id="sidebar-items" title="Robotics/Donate"><span><a href="../pages/donate" class="hamburger is-closed">
-									<i class="fa fa-money" aria-hidden="true"></i>
+									<i class="fa fa-money" aria-hidden="true"></i>&nbsp&nbsp&nbsp
 									Donate</a></span></li>
 
           <li id="sidebar-items" title="Robotics/The Team"><span><a href="../pages/team" class="hamburger is-closed">
-										<i class="fa fa-users" aria-hidden="true"></i>
+										<i class="fa fa-users" aria-hidden="true"></i>&nbsp&nbsp&nbsp
 										The Team</a></span></li>
 
           <li id="sidebar-items" title="Robotics/Contact Us"><span><a href="../pages/contact-us" class="hamburger is-closed">
-											<i class="fa fa-sign-in" aria-hidden="true"></i>
+											<i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp&nbsp&nbsp
 											Contact US</a></span></li>
         </ul>
 
@@ -176,7 +457,7 @@
 ==========================================================================-->
 
 
-<!--Footer
+  <!--Footer
 ==========================================================================-->
 
   <footer class="footer-expanded">
@@ -196,34 +477,33 @@
         <a href="../pages/contact-us">Contact Us</a>
       </p>
 
-      <p class="footer-Robotics-name">SDHS Robotics &copy; 2017</p>
+      <p class="footer-Robotics-name">SDHS Robotics <i class="fa fa-copyright" aria-hidden="true"></i> 2017</p>
     </div>
 
     <div class="footer-center">
 
       <div>
+        <a href="https://www.knoxschools.org/southdoylehs">
         <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-        <p><a href="https://www.knoxschools.org/southdoylehs">South-Doyle High School</a></p>
+        <p>South-Doyle High School</a></p>
       </div>
 
       <div>
+        <a href="https://goo.gl/maps/YqMqu23H3eJ2">
         <i class="fa fa-map-marker"></i>
-        <p><a href="https://goo.gl/maps/YqMqu23H3eJ2"><span>2020 Tipton Station Road,</span>Knoxville, TN 37920</a></p>
+        <p><span>2020 Tipton Station Road,</span>Knoxville, TN 37920</a></p>
       </div>
 
       <div>
+        <a href="tel:8655774475">
         <i class="fa fa-phone"></i>
-        <p> <a href="tel:8655774475">865.577.4475</a></p>
+        <p>865.577.4475</p></a>
       </div>
 
       <div>
-        <i class="fa fa-phone"></i>
-        <p><a href="tel:8655774540">865.577.4540</a></p>
-      </div>
-
-      <div>
+        <a href="mailto:joel.smith@knoxschools.org">
         <i class="fa fa-envelope"></i>
-        <p><a href="mailto:joel.smith@knoxschools.org">support@SDHS_Robotics.com</a></p>
+        <p>support@SDHS_Robotics.com</p></a>
       </div>
 
     </div>
@@ -232,6 +512,10 @@
 
       <p class="footer-Robotics-about">
         <span>About Us</span> WE ARE THE TEAM "FOR THE WIN"!
+      </p>
+
+      <p class="footer-Robotics-about">
+        <br> Website made by: Mohammad Islam, Brandon Walters, Adam Mcdaniel, Mike Soare, Logan Wrinkle.
       </p>
 
       <div class="footer-icons">
