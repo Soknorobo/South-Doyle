@@ -1181,7 +1181,10 @@ div.desc {
 }
 
 /*footer and other information*/
-
+.line {
+    background: linear-gradient(45deg, #ff2e13 0%,#ff2e13 34%,#ff2e16 34%,#ff2e19 34%,#f52c26 37%,#e52c3b 41%,#d72a48 43%,#d62b4c 43%,#bb2b65 47%,#b3296a 48%,#ad2b72 49%,#7e2c96 55%,#4030bc 62%,#1334d1 67%,#0435d7 69%,#0136da 70%,#0136da 100%);
+    height: 5px;
+}
 
 @media (max-height:800px) {
   footer {

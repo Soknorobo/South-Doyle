@@ -26,7 +26,7 @@ $(document).on("scroll", function() {
     // the header changes color from radient to blue
     document.getElementById("heading").style.background = "#303C88";
     // makes the header transparent
-    // document.getElementById("heading").style.opacity = ".9";
+    document.getElementById("heading").style.opacity = ".9";
     // removes the logo shadow
     document.getElementById("logo").style.textShadow = "none";
     // modes the hamburgercross to center on new header
@@ -39,7 +39,7 @@ $(document).on("scroll", function() {
     document.getElementById("heading").style.background = "inherit";
     document.getElementById("logo").style.textShadow = "inherit";
     document.getElementById("hamburger").style.transform = "translateY(0px)";
-    // document.getElementById("heading").style.opacity = "1";
+    document.getElementById("heading").style.opacity = "1";
     // document.getElementById("logo").style.textAlign = "center";
   }
 });
