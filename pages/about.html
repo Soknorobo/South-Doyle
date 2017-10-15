@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- Basic needs
 =========================================================================== -->
@@ -11,11 +10,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
-
-
   <!-- CSS
 ========================================================================== -->
-
   <!-- this css is for bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- this css is for the whole site made by us -->
@@ -24,7 +20,6 @@
   <link rel="stylesheet" type="text/css" href="../css/sidebar.css" />
   <!-- this css adds icons which can be found by googling awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <style>
     #mySidenav a {
       position: fixed;
@@ -37,12 +32,9 @@
       color: white;
       border-radius: 0 5px 5px 0;
     }
-
     #mySidenav a:hover {
       left: 0;
     }
-
-
     #Creators {
       top: 300px;
       background-color: #4CAF50;
@@ -91,6 +83,17 @@
     }
   </style>
 
+  <!-- All scripts goes here
+  	==========================================================================-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- hmmm.... I don't know maybe you'll need to find out yourself-->
+  <script src="../js/38384040373937396665.js"></script>
+  <!-- all other javascript by us -->
+  <script src="../js/robotics.js"></script>
+
+
+
   <!-- Tab Titile
 ========================================================================== -->
   <title>Robotics/About</title>
@@ -125,6 +128,25 @@
         <br>
       </div>
     </div>
+
+
+    <script>
+      $(document).ready(function() {
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, function() {
+
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+    </script>
+
 
 
     <div id="mySidenav" class="sidenav">
@@ -206,7 +228,7 @@
               <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
               <div>
                 <h4><b>**************</b></h4>
-                <p>Creates Stuff</p>
+                <p>**************</p>
               </div>
             </div>
 
@@ -214,7 +236,7 @@
               <img id="crdimg" src="../images/favatar.png" alt="Avatar" style="width:100%">
               <div>
                 <h4><b>**************</b></h4>
-                <p>Creates Stuff</p>
+                <p>**************</p>
               </div>
             </div>
 
@@ -222,7 +244,7 @@
               <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
               <div>
                 <h4><b>**************</b></h4>
-                <p>Creates Stuff</p>
+                <p>**************</p>
               </div>
             </div>
 
@@ -230,7 +252,7 @@
               <img id="crdimg" src="../images/favatar.png" alt="Avatar" style="width:100%">
               <div>
                 <h4><b>**************</b></h4>
-                <p>Creates Stuff</p>
+                <p>**************</p>
               </div>
             </div>
 
@@ -238,7 +260,7 @@
               <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
               <div>
                 <h4><b>**************</b></h4>
-                <p>Creates Stuff</p>
+                <p>**************</p>
               </div>
             </div>
           </div>
@@ -262,7 +284,7 @@
                 <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
                 <div>
                   <h4><b>**************</b></h4>
-                  <p>Creates Stuff</p>
+                  <p>**************</p>
                 </div>
               </div>
 
@@ -270,7 +292,7 @@
                 <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
                 <div>
                   <h4><b>**************</b></h4>
-                  <p>Creates Stuff</p>
+                  <p>**************</p>
                 </div>
               </div>
 
@@ -278,7 +300,7 @@
                 <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
                 <div>
                   <h4><b>**************</b></h4>
-                  <p>Creates Stuff</p>
+                  <p>**************</p>
                 </div>
               </div>
 
@@ -286,7 +308,7 @@
                 <img id="crdimg" src="../images/mavatar.png" alt="Avatar" style="width:100%">
                 <div>
                   <h4><b>**************</b></h4>
-                  <p>Creates Stuff</p>
+                  <p>**************</p>
                 </div>
               </div>
 
@@ -525,39 +547,24 @@
         $("html, body").animate({
           scrollTop: 0
         }, "smooth");
-        // document.body.scrollTop = 0;
-        // document.documentElement.scrollTop = 0;
       }
     </script>
   </footer>
   <!--/#Footer
 	==========================================================================-->
 
+  <!-- website created by:
+  Mohammad Islam
+  Brandon Walters
+  Adam Mcdaniel
+  Mike Soare
+  Logan Wrinkle
 
+  With the support and help of
+  Joel Smith - AP CSP teacher
 
-
-  <!-- All scripts goes here
-	==========================================================================-->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- hmmm.... I don't know maybe you'll need to find out yourself-->
-  <script src="../js/38384040373937396665.js"></script>
-
-  <!-- all other javascript by us -->
-  <script src="../js/robotics.js"></script>
+  *A South Doyle High School owned website* -->
 
 </body>
 
 </html>
-<!-- website created by:
-Mohammad Islam
-Brandon Walters
-Adam Mcdaniel
-Mike Soare
-Logan Wrinkle
-
-With the support and help of
-Joel Smith - AP CSP teacher
-
-*A South Doyle High School owned website* -->
