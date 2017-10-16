@@ -241,7 +241,7 @@ body {
 
 
 footer {
-  position: fixed;
+  position: static;
   bottom: 0;
   padding-top: 10px;
 }
