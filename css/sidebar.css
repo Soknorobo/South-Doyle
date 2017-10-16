@@ -1,7 +1,4 @@
 /*this is a the css for the sidebar*/
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
-/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
-
 
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
   background-color: transparent;

@@ -97,12 +97,6 @@
 }
 
 
-/*dedicated font*/
-@font-face {
-  font-family: "Yanone Kaffeesatz";
-  src: url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
-}
-
 /*all fonts*/
 
 * {
