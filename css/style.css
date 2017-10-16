@@ -96,6 +96,7 @@
   position: absolute;
 }
 
+<<<<<<< HEAD
 
 /*dedicated font*/
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
@@ -109,6 +110,8 @@
 }
 
 
+=======
+>>>>>>> parent of b9af50c... 1.20.5
 #splabel {
   color: #303C88;
   font-size: 50px;
@@ -232,7 +235,7 @@ body {
   overflow: auto;
   height: 100%;
   width: 100%;
-  background:#303C88;
+  background: #303C88;
   background-size: cover;
 }
 
@@ -252,6 +255,18 @@ footer {
   margin: 0;
 }
 
+/*dedicated font*/
+
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+
+/*all fonts*/
+
+* {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
 
 /*scroll to the top funciton*/
 
@@ -321,6 +336,7 @@ footer {
   margin: 0 auto;
   font-weight: 900;
   font-size: 60px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   /*-webkit-background-clip: text;*/
   color: #DDD1C8;
   padding: 0 15% 0 15%;
@@ -344,7 +360,13 @@ header {
   z-index: 700;
   width: 100%;
   padding: 10px;
+  /*text-shadow: -5px 5px 0px #4b5282, -10px 10px 0px #424b87, -15px 15px 0px #303C88;*/
   cursor: default;
+  /*background: -webkit-gradient(linear, left bottom, left top, from(#778899), to(#303C88));*/
+  background: -webkit-gradient(linear, left bottom, left top, from(#778899), to(#303C88));
+  background: linear-gradient(0deg, #778899 0%, #303C88 100%);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 
 /*.headfloat {
@@ -408,6 +430,7 @@ a:hover {
 }
 
 #info_text {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #fff;
   text-align: center;
   font-weight: 900;
