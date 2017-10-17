@@ -11,7 +11,7 @@
 }
 
 .imageSplash {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -143,9 +143,9 @@
     /*without border*/
     /*padding: 5px 13px 5px 19px;*/
     padding: 5px 13px 5px 18.5px;
-    animation: updown 2.5s linear infinite;
+    animation: updown 2.5s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
     -webkit-transition: all 2s ease;
-    transition: all 2s ease;
+    transition: all 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 /*label:active .fa {
