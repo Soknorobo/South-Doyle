@@ -14,6 +14,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- CSS
 ========================================================================== -->
+<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+
 	<!-- this css is for bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- this css is for the whole site made by us -->
@@ -34,6 +36,7 @@
 		window.onbeforeunload = function() {
 			window.scrollTo(0, 0);
 		}
+
 	</script>
 
 	<!-- Splash screen  -->
@@ -42,6 +45,7 @@
 		<div class="imageSplash">
 			<!-- background -->
 			<img id="splashImage" src='./images/South-Doyle V2.gif' alt="SOUTH-DOYLE Robotics" preload>
+
 			<!-- blurred div on top for future -->
 			<!-- <div id="blursplash"></div>			 -->
 			<!-- splash title -->
@@ -51,29 +55,30 @@
 				<!-- inner border -->
 				<label id="splabel" for="clickScroll">
 					<!-- outer border -->
-					<div id='rotate' class="rotate">
-					</div>
+					<!-- <div id='rotate' class="rotate">
+					</div> -->
 					<!-- font awesome icon -->
-				<i id="down-splash-arrow" class="fa down-splash fa-angle-double-down" aria-hidden="true" preload></i>
+				<i id="down-splash-arrow" class="fa down-splash fa-angle-down" aria-hidden="true" preload></i>
 			</label>
 			</div>
 		</div>
-		<script>
-			// splash screen
-			var splash = document.getElementById("splash-screen");
-			splash.addEventListener("touchstart", MouseWheelHandler, false);
-			splash.addEventListener("mousewheel", MouseWheelHandler, false);
-			splash.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
-			window.addEventListener("keypress", MouseWheelHandler, false);
-			// window.addEventListener("keyup", MouseWheelHandler, false);
-			window.addEventListener("keydown", MouseWheelHandler, false);
-			//
-			function MouseWheelHandler(e) {
-				document.getElementById("clickScroll").checked = true;
-				return false;
-			}
-		</script>
 	</div>
+	
+	<script>
+		// splash screen
+		var splash = document.getElementById("splash-screen");
+		splash.addEventListener("touchstart", MouseWheelHandler, false);
+		splash.addEventListener("mousewheel", MouseWheelHandler, false);
+		splash.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+		window.addEventListener("keypress", MouseWheelHandler, false);
+		// window.addEventListener("keyup", MouseWheelHandler, false);
+		window.addEventListener("keydown", MouseWheelHandler, false);
+		//
+		function MouseWheelHandler(e) {
+			document.getElementById("clickScroll").checked = true;
+			return false;
+		}
+	</script>
 	<!-- #Splash screen  -->
 
 

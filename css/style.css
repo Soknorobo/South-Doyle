@@ -1,6 +1,20 @@
 /*This is a css for the South Doyle Robotics Website
  created by the students from scratch*/
 
+/*dedicated font*/
+
+/*@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');*/
+
+/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+
+/*all fonts*/
+
+* {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
 .imageSplash {
   position: absolute;
   top: 0;
@@ -13,39 +27,33 @@
   background-position: center center;
   z-index: 999;
   -webkit-animation: splashfirst 1s ease-in-out;
-          animation: splashfirst 1s ease-in-out;
+  animation: splashfirst 1s ease-in-out;
   /*background-image: url('../images/skull.jpg');*/
 }
-
 
 @-webkit-keyframes splashfirst {
   0% {
     -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
     border-color: transparent;
   }
-
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-
 
 @keyframes splashfirst {
   0% {
     -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
     border-color: transparent;
   }
-
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-
-
 
 #splashImage {
   position: absolute;
@@ -96,27 +104,11 @@
   position: absolute;
 }
 
-<<<<<<< HEAD
-
-/*dedicated font*/
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
-
-/*all fonts*/
-
-* {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box
-}
-
-
-=======
->>>>>>> parent of b9af50c... 1.20.5
 #splabel {
-  color: #303C88;
+  color: #fff;
   font-size: 50px;
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   left: 50%;
   margin-left: -32px;
   width: 40px;
@@ -128,81 +120,34 @@
   animation-delay: 1.5s;
 }
 
-#rotate {
-  background: transparent;
-  border: 5px solid #303C88;
-  width: 78px;
-  height: 78px;
-  border-radius: 50%;
-  margin-left: -5px;
-  margin-top: -3px;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
-  position: absolute;
-  cursor: pointer;
-}
-
-#rotate:hover {
-  -webkit-animation: rotate 1.5s linear infinite;
-  border: 5px dashed #7E1F21;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
-}
-
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
+@keyframes updown {
+  0% {
+    transform: translateY(-6px);
   }
-  to {
-    -webkit-transform: rotate(360deg);
+  25% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(-6px);
   }
 }
 
 .down-splash {
-  border: 5px solid transparent;
+  /*border: 5px solid transparent;*/
   /*border: 5px solid #242842;*/
-  border-radius: 50%;
-  padding: 5px 13px 5px 13px;
+  /*border-radius: 50%;*/
   /*without border*/
   /*padding: 5px 13px 5px 19px;*/
+  padding: 5px 13px 5px 18.5px;
+  animation: updown 2.5s linear infinite;
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
-}
-
-#down-splash-arrow {
-  background: linear-gradient(142deg, #7E1F21, #242842, #778899, #303C88);
-  background-size: 800% 800%;
-  -webkit-animation: gradientTransformation 17s cubic-bezier(0, -0.74, 1, 2.32) infinite;
-  animation: gradientTransformation 17s cubic-bezier(0, -0.74, 1, 2.32) infinite;
-}
-
-@-webkit-keyframes gradientTransformation {
-  0% {
-    background-position: 13% 0%
-  }
-  50% {
-    background-position: 88% 100%
-  }
-  100% {
-    background-position: 13% 0%
-  }
-}
-
-@keyframes gradientTransformation {
-  0% {
-    background-position: 13% 0%
-  }
-  50% {
-    background-position: 88% 100%
-  }
-  100% {
-    background-position: 13% 0%
-  }
-}
-
-label:active {
-  -webkit-transform: scale(1.8);
-  transform: scale(1.8);
 }
 
 /*label:active .fa {
@@ -210,9 +155,9 @@ label:active {
   transition: 20ms;
 }*/
 
-input[type=checkbox]:checked~.imageSplash{
+input[type=checkbox]:checked~.imageSplash {
   -webkit-transform: translateY(-150%);
-  transform:translateY(-150%);
+  transform: translateY(-150%);
   -webkit-transition: all .5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
   transition: all .5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
 }
@@ -220,7 +165,6 @@ input[type=checkbox]:checked~.imageSplash{
 body, html {
   height: 100%;
 }
-
 
 /*html {
     overflow: hidden;
@@ -239,13 +183,11 @@ body {
   background-size: cover;
 }
 
-
 footer {
   position: static;
   bottom: 0;
   padding-top: 10px;
 }
-
 
 /*this is the body under header and above footer*/
 
@@ -255,31 +197,16 @@ footer {
   margin: 0;
 }
 
-/*dedicated font*/
-
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
-/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
-
-/*all fonts*/
-
-* {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box
-}
-
 /*scroll to the top funciton*/
 
-
 ::-moz-selection {
-    color: gold;
-    background: lightgray;
+  color: gold;
+  background: lightgray;
 }
 
-
 ::selection {
-    color: gold;
-    background: lightgray;
+  color: gold;
+  background: lightgray;
 }
 
 #myBtn {
@@ -300,7 +227,7 @@ footer {
   transition: all 500ms ease;
 }
 
-#myBtn:VISITED{
+#myBtn:VISITED {
   border-radius: 50%;
 }
 
@@ -325,7 +252,8 @@ footer {
   /*-webkit-transition: all 500ms ease;
   transition: all 500ms ease;*/
 }
-#up_scroll:hover{
+
+#up_scroll:hover {
   color: red;
 }
 
@@ -336,7 +264,6 @@ footer {
   margin: 0 auto;
   font-weight: 900;
   font-size: 60px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
   /*-webkit-background-clip: text;*/
   color: #DDD1C8;
   padding: 0 15% 0 15%;
@@ -430,7 +357,6 @@ a:hover {
 }
 
 #info_text {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #fff;
   text-align: center;
   font-weight: 900;
@@ -555,7 +481,7 @@ a:hover {
   text-align: center;
 }
 
-#platinumdiv,#donorsdiv,#silverdiv,#golddiv {
+#platinumdiv, #donorsdiv, #silverdiv, #golddiv {
   padding: 0 0 0 0;
   padding: 15px;
   margin-top: 20px;
@@ -579,7 +505,6 @@ a:hover {
   }
 }
 
-
 @media only screen and (max-width: 767px) {
   .silver-img {
     border: 20px solid #C0C0C0;
@@ -597,13 +522,13 @@ a:hover {
   max-width: 300px;
   padding: 10px;
   -webkit-animation: sponsorfirst 1s ease-in-out;
-          animation: sponsorfirst 1s ease-in-out;
+  animation: sponsorfirst 1s ease-in-out;
 }
 
 @-webkit-keyframes sponsorfirst {
   0% {
     -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
     opacity: 0;
     border-color: transparent;
   }
@@ -616,7 +541,7 @@ a:hover {
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     opacity: 1;
   }
 }
@@ -624,7 +549,7 @@ a:hover {
 @keyframes sponsorfirst {
   0% {
     -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
     opacity: 0;
     border-color: transparent;
   }
@@ -637,7 +562,7 @@ a:hover {
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     opacity: 1;
   }
 }
@@ -666,7 +591,7 @@ a:hover {
   text-align: center;
 }
 
-#firstDiv{
+#firstDiv {
   padding: 0 0 0 0;
   padding: 15px;
   margin-top: 20px;
@@ -680,14 +605,14 @@ a:hover {
 
 .FIRST-img, .FIRST-img-us {
   -webkit-animation: startBigger 1s ease-in-out;
-          animation: startBigger 1s ease-in-out;
+  animation: startBigger 1s ease-in-out;
 }
 
 @-webkit-keyframes startBigger {
   0% {
     opacity: 0;
     -webkit-transform: scale(.7);
-            transform: scale(.7);
+    transform: scale(.7);
     border-radius: 100%;
     background: gray;
   }
@@ -699,7 +624,7 @@ a:hover {
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     background-color: transparent;
     opacity: 1;
   }
@@ -709,7 +634,7 @@ a:hover {
   0% {
     opacity: 0;
     -webkit-transform: scale(.7);
-            transform: scale(.7);
+    transform: scale(.7);
     border-radius: 100%;
     background: gray;
   }
@@ -721,7 +646,7 @@ a:hover {
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     background-color: transparent;
     opacity: 1;
   }
@@ -802,7 +727,6 @@ a:hover {
 
 /*social*/
 
-
 #social-vertical-img {
   padding: 100px 0 100px 0;
   width: 100%;
@@ -869,7 +793,6 @@ a:hover {
   bottom: 0;
   left: 75%;
 }
-
 
 #twitter-embed {
   min-width: 300px;
@@ -1197,9 +1120,10 @@ div.desc {
 }
 
 /*footer and other information*/
+
 .line {
-    background: linear-gradient(45deg, #ff2e13 0%,#ff2e13 34%,#ff2e16 34%,#ff2e19 34%,#f52c26 37%,#e52c3b 41%,#d72a48 43%,#d62b4c 43%,#bb2b65 47%,#b3296a 48%,#ad2b72 49%,#7e2c96 55%,#4030bc 62%,#1334d1 67%,#0435d7 69%,#0136da 70%,#0136da 100%);
-    height: 5px;
+  background: linear-gradient(45deg, #ff2e13 0%, #ff2e13 34%, #ff2e16 34%, #ff2e19 34%, #f52c26 37%, #e52c3b 41%, #d72a48 43%, #d62b4c 43%, #bb2b65 47%, #b3296a 48%, #ad2b72 49%, #7e2c96 55%, #4030bc 62%, #1334d1 67%, #0435d7 69%, #0136da 70%, #0136da 100%);
+  height: 5px;
 }
 
 @media (max-height:800px) {
@@ -1211,9 +1135,9 @@ div.desc {
 .footer-expanded {
   background-color: #212121;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
@@ -1242,8 +1166,8 @@ div.desc {
   color: #303C88;
 }
 
-.footer-expanded .fa:hover{
-  color:#5383d3;
+.footer-expanded .fa:hover {
+  color: #5383d3;
 }
 
 /* Footer links */
@@ -1255,7 +1179,7 @@ div.desc {
 }
 
 .footer-expanded .footer-links a:hover {
-  color:#5383d3;
+  color: #5383d3;
 }
 
 .footer-expanded .footer-links a {
