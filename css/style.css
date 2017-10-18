@@ -114,6 +114,7 @@
     animation-delay: 1.5s;
 }
 
+
 @keyframes updown {
     0% {
         transform: translateY(-6px);
@@ -147,12 +148,15 @@
     -webkit-transition: all 2s ease;
     transition: all 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-
+.down-splash:hover {
+  animation: none;
+  color: lightblue;
+}
 /*label:active .fa {
   transform: rotate(180deg);
   transition: 20ms;
 }*/
-input[type=checkbox]:checked~.imageSplash {
+input[type=checkbox]:checked~.imageSplash{
     -webkit-transform: translateY(-150%);
     transform: translateY(-150%);
     -webkit-transition: all .5s cubic-bezier(0.55, 0.09, 0.68, 0.53);
@@ -438,6 +442,11 @@ a:hover {
     cursor: pointer;
     border-radius: 10px 30px 10px 40px;
 }
+/*#full-team{
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+}*/
 
 .nav {
     padding-bottom: 20px;
@@ -863,6 +872,7 @@ a:hover {
 
 /*Donate*/
 /*the team*/
+
 #gallery {
     /**/
 }

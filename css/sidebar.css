@@ -18,7 +18,7 @@
 }
 
 #sidebar-items {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 #sidebar_Robotics:hover, #sidebar_Robotics:focus {
@@ -152,6 +152,7 @@
 
 .sidebar-nav li a:hover, .sidebar-nav li a:active, .sidebar-nav li a:focus, .sidebar-nav li.open a:hover, .sidebar-nav li.open a:active, .sidebar-nav li.open a:focus {
     color: black;
+    filter: grayscale(100%);
     text-decoration: none;
     background-color: transparent;
     -webkit-transition: all 800ms ease;

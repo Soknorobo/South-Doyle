@@ -1,367 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<!-- Basic needs
+    <head>
+        <!-- Basic needs
 =========================================================================== -->
-	<!--Tab Icon-->
-	<link rel="icon" href="images/SDorgicon.png">
-	<link rel="canonical" href="https://soknorobo.com/" />
-	<!-- <link rel="preload" href="./images/South-Doyle V2.gif" as="image"> -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="Soknorobo,Soknorobo.com, Sokno, Robotics, SDHS, sdhs,FIRST,FIRST Robotics,competition,robots,south, south Doyle, Doyle, Knoxville,6517,#6517,team6517, team#6517,team #6517,Tweets from South Doyle Robotics,SDHS_Robotics,FIRST Robotics,South Doyle Robotics,Team, TeamFTW,FTW, The Blue Alliance,robot,Knox County Schools,Argosy Foundation,Consolidated Nuclear Security,UT-Battelle,TVA,Spencer Pro Diesel,Jupiter Entertainment,DeRoyal,,Ryerson Steel,SoKno Market,Red Arrow Industries LLC ">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!-- CSS
+        <!--Tab Icon-->
+        <link rel="icon" href="images/SDorgicon.png">
+        <link rel="canonical" href="https://soknorobo.com/"/>
+        <!-- <link rel="preload" href="./images/South-Doyle V2.gif" as="image"> -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Soknorobo,Soknorobo.com, Sokno, Robotics, SDHS, sdhs,FIRST,FIRST Robotics,competition,robots,south, south Doyle, Doyle, Knoxville,6517,#6517,team6517, team#6517,team #6517,Tweets from South Doyle Robotics,SDHS_Robotics,FIRST Robotics,South Doyle Robotics,Team, TeamFTW,FTW, The Blue Alliance,robot,Knox County Schools,Argosy Foundation,Consolidated Nuclear Security,UT-Battelle,TVA,Spencer Pro Diesel,Jupiter Entertainment,DeRoyal,,Ryerson Steel,SoKno Market,Red Arrow Industries LLC ">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- CSS
 ========================================================================== -->
-	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
-	<!-- this css is for bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!-- this css is for the whole site made by us -->
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<!-- this css is for the sidebar -->
-	<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
-	<!-- this css adds icons which can be found by googling awesome icons -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Tab Titile
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+        <!-- this css is for bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- this css is for the whole site made by us -->
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <!-- this css is for the sidebar -->
+        <link rel="stylesheet" type="text/css" href="css/sidebar.css"/>
+        <!-- this css adds icons which can be found by googling awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Tab Titile
 ========================================================================== -->
-	<title>SDHS Robotics</title>
-</head>
-
-<body>
-
-	<!-- Splash screen  -->
-	<div id="splash-screen">
-		<input id="clickScroll" type="checkbox" class="clickScroll"></input>
-		<div class="imageSplash">
-			<!-- background -->
-			<img id="splashImage" src='./images/South-Doyle V2.gif' alt="SOUTH-DOYLE Robotics" preload>
-			<!-- blurred div on top for future -->
-			<!-- <div id="blursplash"></div>			 -->
-			<!-- splash title -->
-			<!-- <h1 id="splash-title">SOUTH-DOYLE ROBOTICS</h1> -->
-			<!-- scroll down icon -->
-			<div id="fa-splash">
-				<!-- inner border -->
-				<label id="splabel" for="clickScroll">
+        <title>SDHS Robotics</title>
+    </head>
+    <body>
+        <!-- Splash screen  -->
+        <div id="splash-screen">
+            <input id="clickScroll" type="checkbox" class="clickScroll"></input>
+            <div class="imageSplash">
+                <!-- background -->
+                <img id="splashImage" src='./images/South-Doyle V2.gif' alt="SOUTH-DOYLE Robotics" preload>
+                <!-- blurred div on top for future -->
+                <!-- <div id="blursplash"></div>			 -->
+                <!-- splash title -->
+                <!-- <h1 id="splash-title">SOUTH-DOYLE ROBOTICS</h1> -->
+                <!-- scroll down icon -->
+                <div id="fa-splash">
+                    <!-- inner border -->
+                    <label id="splabel" for="clickScroll">
                         <!-- outer border -->
                         <!-- <div id='rotate' class="rotate">
 					</div> -->
                         <!-- font awesome icon -->
                         <i id="down-splash-arrow" class="fa down-splash fa-angle-down" aria-hidden="true" preload></i>
                     </label>
-			</div>
-		</div>
-	</div>
-	<script>
-		// splash screen
-		var splash = document.getElementById("splash-screen");
-		splash.addEventListener("touchstart", MouseWheelHandler, false);
-		splash.addEventListener("mousewheel", MouseWheelHandler, false);
-		splash.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
-		window.addEventListener("keypress", MouseWheelHandler, false);
-		// window.addEventListener("keyup", MouseWheelHandler, false);
-		window.addEventListener("keydown", MouseWheelHandler, false);
-		//
-		function MouseWheelHandler(e) {
-			document.getElementById("clickScroll").checked = true;
-			return false;
-		}
-	</script>
-	<!-- #Splash screen  -->
-	<!-- Header
+                </div>
+            </div>
+        </div>
+        <script>
+            // splash screen
+            var splash = document.getElementById("splash-screen");
+            splash.addEventListener("touchstart", MouseWheelHandler, false);
+            splash.addEventListener("mousewheel", MouseWheelHandler, false);
+            splash.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+            window.addEventListener("keypress", MouseWheelHandler, false);
+            // window.addEventListener("keyup", MouseWheelHandler, false);
+            window.addEventListener("keydown", MouseWheelHandler, false);
+            //
+            function MouseWheelHandler(e) {
+                document.getElementById("clickScroll").checked = true;
+                return false;
+            }
+        </script>
+        <!-- #Splash screen  -->
+        <!-- Header
 ========================================================================== -->
-	<!-- logo header -->
-	<header>
-		<div id="heading">
-			<h1 id="logo">TeamFTW
+        <!-- logo header -->
+        <header>
+            <div id="heading">
+                <h1 id="logo">TeamFTW
 	      </h1>
-		</div>
-	</header>
-	<!-- Body id
+            </div>
+        </header>
+        <!-- Body id
 ========================================================================== -->
-	<div id="body">
-		<!--profile image-->
-		<div class="hover-active">
-			<div class="home-image">
-				<img class="hamburger is-closed" data-toggle="offcanvas" title="Robotics/Home" id="profile" data-src="images/img.jpg" src="lowimages/img.jpg" alt="ROBOTICS" />
-				<br>
-			</div>
-		</div>
-		<!--fancy-sidebar
+        <div id="body">
+            <!--profile image-->
+            <div class="hover-active">
+                <div class="home-image">
+                    <img class="hamburger is-closed" data-toggle="offcanvas" title="Robotics/Home" id="profile" data-src="images/img.jpg" src="lowimages/img.jpg" alt="ROBOTICS"/>
+                    <br>
+                </div>
+            </div>
+            <!--fancy-sidebar
 	==========================================================================-->
-		<!-- sidebar navigation -->
-		<div id="wrapper">
-			<div class="overlay hamburger is-closed" data-toggle="offcanvas"></div>
-			<!-- Sidebar -->
-			<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-				<ul class="nav sidebar-nav" data-toggle="offcanvas">
-					<li class="sidebar-brand">
-						<a href="#" id="sidebar_Robotics" class="hamburger is-closed">
+            <!-- sidebar navigation -->
+            <div id="wrapper">
+                <div class="overlay hamburger is-closed" data-toggle="offcanvas"></div>
+                <!-- Sidebar -->
+                <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+                    <ul class="nav sidebar-nav" data-toggle="offcanvas">
+                        <li class="sidebar-brand">
+                            <a href="#" id="sidebar_Robotics" class="hamburger is-closed">
                                 <i class="fa fa-smile-o" style="color:green;" aria-hidden="true"></i>
                                 Robotics
 
+
                             </a>
-					</li>
-					<!-- active tab -->
-					<!-- same as navbar-nav -->
-					<li id="sidebar-items" class="active" title="Robotics/Home">
-						<span onclick="topFunction()">
+                        </li>
+                        <!-- active tab -->
+                        <!-- same as navbar-nav -->
+                        <li id="sidebar-items" class="active" title="Robotics/Home">
+                            <span onclick="topFunction()">
                                 <a href="#" class="hamburger is-closed">
                                     <i class="fa fa-home" aria-hidden="true"></i>
-                                    &nbsp &nbsp &nbsp Home
+                                    Home
+
 
                                 </a>
                             </span>
-					</li>
-					<!-- Inactive tabs -->
-					<li id="sidebar-items" title="Robotics/Social">
-						<span>
+                        </li>
+                        <!-- Inactive tabs -->
+                        <li id="sidebar-items" title="Robotics/Social">
+                            <span>
                                 <a href="./pages/social" class="hamburger is-closed">
                                     <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                    &nbsp &nbsp &nbsp Social
+                                    Social
+
 
                                 </a>
                             </span>
-					</li>
-					<li id="sidebar-items" title="Robotics/About">
-						<span>
+                        </li>
+                        <li id="sidebar-items" title="Robotics/About">
+                            <span>
                                 <a href="./pages/about" class="hamburger is-closed">
                                     <i class="fa fa-sitemap" aria-hidden="true"></i>
-                                    &nbsp &nbsp &nbsp About
+                                    About
+
 
                                 </a>
                             </span>
-					</li>
-					<li id="sidebar-items" title="Robotics/About">
-						<span>
+                        </li>
+                        <li id="sidebar-items" title="Robotics/About">
+                            <span>
                                 <a href="./pages/FIRST" class="hamburger is-closed">
-                                    <img style="width:15px;" src="sponsors/firstnotext.png" alt="f ">&nbsp &nbsp &nbsp FIRST Robotics
+                                    <img style="width:15px;" src="sponsors/firstnotext.png" alt="f ">FIRST Robotics
+
 
                                 </a>
                             </span>
-					</li>
-					<li id="sidebar-items" title="Robotics/About">
-						<span>
+                        </li>
+                        <li id="sidebar-items" title="Robotics/About">
+                            <span>
                                 <a href="./pages/sponsors" class="hamburger is-closed">
                                     <i class="fa fa-link" aria-hidden="true"></i>
-                                    &nbsp &nbsp &nbsp Sponsors
+                                    Sponsors
+
 
                                 </a>
                             </span>
-					</li>
-					<li id="sidebar-items" title="Robotics/The Team">
-						<span>
+                        </li>
+                        <li id="sidebar-items" title="Robotics/The Team">
+                            <span>
                                 <a href="./pages/team" class="hamburger is-closed">
                                     <i class="fa fa-users" aria-hidden="true"></i>
-                                    &nbsp &nbsp &nbsp The Team
+                                    The Team
+
 
                                 </a>
                             </span>
-					</li>
-					<li id="sidebar-items" title="Robotics/contact-us">
-						<span>
+                        </li>
+                        <li id="sidebar-items" title="Robotics/contact-us">
+                            <span>
                                 <a href="./pages/contact-us" class="hamburger is-closed">
                                     <i class="fa fa-sign-in" aria-hidden="true"></i>
-                                    &nbsp &nbsp &nbsp Contact us
+                                    Contact us
+
 
                                 </a>
                             </span>
-					</li>
-				</ul>
-				</ul>
-			</nav>
-			<!-- /#sidebar-wrapper -->
-			<div id="page-content-wrapper">
-				<!-- <button type="button" class="hamburger is-closed" data-toggle="offcanvas"> -->
-				<div id="menu_button">
-					<button type="button" id="hamburger" class="hamburger is-closed" data-toggle="offcanvas">
+                        </li>
+                    </ul>
+</ul></nav>
+<!-- /#sidebar-wrapper -->
+<div id="page-content-wrapper">
+    <!-- <button type="button" class="hamburger is-closed" data-toggle="offcanvas"> -->
+    <div id="menu_button">
+        <button type="button" id="hamburger" class="hamburger is-closed" data-toggle="offcanvas">
             <span class="hamb-top"></span>
             <span class="hamb-middle"></span>
             <span class="hamb-bottom"></span>
         </button>
-				</div>
-			</div>
-			<!-- /#page-content-wrapper -->
-		</div>
-		<!-- /#wrapper -->
-		<!--/#fancy-sidebar
+    </div>
+</div>
+<!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+<!--/#fancy-sidebar
 	==========================================================================-->
-		<!-- Home-tab
+<!-- Home-tab
 ========================================================================== -->
-		<div id="Home">
-			<h3 class="info_sub">
+<div id="Home">
+    <h3 class="info_sub">
     <!-- <i class="fa fa-angle-double-left" aria-hidden="true"></i> -->
     WELCOME
 
+
     <!-- <i class="fa fa-angle-double-right" aria-hidden="true"></i> -->
     </h3>
-			<p id="info_text">Robotics Home Page</p>
-			<!-- YouTube Video
+    <p id="info_text">Robotics Home Page</p>
+    <!-- YouTube Video
 		========================================================================== -->
-			<div id='ytvid'>
-				<div class="video-responsive">
-					<!-- YouTube player -->
-					<div style="text-align: center">
-						<div class="video-container">
-							<iframe id="player" title="Robotics Youtube Video" src="https://www.youtube-nocookie.com/embed/53J_WNPmnRw?rel=0&autoplay=0&showinfo=0&end=151&cc_load_policy=0&disablekb=0&modestbranding=0c" frameborder="0" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-				<h3 id="yt-title">FIRST Worlds Robotics Competition Houston</h3>
-				<div id="yt-info">
-					<span>L &N Stem's and South Doyle High School's journey to the FRC Worlds FIRST Robotics competition in Houston, Texas.</span>
-				</div>
-			</div>
-			<!-- Home Cards
+    <div id='ytvid'>
+        <div class="video-responsive">
+            <!-- YouTube player -->
+            <div style="text-align: center">
+                <div class="video-container">
+                    <iframe id="player" title="Robotics Youtube Video" src="https://www.youtube-nocookie.com/embed/53J_WNPmnRw?rel=0&autoplay=0&showinfo=0&end=151&cc_load_policy=0&disablekb=0&modestbranding=0c" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <h3 id="yt-title">FIRST Worlds Robotics Competition Houston</h3>
+        <div id="yt-info">
+            <span>L &N Stem's and South Doyle High School's journey to the FRC Worlds FIRST Robotics competition in Houston, Texas.</span>
+        </div>
+    </div>
+    <!-- Home Cards
 		========================================================================== -->
-			<div id="info-content">
-				<!-- story card -->
-				<p id="info_text">Story
+    <div id="info-content">
+        <!-- story card -->
+        <p id="info_text">Story
 				</p>
-				<!-- story text -->
-				<p id="achievement">The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot at the
+        <!-- story text -->
+        <p id="achievement">The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot at the
 					World Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
 				</p>
-				<a href="./images/team.jpg">
+        <a href="./images/team.jpg">
             <img id="trophie" data-src="images/team.jpg" src="lowimages/team.jpg" alt="Can't load image...">
         </a>
-			</div>
-			<br>
-			<!-- achievement card -->
-			<div id="info-content">
-				<p id="info_text">Our Achievements
+    </div>
+    <br>
+    <!-- achievement card -->
+    <div id="info-content">
+        <p id="info_text">Our Achievements
 				</p>
-				<!-- achievement text -->
-				<p id="achievement">Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running
+        <!-- achievement text -->
+        <p id="achievement">Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running
 					to help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
 				</p>
-				<a href="./images/trophies.jpg">
+        <a href="./images/trophies.jpg">
             <img id="trophie" data-src="images/trophies.jpg" src="lowimages/trophies.jpg" alt="Can't load image...">
         </a>
-			</div>
-		</div>
-	</div>
-	<!-- #HOME
+    </div>
+</div>
+</div>
+<!-- #HOME
 ========================================================================== -->
-	<!--Footer
+<!--Footer
 ==========================================================================-->
-	<div class="line"></div>
-	<footer class="footer-expanded">
-		<div class="footer-left">
-			<h3>
+<div class="line"></div>
+<footer class="footer-expanded">
+    <div class="footer-left">
+        <h3>
             Team<span>FTW</span>
         </h3>
-			<p class="footer-links">
-				<a href="../index">Home</a> ·
-				<a href="../pages/social">Social</a> ·
-				<a href="../pages/about">About</a> ·
-				<a href="../pages/FIRST">FIRST</a> ·
-				<a href="../pages/sponsors">Sponsors</a> ·
-				<a href="../pages/team">The Team</a> ·
+        <p class="footer-links">
+            <a href="../index">Home</a>
+            ·
+				<a href="../pages/social">Social</a>
+            ·
+				<a href="../pages/about">About</a>
+            ·
+				<a href="../pages/FIRST">FIRST</a>
+            ·
+				<a href="../pages/sponsors">Sponsors</a>
+            ·
+				<a href="../pages/team">The Team</a>
+            ·
 				<a href="../pages/contact-us">Contact Us</a>
-			</p>
-			<p class="footer-Robotics-name">
-				SDHS Robotics <i class="fa fa-copyright" aria-hidden="true"></i> 2017
-			</p>
-		</div>
-		<div class="footer-center">
-			<div>
-				<a href="https://www.knoxschools.org/southdoylehs">
+        </p>
+        <p class="footer-Robotics-name">
+            SDHS Robotics <i class="fa fa-copyright" aria-hidden="true"></i>
+            2017
+
+        </p>
+    </div>
+    <div class="footer-center">
+        <div>
+            <a href="https://www.knoxschools.org/southdoylehs">
                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                 <p>South-Doyle High School
+
             </a>
-				</p>
-			</div>
-			<div>
-				<a href="https://goo.gl/maps/YqMqu23H3eJ2">
+</p></div>
+<div>
+    <a href="https://goo.gl/maps/YqMqu23H3eJ2">
         <i class="fa fa-map-marker"></i>
         <p>
             <span>2020 Tipton Station Road,</span>
             Knoxville, TN 37920
+
     </a>
-				</p>
-			</div>
-			<div>
-				<a href="tel:8655774475">
+</p></div>
+<div>
+    <a href="tel:8655774475">
         <i class="fa fa-phone"></i>
         <p>865.577.4475</p>
     </a>
-			</div>
-			<div>
-				<a href="mailto:joel.smith@knoxschools.org">
+</div>
+<div>
+    <a href="mailto:joel.smith@knoxschools.org">
         <i class="fa fa-envelope"></i>
         <p>support@SDHS_Robotics.com</p>
     </a>
-			</div>
-		</div>
-		<div class="footer-right">
-			<p class="footer-Robotics-about">
-				<span>About Us</span> WE ARE THE TEAM "FOR THE WIN"!
+</div>
+</div>
+<div class="footer-right">
+    <p class="footer-Robotics-about">
+        <span>About Us</span>
+        WE ARE THE TEAM "FOR THE WIN"!
 
-			</p>
-			<p class="footer-Robotics-about">
-				<br>website created by: Mohammad Islam, Brandon Walters, Adam Mcdaniel, Mike Soare, Logan Wrinkle.
 
-			</p>
-			<div class="footer-icons">
-				<a href="https://www.facebook.com/pages/South-Doyle-High-School/109536089065212">
+    </p>
+    <p class="footer-Robotics-about">
+        <br>website created by: Mohammad Islam, Brandon Walters, Adam Mcdaniel, Mike Soare, Logan Wrinkle.
+
+
+    </p>
+    <div class="footer-icons">
+        <a href="https://www.facebook.com/pages/South-Doyle-High-School/109536089065212">
             <i class="fa fa-facebook"></i>
         </a>
-				<a href="https://twitter.com/sdhs_robotics?lang=en">
+        <a href="https://twitter.com/sdhs_robotics?lang=en">
             <i class="fa fa-twitter"></i>
         </a>
-				<a href="https://www.instagram.com/southdoylerobotics/?hl=en">
+        <a href="https://www.instagram.com/southdoylerobotics/?hl=en">
             <i class="fa fa-instagram"></i>
         </a>
-				<a href="https://github.com/South-Doyle/South-Doyle">
+        <a href="https://github.com/South-Doyle/South-Doyle">
             <i class="fa fa-github"></i>
         </a>
-			</div>
-		</div>
-		<!-- scroll to top -->
-		<button onclick="topFunction()" id="myBtn" title="Go to top">
+    </div>
+</div>
+<!-- scroll to top -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">
     <i class="fa fa-angle-up fa-2x" id="up_scroll" aria-hidden="true"></i>
 </button>
-		<script>
-			// When the user scrolls down 20px from the top of the document, show the button
-			window.onscroll = function() {
-				scrollFunction()
-			};
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        scrollFunction()
+    }
+    ;
 
-			function scrollFunction() {
-				if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-					document.getElementById("myBtn").style.visibility = "visible";
+    function scrollFunction() {
+        if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+            document.getElementById("myBtn").style.visibility = "visible";
 
-				} else {
-					document.getElementById("myBtn").style.visibility = "hidden";
+        } else {
+            document.getElementById("myBtn").style.visibility = "hidden";
 
-				}
-			}
+        }
+    }
 
-			// When the user clicks on the button, scroll to the top of the document
-			function topFunction() {
-				$("html, body").animate({
-					scrollTop: 0
-				}, "slow");
-				// document.body.scrollTop = 0;
-				// document.documentElement.scrollTop = 0;
-			}
-		</script>
-	</footer>
-	<!--/#Footer
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        $("html, body").animate({
+            scrollTop: 0
+        }, "slow");
+        // document.body.scrollTop = 0;
+        // document.documentElement.scrollTop = 0;
+    }
+</script>
+</footer>
+<!--/#Footer
 	==========================================================================-->
-	<!-- All scripts goes here
+<!-- All scripts goes here
 			==========================================================================-->
-	<!-- jquery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- bootstrap -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!-- estregg -->
-	<script src="js/38384040373937396665.js"></script>
-	<!-- all other javascript by us -->
-	<script src="js/robotics.js"></script>
-	<!-- website created by:
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- estregg -->
+<script src="js/38384040373937396665.js"></script>
+<!-- all other javascript by us -->
+<script src="js/robotics.js"></script>
+<!-- website created by:
 	Mohammad Islam
 	Brandon Walters
 	Adam Mcdaniel
@@ -372,6 +389,4 @@
 	Joel Smith - AP CSP teacher
 
 	*A South Doyle High School owned website* -->
-</body>
-
-</html>
+</body></html>
