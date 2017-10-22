@@ -74,10 +74,17 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  /*-webkit-box-shadow: inset 0 0 0 2000px #242842;
-  box-shadow: inset 0 0 0 2000px black;*/
-  /*opacity: .7;*/
+  -webkit-box-shadow: inset 0 0 0 2000px #242842;
+  box-shadow: inset 0 0 0 2000px #242842;
+  opacity: 1;
   overflow: hidden;
+  z-index: -1;
+}
+#blursplashtp {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
 }
 
 /*.imageSplash h1 {
@@ -1609,3 +1616,4 @@ div.desc {
 The navy and light blue will be used for divs and header/footer elements
 the red is an accent color
 Borders and lines will be the Red*/
+}

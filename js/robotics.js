@@ -2,6 +2,10 @@
 // ?
 // This contains all the extra javascript
 // ?
+
+
+
+
 // tooltip javascript, creates tooltip
 $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip();
