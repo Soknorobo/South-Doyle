@@ -152,7 +152,8 @@
 
 .sidebar-nav li a:hover, .sidebar-nav li a:active, .sidebar-nav li a:focus, .sidebar-nav li.open a:hover, .sidebar-nav li.open a:active, .sidebar-nav li.open a:focus {
     color: black;
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
     text-decoration: none;
     background-color: transparent;
     -webkit-transition: all 800ms ease;
@@ -175,6 +176,12 @@
     outline: none;
     -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
+}
+
+@media only screen and (min-width: 767px) {
+  #hamburger {
+    visibility:hidden;
+  }
 }
 
 .hamburger:hover, .hamburger:focus, .hamburger:active {

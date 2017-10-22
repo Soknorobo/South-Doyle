@@ -7,6 +7,7 @@ $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
+
 // adjust the carousel speed
 // // carousel speed javascript
 // $(document).ready(function() {
@@ -20,29 +21,34 @@ $(document).ready(function() {
 
 $(document).on("scroll", function() {
   // when scrolled 5 lines down
-  if ($(document).scrollTop() > 5) {
+  if ($(document).scrollTop() > 0) {
     // the logo resizes to fit in the smaller header
-    document.getElementById("logo").style.fontSize = "25px";
+    document.getElementById("logo").style.fontSize = "35px";
     // the header changes color from radient to blue
     document.getElementById("heading").style.background = "#303C88";
+    document.getElementById("heading").style.padding = "0";
+    document.getElementById("login").style.padding = "5px";
     // makes the header transparent
-    document.getElementById("heading").style.opacity = ".9";
+    // document.getElementById("heading").style.opacity = ".9";
     // removes the logo shadow
-    document.getElementById("logo").style.textShadow = "none";
+    document.getElementById("logo-sp").style.textShadow = "none";
     // modes the hamburgercross to center on new header
     document.getElementById("hamburger").style.transform = "translateY(-12px)";
     // moving the logo to he left
     // document.getElementById("logo").style.textAlign = "left";
   } else {
     // for the default posiitons
-    document.getElementById("logo").style.fontSize = "60px";
+    document.getElementById("logo").style.fontSize = "40px";
     document.getElementById("heading").style.background = "inherit";
-    document.getElementById("logo").style.textShadow = "inherit";
+    document.getElementById("heading").style.padding = "10px";
+    document.getElementById("login").style.padding = "10px";
+    document.getElementById("logo-sp").style.textShadow = "inherit";
     document.getElementById("hamburger").style.transform = "translateY(0px)";
-    document.getElementById("heading").style.opacity = "1";
+    // document.getElementById("heading").style.opacity = "1";
     // document.getElementById("logo").style.textAlign = "center";
   }
 });
+
 
 // the sidebar
 $(document).ready(function() {

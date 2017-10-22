@@ -5,14 +5,14 @@
   <!-- Basic needs
 =========================================================================== -->
   <!--Tab Icon-->
-  <link rel="icon" href="../images/SDorgicon.png">
+  <link rel="icon" href="../images/SDorgicon.webp">
   <link rel="canonical" href="https://soknorobo.com/" />
   <meta charset="UTF-8">
   <meta name="theme-color" content="#242842">
   <meta name="description" content="South Doyle Robotics, Team For the win (Team FTW) competes to reach victory they deserves, Thanks to everyone who are continuing to support and help us achieve our dreams.">
   <meta name='copyright' content='South Doyle High School'>
   <meta name="author" content="SOUTH-DOYLE HIGH SCHOOL">
-  <meta name='owner' content='Joel Smith'>
+  <meta name='owner' content='South-Doyle High School'>
   <meta name="robots" CONTENT="all">
   <meta name="revisit-after" content="7 days">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,11 +45,11 @@
 ========================================================================== -->
   <title>Robotics/contact-us</title>
 
-<style>
-  #body{
-    padding: 100px 0 0 0;
-  }
-</style>
+  <style>
+    #body {
+      padding: 100px 0 0 0;
+    }
+  </style>
 
 </head>
 
@@ -58,29 +58,87 @@
   <!-- Header
 ========================================================================== -->
 
-<header>
-  <div id="heading">
-    <h1 id="logo">
-      TeamFTW
-    </h1>
-  </div>
-</header>
+  <header>
+    <div id="heading">
+      <nav class="navbar navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <h1 id="logo">
+              <a id="logo-sp" href="../index"><span>TeamFTW</span></a>
+              </h1>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../index">HOME</a></li>
+              <li><a href="../pages/about">ABOUT</a></li>
+              <li><a href="../pages/FIRST">FIRST</a></li>
+              <li><a href="../pages/sponsors">SPONSORS</a></li>
+              <li><a href="../pages/team">TEAM</a></li>
+              <li><a href="#">CONTACT US</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
+    </div>
+
+  </header>
   <!-- Body Class
 ========================================================================== -->
 
   <div id="body">
 
     <!--profile image-->
-    <div class="hover-active">
+    <!-- <div class="hover-active">
       <div class="home-image">
         <a href="../index">
-            <img title="Robotics/Home" id="profile" src="../lowimages/img.jpg" data-src="../images/img.jpg"/>
+            <img title="Robotics/Home" id="profile" src="../lowimages/img.webp" data-src="../images/img.webp"/>
           </a>
         <br>
       </div>
+    </div> -->
+
+
+    <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+    <div id="id01" class="modal">
+
+      <form id="loginform" class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <h3>LOGIN </h3>
+        </div>
+
+        <div class="containerlgn">
+
+          <label><b>Username</b></label>
+          <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+
+          <label><b>Password</b></label>
+          <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+
+          <button class="loginbtn" type="submit">Login</button>
+          <input type="checkbox" checked="checked"> Remember me
+        </div>
+
+        <div class="containerlgn" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw"><a href="#">Forgot password?</a></span>
+        </div>
+      </form>
     </div>
 
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
 
 
 
@@ -123,13 +181,6 @@
           </li>
 
           <!-- Inactive tabs -->
-          <li class="sidebar-items" title="Robotics/Social"><span><a href="../pages/social" class="hamburger is-closed">
-							<i class="fa fa-share-square-o" aria-hidden="true"></i>
-							Social
-            </a>
-          </span>
-          </li>
-
           <li class="sidebar-items" title="Robotics/About"><span><a href="../pages/about" class="hamburger is-closed">
 								<i class="fa fa-sitemap" aria-hidden="true"></i>
 								About
@@ -138,7 +189,7 @@
           </li>
 
           <li class="sidebar-items" title="Robotics/About"><span><a href="../pages/FIRST" class="hamburger is-closed">
-								<img style="width:15px;" src="../sponsors/firstnotext.png" alt="f ">
+								<img style="width:15px;" src="../sponsors/FIRSTnotext.webp" alt="f ">
 								FIRST Robotics
               </a>
             </span>
@@ -186,18 +237,18 @@
     </div>
     <!-- /#wrapper -->
   </div>
-<!-- bodyidendshere -->
+  <!-- bodyidendshere -->
   <!--/#fancy-sidebar
 
 
 ==========================================================================-->
 
 
-<!--Footer
+  <!--Footer
 ==========================================================================-->
 
   <div class="line"></div>
-<footer class="footer-expanded">
+  <footer class="footer-expanded">
 
     <div class="footer-left">
 
@@ -205,7 +256,6 @@
 
       <p class="footer-links">
         <a href="../index">Home</a> ·
-        <a href="../pages/social">Social</a> ·
         <a href="../pages/about">About</a> ·
         <a href="../pages/FIRST">FIRST</a> ·
         <a href="../pages/sponsors">Sponsors</a> ·
@@ -219,25 +269,25 @@
     <div class="footer-center">
 
       <div>
-				<a href="https://www.knoxschools.org/southdoylehs" aria-hidden="true">
+        <a href="https://www.knoxschools.org/southdoylehs" aria-hidden="true">
         <i class="fa fa-graduation-cap" aria-hidden="true"></i>
         <p>South-Doyle High School</a></p>
       </div>
 
       <div>
-				<a href="https://goo.gl/maps/YqMqu23H3eJ2" aria-hidden="true">
+        <a href="https://goo.gl/maps/YqMqu23H3eJ2" aria-hidden="true">
         <i class="fa fa-map-marker"></i>
         <p><span>2020 Tipton Station Road,</span>Knoxville, TN 37920</a></p>
       </div>
 
       <div>
-				<a href="tel:8655774475">
+        <a href="tel:8655774475">
         <i class="fa fa-phone"></i>
         <p>865.577.4475</p></a>
       </div>
 
       <div>
-				<a href="mailto:joel.smith@knoxschools.org">
+        <a href="mailto:joel.smith@knoxschools.org">
         <i class="fa fa-envelope"></i>
         <p>support@SDHS_Robotics.com</p></a>
       </div>
@@ -264,8 +314,7 @@
 
       </div>
       <p class="footer-Robotics-about">
-        <br>
-        Website created by: Mohammad Islam, Brandon Walters, Adam Mcdaniel, Mike Soare, Logan Wrinkle.
+        <br> Website created by: Mohammad Islam, Brandon Walters, Adam Mcdaniel, Mike Soare, Logan Wrinkle.
       </p>
 
     </div>

@@ -5,7 +5,7 @@
   <!-- Basic needs
 =========================================================================== -->
   <!--Tab Icon-->
-  <link rel="icon" href="images/SDorgicon.png">
+  <link rel="icon" href="images/SDorgicon.webp">
   <link rel="canonical" href="https://soknorobo.com/" />
   <!-- <link rel="preload" href="./images/South-Doyle V2.gif" as="image"> -->
 
@@ -14,7 +14,7 @@
   <meta name="description" content="South Doyle Robotics, Team For the win (Team FTW) competes to reach victory they deserves, Thanks to everyone who are continuing to support and help us achieve our dreams.">
   <meta name='copyright' content='South Doyle High School'>
   <meta name="author" content="SOUTH-DOYLE HIGH SCHOOL">
-  <meta name='owner' content='Joel Smith'>
+  <meta name='owner' content='South-Doyle High School'>
   <meta name="robots" CONTENT="all">
   <meta name="revisit-after" content="7 days">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,9 +42,13 @@
     <input id="clickScroll" type="checkbox" class="clickScroll" aria-hidden="true"></input>
     <div class="imageSplash">
       <!-- background -->
-      <img id="splashImage" src='./images/South-Doyle V2.gif' alt="SOUTH-DOYLE Robotics" preload>
+      <!-- <img id="splashImage" src='./images/South-Doyle V2.gif' alt="SOUTH-DOYLE Robotics" preload> -->
+      <video id="splashImage" height="100%" autoplay loop preload>
+        <source src="./images/South-Doyle V2.webm" type="video/webm" poster="./images/South-Doyle V2.webp">
+        Loading...
+      </video>
       <!-- blurred div on top for future -->
-      <!-- <div id="blursplash"></div>			 -->
+      <div id="blursplash"></div>
       <!-- splash title -->
       <!-- <h1 id="splash-title">SOUTH-DOYLE ROBOTICS</h1> -->
       <!-- scroll down icon -->
@@ -55,20 +59,30 @@
                         <!-- <div id='rotate' class="rotate">
 					</div> -->
                         <!-- font awesome icon -->
-                        <i id="down-splash-arrow" class="fa down-splash fa-angle-down" aria-hidden="true" preload></i>
-                    </label>
+            <i id="down-splash-arrow" class="fa down-splash fa-angle-down" aria-hidden="true" preload></i>
+        </label>
       </div>
     </div>
   </div>
   <script>
     // splash screen
     var splash = document.getElementById("splash-screen");
-    splash.addEventListener("touchstart", MouseWheelHandler,{passive: true}, false);
-    splash.addEventListener("mousewheel", MouseWheelHandler,{passive: true}, false);
-    splash.addEventListener("DOMMouseScroll", MouseWheelHandler,{passive: true}, false);
-    window.addEventListener("keypress", MouseWheelHandler,{passive: true}, false);
+    splash.addEventListener("touchstart", MouseWheelHandler, {
+      passive: true
+    }, false);
+    splash.addEventListener("mousewheel", MouseWheelHandler, {
+      passive: true
+    }, false);
+    splash.addEventListener("DOMMouseScroll", MouseWheelHandler, {
+      passive: true
+    }, false);
+    window.addEventListener("keypress", MouseWheelHandler, {
+      passive: true
+    }, false);
     // window.addEventListener("keyup", MouseWheelHandler,{passive: true}, false);
-    window.addEventListener("keydown", MouseWheelHandler,{passive: true}, false);
+    window.addEventListener("keydown", MouseWheelHandler, {
+      passive: true
+    }, false);
     //
     function MouseWheelHandler(e) {
       document.getElementById("clickScroll").checked = true;
@@ -81,23 +95,55 @@
   <!-- logo header -->
   <header>
     <div id="heading">
-      <h1 id="logo">TeamFTW
-	      </h1>
+        <nav class="navbar navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <h1 id="logo">
+                <a id="logo-sp" href="#" onclick="topFunction();"><span>TeamFTW</span></a>
+                </h1>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">HOME</a></li>
+                <li><a href="./pages/about">ABOUT</a></li>
+                <li><a href="./pages/FIRST">FIRST</a></li>
+                <li><a href="./pages/sponsors">SPONSORS</a></li>
+                <li><a href="./pages/team">TEAM</a></li>
+                <li><a href="./pages/contact-us">CONTACT US</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
     </div>
+
   </header>
+
+
   <!-- Body id
 ========================================================================== -->
   <div id="body">
     <!--profile image-->
-    <div class="hover-active">
+    <!-- <div class="hover-active">
       <div class="home-image">
-        <img class="hamburger is-closed" data-toggle="offcanvas" title="Robotics/Home" id="profile" data-src="images/img.jpg" src="lowimages/img.jpg" alt="ROBOTICS" />
+        <img class="hamburger is-closed" data-toggle="offcanvas" title="Robotics/Home" id="profile" data-src="images/img.webp" src="lowimages/img.webp" alt="ROBOTICS" />
         <br>
       </div>
-    </div>
+    </div> -->
     <!--fancy-sidebar
 	==========================================================================-->
     <!-- sidebar navigation -->
+    <!-- <div class="tpnav">
+    <ul class="nav navbar-nav">
+      <li><a href="#">HOME</a></li>
+      <li><a href="./pages/about">ABOUT</a></li>
+      <li><a href="./pages/FIRST">FIRST</a></li>
+      <li><a href="./pages/sponsors">SPONSORS</a></li>
+      <li><a href="./pages/team">TEAM</a></li>
+      <li><a href="./pages/contact-us">CONTACT US</a></li>
+    </ul>
+    </div> -->
+
     <div id="wrapper">
       <div class="overlay hamburger is-closed" data-toggle="offcanvas"></div>
       <!-- Sidebar -->
@@ -107,8 +153,6 @@
             <a href="#" id="sidebar_Robotics" class="hamburger is-closed">
                                 <i class="fa fa-smile-o" style="color:green;" aria-hidden="true"></i>
                                 Robotics
-
-
                             </a>
           </li>
           <!-- active tab -->
@@ -118,38 +162,24 @@
                                 <a href="#" class="hamburger is-closed">
                                     <i class="fa fa-home" aria-hidden="true"></i>
                                     Home
-
-
                                 </a>
                             </span>
           </li>
           <!-- Inactive tabs -->
-          <li class="sidebar-items" title="Robotics/Social">
-            <span>
-                                <a href="./pages/social" class="hamburger is-closed">
-                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                    Social
 
-
-                                </a>
-                            </span>
-          </li>
           <li class="sidebar-items" title="Robotics/About">
             <span>
                                 <a href="./pages/about" class="hamburger is-closed">
                                     <i class="fa fa-sitemap" aria-hidden="true"></i>
                                     About
-
-
                                 </a>
                             </span>
           </li>
           <li class="sidebar-items" title="Robotics/About">
             <span>
                                 <a href="./pages/FIRST" class="hamburger is-closed">
-                                    <img style="width:15px;" src="sponsors/firstnotext.png" alt="f ">FIRST Robotics
-
-
+                                    <img style="width:15px;" src="sponsors/FIRSTnotext.webp" alt="f ">
+                                    FIRST Robotics
                                 </a>
                             </span>
           </li>
@@ -158,8 +188,6 @@
                                 <a href="./pages/sponsors" class="hamburger is-closed">
                                     <i class="fa fa-link" aria-hidden="true"></i>
                                     Sponsors
-
-
                                 </a>
                             </span>
           </li>
@@ -168,8 +196,6 @@
                                 <a href="./pages/team" class="hamburger is-closed">
                                     <i class="fa fa-users" aria-hidden="true"></i>
                                     The Team
-
-
                                 </a>
                             </span>
           </li>
@@ -178,8 +204,6 @@
                                 <a href="./pages/contact-us" class="hamburger is-closed">
                                     <i class="fa fa-sign-in" aria-hidden="true"></i>
                                     Contact us
-
-
                                 </a>
                             </span>
           </li>
@@ -202,6 +226,51 @@
     <!-- /#wrapper -->
     <!--/#fancy-sidebar
 	==========================================================================-->
+
+
+
+            <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+            <div id="id01" class="modal">
+
+              <form id="loginform" class="modal-content animate">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <h3>LOGIN </h3>
+                </div>
+
+                <div class="containerlgn">
+
+                  <label><b>Username</b></label>
+                  <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+
+                  <label><b>Password</b></label>
+                  <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+
+                  <button class="loginbtn" type="submit">Login</button>
+                  <input type="checkbox" checked="checked"> Remember me
+                </div>
+
+                <div class="containerlgn" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw"><a href="#">Forgot password?</a></span>
+                </div>
+              </form>
+            </div>
+
+            <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+  <!-- ============================================================================== -->
+
     <!-- Home-tab
 ========================================================================== -->
     <div id="Home">
@@ -209,10 +278,9 @@
     <!-- <i class="fa fa-angle-double-left" aria-hidden="true"></i> -->
     WELCOME
 
-
     <!-- <i class="fa fa-angle-double-right" aria-hidden="true"></i> -->
     </h3>
-      <p id="info_text">Robotics Home Page</p>
+      <p class="info_text">Robotics Home Page</p>
       <!-- YouTube Video
 		========================================================================== -->
       <div id='ytvid'>
@@ -233,30 +301,54 @@
 		========================================================================== -->
       <div id="info-content">
         <!-- story card -->
-        <p id="info_text2">Story
+        <p class="info_text">Story
         </p>
         <!-- story text -->
         <p id="cardtext">The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot at
           the World Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
         </p>
-        <a href="./images/team.jpg" target="_blank" rel="noopener">
-            <img id="team" data-src="images/team.jpg" src="lowimages/team.jpg" alt="Can't load image...">
+        <a href="./images/team.webp" target="_blank" rel="noopener">
+            <img id="team" data-src="images/team.webp" src="lowimages/team.webp" alt="Can't load image...">
         </a>
 
       </div>
       <br>
       <!-- achievement card -->
       <div id="info-content2">
-        <p id="info_text3">Our Achievements
+        <p class="info_text">Our Achievements
         </p>
         <!-- achievement text -->
         <p id="cardtext2">Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running
           to help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
         </p>
-        <a href="./images/trophies.jpg" target="_blank" rel="noopener">
-            <img id="trophie" data-src="images/trophies.jpg" src="lowimages/trophies.jpg" alt="Can't load image...">
+        <a href="./images/trophies.webp" target="_blank" rel="noopener">
+            <img id="trophie" data-src="images/trophies.webp" src="lowimages/trophies.webp" alt="Can't load image...">
         </a>
       </div>
+
+      <div>
+        <h3 class="info_text">Our School</h3>
+
+        <!-- <image></image> -->
+
+        <div class="container" id="About_big_img">
+          <img id="top_down_SDHS" src="./lowimages/top_down_SDHS.webp" data-src="./images/top_down_SDHS.webp" alt="opps...">
+          <div id="school_website">
+            <!-- <a href="https://www.knoxschools.org/southdoylehs">
+                  <span id="learn_more_school">Learn more about our school <i class="scllnk fa fa-angle-double-right" aria-hidden="true"></i> </span>
+                </a> -->
+          </div>
+        </div>
+
+        <!-- Maps
+      ========================================================================== -->
+        <div>
+          <iframe title="Google maps direction to SOUTH-DOYLE HIGH SCHOOL" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7245.477571896917!2d-83.88618167063207!3d35.88883818937322!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885c1900acf8ac13%3A0xc782739cb7dc6c0c!2s2020+Tipton+Station+Rd%2C+Knoxville%2C+TN+37920!5e0!3m2!1sen!2sus!4v1506145806747"
+            frameborder="0" style="border:0" allowfullscreen id="map"></iframe>
+        </div>
+
+      </div>
+
     </div>
   </div>
   <!-- #HOME
@@ -271,7 +363,6 @@
         </h3>
       <p class="footer-links">
         <a href="../index">Home</a> ·
-        <a href="../pages/social">Social</a> ·
         <a href="../pages/about">About</a> ·
         <a href="../pages/FIRST">FIRST</a> ·
         <a href="../pages/sponsors">Sponsors</a> ·
