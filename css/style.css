@@ -28,7 +28,7 @@
   z-index: 999;
   -webkit-animation: splashFIRST 1s ease-in-out;
   animation: splashFIRST 1s ease-in-out;
-  /*background-image: url('../images/skull.webp');*/
+  /*background-image: url('../images/skull.jpg');*/
 }
 
 @-webkit-keyframes splashFIRST {

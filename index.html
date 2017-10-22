@@ -5,7 +5,7 @@
   <!-- Basic needs
 =========================================================================== -->
   <!--Tab Icon-->
-  <link rel="icon" href="images/SDorgicon.webp">
+  <link rel="icon" href="images/SDorgicon.png">
   <link rel="canonical" href="https://soknorobo.com/" />
   <!-- <link rel="preload" href="./images/South-Doyle V2.gif" as="image"> -->
 
@@ -42,11 +42,16 @@
     <input id="clickScroll" type="checkbox" class="clickScroll" aria-hidden="true"></input>
     <div class="imageSplash">
       <!-- background -->
-      <!-- <img id="splashImage" src='./images/South-Doyle V2.gif' alt="SOUTH-DOYLE Robotics" preload> -->
-      <video id="splashImage" height="100%" autoplay loop preload>
-        <source src="./images/South-Doyle V2.webm" type="video/webm" poster="./images/South-Doyle V2.webp" preload>
-        Loading...
-      </video>
+      <!--  -->
+      <script type="text/javascript">
+        var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+        if (is_chrome) {
+          document.write('<video id="splashImage" height="100%" autoplay loop preload> <source src="./images/South-Doyle V2.webm" type="video/webm" poster="./images/South-Doyle-V2.jpg" preload> Loading...</video>');
+        } else {
+          document.write('<img id="splashImage" src="./images/South-Doyle-V2.jpg" alt="SOUTH-DOYLE Robotics" preload>');
+        }
+      </script>
+
       <!-- blurred div on top for future -->
       <div id="blursplash"></div>
       <!-- splash title -->
@@ -95,25 +100,25 @@
   <!-- logo header -->
   <header>
     <div id="heading">
-        <nav class="navbar navbar">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <h1 id="logo">
+      <nav class="navbar navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <h1 id="logo">
                 <a id="logo-sp" href="#" onclick="topFunction();"><span>TeamFTW</span></a>
                 </h1>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">HOME</a></li>
-                <li><a href="./pages/about">ABOUT</a></li>
-                <li><a href="./pages/FIRST">FIRST</a></li>
-                <li><a href="./pages/sponsors">SPONSORS</a></li>
-                <li><a href="./pages/team">TEAM</a></li>
-                <li><a href="./pages/contact-us">CONTACT US</a></li>
-              </ul>
-            </div>
           </div>
-        </nav>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">HOME</a></li>
+              <li><a href="./pages/about">ABOUT</a></li>
+              <li><a href="./pages/FIRST">FIRST</a></li>
+              <li><a href="./pages/sponsors">SPONSORS</a></li>
+              <li><a href="./pages/team">TEAM</a></li>
+              <li><a href="./pages/contact-us">CONTACT US</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
     </div>
 
@@ -126,7 +131,7 @@
     <!--profile image-->
     <!-- <div class="hover-active">
       <div class="home-image">
-        <img class="hamburger is-closed" data-toggle="offcanvas" title="Robotics/Home" id="profile" data-src="images/img.webp" src="lowimages/img.webp" alt="ROBOTICS" />
+        <img class="hamburger is-closed" data-toggle="offcanvas" title="Robotics/Home" id="profile" data-src="images/img.jpg" src="lowimages/img.jpg" alt="ROBOTICS" />
         <br>
       </div>
     </div> -->
@@ -178,7 +183,7 @@
           <li class="sidebar-items" title="Robotics/About">
             <span>
                                 <a href="./pages/FIRST" class="hamburger is-closed">
-                                    <img style="width:15px;" src="sponsors/FIRSTnotext.webp" alt="f ">
+                                    <img style="width:15px;" src="sponsors/FIRSTnotext.png" alt="f ">
                                     FIRST Robotics
                                 </a>
                             </span>
@@ -229,47 +234,47 @@
 
 
 
-            <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
-            <div id="id01" class="modal">
+    <div id="id01" class="modal">
 
-              <form id="loginform" class="modal-content animate">
-                <div class="imgcontainer">
-                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                  <h3>LOGIN </h3>
-                </div>
+      <form id="loginform" class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <h3>LOGIN </h3>
+        </div>
 
-                <div class="containerlgn">
+        <div class="containerlgn">
 
-                  <label><b>Username</b></label>
-                  <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+          <label><b>Username</b></label>
+          <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
 
-                  <label><b>Password</b></label>
-                  <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+          <label><b>Password</b></label>
+          <input id="password" type="password" placeholder="Enter Password" name="psw" required>
 
-                  <button class="loginbtn" type="submit">Login</button>
-                  <input type="checkbox" checked="checked"> Remember me
-                </div>
+          <button class="loginbtn" type="submit">Login</button>
+          <input type="checkbox" checked="checked"> Remember me
+        </div>
 
-                <div class="containerlgn" style="background-color:#f1f1f1">
-                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                  <span class="psw"><a href="#">Forgot password?</a></span>
-                </div>
-              </form>
-            </div>
+        <div class="containerlgn" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw"><a href="#">Forgot password?</a></span>
+        </div>
+      </form>
+    </div>
 
-            <script>
-            // Get the modal
-            var modal = document.getElementById('id01');
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
 
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-            </script>
-  <!-- ============================================================================== -->
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+    <!-- ============================================================================== -->
 
     <!-- Home-tab
 ========================================================================== -->
@@ -307,8 +312,8 @@
         <p id="cardtext">The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot at
           the World Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
         </p>
-        <a href="./images/team.webp" target="_blank" rel="noopener">
-            <img id="team" data-src="images/team.webp" src="lowimages/team.webp" alt="Can't load image...">
+        <a href="./images/team.jpg" target="_blank" rel="noopener">
+            <img id="team" data-src="images/team.jpg" src="lowimages/team.jpg" alt="Can't load image...">
         </a>
 
       </div>
@@ -321,8 +326,8 @@
         <p id="cardtext2">Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running
           to help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
         </p>
-        <a href="./images/trophies.webp" target="_blank" rel="noopener">
-            <img id="trophie" data-src="images/trophies.webp" src="lowimages/trophies.webp" alt="Can't load image...">
+        <a href="./images/trophies.jpg" target="_blank" rel="noopener">
+            <img id="trophie" data-src="images/trophies.jpg" src="lowimages/trophies.jpg" alt="Can't load image...">
         </a>
       </div>
 
@@ -332,7 +337,7 @@
         <!-- <image></image> -->
 
         <div class="container" id="About_big_img">
-          <img id="top_down_SDHS" src="./lowimages/top_down_SDHS.webp" data-src="./images/top_down_SDHS.webp" alt="opps...">
+          <img id="top_down_SDHS" src="./lowimages/top_down_SDHS.jpg" data-src="./images/top_down_SDHS.jpg" alt="opps...">
           <div id="school_website">
             <!-- <a href="https://www.knoxschools.org/southdoylehs">
                   <span id="learn_more_school">Learn more about our school <i class="scllnk fa fa-angle-double-right" aria-hidden="true"></i> </span>
