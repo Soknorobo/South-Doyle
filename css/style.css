@@ -70,16 +70,7 @@
   /*background-repeat: no-repeat;*/
 }
 
-#blursplash {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  -webkit-box-shadow: inset 0 0 0 2000px #242842;
-  box-shadow: inset 0 0 0 2000px #242842;
-  opacity: 1;
-  overflow: hidden;
-  z-index: -1;
-}
+
 #blursplashtp {
     height: 100%;
     width: 100%;
