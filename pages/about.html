@@ -94,25 +94,6 @@
       </div>
     </div> -->
 
-
-    <script>
-      $(document).ready(function() {
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 600, function() {
-
-              window.location.hash = hash;
-            });
-          }
-        });
-      });
-    </script>
-
-
     <!--
         <div id="mySidenav" class="sidenav">
           <a href="#creators" id="Creators">Website Creators</a>
@@ -176,6 +157,35 @@
           }
       }
       </script>
+
+
+      <div id="info-content">
+        <!-- story card -->
+        <p class="info_text">Story
+        </p>
+        <!-- story text -->
+        <p id="cardtext">The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot at
+          the World Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
+        </p>
+        <a href="./images/team.jpg" target="_blank" rel="noopener">
+            <img id="team" data-src="../images/team.jpg" src="lowimages/team.jpg" alt="Can't load image...">
+        </a>
+
+      </div>
+      <br>
+      <!-- achievement card -->
+      <div id="info-content2">
+        <p class="info_text">Our Achievements
+        </p>
+        <!-- achievement text -->
+        <p id="cardtext2">Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running
+          to help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
+        </p>
+        <a href="./images/trophies.jpg" target="_blank" rel="noopener">
+            <img id="trophie" data-src="../images/trophies.jpg" src="lowimages/trophies.jpg" alt="Can't load image...">
+        </a>
+      </div>
+
 
         <!--  -->
         <div id="robots" class="container">
