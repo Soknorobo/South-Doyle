@@ -38,10 +38,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 function activateCheats() {
-  document.html.style.backgroundImage = "url(images/IMG_4862.jpg)";
-  //
-  // var audio = new Audio('audio/pling.mp3');
-  // audio.play();
-  //
+  document.body.style.backgroundImage = "url(images/IMG_4862.jpg)";
   alert("...cheats activated...");
+
 }
