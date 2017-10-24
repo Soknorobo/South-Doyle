@@ -74,9 +74,9 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  /*-webkit-box-shadow: inset 0 0 0 2000px #242842;
-  box-shadow: inset 0 0 0 2000px #242842;*/
-background: #192c4f;
+  -webkit-box-shadow: inset 0 0 0 2000px #242842;
+  box-shadow: inset 0 0 0 2000px #192c4f;
+  /*background: #192c4f;*/
   opacity: 1;
   overflow: hidden;
   z-index: -1;
