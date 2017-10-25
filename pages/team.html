@@ -38,7 +38,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- hmmm.... I don't know maybe you'll need to find out yourself-->
-  <script src="../js/38384040373937396665.js"></script>
+
 
   <!-- all other javascript by us -->
   <script src="../js/robotics.js"></script>
@@ -57,25 +57,25 @@
 
   <header>
     <div id="heading">
-        <nav class="navbar navbar">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <h1 id="logo">
+      <nav class="navbar navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <h1 id="logo">
                 <a id="logo-sp" href="../index"><span>TeamFTW</span></a>
                 </h1>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="../index">HOME</a></li>
-                <li><a href="../pages/about">ABOUT</a></li>
-                <li><a href="../pages/FIRST">FIRST</a></li>
-                <li><a href="../pages/sponsors">SPONSORS</a></li>
-                <li><a href="#">TEAM</a></li>
-                <li><a href="../pages/contact-us">CONTACT US</a></li>
-              </ul>
-            </div>
           </div>
-        </nav>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../index">HOME</a></li>
+              <li><a href="../pages/about">ABOUT</a></li>
+              <li><a href="../pages/FIRST">FIRST</a></li>
+              <li><a href="../pages/sponsors">SPONSORS</a></li>
+              <li><a href="#">TEAM</a></li>
+              <li><a href="../pages/contact-us">CONTACT US</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
     </div>
 
@@ -97,54 +97,48 @@
       </div>
     </div> -->
 
-          <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
-          <div id="id01" class="modal">
+    <div id="id01" class="modal">
 
-            <form id="loginform" class="modal-content animate">
-              <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <h3>LOGIN </h3>
-              </div>
+      <form id="loginform" class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <h3>LOGIN </h3>
+        </div>
 
-              <div class="containerlgn">
+        <div class="containerlgn">
 
-                <label><b>Username</b></label>
-                <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+          <label><b>Username</b></label>
+          <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
 
-                <label><b>Password</b></label>
-                <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+          <label><b>Password</b></label>
+          <input id="password" type="password" placeholder="Enter Password" name="psw" required>
 
-                <button class="loginbtn" type="submit">Login</button>
-                <input type="checkbox" checked="checked"> Remember me
-              </div>
+          <button class="loginbtn" type="submit">Login</button>
+          <input type="checkbox" checked="checked"> Remember me
+        </div>
 
-              <div class="containerlgn" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <span class="psw"><a href="#">Forgot password?</a></span>
-              </div>
-            </form>
-          </div>
+        <div class="containerlgn" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw"><a href="#">Forgot password?</a></span>
+        </div>
+      </form>
+    </div>
 
-          <script>
-          // Get the modal
-          var modal = document.getElementById('id01');
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
 
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function(event) {
-              if (event.target == modal) {
-                  modal.style.display = "none";
-              }
-          }
-          </script>
-<!-- ============================================================================== -->
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+    <!-- ============================================================================== -->
 
-
-    <div class="nav nav-tabs">
-
-      <!-- Tab contents -->
-
-      <div class="tab-content">
 
 
         <!--  														-->
@@ -154,312 +148,38 @@
           <div class="info">
 
             <h2 class="info_sub">Gallery</h2>
-            <div id="gallery">
-              <div class="responsive raw">
-                <div class="gallery">
-                  <img class="gallery-image" src="../lowimages/IMG_4622.jpg" data-src="../images/IMG_4622.jpg" alt="the team" width="300" height="200" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                  <!--<div class="desc">Add a description of the image here</div>-->
+
+            <!-- Photo Grid -->
+            <div class="ver">
+              <div class="hor">
+                <img src="../lowimages/IMG_4622.jpg" data-src="../images/IMG_4622.jpg" alt="the team" style="width:100%">
+                <img src="../lowimages/IMG_4556.jpg" data-src="../images/IMG_4556.jpg" alt="trophie" style="width:100%">
+                <img src="../lowimages/IMG_4574.jpg" data-src="../images/IMG_4574.jpg" alt="The team" style="width:100%">
                 </div>
+
+                <div class="hor">
+                <img src="../lowimages/IMG_4717.jpg" data-src="../images/IMG_4717.jpg" alt="The team" style="width:100%">
+                <img src="../lowimages/IMG_4618.jpg" data-src="../images/IMG_4618.jpg" alt="The team" style="width:100%">
+                <img src="../lowimages/IMG_4718.jpg" data-src="../images/IMG_4718.jpg" alt="The team" style="width:100%">
+                </div>
+
+                <div class="hor">
+                <img src="../lowimages/IMG_4527.jpg" data-src="../images/IMG_4527.jpg" alt="The team" style="width:100%">
+                <img src="../lowimages/IMG_4684.jpg" data-src="../images/IMG_4684.jpg" alt="The team" style="width:100%">
+                <img src="../lowimages/IMG_4749.jpg" data-src="../images/IMG_4749.jpg" alt="The team" style="width:100%">
+                </div>
+
+                <div class="hor">
+                <img src="../lowimages/IMG_4581.jpg" data-src="../images/IMG_4581.jpg" alt="trophie" style="width:100%">
+                <img src="../lowimages/IMG_4654.jpg" data-src="../images/IMG_4654.jpg" alt="The team" style="width:100%">
+                <img src="../lowimages/IMG_4657.jpg" data-src="../images/IMG_4657.jpg" alt="The team" style="width:100%">
               </div>
 
-              <!-- 2 -->
-              <div class="responsive raw">
-                <div class="gallery">
-                  <img class="gallery-image" src="../lowimages/IMG_4556.jpg" data-src="../images/IMG_4556.jpg" alt="trophie" width="600" height="400" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                  <!--<div class="desc">Add a description of the image here</div>-->
-                </div>
-              </div>
-
-              <!-- 3 -->
-              <div class="responsive raw">
-                <div class="gallery">
-                  <img class="gallery-image" src="../lowimages/IMG_4574.jpg" data-src="../images/IMG_4574.jpg" alt="The team" width="600" height="400" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                  <!--<div class="desc">Add a description of the image here</div>-->
-                </div>
-              </div>
-
-              <!-- 4 -->
-              <div class="responsive raw">
-                <div class="gallery">
-                  <img class="gallery-image" src="../lowimages/IMG_4581.jpg" data-src="../images/IMG_4581.jpg" alt="trophie" width="600" height="400" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                  <!--<div class="desc">Add a description of the image here</div>-->
-                </div>
-              </div>
-
-              <!-- 5 -->
-              <div class="responsive raw">
-                <div class="gallery">
-                  <img class="gallery-image" src="../lowimages/IMG_4717.jpg" data-src="../images/IMG_4717.jpg" alt="The team" width="600" height="400" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-                  <!--<div class="desc">Add a description of the image here</div>-->
-                </div>
-              </div>
-
-              <!-- 6 -->
-              <div class="responsive raw">
-                <div class="gallery">
-                  <img class="gallery-image" src="../lowimages/IMG_4618.jpg" data-src="../images/IMG_4618.jpg" alt="The team" width="600" height="400" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-                  <!--<div class="desc">Add a description of the image here</div>-->
-                </div>
-              </div>
-
-              <!-- 7 -->
-              <div class="responsive raw">
-                <div class="gallery">
-                  <img class="gallery-image" src="../lowimages/IMG_4718.jpg" data-src="../images/IMG_4718.jpg" alt="The team" width="600" height="400" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-                  <!--<div class="desc">Add a description of the image here</div>-->
-                </div>
-              </div>
-
-              <!-- 8 -->
-              <div class="responsive raw">
-                <div class="gallery">
-                  <img class="gallery-image" src="../lowimages/IMG_4527.jpg" data-src="../images/IMG_4527.jpg" alt="The team" width="600" height="400" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-                  <!--<div class="desc">Add a description of the image here</div>-->
-                </div>
-              </div>
-
-              <!-- 9 -->
-              <div class="responsive raw">
-                <div class="gallery">
-                  <img class="gallery-image" src="../lowimages/IMG_4684.jpg" data-src="../images/IMG_4684.jpg" alt="The team" width="600" height="400" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
-                  <!--<div class="desc">Add a description of the image here</div>-->
-                </div>
-              </div>
-
-              <!-- 10 -->
-              <div class="responsive raw">
-                <div class="gallery">
-                  <img class="gallery-image" src="../lowimages/IMG_4749.jpg" data-src="../images/IMG_4749.jpg" alt="The team" width="600" height="400" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
-                  <!--<div class="desc">Add a description of the image here</div>-->
-                </div>
-              </div>
-
-              <!-- 11 -->
-              <div class="responsive raw">
-                <div class="gallery">
-                  <img class="gallery-image" src="../lowimages/IMG_4654.jpg" data-src="../images/IMG_4654.jpg" alt="The team" width="600" height="400" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
-                  <!--<div class="desc">Add a description of the image here</div>-->
-                </div>
-              </div>
-
-              <!-- 12 -->
-              <div class="responsive raw">
-                <div class="gallery">
-                  <img class="gallery-image" src="../lowimages/IMG_4657.jpg" data-src="../images/IMG_4657.jpg" alt="The team" width="600" height="400" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
-                  <!--<div class="desc">Add a description of the image here</div>-->
-                </div>
-              </div>
+              <!-- <div class="hor">
+                <img src="/images/underwater.jpg" style="width:100%">
+              </div> -->
             </div>
 
-
-            <!-- the slideshow preview -->
-            <!-- THE CLOSE BUTTON -->
-
-            <div id="myModal" class="modal">
-
-              <span class="close cursor" onclick="closeModal()"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
-              <div class="modal-content">
-
-                <!-- slide 1 -->
-                <div class="mySlides">
-                  <div class="numbertext">1 / 12</div>
-                  <img src="../lowimages/IMG_4622.jpg" data-src="../images/IMG_4622.jpg" style="width:100%">
-                </div>
-
-                <!-- slide 2 -->
-                <div class="mySlides">
-                  <div class="numbertext">2 / 12</div>
-                  <img src="../lowimages/IMG_4556.jpg" data-src="../images/IMG_4556.jpg" style="width:100%">
-                </div>
-
-                <!-- slide 3 -->
-                <div class="mySlides">
-                  <div class="numbertext">3 / 12</div>
-                  <img src="../lowimages/IMG_4574.jpg" data-src="../images/IMG_4574.jpg" style="width:100%">
-                </div>
-
-                <!-- slide 4 -->
-                <div class="mySlides">
-                  <div class="numbertext">4 / 12</div>
-                  <img src="../lowimages/IMG_4581.jpg" data-src="../images/IMG_4581.jpg" style="width:100%">
-                </div>
-
-                <!-- slide 5 -->
-                <div class="mySlides">
-                  <div class="numbertext">5 / 12</div>
-                  <img src="../lowimages/IMG_4717.jpg" data-src="../images/IMG_4717.jpg" style="width:100%">
-                </div>
-
-                <!-- slide 6 -->
-                <div class="mySlides">
-                  <div class="numbertext">6 / 12</div>
-                  <img src="../lowimages/IMG_4618.jpg" data-src="../images/IMG_4618.jpg" style="width:100%">
-                </div>
-
-                <!-- slide 7 -->
-                <div class="mySlides">
-                  <div class="numbertext">7 / 12</div>
-                  <img src="../lowimages/IMG_4718.jpg" data-src="../images/IMG_4718.jpg" style="width:100%">
-                </div>
-
-                <!-- slide 8 -->
-                <div class="mySlides">
-                  <div class="numbertext">8 / 12</div>
-                  <img src="../lowimages/IMG_4527.jpg" data-src="../images/IMG_4527.jpg" style="width:100%">
-                </div>
-
-                <!-- slide 9 -->
-                <div class="mySlides">
-                  <div class="numbertext">9 / 12</div>
-                  <img src="../lowimages/IMG_4684.jpg" data-src="../images/IMG_4684.jpg" style="width:100%">
-                </div>
-
-                <!-- slide 10 -->
-                <div class="mySlides">
-                  <div class="numbertext">10 / 12</div>
-                  <img src="../lowimages/IMG_4749.jpg" data-src="../images/IMG_4749.jpg" style="width:100%">
-                </div>
-
-                <!-- slide 11 -->
-                <div class="mySlides">
-                  <div class="numbertext">11 / 12</div>
-                  <img src="../lowimages/IMG_4654.jpg" data-src="../images/IMG_4654.jpg" style="width:100%">
-                </div>
-
-                <!-- slide 12 -->
-                <div class="mySlides">
-                  <div class="numbertext">12 / 12</div>
-                  <img src="../lowimages/IMG_4657.jpg" data-src="../images/IMG_4657.jpg" style="width:100%">
-                </div>
-
-                <!-- left and right buttons -->
-                <a class="prev" id="prev" onclick="plusSlides(-1)"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
-                <a class="next" id="next" onclick="plusSlides(1)"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
-                <!--
-                <div class="caption-container">
-                  <p id="caption"></p>
-                </div> -->
-
-                <!-- thumbnail preview -->
-                <!-- slide thumbnail 1 -->
-                <div class="column">
-                  <img class="demo cursor" src="../lowimages/IMG_4622.jpg" data-src="../images/IMG_4622.jpg" style="width:100%" onclick="currentSlide(1)" alt="team">
-                </div>
-                <!-- slide thumbnail 2 -->
-
-                <div class="column">
-                  <img class="demo cursor" src="../lowimages/IMG_4556.jpg" data-src="../images/IMG_4556.jpg" style="width:100%" onclick="currentSlide(2)" alt="team">
-                </div>
-
-                <!-- slide thumbnail 3 -->
-                <div class="column">
-                  <img class="demo cursor" src="../lowimages/IMG_4574.jpg" data-src="../images/IMG_4574.jpg" style="width:100%" onclick="currentSlide(3)" alt="team">
-                </div>
-
-                <!-- slide thumbnail 4 -->
-                <div class="column">
-                  <img class="demo cursor" src="../lowimages/IMG_4581.jpg" data-src="../images/IMG_4581.jpg" style="width:100%" onclick="currentSlide(4)" alt="team">
-                </div>
-
-                <!-- slide thumbnail 5 -->
-                <div class="column">
-                  <img class="demo cursor" src="../lowimages/IMG_4717.jpg" data-src="../images/IMG_4717.jpg" style="width:100%" onclick="currentSlide(5)" alt="team">
-                </div>
-
-                <!-- slide thumbnail 6 -->
-                <div class="column">
-                  <img class="demo cursor" src="../lowimages/IMG_4618.jpg" data-src="../images/IMG_4618.jpg" style="width:100%" onclick="currentSlide(6)" alt="team">
-                </div>
-
-                <!-- slide thumbnail 7 -->
-                <div class="column">
-                  <img class="demo cursor" src="../lowimages/IMG_4718.jpg" data-src="../images/IMG_4718.jpg" style="width:100%" onclick="currentSlide(7)" alt="team">
-                </div>
-
-                <!-- slide thumbnail 8 -->
-                <div class="column">
-                  <img class="demo cursor" src="../lowimages/IMG_4527.jpg" data-src="../images/IMG_4527.jpg" style="width:100%" onclick="currentSlide(8)" alt="team">
-                </div>
-
-                <!-- slide thumbnail 9 -->
-                <div class="column">
-                  <img class="demo cursor" src="../lowimages/IMG_4684.jpg" data-src="../images/IMG_4684.jpg" style="width:100%" onclick="currentSlide(9)" alt="team">
-                </div>
-
-                <!-- slide thumbnail 10 -->
-                <div class="column">
-                  <img class="demo cursor" src="../lowimages/IMG_4749.jpg" data-src="../images/IMG_4749.jpg" style="width:100%" onclick="currentSlide(10)" alt="team">
-                </div>
-
-                <!-- slide thumbnail 11 -->
-                <div class="column">
-                  <img class="demo cursor" src="../lowimages/IMG_4654.jpg" data-src="../images/IMG_4654.jpg" style="width:100%" onclick="currentSlide(11)" alt="team">
-                </div>
-
-                <!-- slide thumbnail 12 -->
-                <div class="column">
-                  <img class="demo cursor" src="../lowimages/IMG_4657.jpg" data-src="../images/IMG_4657.jpg" style="width:100%" onclick="currentSlide(12)" alt="team">
-                </div>
-              </div>
-            </div>
-
-            <script>
-              // gallery slideshow
-              function openModal() {
-                document.getElementById('myModal').style.display = "block";
-              }
-
-              function closeModal() {
-                document.getElementById('myModal').style.display = "none";
-              }
-
-              // prev and next button function
-              var slideIndex = 1;
-              showSlides(slideIndex);
-
-              function plusSlides(n) {
-                showSlides(slideIndex += n);
-              }
-
-              function currentSlide(n) {
-                showSlides(slideIndex = n);
-              }
-
-              document.addEventListener("keyup", function(e) {
-                var key = e.which || e.keyCode;
-                switch (key) {
-                  //left arrow
-                  case 37:
-                    document.getElementById("prev").click();
-                    break;
-                    //right arrow
-                  case 39:
-                    document.getElementById("next").click();
-                    break;
-                }
-              });
-
-              function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("demo");
-                var captionText = document.getElementById("caption");
-                if (n > slides.length) {
-                  slideIndex = 1
-                }
-                if (n < 1) {
-                  slideIndex = slides.length
-                }
-                for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-              }
-            </script>
 
           </div>
         </div>
@@ -469,10 +189,6 @@
 
         <!--  														-->
 
-      </div>
-      <!--Tab content ends here-->
-      <!--div content ends here-->
-    </div>
 
     <!--fancy-sidebar
 ==========================================================================-->
