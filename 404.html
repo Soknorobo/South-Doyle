@@ -4,14 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <link rel="icon" href="images/bug.png">
-  <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SDHS Robotics Error</title>
+  <title>SDHS_Robotics Error</title>
 
   <style>
+  *{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
     #title {
-      font-family: 'Germania One', cursive;
       font-weight: 900;
       text-align: center;
       font-size: 7vw;
@@ -20,14 +22,12 @@
     #goback {
       text-align: center;
       font-size: 30px;
-      font-family: fantasy;
     }
 
     #directory {
       font-size: 20px;
       margin-top: 20px;
       text-align: center;
-      font-family: fantasy;
     }
 
     button {
@@ -54,13 +54,13 @@
     }
 
     body {
-      background: linear-gradient(250deg, #dacd43, Tomato, #3444f4, #db06f6, #7f08ba, #083eba, DodgerBlue, Green, SlateBlue, Gray, #00c290);
+      background: linear-gradient(250deg, #403a3e, #be5869 ,#304352, #64b3f4, #c2e59c, #8DC26F, #92FE9D, #2c3e50, #3498db,#3d72b4);
       background-size: 1400% 1400%;
 
-      -webkit-animation: anigradient 120s ease infinite;
-      -moz-animation: anigradient 120s ease infinite;
-      -o-animation: anigradient 120s ease infinite;
-      animation: anigradient 120s ease infinite;
+      -webkit-animation: anigradient 140s ease infinite;
+      -moz-animation: anigradient 140s ease infinite;
+      -o-animation: anigradient 140s ease infinite;
+      animation: anigradient 140s ease infinite;
     }
 
     @-webkit-keyframes anigradient {
@@ -110,25 +110,27 @@
         background-position: 0% 52%
       }
     }
+
 </style>
 
 </head>
 
 <body>
+  <div id="controls">
+</div>
   <div id="title">
     UH-OH, You seem lost
   </div>
   <div id="goback">
     Go back home
-    <a href="/index"><button type="button" name="Home">SDHS Robotics</button></a>
+    <a href="/index"><button type="button" name="Home">SDHS_Robotics</button></a>
   </div>
   <div id="directory">
     Optionally move to another directory:
-    <a href="/pages/social"><button>Robotics/Social </button></a>
+    <a href="/pages/social"><button>Robotics/Social* </button></a>
     <a href="/pages/about"><button>Robotics/About </button></a>
     <a href="/pages/FIRST"><button>Robotics/FIRST </button></a>
     <a href="/pages/sponsors"><button>Robotics/Sponsors </button></a>
-    <a href="/pages/donate"><button>Robotics/Donate </button></a>
     <a href="/pages/team"><button>Robotics/team </button></a>
     <a href="/pages/contact-us"><button>Robotics/Contact </button></a>
   </div>
