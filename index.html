@@ -381,7 +381,9 @@
       </p>
       <p class="footer-Robotics-name">
         SDHS_Robotics <i class="fa fa-copyright" aria-hidden="true"></i> 2017
-
+      </p>
+      <br>
+      <p id="clock" class="footer-Robotics-name">
       </p>
     </div>
     <div class="footer-center">
@@ -409,6 +411,7 @@
         <p>865.577.4475</p>
     </a>
       </div>
+
       <div>
         <a href="mailto:joel.smith@knoxschools.org">
         <i class="fa fa-envelope"></i>
@@ -445,17 +448,13 @@
       window.onscroll = function() {
         scrollFunction()
       };
-
       function scrollFunction() {
         if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
           document.getElementById("myBtn").style.visibility = "visible";
-
         } else {
           document.getElementById("myBtn").style.visibility = "hidden";
-
         }
       }
-
       // When the user clicks on the button, scroll to the top of the document
       function topFunction() {
         $("html, body").animate({
