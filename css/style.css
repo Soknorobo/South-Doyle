@@ -245,6 +245,8 @@ footer {
   background: #778899;
   padding: 75px 0 100px 0;
   margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*scroll to the top funciton*/
@@ -1187,12 +1189,13 @@ a:hover {
 
 .hor {
   float: left;
-  width: 25%;
   padding: 5px;
 }
 
 .hor img {
   margin-top: 8px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px)
 }
 
 .ver {
@@ -1218,17 +1221,6 @@ a:hover {
   clear: both;
 }
 
-@media (max-width: 800px) {
-  .hor {
-    width: 50%;
-  }
-}
-
-@media (max-width: 600px) {
-  .hor {
-    width: 100%;
-  }
-}
 
 /*contact-us*/
 
