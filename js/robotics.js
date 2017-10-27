@@ -31,7 +31,8 @@ $(document).on("scroll", function() {
     // the header changes color from radient to blue
     document.getElementById("heading").style.background = "#303C88";
     document.getElementById("heading").style.padding = "0";
-    document.getElementById("login").style.padding = "5px";
+    document.getElementById("login").style.padding = "5px 10px";
+    document.getElementById("upload").style.padding = "5px 10px";
     // makes the header transparent
     // document.getElementById("heading").style.opacity = ".9";
     // removes the logo shadow
@@ -45,7 +46,8 @@ $(document).on("scroll", function() {
     document.getElementById("logo").style.fontSize = "40px";
     document.getElementById("heading").style.background = "inherit";
     document.getElementById("heading").style.padding = "10px";
-    document.getElementById("login").style.padding = "10px";
+    document.getElementById("login").style.padding = "10px 15px";
+    document.getElementById("upload").style.padding = "10px 15px";
     document.getElementById("logo-sp").style.textShadow = "inherit";
     document.getElementById("hamburger").style.transform = "translateY(0px)";
     // document.getElementById("heading").style.opacity = "1";
