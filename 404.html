@@ -10,13 +10,21 @@
   <title>SDHS_Robotics Error</title>
 
   <style>
-  *{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-  }
+    * {
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      color: white;
+    }
+
     #title {
+      background: url("./images/South-Doyle V2.gif") no-repeat center;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
       font-weight: 900;
       text-align: center;
-      font-size: 7vw;
+      font-size: 4vw;
     }
 
     #goback {
@@ -31,6 +39,12 @@
     }
 
     button {
+      background: linear-gradient(250deg, #403a3e, #be5869, #304352, #64b3f4, #c2e59c, #8DC26F, #92FE9D, #2c3e50, #3498db, #3d72b4);
+      background-size: 1400% 1400%;
+      -webkit-animation: anigradient 140s ease infinite;
+      -moz-animation: anigradient 140s ease infinite;
+      -o-animation: anigradient 140s ease infinite;
+      animation: anigradient 140s ease infinite;
       cursor: pointer;
       border: none;
       font-size: 20px;
@@ -43,7 +57,8 @@
     }
 
     button:hover {
-      background: #0f66ff;
+      background: #212121;
+      color: white;
       transition: all 1s ease-out;
     }
 
@@ -54,13 +69,7 @@
     }
 
     body {
-      background: linear-gradient(250deg, #403a3e, #be5869 ,#304352, #64b3f4, #c2e59c, #8DC26F, #92FE9D, #2c3e50, #3498db,#3d72b4);
-      background-size: 1400% 1400%;
-
-      -webkit-animation: anigradient 140s ease infinite;
-      -moz-animation: anigradient 140s ease infinite;
-      -o-animation: anigradient 140s ease infinite;
-      animation: anigradient 140s ease infinite;
+      background-image: url("./images/naturalblack.png");
     }
 
     @-webkit-keyframes anigradient {
@@ -110,16 +119,15 @@
         background-position: 0% 52%
       }
     }
-
-</style>
+  </style>
 
 </head>
 
 <body>
   <div id="controls">
-</div>
+  </div>
   <div id="title">
-    UH-OH, You seem lost
+    <h1>UH-OH, You seem lost </h1>
   </div>
   <div id="goback">
     Go back home
