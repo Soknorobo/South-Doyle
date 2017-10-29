@@ -406,10 +406,10 @@ span.psw {
   }
 }
 
-.modal {
+.login_modal {
   display: none;
   position: fixed;
-  z-index: 700;
+  z-index: 701;
   left: 0;
   top: 0;
   width: 100%;
@@ -417,10 +417,9 @@ span.psw {
   overflow: auto;
   background-color: #242842;
   background-color: #242842;
-  padding-top: 60px;
 }
 
-.modal-content {
+.login_modal-content {
   background-color: #fefefe;
   margin: 5% auto 15% auto;
   border: 1px solid #888;
@@ -448,7 +447,7 @@ span.psw {
   color: white;
   padding: 10px 15px;
   border-radius: 10px;
-  z-index: 998;
+  z-index: 700;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -477,7 +476,7 @@ span.psw {
   color: white;
   padding: 10px 15px;
   border-radius: 10px;
-  z-index: 998;
+  z-index: 700;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -495,6 +494,15 @@ span.psw {
   box-shadow: 0 0 10px 5px rgb(61, 71, 82);
 }
 
+#upload_frame{
+  background: #000;
+  border: none;
+  outline: none;
+}
+#upload_content{
+  background-image: url("../images/hypnotize.png");
+}
+
 #myBtn {
   visibility: hidden;
   position: fixed;
@@ -508,7 +516,7 @@ span.psw {
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 100px;
-  z-index: 998;
+  z-index: 700;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -1323,8 +1331,8 @@ a:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
+  overflow: hidden;
   text-align: justify;
-  font: bold 16px sans-serif;
   padding: 55px 50px;
 }
 

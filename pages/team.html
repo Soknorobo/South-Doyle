@@ -98,13 +98,12 @@
     </div> -->
 
     <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-    <a href="https://script.google.com/a/student.knoxschools.org/macros/s/AKfycbz-PiadwHLL4TJQi_2v39xPgo_HUYf9pWnRvjq-S-c3QSKvhVY/exec" target="_blank"><button id="upload"><i class="fa fa-cloud-upload" aria-hidden="true"></i></button></a>
 
-    <div id="id01" class="modal">
+    <div id="id01" class="login_modal">
 
-      <form id="loginform" class="modal-content animate">
+      <form id="loginform" class="login_modal-content animate">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close login_modal">&times;</span>
           <h3>LOGIN </h3>
         </div>
 
@@ -127,66 +126,87 @@
     </div>
 
     <script>
-      // Get the modal
-      var modal = document.getElementById('id01');
+      // Get the login_modal
+      var login_modal = document.getElementById('id01');
 
-      // When the user clicks anywhere outside of the modal, close it
+      // When the user clicks anywhere outside of the login_modal, close it
       window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
+        if (event.target == login_modal) {
+          login_modal.style.display = "none";
         }
       }
     </script>
+
+
+    <button type="button" id="upload" data-toggle="modal" data-target="#upload_modal" data-keyboard="true"><i class="fa fa-cloud-upload" aria-hidden="true"></i></button>
+
+    <div class="container" id="upload_popup">
+      <!-- Modal -->
+      <div class="modal fade" id="upload_modal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content" id="upload_content">
+            <button type="button" class="btn btn-default" data-dismiss="modal" style="float:right;background:black;color:white;outline:none;border:none;"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+
+            <div href="#upload_frame">
+              <iframe id="upload_frame" title="upload US FORM" src="https://script.google.com/a/student.knoxschools.org/macros/s/AKfycbz-PiadwHLL4TJQi_2v39xPgo_HUYf9pWnRvjq-S-c3QSKvhVY/exec" width="100%" height="550px">NOT WORKING< STILL IN PROGESS...</iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
     <!-- ============================================================================== -->
 
+    <!--  														-->
+    <!-- 				The team Tab					-->
+    <!--  														-->
+    <div id="Team">
+      <div class="info">
 
+        <h2 class="info_sub">Gallery</h2>
 
-        <!--  														-->
-        <!-- 				The team Tab					-->
-        <!--  														-->
-        <div id="Team">
-          <div class="info">
+        <!-- Photo Grid -->
+        <div class="ver">
+          <div class="hor col-xs-12 col-sm-6 col-md-3">
+            <img src="../lowimages/IMG_4622.jpg" data-src="../images/IMG_4622.jpg" alt="the team" style="width:100%">
+            <img src="../lowimages/IMG_4556.jpg" data-src="../images/IMG_4556.jpg" alt="The team" style="width:100%">
+            <img src="../lowimages/IMG_4574.jpg" data-src="../images/IMG_4574.jpg" alt="The team" style="width:100%">
+          </div>
 
-            <h2 class="info_sub">Gallery</h2>
+          <div class="hor col-xs-12 col-sm-6 col-md-3">
+            <img src="../lowimages/IMG_4534.jpg" data-src="../images/IMG_4534.jpg" alt="The team" style="width:100%">
+            <img src="../lowimages/IMG_4618.jpg" data-src="../images/IMG_4618.jpg" alt="The team" style="width:100%">
+            <img src="../lowimages/IMG_4718.jpg" data-src="../images/IMG_4718.jpg" alt="The team" style="width:100%">
+          </div>
 
-            <!-- Photo Grid -->
-            <div class="ver">
-                <div class="hor col-xs-12 col-sm-6 col-md-3">
-                <img src="../lowimages/IMG_4622.jpg" data-src="../images/IMG_4622.jpg" alt="the team" style="width:100%">
-                <img src="../lowimages/IMG_4556.jpg" data-src="../images/IMG_4556.jpg" alt="The team" style="width:100%">
-                <img src="../lowimages/IMG_4574.jpg" data-src="../images/IMG_4574.jpg" alt="The team" style="width:100%">
-                </div>
+          <div class="hor col-xs-12 col-sm-6 col-md-3">
+            <img src="../lowimages/IMG_4527.jpg" data-src="../images/IMG_4527.jpg" alt="The team" style="width:100%">
+            <img src="../lowimages/IMG_4684.jpg" data-src="../images/IMG_4684.jpg" alt="The team" style="width:100%">
+            <img src="../lowimages/IMG_4749.jpg" data-src="../images/IMG_4749.jpg" alt="The team" style="width:100%">
+          </div>
 
-                <div class="hor col-xs-12 col-sm-6 col-md-3">
-                <img src="../lowimages/IMG_4534.jpg" data-src="../images/IMG_4534.jpg" alt="The team" style="width:100%">
-                <img src="../lowimages/IMG_4618.jpg" data-src="../images/IMG_4618.jpg" alt="The team" style="width:100%">
-                <img src="../lowimages/IMG_4718.jpg" data-src="../images/IMG_4718.jpg" alt="The team" style="width:100%">
-                </div>
+          <div class="hor col-xs-12 col-sm-6 col-md-3">
+            <img src="../lowimages/IMG_4581.jpg" data-src="../images/IMG_4581.jpg" alt="The team" style="width:100%">
+            <img src="../lowimages/IMG_4654.jpg" data-src="../images/IMG_4654.jpg" alt="The team" style="width:100%">
+            <img src="../lowimages/IMG_4657.jpg" data-src="../images/IMG_4657.jpg" alt="The team" style="width:100%">
+          </div>
 
-                <div class="hor col-xs-12 col-sm-6 col-md-3">
-                <img src="../lowimages/IMG_4527.jpg" data-src="../images/IMG_4527.jpg" alt="The team" style="width:100%">
-                <img src="../lowimages/IMG_4684.jpg" data-src="../images/IMG_4684.jpg" alt="The team" style="width:100%">
-                <img src="../lowimages/IMG_4749.jpg" data-src="../images/IMG_4749.jpg" alt="The team" style="width:100%">
-                </div>
-
-                <div class="hor col-xs-12 col-sm-6 col-md-3">
-                <img src="../lowimages/IMG_4581.jpg" data-src="../images/IMG_4581.jpg" alt="The team" style="width:100%">
-                <img src="../lowimages/IMG_4654.jpg" data-src="../images/IMG_4654.jpg" alt="The team" style="width:100%">
-                <img src="../lowimages/IMG_4657.jpg" data-src="../images/IMG_4657.jpg" alt="The team" style="width:100%">
-              </div>
-
-              <!-- <div class="hor">
+          <!-- <div class="hor">
                 <img src="/images/underwater.jpg" style="width:100%">
               </div> -->
-            </div>
-
-          </div>
         </div>
-        <!--  														-->
-        <!-- 			/#The team Tab					-->
-        <!--  														-->
 
-        <!--  														-->
+      </div>
+    </div>
+    <!--  														-->
+    <!-- 			/#The team Tab					-->
+    <!--  														-->
+
+    <!--  														-->
 
 
     <!--fancy-sidebar

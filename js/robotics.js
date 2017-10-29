@@ -90,7 +90,7 @@ $(document).ready(function() {
 });
 
 
-// LQIP
+// LQIP LOW QUALITY IMAGE PLACEMENT
 function init() {
   var imgDefer = document.getElementsByTagName('img');
   for (var i = 0; i < imgDefer.length; i++) {
