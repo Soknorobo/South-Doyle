@@ -396,7 +396,7 @@ span.psw {
 
 /* Change styles for span and cancel button on extra small screens */
 
-@media screen and (max-width: 300px) {
+@media only screen and (max-width: 300px) {
   span.psw {
     display: block;
     float: none;
@@ -553,14 +553,10 @@ span.psw {
   /*-webkit-background-clip: text;*/
   color: #DDD1C8;
   text-shadow: -4px 4px 0px #4b5282, -8px 8px 0px #424b87, -12px 12px 0px #303C88;
-  padding: 0 15% 0 15%;
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
 }
 
-/*#title_logo{
-
-}*/
 
 .navbar {
   margin-bottom: 0;
@@ -1312,7 +1308,7 @@ a:hover {
   height: 5px;
 }
 
-@media (max-height: 800px) {
+@media only screen and (max-height: 800px) {
   footer {
     position: static;
   }
@@ -1327,10 +1323,11 @@ a:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  text-align: left;
+  text-align: justify;
   font: bold 16px sans-serif;
   padding: 55px 50px;
 }
+
 
 .footer-expanded .footer-left, .footer-expanded .footer-center, .footer-expanded .footer-right {
   display: inline-block;
@@ -1346,12 +1343,12 @@ a:hover {
 /* Robotics logo if we ever get one*/
 
 .footer-expanded h3 {
-  color: #9FA9DA;
+  color: #303C88;
   margin: 0;
 }
 
 .footer-expanded h3 span {
-  color: #E69999;
+  color: #7E1F21;
 }
 
 .footer-expanded .fa:hover {
@@ -1470,14 +1467,11 @@ a:hover {
 
 /*responsive*/
 
-@media (max-width: 660px) {
-  .footer-expanded {
-    font: bold 14px sans-serif;
-  }
+@media only screen and (max-width: 660px) {
   .footer-expanded .footer-left, .footer-expanded .footer-center, .footer-expanded .footer-right {
     display: block;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
     text-align: center;
   }
   .footer-expanded .footer-center i {

@@ -28,6 +28,7 @@ $(document).on("scroll", function() {
   if ($(document).scrollTop() > 0) {
     // the logo resizes to fit in the smaller header
     document.getElementById("logo").style.fontSize = "35px";
+    document.getElementById("logo").style.padding = "4px 0px 0px 0px";
     // the header changes color from radient to blue
     document.getElementById("heading").style.background = "#303C88";
     document.getElementById("heading").style.padding = "0";
@@ -44,6 +45,7 @@ $(document).on("scroll", function() {
   } else {
     // for the default posiitons
     document.getElementById("logo").style.fontSize = "40px";
+    document.getElementById("logo").style.padding = "none";
     document.getElementById("heading").style.background = "inherit";
     document.getElementById("heading").style.padding = "10px";
     document.getElementById("login").style.padding = "10px 15px";
