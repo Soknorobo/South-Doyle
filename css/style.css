@@ -308,6 +308,7 @@ input[type=text], input[type=password] {
 
 #loginform {
   margin-top: 10%;
+  max-width: 700px;
 }
 
 .containerlgn {
