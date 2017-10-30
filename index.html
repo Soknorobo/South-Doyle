@@ -366,7 +366,9 @@
         <!-- <image></image> -->
 
         <div class="container" id="About_big_img">
-          <img id="top_down_SDHS" src="./lowimages/top_down_SDHS.jpg" data-src="./images/top_down_SDHS.jpg" alt="opps...">
+          <a data-fancybox="gallery" href="./images/top_down_SDHS.jpg">
+            <img id="top_down_SDHS" src="./lowimages/top_down_SDHS.jpg" data-src="./images/top_down_SDHS.jpg" alt="opps...">
+          </a>
           <div id="school_website">
             <!-- <a href="https://www.knoxschools.org/southdoylehs">
                   <span id="learn_more_school">Learn more about our school <i class="scllnk fa fa-angle-double-right" aria-hidden="true"></i> </span>
@@ -487,6 +489,15 @@
         // document.documentElement.scrollTop = 0;
       }
     </script>
+    <!-- fancybox -->
+    <script>
+      $(document).ready(function() {
+        $(".fancybox").fancybox({
+          openEffect: 'none',
+          closeEffect: 'none'
+        });
+      });
+    </script>
   </footer>
   <!--/#Footer
 	==========================================================================-->
@@ -496,7 +507,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- estregg -->
+  <!-- fancybox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+
   <!-- all other javascript by us -->
   <script src="js/robotics.js"></script>
 

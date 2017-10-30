@@ -34,7 +34,9 @@
   	==========================================================================-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- hmmm.... I don't know maybe you'll need to find out yourself-->
+  <!-- fancybox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
 
   <!-- all other javascript by us -->
   <script src="../js/robotics.js"></script>
@@ -189,7 +191,7 @@
         <p id="cardtext">The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot at
           the World Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
         </p>
-        <a href="./images/team.jpg" target="_blank" rel="noopener">
+        <a data-fancybox="gallery" href="../images/team.jpg">
             <img id="team" data-src="../images/team.jpg" src="../lowimages/team.jpg" alt="Can't load image...">
         </a>
 
@@ -203,7 +205,7 @@
         <p id="cardtext2">Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running
           to help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
         </p>
-        <a href="./images/trophies.jpg" target="_blank" rel="noopener">
+        <a data-fancybox="gallery" href="../images/trophies.jpg">
             <img id="trophie" data-src="../images/trophies.jpg" src="../lowimages/trophies.jpg" alt="Can't load image...">
         </a>
       </div>
@@ -215,7 +217,9 @@
             <h3>Robots</h3>
             <div class="col-xs-12 col-sm-6 col-md-6">
               <!-- <h3 id="FIRST-font">FIRST Logo</h3> -->
-              <img class="img-responsive Robotimg" src="../images/robot_1.jpg" alt="our COOL robot image">
+              <a data-fancybox="gallery" href="../images/robot_1.jpg">
+                <img class="img-responsive Robotimg" src="../images/robot_1.jpg" alt="our COOL robot image">
+              </a>
               <br>
             </div>
 
@@ -407,6 +411,15 @@
           scrollTop: 0
         }, "smooth");
       }
+    </script>
+    <!-- fancybox -->
+    <script>
+      $(document).ready(function() {
+        $(".fancybox").fancybox({
+          openEffect: 'none',
+          closeEffect: 'none'
+        });
+      });
     </script>
   </footer>
   <!--/#Footer
