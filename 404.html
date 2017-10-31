@@ -39,66 +39,45 @@
     }
 
     button {
-      background: linear-gradient(250deg, #403a3e, #be5869, #304352, #64b3f4, #c2e59c, #8DC26F, #92FE9D, #2c3e50, #3498db, #3d72b4);
-      background-size: 1400% 1400%;
-      -webkit-animation: anigradient 140s ease infinite;
-      -moz-animation: anigradient 140s ease infinite;
-      -o-animation: anigradient 140s ease infinite;
-      animation: anigradient 140s ease infinite;
+      background-image: url("./images/naturalblack.jpg");
       cursor: pointer;
       border: none;
       font-size: 20px;
-      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+              box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
       outline: none;
       padding: 10px;
       margin: 10px;
       border-radius: 10px;
+      -webkit-transition: all 1s ease-in-out;
       transition: all 1s ease-in-out;
     }
 
     button:hover {
       background: #212121;
       color: white;
+      -webkit-transition: all 1s ease-out;
       transition: all 1s ease-out;
     }
 
     button:active {
-      transform: translateY(5px);
+      -webkit-transform: translateY(5px);
+              transform: translateY(5px);
       content: 'Navigating';
+      -webkit-transition: all .1s ease-out;
       transition: all .1s ease-out;
     }
 
     body {
       background: #0d151b;
-      background-image: url("./images/naturalblack.png");
+      background: linear-gradient(260deg, #000000, #263238, #304352, #64b3f4, #004D40, #3A1C71, #093637, #2c3e50, #212121, #3d72b4);
+      background-size: 1500% 1500%;
+      -webkit-animation: anigradient 70s ease-out infinite;
+              animation: anigradient 70s ease-out infinite;
 
     }
 
     @-webkit-keyframes anigradient {
-      0% {
-        background-position: 0% 52%
-      }
-      50% {
-        background-position: 100% 49%
-      }
-      100% {
-        background-position: 0% 52%
-      }
-    }
-
-    @-moz-keyframes anigradient {
-      0% {
-        background-position: 0% 52%
-      }
-      50% {
-        background-position: 100% 49%
-      }
-      100% {
-        background-position: 0% 52%
-      }
-    }
-
-    @-o-keyframes anigradient {
       0% {
         background-position: 0% 52%
       }
