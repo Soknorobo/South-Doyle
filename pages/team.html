@@ -428,17 +428,22 @@
     <script>
       $(document).ready(function() {
         $(".fancybox").fancybox({
-          openEffect: 'Zoom',
-          closeEffect: 'Zoom'
+          openEffect: 'none',
+          closeEffect: 'none'
         });
       });
 
       $().fancybox({
         selector: '[data-fancybox="gallery"]',
         loop: true,
-        infobar : true,
+        animationEffect: "zoom",
+        transitionEffect: "zoom-in-out",
+        slideShow: {
+          autoStart: false,
+          speed: 1500
+        },
+        infobar: true,
       });
-
     </script>
   </footer>
   <!--/#Footer
