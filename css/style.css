@@ -397,13 +397,16 @@ span.psw {
 
 /* Change styles for span and cancel button on extra small screens */
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 320px) {
   span.psw {
     display: block;
     float: none;
   }
   .cancelbtn {
     width: 100%;
+  }
+  #upload{
+    display: none;
   }
 }
 
@@ -703,18 +706,19 @@ a:hover {
 
 /*this is the text on the home tab under the video*/
 
-#cardtext, #cardtext2 {
+.cardtext{
   text-align: justify;
-  font-size: 1.7rem;
+  font-size: 2.25rem;
+  font-weight: bolder;
   color: #DDD1C8;
 }
 
-#info-content, #info-content2 {
+#info-content, #info-content2,#robots {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 1200px;
   padding: 0 0 0 0;
   min-width: 300px;
-  border-radius: 10px 40px 10px 40px;
+  border-radius: 5px;
   border-style: hidden;
   margin-top: 40px;
   padding: 15px 15px 15px 15px;
@@ -781,7 +785,6 @@ a:hover {
 #trophie, #team {
   width: 100%;
   cursor: pointer;
-  border-radius: 10px 30px 10px 40px;
 }
 
 #trophie:hover, #team:hover, #FIRST-img:hover {
@@ -838,28 +841,19 @@ a:hover {
   -webkit-box-shadow: 0 0 8px 0 #7E1F21;
   box-shadow: 0 0 8px 0 #7E1F21;
   overflow: hidden;
-  padding: 30px;
+  padding: 50px;
 }
 
 @media only screen and (max-width: 767px) {
   .platinum-img {
     border: 20px solid #e5e4e2;
   }
-}
-
-@media only screen and (max-width: 767px) {
   .gold-img {
     border: 20px solid #CFB53B;
   }
-}
-
-@media only screen and (max-width: 767px) {
   .silver-img {
     border: 20px solid #C0C0C0;
   }
-}
-
-@media only screen and (max-width: 767px) {
   .donors-img {
     border: 20px solid seagreen;
   }
@@ -867,7 +861,8 @@ a:hover {
 
 .platinum-img, .gold-img, .silver-img, .donors-img {
   margin: 0 auto;
-  max-width: 300px;
+
+  max-width: 200px;
   padding: 10px;
   -webkit-animation: sponsorFIRST 1s ease-in-out;
   animation: sponsorFIRST 1s ease-in-out;
@@ -915,17 +910,13 @@ a:hover {
   }
 }
 
-#platinumdiv, #golddiv, #silverdiv, #donorsdiv {
-  padding: 10px 0 100px 0;
-}
-
 .sponsorlevel {
   font-weight: 900;
   padding-bottom: 50px;
 }
 
 .sponsorinfo {
-  text-align: justify;
+  text-align:justify;
   font-size: 20px;
   padding-bottom: 30px;
 }
@@ -1018,6 +1009,17 @@ a:hover {
   .FIRST-img:hover {
     border: 10px solid blue;
   }
+  .platinum-img, .gold-img, .silver-img, .donors-img {
+    border-radius: 100%;
+    background: #DDD1C8;
+    max-width: 200px;
+    margin: 0 auto;
+    -webkit-transition: 2s all ease-in-out;
+    transition: 2s all ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .platinum-img, .gold-img, .silver-img, .donors-img {
     border-radius: 100%;
     background: #DDD1C8;
@@ -1272,10 +1274,15 @@ a:hover {
 .ver {
   padding: 0 10px;
 }
-
-.ver img {
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+.ver img:hover {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.ver img:hover {
+  -webkit-transform: scale(1.005);
+          transform: scale(1.005);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 /*.ver img:hover {

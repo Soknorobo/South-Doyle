@@ -54,8 +54,8 @@
   <!-- Header
 ========================================================================== -->
 
-<header>
-  <div id="heading">
+  <header>
+    <div id="heading">
       <nav class="navbar navbar">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -76,9 +76,9 @@
         </div>
       </nav>
 
-  </div>
+    </div>
 
-</header>
+  </header>
 
 
   <!-- Body Class
@@ -111,12 +111,7 @@
 
     <!-- About Us
     ========================================================================== -->
-    <div id="About">
 
-      <div class="info">
-        <h3 class="info_sub">About us</h3>
-      </div>
-      <br>
 
 
       <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
@@ -149,15 +144,15 @@
       </div>
 
       <script>
-      // Get the login_modal
-      var login_modal = document.getElementById('id01');
+        // Get the login_modal
+        var login_modal = document.getElementById('id01');
 
-      // When the user clicks anywhere outside of the login_modal, close it
-      window.onclick = function(event) {
+        // When the user clicks anywhere outside of the login_modal, close it
+        window.onclick = function(event) {
           if (event.target == login_modal) {
-              login_modal.style.display = "none";
+            login_modal.style.display = "none";
           }
-      }
+        }
       </script>
 
 
@@ -181,131 +176,147 @@
         </div>
 
       </div>
-<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->_
 
-      <div id="info-content">
-        <!-- story card -->
-        <p class="info_text">Story
-        </p>
+
+      <div id="About">
+
+        <div class="info">
+          <h3 class="info_sub">About us</h3>
+          <h3 style="color:white;"> <center>We are <span style="color:#303C88;">South</span> <span style="color:#7E1F21;">Doyle</span> Robotics Team ftw, Winners of The Rookie Seed award and rookie of the year at the 2017 Smokey Mountain Regional Tournament. </center></h3>
+        </div>
+        <br>
+      <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+      <div id="info-content" class="container">
         <!-- story text -->
-        <p id="cardtext">The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot at
-          the World Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
-        </p>
-        <a data-fancybox="gallery" href="../images/team.jpg">
-            <img id="team" data-src="../images/team.jpg" src="../lowimages/team.jpg" alt="Can't load image...">
-        </a>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <p class="cardtext">The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot
+            at the World Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
+          </p>
+        </div>
 
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <a data-fancybox="gallery" href="../images/team.jpg">
+              <img id="team" data-src="../images/team.jpg" src="../lowimages/team.jpg" alt="Can't load image...">
+          </a>
+        </div>
       </div>
-      <br>
+
       <!-- achievement card -->
-      <div id="info-content2">
-        <p class="info_text">Our Achievements
-        </p>
+      <div class="container" id="info-content2">
         <!-- achievement text -->
-        <p id="cardtext2">Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students running
-          to help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
-        </p>
-        <a data-fancybox="gallery" href="../images/trophies.jpg">
-            <img id="trophie" data-src="../images/trophies.jpg" src="../lowimages/trophies.jpg" alt="Can't load image...">
-        </a>
-      </div>
 
-
-        <!--  -->
-        <div id="robots" class="container">
-          <div class="info">
-            <h3>Robots</h3>
-            <div class="col-xs-12 col-sm-6 col-md-6">
-              <!-- <h3 id="FIRST-font">FIRST Logo</h3> -->
-              <a data-fancybox="gallery" href="../images/robot_1.jpg">
-                <img class="img-responsive Robotimg" src="../images/robot_1.jpg" alt="our COOL robot image">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <a data-fancybox="gallery" href="../images/trophies.jpg">
+              <img id="trophie" data-src="../images/trophies.jpg" src="../lowimages/trophies.jpg" alt="Can't load image...">
               </a>
-              <br>
-            </div>
+        </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-6">
-              <h3 id="FIRST-font">2016</h3>
-              <h4 id="FIRST-info">Our rookie season has been full of ups and downs (our robot climbs, so in this case it is meant literally), and we powered through each hurdle with dedication and heart. In our rookie season we built a robot and a team that raised the eye of veteran competitors and Judges this weekend at Thompson-Boling Arena in Knoxville TN</h4>
-            </div>
-          </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <p class="cardtext">Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students
+            running to help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
+          </p>
         </div>
 
       </div>
 
+
+      <!--  -->
+      <div id="robots" class="container">
+        <div class="info">
+          <h3 class="info_text">Robots</h3>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h3 id="FIRST-font">2016</h3>
+            <h4 class="cardtext">Our rookie season has been full of ups and downs (our robot climbs, so in this case it is meant literally), and we powered through each hurdle with dedication and heart. In our rookie season we built a robot and a team that raised the eye of veteran competitors and Judges this weekend at Thompson-Boling Arena in Knoxville TN</h4>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <!-- <h3 id="FIRST-font">FIRST Logo</h3> -->
+            <a data-fancybox="gallery" href="../images/robot_1.jpg">
+                <img class="img-responsive Robotimg" src="../images/robot_1.jpg" alt="our COOL robot image">
+              </a>
+            <br>
+          </div>
+
+        </div>
+      </div>
+
     </div>
 
-    <!-- #/About Us
+  </div>
+
+  <!-- #/About Us
     ========================================================================== -->
 
 
-    <!--fancy-sidebar
+  <!--fancy-sidebar
 	==========================================================================-->
 
-    <!-- sidebar navigation -->
-    <div id="wrapper">
-      <div class="overlay hamburger is-closed" data-toggle="offcanvas"></div>
+  <!-- sidebar navigation -->
+  <div id="wrapper">
+    <div class="overlay hamburger is-closed" data-toggle="offcanvas"></div>
 
-      <!-- Sidebar -->
-      <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-        <ul class="nav sidebar-nav" data-toggle="offcanvas">
-          <li class="sidebar-brand">
-            <a href="#" id="sidebar_Robotics" class="hamburger is-closed">
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav" data-toggle="offcanvas">
+        <li class="sidebar-brand">
+          <a href="#" id="sidebar_Robotics" class="hamburger is-closed">
 						<i class="fa fa-smile-o" style="color:green;" aria-hidden="true"></i>
 						Robotics
 					</a></li>
-          <!-- active tab -->
-          <!-- same as navbar-nav -->
-          <li class="sidebar-items" class="active" title="Robotics/Home"><span><a href="../index" class="hamburger is-closed">
+        <!-- active tab -->
+        <!-- same as navbar-nav -->
+        <li class="sidebar-items" class="active" title="Robotics/Home"><span><a href="../index" class="hamburger is-closed">
 						<i class="fa fa-home" aria-hidden="true"></i>
 						Home</a></span></li>
 
-          <!-- Inactive tabs -->
-          <li class="sidebar-items" title="Robotics/About"><span onclick="topFunction()"><a href="#" class="hamburger is-closed">
+        <!-- Inactive tabs -->
+        <li class="sidebar-items" title="Robotics/About"><span onclick="topFunction()"><a href="#" class="hamburger is-closed">
 								<i class="fa fa-sitemap" aria-hidden="true"></i>
 								About</a></span></li>
 
-          <li class="sidebar-items" title="Robotics/About"><span><a href="../pages/FIRST" class="hamburger is-closed">
+        <li class="sidebar-items" title="Robotics/About"><span><a href="../pages/FIRST" class="hamburger is-closed">
                   <img style="width:15px;" src="../sponsors/FIRSTnotext.png" alt="f ">
                   FIRST Robotics
                 </a>
               </span>
-          </li>
+        </li>
 
-          <li class="sidebar-items" title="Robotics/About"><span><a href="../pages/sponsors" class="hamburger is-closed">
+        <li class="sidebar-items" title="Robotics/About"><span><a href="../pages/sponsors" class="hamburger is-closed">
                   <i class="fa fa-link" aria-hidden="true"></i>
                   Sponsors
                 </a>
               </span>
-          </li>
+        </li>
 
-          <li class="sidebar-items" title="Robotics/The Team"><span><a href="../pages/team" class="hamburger is-closed">
+        <li class="sidebar-items" title="Robotics/The Team"><span><a href="../pages/team" class="hamburger is-closed">
 										<i class="fa fa-users" aria-hidden="true"></i>
 										The Team</a></span></li>
 
-          <li class="sidebar-items" title="Robotics/Contact Us"><span><a href="../pages/contact-us" class="hamburger is-closed">
+        <li class="sidebar-items" title="Robotics/Contact Us"><span><a href="../pages/contact-us" class="hamburger is-closed">
 											<i class="fa fa-sign-in" aria-hidden="true"></i>
 											Contact US</a></span></li>
-        </ul>
+      </ul>
 
-        </ul>
-      </nav>
-      <!-- /#sidebar-wrapper -->
+      </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->
 
-      <div id="page-content-wrapper">
-        <!-- <button type="button" class="hamburger is-closed" data-toggle="offcanvas"> -->
-        <div id="menu_button">
-          <button type="button" id="hamburger" aria-hidden="true" class="hamburger is-closed" data-toggle="offcanvas">
+    <div id="page-content-wrapper">
+      <!-- <button type="button" class="hamburger is-closed" data-toggle="offcanvas"> -->
+      <div id="menu_button">
+        <button type="button" id="hamburger" aria-hidden="true" class="hamburger is-closed" data-toggle="offcanvas">
 					<span class="hamb-top"></span>
 					<span class="hamb-middle"></span>
 					<span class="hamb-bottom"></span>
 				</button>
-        </div>
       </div>
-
-      <!-- /#page-content-wrapper -->
-
     </div>
-    <!-- /#wrapper -->
+
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
   </div>
   <!--/#fancy-sidebar
 ==========================================================================-->
@@ -370,8 +381,8 @@
 
       <div class="footer-icons">
 
-        <a href="https://www.facebook.com/pages/South-Doyle-High-School/109536089065212" aria-hidden="true">
-          <i class="fa fa-facebook"></i></a>
+        <a href="https://www.knoxschools.org/southdoylehs" aria-hidden="true">
+          <i class="fa fa-anchor" aria-hidden="true"></i></a>
         <a href="https://twitter.com/sdhs_robotics?lang=en" aria-hidden="true">
           <i class="fa fa-twitter"></i></a>
         <a href="https://www.instagram.com/southdoylerobotics/?hl=en" aria-hidden="true">
@@ -381,9 +392,9 @@
 
       </div>
 
-            <p class="footer-Robotics-about">
-              <br> Website created by: Mohammad Islam, Brandon Walters, Adam Mcdaniel, Mike Soare, Logan Wrinkle.
-            </p>
+      <p class="footer-Robotics-about">
+        <br> Website created by: Mohammad Islam, Brandon Walters, Adam Mcdaniel, Mike Soare, Logan Wrinkle.
+      </p>
     </div>
 
     <!-- scroll to top -->
@@ -421,6 +432,7 @@
         });
       });
     </script>
+
   </footer>
   <!--/#Footer
 	==========================================================================-->
