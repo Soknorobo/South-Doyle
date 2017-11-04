@@ -44,8 +44,15 @@
 
 * {
   font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+* {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .imageSplash {
@@ -1259,47 +1266,77 @@ a:hover {
 /*Donate*/
 
 /*the team*/
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
 
-.hor {
-  float: left;
-  padding: 5px;
-}
-
-.hor img {
-  margin-top: 8px;
-  -webkit-filter: blur(10px);
-          filter: blur(10px)
-}
-
-.ver {
-  padding: 0 10px;
-}
-.ver img:hover {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-.ver img:hover {
-  -webkit-transform: scale(1.005);
-          transform: scale(1.005);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-/*.ver img:hover {
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  cursor: pointer;
-}*/
-
-.ver:after {
-  content: "";
-  display: table;
-  clear: both;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 4;
+  -moz-column-gap: 0px;
+  column-count: 4;
+  column-gap: 0px;
 }
 
 
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  padding: 3px;
+}
+
+@-webkit-keyframes unblur{
+  from{
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+  }
+  to{
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+@keyframes unblur{
+  from{
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
+  }
+  to{
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+@media (max-width: 1200px) {
+  #photos {
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+
+@media (max-width: 1000px) {
+  #photos {
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  #photos {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  #photos {
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
 /*contact-us*/
 
 /*#contact-us{
