@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- 2017-11-03T21:27:53.826-04:00 -->
+
 <head>
   <!-- Basic needs
 =========================================================================== -->
@@ -15,8 +16,14 @@
   <meta name='owner' content='South-Doyle High School'>
   <meta name="robots" CONTENT="all">
   <meta name="revisit-after" content="7 days">
+  <meta property="og:title" content="Soknorobo" />
+  <meta property="og:description" content="SDHS Robotics or SDHS_Robotics, South Doyle High School Robotics Team,(Team FTW), Team For the win, Soknorobo. The winner of the Off-Season Robotics Compeition at Lynn Camp High School, Winners of The Rookie Seed award and rookie of the year at the 2017 Smokey Mountain Regional Tournament."
+  />
+  <meta property="og:url" content="http://soknorobo.com/" />
+  <meta property="og:image" content="https://github.com/South-Doyle/South-Doyle/blob/master/images/img.png?raw=true" />
+  <meta content="/images/img.png" itemprop="image">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="SDHS Robotics, South Doyle Robotics, Soknorobo,Soknorobo.com, Sokno, Robotics, SDHS, sdhs,FIRST,FIRST Robotics,competition,robots,south, south Doyle, Doyle, Knoxville,6517,#6517,team6517, team#6517,team #6517,Tweets from South Doyle Robotics,SDHS_Robotics,FIRST Robotics,South Doyle Robotics,Team, TeamFTW,FTW, The Blue Alliance,robot,Knox County Schools,Argosy Foundation,Consolidated Nuclear Security,UT-Battelle,TVA,Spencer Pro Diesel,Jupiter Entertainment,DeRoyal,,Ryerson Steel,SoKno Market,Red Arrow Industries LLC ">
+  <meta name="keywords" content="SDHS Robotics, South Doyle Robotics, Soknorobo,Soknorobo.com, Sokno, Robotics, SDHS,SDHS Robotics,SDHS_Robotics, sdhs,FI RST,FIRST Robotics,competition,robots,south, south Doyle, Doyle, Knoxville,6517,#6517,team6517, team#6517,team #6517,Tweets from South Doyle Robotics,FIRST Robotics,South Doyle Robotics,Team, TeamFTW,FTW, The Blue Alliance,robot,Knox County Schools,Argosy Foundation,Consolidated Nuclear Security,UT-Battelle,TVA,Spencer Pro Diesel,Jupiter Entertainment,DeRoyal,Ryerson Steel,SoKno Market,Red Arrow Industries LLC ">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- CSS
 ========================================================================== -->
@@ -40,7 +47,6 @@
 
   <!-- all other javascript by us -->
   <script src="../js/robotics.js"></script>
-
 
 
   <!-- Tab Titile
@@ -114,132 +120,230 @@
 
 
 
-      <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
-      <div id="id01" class="login_modal">
+    <div id="id01" class="login_modal">
 
-        <form id="loginform" class="login_modal-content animate">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close login_modal">&times;</span>
-            <h3>LOGIN </h3>
+      <form id="loginform" class="login_modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close login_modal">&times;</span>
+          <h3>LOGIN </h3>
+        </div>
+
+        <div class="containerlgn">
+
+          <label><b>Username</b></label>
+          <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+
+          <label><b>Password</b></label>
+          <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+
+          <button class="loginbtn" type="submit">Login</button>
+          <input type="checkbox" checked="checked"> Remember me
+        </div>
+
+        <div class="containerlgn" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw"><a href="#">Forgot password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      // Get the login_modal
+      var login_modal = document.getElementById('id01');
+
+      // When the user clicks anywhere outside of the login_modal, close it
+      window.onclick = function(event) {
+        if (event.target == login_modal) {
+          login_modal.style.display = "none";
+        }
+      }
+    </script>
+
+
+    <button type="button" id="upload" data-toggle="modal" data-target="#upload_modal" data-keyboard="true"><i class="fa fa-cloud-upload" aria-hidden="true"></i></button>
+
+    <div class="container" id="upload_popup">
+      <!-- Modal -->
+      <div class="modal fade" id="upload_modal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content" id="upload_content">
+            <button type="button" class="btn btn-default" data-dismiss="modal" style="float:right;background:black;color:white;outline:none;border:none;"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+
+            <div href="#upload_frame">
+              <iframe id="upload_frame" title="upload US FORM" src="https://script.google.com/a/student.knoxschools.org/macros/s/AKfycbz-PiadwHLL4TJQi_2v39xPgo_HUYf9pWnRvjq-S-c3QSKvhVY/exec" width="100%" height="570px">NOT WORKING< STILL IN PROGESS...</iframe>
+            </div>
           </div>
 
-          <div class="containerlgn">
-
-            <label><b>Username</b></label>
-            <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
-
-            <label><b>Password</b></label>
-            <input id="password" type="password" placeholder="Enter Password" name="psw" required>
-
-            <button class="loginbtn" type="submit">Login</button>
-            <input type="checkbox" checked="checked"> Remember me
-          </div>
-
-          <div class="containerlgn" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <span class="psw"><a href="#">Forgot password?</a></span>
-          </div>
-        </form>
+        </div>
       </div>
 
-      <script>
-        // Get the login_modal
-        var login_modal = document.getElementById('id01');
-
-        // When the user clicks anywhere outside of the login_modal, close it
-        window.onclick = function(event) {
-          if (event.target == login_modal) {
-            login_modal.style.display = "none";
-          }
-        }
-      </script>
+    </div>
 
 
-      <button type="button" id="upload" data-toggle="modal" data-target="#upload_modal" data-keyboard="true"><i class="fa fa-cloud-upload" aria-hidden="true"></i></button>
+    <div id="About">
 
-      <div class="container" id="upload_popup">
-        <!-- Modal -->
-        <div class="modal fade" id="upload_modal" role="dialog">
-          <div class="modal-dialog">
+      <div class="info">
+        <h3 class="info_sub">About us</h3>
+        <div class="container">
+          <h3 style="color:white;"> <center>We are <span style="color:#303C88;">South</span> <span style="color:#7E1F21;">Doyle</span> Robotics Team ftw, Winner of the Battle for the BlueGrass 2017 Robotics Compeition at Lynn Camp High School, Winners of The Rookie Seed award and rookie of the year at the 2017 Smokey Mountain Regional Tournament. </center></h3>
 
-            <!-- Modal content-->
-            <div class="modal-content" id="upload_content">
-              <button type="button" class="btn btn-default" data-dismiss="modal" style="float:right;background:black;color:white;outline:none;border:none;"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+        </div>
+      </div>
 
-              <div href="#upload_frame">
-                <iframe id="upload_frame" title="upload US FORM" src="https://script.google.com/a/student.knoxschools.org/macros/s/AKfycbz-PiadwHLL4TJQi_2v39xPgo_HUYf9pWnRvjq-S-c3QSKvhVY/exec" width="100%" height="570px">NOT WORKING< STILL IN PROGESS...</iframe>
+
+      <div class="tabsabout">
+        <input type="radio" id="tab1" name="tab-control" checked>
+        <input type="radio" id="tab2" name="tab-control">
+        <input type="radio" id="tab3" name="tab-control">
+        <input type="radio" id="tab4" name="tab-control">
+        <ul>
+          <li title="Features"><label for="tab1" role="button"><i class="fa fa-trophy" aria-hidden="true"></i>
+            <br><span>Awards</span></label></li>
+
+          <li title="Delivery Contents"><label for="tab2" role="button"><i class="fa fa-users" aria-hidden="true"></i>
+            <br><span>Team</span></label></li>
+
+          <li title="Shipping"><label for="tab3" role="button"><i class="fa fa-cog" aria-hidden="true"></i>
+            <br><span>Robots</span></label></li>
+          <!--
+          <li title="Returns"><label for="tab4" role="button">
+              <br><span></span></label></li> -->
+
+        </ul>
+
+        <div class="slider">
+          <div class="indicator"></div>
+        </div>
+        <div class="content">
+          <!-- Awards -->
+          <div class="content-tab">
+            <div class="year" data-toggle="collapse" data-target="#2017_2018" aria-expanded="true">
+              2017-2018
+            </div>
+
+            <div id="2017_2018" aria-expanded="true" class="collapse in" style="">
+              <div id="info-content">
+                <!-- story text -->
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <a data-fancybox="gallery" href="../images/IMG_20171104_173323.jpg">
+                      <img id="team" data-src="../images/IMG_20171104_173323.jpg" src="../lowimages/IMG_20171104_173323.jpg" alt="Can't load image...">
+                  </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <p class="cardtext"> We are slowly but surely making our way to the top as we not only improve our stragies but also the amount of support we recieved is undescribable. This year, our true hard work and dedication have paid off, We came in 1st, Winner of
+                    the Battle for the BlueGrass 2017 Robotics Compeition at Lynn Camp High School.
+                  </p>
+                </div>
+
               </div>
             </div>
 
+
+            <div class="year" data-toggle="collapse" data-target="#2016_2017" aria-expanded="tru">
+              2016-2017
+            </div>
+
+            <div id="2016_2017" aria-expanded="tru" class="collapse in" style="">
+              <div id="info-content">
+                <!-- story text -->
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <p class="cardtext">The South-Doyle Robotics team competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot
+                    at the World Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
+                  </p>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <a data-fancybox="gallery" href="../images/team.jpg">
+                    <img id="team" data-src="../images/team.jpg" src="../lowimages/team.jpg" alt="Can't load image...">
+                </a>
+                </div>
+              </div>
+
+
+              <!-- achievement card -->
+              <div id="info-content2">
+                <!-- achievement text -->
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <a data-fancybox="gallery" href="../images/trophies.jpg">
+                          <img id="trophie" data-src="../images/trophies.jpg" src="../lowimages/trophies.jpg" alt="Can't load image...">
+                          </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <p class="cardtext">Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students
+                    running to help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team -->
+          <div class="content-tab">
+            <h2>Team Organization</h2>
+            <p>Coming soon...</p>
+          </div>
+
+          <!-- Robots -->
+          <div class="content-tab">
+
+            <!--  -->
+            <div class="year" data-toggle="collapse" data-target="#robots2017_2018" aria-expanded="true">
+              2017-2018
+            </div>
+
+            <div id="robots2017_2018" aria-expanded="true" class="collapse in" style="">
+
+              <div id="robots">
+                <!-- story text -->
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h3 id="FIRST-font">2017-2018</h3>
+                  <h4 class="cardtext">Despite all the stuggles this robot, with the help of our awesome driver and the support of our team, not only earned us a qualifying spot but also managed to get 1st at the Battle For The BlueGrass Robotics Competition at at Lynn Camp High School.</h4>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <a data-fancybox="gallery" href="../images/IMG_20171104_171531.jpg">
+                          <img id="trophie" data-src="../images/IMG_20171104_171531.jpg" src="../lowimages/IMG_20171104_171531.jpg" alt="our COOL robot image">
+                          </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!--  -->
+            <div class="year" data-toggle="collapse" data-target="#robots2016_2017" aria-expanded="true">
+              2016-2017
+            </div>
+
+            <div id="robots2016_2017" aria-expanded="true" class="collapse in" style="">
+              <div id="robots">
+                <!-- story text -->
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <a data-fancybox="gallery" href="../images/robot_1.jpg">
+                <img id="trophie" data-src="../images/robot_1.jpg" src="../lowimages/robot_1.jpg" alt="our COOL robot image">
+                </a>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h3 id="FIRST-font">2016-2017</h3>
+                  <h4 class="cardtext">Our rookie season has been full of ups and downs (our robot climbs, so in this case it is meant literally), and we powered through each hurdle with dedication and heart. In our rookie season we built a robot and a team that raised the eye of veteran competitors and Judges this weekend at Thompson-Boling Arena in Knoxville TN</h4>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
 
-
-      <div id="About">
-
-        <div class="info">
-          <h3 class="info_sub">About us</h3>
-          <h3 style="color:white;"> <center>We are <span style="color:#303C88;">South</span> <span style="color:#7E1F21;">Doyle</span> Robotics Team ftw, Winners of The Rookie Seed award and rookie of the year at the 2017 Smokey Mountain Regional Tournament. </center></h3>
-        </div>
-        <br>
       <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-
-      <div id="info-content" class="container">
-        <!-- story text -->
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <p class="cardtext">The South-Doyle Robotics team recently competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot
-            at the World Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
-          </p>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <a data-fancybox="gallery" href="../images/team.jpg">
-              <img id="team" data-src="../images/team.jpg" src="../lowimages/team.jpg" alt="Can't load image...">
-          </a>
-        </div>
-      </div>
-
-      <!-- achievement card -->
-      <div class="container" id="info-content2">
-        <!-- achievement text -->
-
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <a data-fancybox="gallery" href="../images/trophies.jpg">
-              <img id="trophie" data-src="../images/trophies.jpg" src="../lowimages/trophies.jpg" alt="Can't load image...">
-              </a>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <p class="cardtext">Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students
-            running to help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
-          </p>
-        </div>
-
-      </div>
-
-
-      <!--  -->
-      <div id="robots" class="container">
-        <div class="info">
-          <h3 class="info_text">Robots</h3>
-
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <h3 id="FIRST-font">2016</h3>
-            <h4 class="cardtext">Our rookie season has been full of ups and downs (our robot climbs, so in this case it is meant literally), and we powered through each hurdle with dedication and heart. In our rookie season we built a robot and a team that raised the eye of veteran competitors and Judges this weekend at Thompson-Boling Arena in Knoxville TN</h4>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <!-- <h3 id="FIRST-font">FIRST Logo</h3> -->
-            <a data-fancybox="gallery" href="../images/robot_1.jpg">
-                <img width="100%" class="img-responsive Robotimg" src="../lowimages/robot_1.jpg" data-src="../images/robot_1.jpg"  alt="our COOL robot image">
-              </a>
-            <br>
-          </div>
-
-        </div>
-      </div>
 
     </div>
 
