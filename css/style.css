@@ -730,7 +730,7 @@ a:hover {
   margin-top: 40px;
   padding: 15px 15px 15px 15px;
   margin-bottom: 20px;
-  background: #242842;
+  background: #24283F;
   overflow: hidden;
   -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
@@ -1178,7 +1178,7 @@ a:hover {
 /*About*/
 .tabsabout {
   position: relative;
-  background: white;
+  background: #242842;
   padding: 30px;
   margin: 50px;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -1875,6 +1875,84 @@ background-color: #ccc;
     margin-left: 0;
   }
 }
+
+/*infinate roations for everything*/
+.rotate{
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.rotate_active:active{
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.rotate_hover:hover{
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+@-webkit-keyframes rotate {
+  from{
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from{
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*btn hover effects*/
+.btn_hover1:after,
+.btn_hover1:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: "  ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  width: 0;
+}
+
+.btn_hover1:hover:after,
+.btn_hover1:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #fff;
+  -webkit-transition: width 500ms ease-in-out;
+  transition: width 500ms ease-in-out;
+  width: 100%;
+}
+
+.btn_hover1:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 100%;
+}
+
+/*effect2*/
+
+
 
 /*
 #7E1F21 - RED
