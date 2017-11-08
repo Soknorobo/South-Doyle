@@ -59,6 +59,7 @@
 </head>
 
 <body>
+  <div id="progress" class="waiting"> <dt></dt><dd></dd></div>
 
   <!-- Splash screen  -->
   <div id="splash-screen">
@@ -90,7 +91,6 @@
 
       <!-- blurred div on top for future -->
       <div id="blursplash"></div>
-      <div id="blursplashtp"></div>
       <!-- splash title -->
       <!-- <h1 id="splash-title">SOUTH-DOYLE ROBOTICS</h1> -->
       <!-- scroll down icon -->
@@ -103,6 +103,8 @@
                         <!-- font awesome icon -->
             <i id="down-splash-arrow" class="fa down-splash fa-angle-down" aria-hidden="true" preload></i>
         </label>
+        <div id="blursplashtp"></div>
+
       </div>
     </div>
   </div>
@@ -118,11 +120,13 @@
     splash.addEventListener("DOMMouseScroll", MouseWheelHandler, {
       passive: true
     }, false);
-    window.addEventListener("keypress", MouseWheelHandler, {
+    // window.addEventListener("keypress", MouseWheelHandler, {
+    //   passive: true
+    // }, false);
+    window.addEventListener("keydown", MouseWheelHandler, {
       passive: true
     }, false);
-    // window.addEventListener("keyup", MouseWheelHandler,{passive: true}, false);
-    window.addEventListener("keydown", MouseWheelHandler, {
+    window.addEventListener("click", MouseWheelHandler, {
       passive: true
     }, false);
     //
@@ -130,6 +134,7 @@
       document.getElementById("clickScroll").checked = true;
       return false;
     }
+
   </script>
   <!-- #Splash screen  -->
   <!-- Header
