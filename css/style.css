@@ -152,7 +152,7 @@
 }*/
 
 .clickScroll {
-  z-index: 701;
+  z-index: 700;
   opacity: 0;
   width: 5px;
   height: 5px;
@@ -307,7 +307,7 @@ footer {
  /*progress bar*/
 #progress {
   position: fixed;
-  z-index: 2147483647;
+  z-index: 99999;
   top: 0;
   left: -10px;
   width: 0%;

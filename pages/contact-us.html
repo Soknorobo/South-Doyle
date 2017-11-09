@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- 2017-11-03T21:27:44.112-04:00 -->
+
 <head>
   <!-- Basic needs
 =========================================================================== -->
@@ -16,7 +17,8 @@
   <meta name="robots" CONTENT="all">
   <meta name="revisit-after" content="7 days">
   <meta property="og:title" content="Soknorobo" />
-  <meta property="og:description" content="SDHS Robotics or SDHS_Robotics, South Doyle High School Robotics Team,(Team FTW), Team For the win, Soknorobo. The winner of the Off-Season Robotics Compeition at Lynn Camp High School, Winners of The Rookie Seed award and rookie of the year at the 2017 Smokey Mountain Regional Tournament."/>
+  <meta property="og:description" content="SDHS Robotics or SDHS_Robotics, South Doyle High School Robotics Team,(Team FTW), Team For the win, Soknorobo. The winner of the Off-Season Robotics Compeition at Lynn Camp High School, Winners of The Rookie Seed award and rookie of the year at the 2017 Smokey Mountain Regional Tournament."
+  />
   <meta property="og:url" content="http://soknorobo.com/" />
   <meta property="og:image" content="https://github.com/South-Doyle/South-Doyle/blob/master/images/img.png?raw=true" />
   <meta content="/images/img.png" itemprop="image">
@@ -29,7 +31,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- hmmm.... I don't know maybe you'll need to find out yourself-->
 
 
   <!-- all other javascript by us -->
@@ -58,7 +59,9 @@
 </head>
 
 <body>
-  <div id="progress" class="waiting"> <dt></dt><dd></dd></div>
+  <div id="progress" class="waiting"> <dt></dt>
+    <dd></dd>
+  </div>
 
   <!-- Header
 ========================================================================== -->
@@ -79,7 +82,7 @@
               <li><a href="../pages/FIRST">FIRST</a></li>
               <li><a href="../pages/sponsors">SPONSORS</a></li>
               <li><a href="../pages/seasons">SEASONS</a></li>
-              <li><a href="#">CONTACT US</a></li>
+              <li><a onclick="topFunction()" href="#">CONTACT US</a></li>
             </ul>
           </div>
         </div>
@@ -327,13 +330,15 @@
       <div class="footer-icons">
 
         <a href="https://www.knoxschools.org/southdoylehs" aria-hidden="true">
-          <i class="fa fa-anchor" aria-hidden="true"></i></a>
+    <i class="fa fa-anchor" aria-hidden="true"></i></a>
         <a href="https://twitter.com/sdhs_robotics?lang=en" aria-hidden="true">
-          <i class="fa fa-twitter"></i></a>
+    <i class="fa fa-twitter"></i></a>
         <a href="https://www.instagram.com/southdoylerobotics/?hl=en" aria-hidden="true">
-          <i class="fa fa-instagram"></i></a>
+    <i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/teamftw6517" aria-hidden="true">
+    <i class="fa fa-facebook"></i></a>
         <a href="https://github.com/South-Doyle/South-Doyle" aria-hidden="true">
-          <i class="fa fa-github"></i></a>
+    <i class="fa fa-github"></i></a>
 
       </div>
       <p class="footer-Robotics-about">
@@ -360,31 +365,10 @@
 
         }
       }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        $("html, body").animate({
-          scrollTop: 0
-        }, "slow");
-        // document.body.scrollTop = 0;
-        // document.documentElement.scrollTop = 0;
-      }
     </script>
   </footer>
-  <!--/#Footer
-	==========================================================================-->
 
-  <!-- Website created by:
-  Mohammad Islam
-  Brandon Walters
-  Adam Mcdaniel
-  Mike Soare
-  Logan Wrinkle
-
-  With the support and help of
-  Joel Smith - AP CSP teacher
-
-  *A South Doyle High School owned website* -->
+  <script src="../js/index-scripts.js"></script>
 
 </body>
 

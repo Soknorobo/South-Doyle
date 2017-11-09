@@ -40,19 +40,6 @@
   <!-- this css adds icons which can be found by googling awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://platform.twitter.com/widgets.js" async></script>
-  <!-- All scripts goes here
-			==========================================================================-->
-  <!-- jquery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- bootstrap -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- fancybox -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
-
-
-  <!-- all other javascript by us -->
-  <script src="js/robotics.js"></script>
 
   <!-- Tab Titile
 ========================================================================== -->
@@ -117,12 +104,12 @@
     splash.addEventListener("touchstart", MouseWheelHandler, {
       passive: true
     }, false);
-    splash.addEventListener("mousewheel", MouseWheelHandler, {
-      passive: true
-    }, false);
-    splash.addEventListener("DOMMouseScroll", MouseWheelHandler, {
-      passive: true
-    }, false);
+    splash.addEventListener("mousewheel", function(event) {
+      event.preventDefault()
+    });
+    splash.addEventListener("DOMMouseScroll", function(event) {
+      event.preventDefault()
+    });
     // window.addEventListener("keypress", MouseWheelHandler, {
     //   passive: true
     // }, false);
@@ -149,18 +136,18 @@
         <div class="container-fluid">
           <div class="navbar-header">
             <h1 id="logo">
-                <a id="logo-sp" onclick="topFunction();" href="#" ><span id="title_logo">TeamFTW</span></a>
+                <a id="logo-sp" onclick="topFunction();" ><span id="title_logo">TeamFTW</span></a>
                 </h1>
           </div>
 
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
               <li><a onclick="topFunction();" href="#">HOME</a></li>
-              <li><a href="../pages/about">ABOUT</a></li>
-              <li><a href="../pages/FIRST">FIRST</a></li>
-              <li><a href="../pages/sponsors">SPONSORS</a></li>
-              <li><a href="../pages/seasons">SEASONS</a></li>
-              <li><a href="../pages/contact-us">CONTACT US</a></li>
+              <li><a href="./pages/about">ABOUT</a></li>
+              <li><a href="./pages/FIRST">FIRST</a></li>
+              <li><a href="./pages/sponsors">SPONSORS</a></li>
+              <li><a href="./pages/seasons">SEASONS</a></li>
+              <li><a href="./pages/contact-us">CONTACT US</a></li>
             </ul>
           </div>
         </div>
@@ -510,39 +497,32 @@
           document.getElementById("myBtn").style.visibility = "hidden";
         }
       }
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        $("html, body").animate({
-          scrollTop: 0
-        }, "smooth");
-        // document.body.scrollTop = 0;
-        // document.documentElement.scrollTop = 0;
-      }
     </script>
-    <!-- fancybox -->
-    <script>
-      $(document).ready(function() {
-        $(".fancybox").fancybox({
-          openEffect: 'none',
-          closeEffect: 'none'
-        });
-      });
-    </script>
+
   </footer>
+
+
+  <!-- All scripts goes here
+			==========================================================================-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- fancybox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+  <!-- all other javascript by us -->
+  <script src="js/robotics.js"></script>
+  <script src="js/index-scripts.js"></script>
+  <!-- fancybox -->
+  <script>
+    $(document).ready(function() {
+      $(".fancybox").fancybox({
+        openEffect: 'none',
+        closeEffect: 'none'
+      });
+    });
+  </script>
   <!--/#Footer
 	==========================================================================-->
-
-  <!-- Website created by:
-	Mohammad Islam
-	Brandon Walters
-	Adam Mcdaniel
-	Mike Soare
-	Logan Wrinkle
-
-	With the support and help of
-	Joel Smith - AP CSP teacher
-
-	*A South Doyle High School owned website* -->
 
 </body>
 
