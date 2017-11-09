@@ -20,7 +20,8 @@
   <meta name="robots" CONTENT="all">
   <meta name="revisit-after" content="7 days">
   <meta property="og:title" content="Soknorobo" />
-  <meta property="og:description" content="SDHS Robotics or SDHS_Robotics, South Doyle High School Robotics Team,(Team FTW), Team For the win, Soknorobo. The winner of the Off-Season Robotics Compeition at Lynn Camp High School, Winners of The Rookie Seed award and rookie of the year at the 2017 Smokey Mountain Regional Tournament."/>
+  <meta property="og:description" content="SDHS Robotics or SDHS_Robotics, South Doyle High School Robotics Team,(Team FTW), Team For the win, Soknorobo. The winner of the Off-Season Robotics Compeition at Lynn Camp High School, Winners of The Rookie Seed award and rookie of the year at the 2017 Smokey Mountain Regional Tournament."
+  />
   <meta property="og:url" content="http://soknorobo.com/" />
   <meta property="og:image" content="https://github.com/South-Doyle/South-Doyle/blob/master/images/img.png?raw=true" />
   <meta content="/images/img.png" itemprop="image">
@@ -59,7 +60,9 @@
 </head>
 
 <body>
-  <div id="progress" class="waiting"> <dt></dt><dd></dd></div>
+  <div id="progress" class="waiting"> <dt></dt>
+    <dd></dd>
+  </div>
 
   <!-- Splash screen  -->
   <div id="splash-screen">
@@ -134,34 +137,36 @@
       document.getElementById("clickScroll").checked = true;
       return false;
     }
-
   </script>
-  <!-- #Splash screen  -->
-  <!-- Header
-========================================================================== -->
-  <!-- logo header -->
+
+  <!--  														-->
+  <!-- 						Header						-->
+  <!--  														-->
+
   <header>
     <div id="heading">
       <nav class="navbar navbar">
         <div class="container-fluid">
           <div class="navbar-header">
             <h1 id="logo">
-                <a id="logo-sp" href="#" onclick="topFunction();"><span id="title_logo">TeamFTW</span></a>
+                <a id="logo-sp" onclick="topFunction();" href="#" ><span id="title_logo">TeamFTW</span></a>
                 </h1>
           </div>
+
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#" class="btn_hover1">HOME</a></li>
-              <li><a href="./pages/about" class="btn_hover1">ABOUT</a></li>
-              <li><a href="./pages/FIRST" class="btn_hover1">FIRST</a></li>
-              <li><a href="./pages/sponsors" class="btn_hover1">SPONSORS</a></li>
-              <li><a href="./pages/seasons" class="btn_hover1">SEASONS</a></li>
-              <li><a href="./pages/contact-us" class="btn_hover1">CONTACT US</a></li>
+              <li><a onclick="topFunction();" href="#">HOME</a></li>
+              <li><a href="../pages/about">ABOUT</a></li>
+              <li><a href="../pages/FIRST">FIRST</a></li>
+              <li><a href="../pages/sponsors">SPONSORS</a></li>
+              <li><a href="../pages/seasons">SEASONS</a></li>
+              <li><a href="../pages/contact-us">CONTACT US</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
+
   </header>
 
 
@@ -363,7 +368,7 @@
         </div>
         <h3 id="yt-title">FIRST Worlds Robotics Competition Houston</h3>
         <div id="yt-info">
-          <span>L &N Stem's and South Doyle High School's journey to the FRC Worlds FIRST Robotics competition in Houston, Texas.</span>
+          <span>South Doyle High School's journey to the FRC Worlds FIRST Robotics competition in Houston, Texas.</span>
         </div>
       </div>
 
@@ -484,7 +489,7 @@
         <i class="fa fa-github"></i></a>
       </div>
       <p class="footer-Robotics-about">
-        <br>Website created by: Mohammad Islam, Brandon Walters, Adam Mcdaniel, Mike Soare, Logan Wrinkle.
+        <br>Website created by: Mohammad Islam, Brandon Walters.
       </p>
     </div>
 
@@ -509,7 +514,7 @@
       function topFunction() {
         $("html, body").animate({
           scrollTop: 0
-        }, "slow");
+        }, "smooth");
         // document.body.scrollTop = 0;
         // document.documentElement.scrollTop = 0;
       }

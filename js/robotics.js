@@ -22,6 +22,7 @@ $(document).on("scroll", function() {
     document.getElementById("hamburger").style.transform = "translateY(0px)";
   }
 });
+
 $(document).ready(function() {
   var trigger = $('.hamburger'),
     overlay = $('.overlay'),
