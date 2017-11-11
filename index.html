@@ -55,22 +55,7 @@
   <div id="splash-screen">
     <input id="clickScroll" type="checkbox" class="clickScroll" aria-hidden="true"></input>
     <div class="imageSplash">
-      <!-- background -->
-      <!-- wow no need for scripting -->
-      <!-- <script>
-        var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
-        if (is_chrome) {
-          document.write('');
-        } else {
-          document.write('');
-        }
-      </script>
-       -->
-      <!-- <img id="splashImage" src="./images/South-Doyle V2.gif" alt="SOUTH-DOYLE Robotics" preload> -->
-      <!-- <video id="splashImage" height="100%" autoplay loop preload poster="./images/South-Doyle V2.gif">
-        <source src="./images/South-Doyle V2.mp4" type="video/mp4">
-           Loading...
-        </video> -->
+
       <video id="splashImage" height="100%" autoplay loop preload poster="./images/South-Doyle V2.jpg">
           <source src="./images/vid/South-Doyle V2.mp4" type="video/mp4">
             <source src="./images/vid/South-Doyle V2.webp" type="video/webp">
@@ -160,26 +145,7 @@
   <!-- Body id
 ========================================================================== -->
   <div id="body">
-    <!--profile image-->
-    <!-- <div class="hover-active">
-      <div class="home-image">
-        <img class="hamburger is-closed" data-toggle="offcanvas" title="Robotics/Home" id="profile" data-src="images/img.jpg" src="lowimages/img.jpg" alt="ROBOTICS" />
-        <br>
-      </div>
-    </div> -->
-    <!--fancy-sidebar
-	==========================================================================-->
-    <!-- sidebar navigation -->
-    <!-- <div class="tpnav">
-    <ul class="nav navbar-nav">
-      <li><a href="#">HOME</a></li>
-      <li><a href="./pages/about">ABOUT</a></li>
-      <li><a href="./pages/FIRST">FIRST</a></li>
-      <li><a href="./pages/sponsors">SPONSORS</a></li>
-      <li><a href="./pages/seasons">SEASONS</a></li>
-      <li><a href="./pages/contact-us">CONTACT US</a></li>
-    </ul>
-    </div> -->
+
 
     <div id="wrapper">
       <div class="overlay hamburger is-closed" data-toggle="offcanvas"></div>
@@ -337,7 +303,6 @@
       <h3 class="info_sub">
     <!-- <i class="fa fa-angle-double-left" aria-hidden="true"></i> -->
     FIRST Robotics Competition
-
     <!-- <i class="fa fa-angle-double-right" aria-hidden="true"></i> -->
     </h3>
 
@@ -359,9 +324,8 @@
         </div>
       </div>
 
-      <div>
         <!-- embeded twitter feed-->
-        <div id="twitter-embed">
+        <div id="twitter-embed" >
 
           <!-- dark theme -->
           <a class="twitter-timeline" data-theme="dark" title="twitter-feed" data-chrome="transparent" href="https://twitter.com/SDHS_Robotics">Tweets by SDHS_Robotics</a>
@@ -373,11 +337,8 @@
           <a href="https://twitter.com/intent/tweet?screen_name=SDHS_Robotics&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @SDHS_Robotics</a>
         </div>
 
-      </div>
-
       <!-- Home Cards
 		========================================================================== -->
-      <div>
         <h3 class="info_text">Our School</h3>
 
         <!-- <image></image> -->
@@ -401,7 +362,6 @@
             frameborder="0" style="border:0" allowfullscreen id="map"></iframe>
         </div>
 
-      </div>
 
     </div>
   </div>
@@ -416,12 +376,13 @@
             Team<span>FTW</span>
         </h3>
       <p class="footer-links">
-        <a href="../index">Home</a> ·
-        <a href="../pages/about">About</a> ·
-        <a href="../pages/FIRST">FIRST</a> ·
-        <a href="../pages/sponsors">Sponsors</a> ·
-        <a href="../pages/seasons">Seasons</a> ·
-        <a href="../pages/contact-us">Contact Us</a>
+        <a href="./index">Home</a> ·
+        <a href="./pages/about">About</a> ·
+        <a href="./pages/FIRST">FIRST</a> ·
+        <a href="./pages/sponsors">Sponsors</a> ·
+        <a href="./pages/seasons">Seasons</a> ·
+        <a href="./pages/contact-us">Contact Us</a> ·
+        <a href="./pages/resource">Resource</a>  ·
       </p>
       <p class="footer-Robotics-name">
         SDHS_Robotics <i class="fa fa-copyright" aria-hidden="true"></i> 2017
@@ -511,7 +472,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
   <!-- all other javascript by us -->
   <script src="js/robotics.js"></script>
-  <script src="js/index-scripts.js"></script>
+
   <!-- fancybox -->
   <script>
     $(document).ready(function() {

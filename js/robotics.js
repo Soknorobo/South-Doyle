@@ -1,6 +1,7 @@
-$(document).ready(function() {
-  $('[data-toggle="tooltip"]').tooltip();
-});
+// $(document).ready(function() {
+//   $('[data-toggle="tooltip"]').tooltip();
+// });
+
 $(document).on("scroll", function() {
   if ($(document).scrollTop() > 0) {
     document.getElementById("logo").style.fontSize = "35px";
@@ -30,6 +31,7 @@ $(document).ready(function() {
   trigger.click(function() {
     hamburger_cross();
   });
+
   function hamburger_cross() {
     if (isClosed == true) {
       overlay.hide();
@@ -47,6 +49,7 @@ $(document).ready(function() {
     $('#wrapper').toggleClass('toggled');
   });
 });
+
 function init() {
   var imgDefer = document.getElementsByTagName('img');
   for (var i = 0; i < imgDefer.length; i++) {
@@ -58,18 +61,59 @@ function init() {
   }
 }
 window.onload = init;
-$( document ).ready(function() {
-       $({property: 0}).animate({property: 105}, {
-           duration:2000,
-           step: function() {
-               var _percent = Math.round(this.property);
-               $('#progress').css('width',  _percent+"%");
-               if(_percent == 105) {
-                   $("#progress").addClass("done");
-               }
-           },
-           complete: function() {
-               $("#progress").hide();
-           }
-       });
-   });
+$(document).ready(function() {
+  $({
+    property: 0
+  }).animate({
+    property: 105
+  }, {
+    duration: 2000,
+    step: function() {
+      var _percent = Math.round(this.property);
+      $('#progress').css('width', _percent + "%");
+      if (_percent == 105) {
+        $("#progress").addClass("done");
+      }
+    },
+    complete: function() {
+      $("#progress").hide();
+    }
+  });
+});
+
+// scrolling
+// ?
+jQuery.easing.jswing = jQuery.easing.swing;
+jQuery.extend(jQuery.easing, {
+  def: "easeOutQuad",
+
+  easeInOutExpo: function(e, f, a, h, g) {
+    if (f == 0) {
+      return a
+    }
+    if (f == g) {
+      return a + h
+    }
+    if ((f /= g / 2) < 1) {
+      return h / 2 * Math.pow(2, 10 * (f - 1)) + a
+    }
+    return h / 2 * (-Math.pow(2, -10 * --f) + 2) + a
+  }
+});
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  $("html, body").animate({
+    scrollTop: 0
+  }, 1500, 'easeInOutExpo');
+}
+// page-scroll
+$(function() {
+  $('a.page-scroll').bind('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+  });
+});

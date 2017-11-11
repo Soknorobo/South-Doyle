@@ -9,63 +9,32 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SDHS_Robotics Error</title>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <style>
     * {
       font-family: 'Yanone Kaffeesatz', sans-serif;
       color: white;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    html {
+      background: #0d151b;
     }
 
     #title {
-      /*background: url("./images/solidblue.png") no-repeat center;*/
-      /*background-size: cover;*/
       color: #fff;
-      /*text-align: center;*/
-      /*-webkit-text-fill-color: transparent;*/
-      /*-webkit-background-clip: text;*/
       font-weight: 900;
       text-align: center;
-      font-size: 4vw;
-    }
-
-    #goback {
-      text-align: center;
-      font-size: 30px;
-    }
-
-    #directory {
-      font-size: 20px;
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    button {
-      background-image: url("./images/naturalblack.jpg");
-      cursor: pointer;
-      border: none;
-      font-size: 20px;
-      -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
-              box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
-      outline: none;
-      padding: 10px;
-      margin: 10px;
-      border-radius: 10px;
-      -webkit-transition: all 1s ease-in-out;
-      transition: all 1s ease-in-out;
-    }
-
-    button:hover {
-      background: #212121;
-      color: white;
-      -webkit-transition: all 1s ease-out;
-      transition: all 1s ease-out;
-    }
-
-    button:active {
-      -webkit-transform: translateY(5px);
-              transform: translateY(5px);
-      content: 'Navigating';
-      -webkit-transition: all .1s ease-out;
-      transition: all .1s ease-out;
+      font-size: 50px;
     }
 
     body {
@@ -73,8 +42,24 @@
       background: linear-gradient(260deg, #000000, #263238, #304352, #64b3f4, #004D40, #3A1C71, #093637, #2c3e50, #212121, #3d72b4);
       background-size: 1500% 1500%;
       -webkit-animation: anigradient 70s ease-out infinite;
-              animation: anigradient 70s ease-out infinite;
+      animation: anigradient 70s ease-out infinite;
 
+    }
+
+    #body {
+      background-image: url("./images/subtle_dialine.png");
+      height: 100%;
+      z-index: 999;
+    }
+
+    ::selection {
+      background: #ff5e99;
+      color: #FFFFFF;
+    }
+
+    ::-moz-selection {
+      background: #ff5e99;
+      color: #FFFFFF;
     }
 
     @-webkit-keyframes anigradient {
@@ -101,31 +86,708 @@
       }
     }
 
+    .error-tpl {
+      padding: 40px 15px;
+      text-align: center;
+    }
+
+    .error-actions {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .error-actions .btn {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Styles of the 404 page of my website. */
+
+    body {
+      color: #d3d7de;
+      font-family: "Courier new";
+      font-size: 18px;
+      line-height: 2em;
+      cursor: default;
+    }
+
+    .code-area {
+      position: absolute;
+      width: 320px;
+      min-width: 320px;
+      top: 80%;
+      left: 52%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+
+    .code-area>span {
+      display: block;
+    }
+
+    @media screen and (max-width: 600px) {
+      .code-area {
+        visibility: collapse;
+      }
+    }
+
+    .overlay {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 99999;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow-y: hidden;
+      transition: 0.5s;
+    }
+
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+      position: absolute;
+      top: 2rem;
+      right: 3rem;
+      font-size: 60px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .overlay {
+        overflow-y: auto;
+      }
+      .overlay a {
+        font-size: 20px
+      }
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+
+    .openNavbtn {
+      position: absolute;
+      font-size: 30px;
+      margin-top: 2rem;
+      margin-left: 3rem;
+      z-index: 9999;
+      cursor: pointer;
+    }
+
+    .home {
+      animation: rotate 10s linear infinite;
+    }
+
+    @-webkit-keyframes rotate {
+      from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes rotate {
+      from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    .holder {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .holder span {
+      margin-left: -5px;
+    }
+
+    .clr {
+      clear: both;
+    }
+
+    .bar {
+      width: 2px;
+      height: 40px;
+      margin: 2px;
+      float: left;
+    }
+
+    .b1 {
+      -webkit-animation: anim1 500ms linear infinite;
+      animation: anim1 500ms linear infinite;
+      background: #1abc9c;
+
+    }
+
+    .b2 {
+      -webkit-animation: anim2 750ms linear infinite;
+      animation: anim2 750ms linear infinite;
+      background: #FFDE25;
+    }
+
+    .b3 {
+      -webkit-animation: anim3 750ms linear infinite;
+      animation: anim3 750ms linear infinite;
+      background: #9b59b6;
+    }
+
+    .b4 {
+      -webkit-animation: anim4 650ms linear infinite;
+      animation: anim4 650ms linear infinite;
+      background: #e74c3c;
+
+    }
+
+    .b5 {
+      -webkit-animation: anim5 750ms linear infinite;
+      animation: anim5 750ms linear infinite;
+      background: #27ae60;
+
+    }
+
+    .b6 {
+      -webkit-animation: anim6 700ms linear infinite;
+      animation: anim6 700ms linear infinite;
+      background: #f39c12;
+
+    }
+
+    .b7 {
+      -webkit-animation: anim7 750ms linear infinite;
+      animation: anim7 750ms linear infinite;
+      background: #49BEB7;
+
+    }
+
+    .b8 {
+      -webkit-animation: anim8 650ms linear infinite;
+      animation: anim8 650ms linear infinite;
+      background: #49BEB7;
+
+    }
+
+    .b9 {
+      -webkit-animation: anim9 550ms linear infinite;
+      animation: anim9 550ms linear infinite;
+      background: #658525;
+
+    }
+
+    @-webkit-keyframes anim1 {
+      0% {
+        height: 10px;
+      }
+      25% {
+        height: 30px;
+      }
+      50% {
+        height: 10px;
+      }
+      75% {
+        height: 25px;
+      }
+      100% {
+        height: 10px;
+      }
+    }
+
+    @-webkit-keyframes anim2 {
+      0% {
+        height: 30px;
+      }
+      25% {
+        height: 10px;
+      }
+      50% {
+        height: 40px;
+      }
+      75% {
+        height: 25px;
+      }
+      100% {
+        height: 30px;
+      }
+    }
+
+    @-webkit-keyframes anim3 {
+      0% {
+        height: 10px;
+      }
+      25% {
+        height: 25px;
+      }
+      50% {
+        height: 10px;
+      }
+      75% {
+        height: 40px;
+      }
+      100% {
+        height: 10px;
+      }
+    }
+
+    @-webkit-keyframes anim4 {
+      0% {
+        height: 40px;
+      }
+      25% {
+        height: 10px;
+      }
+      50% {
+        height: 35px;
+      }
+      75% {
+        height: 15px;
+      }
+      100% {
+        height: 40px;
+      }
+    }
+
+    @-webkit-keyframes anim5 {
+      0% {
+        height: 15px;
+      }
+      25% {
+        height: 25px;
+      }
+      50% {
+        height: 10px;
+      }
+      75% {
+        height: 40px;
+      }
+      100% {
+        height: 15px;
+      }
+    }
+
+    @-webkit-keyframes anim6 {
+      0% {
+        height: 30px;
+      }
+      25% {
+        height: 10px;
+      }
+      50% {
+        height: 30px;
+      }
+      75% {
+        height: 20px;
+      }
+      100% {
+        height: 30px;
+      }
+    }
+
+    @-webkit-keyframes anim7 {
+      0% {
+        height: 0px;
+      }
+      25% {
+        height: 30px;
+      }
+      50% {
+        height: 15px;
+      }
+      75% {
+        height: 20px;
+      }
+      100% {
+        height: 00px;
+      }
+    }
+
+    @-webkit-keyframes anim8 {
+      0% {
+        height: 0px;
+      }
+      25% {
+        height: 20px;
+      }
+      50% {
+        height: 10px;
+      }
+      75% {
+        height: 30px;
+      }
+      100% {
+        height: 0px;
+      }
+    }
+
+    @-webkit-keyframes anim9 {
+      0% {
+        height: 10px;
+      }
+      25% {
+        height: 30px;
+      }
+      50% {
+        height: 0px;
+      }
+      75% {
+        height: 15px;
+      }
+      100% {
+        height: 10px;
+      }
+    }
+
+
+    .quotes {
+      background: #212121;
+      border-radius: 5px;
+      font-size: 15px;
+      font-style: italic;
+      line-height: 30px;
+      margin: 0 5px;
+      transition: .5s all ease;
+    }
+
+    .quotation {
+      color: #4ca8ef;
+    }
+
+
+    .glitch {
+      color: white;
+      font-size: 50px;
+      position: relative;
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    @keyframes noise-anim {
+      0% {
+        clip: rect(70px, 9999px, 58px, 0);
+      }
+      5% {
+        clip: rect(4px, 9999px, 73px, 0);
+      }
+      10% {
+        clip: rect(68px, 9999px, 13px, 0);
+      }
+      15% {
+        clip: rect(25px, 9999px, 19px, 0);
+      }
+      20% {
+        clip: rect(38px, 9999px, 58px, 0);
+      }
+      25% {
+        clip: rect(31px, 9999px, 43px, 0);
+      }
+      30% {
+        clip: rect(43px, 9999px, 95px, 0);
+      }
+      35% {
+        clip: rect(26px, 9999px, 23px, 0);
+      }
+      40% {
+        clip: rect(72px, 9999px, 32px, 0);
+      }
+      45% {
+        clip: rect(62px, 9999px, 96px, 0);
+      }
+      50% {
+        clip: rect(57px, 9999px, 83px, 0);
+      }
+      55% {
+        clip: rect(88px, 9999px, 6px, 0);
+      }
+      60% {
+        clip: rect(30px, 9999px, 53px, 0);
+      }
+      65% {
+        clip: rect(12px, 9999px, 31px, 0);
+      }
+      70% {
+        clip: rect(90px, 9999px, 84px, 0);
+      }
+      75% {
+        clip: rect(36px, 9999px, 69px, 0);
+      }
+      80% {
+        clip: rect(80px, 9999px, 46px, 0);
+      }
+      85% {
+        clip: rect(74px, 9999px, 72px, 0);
+      }
+      90% {
+        clip: rect(2px, 9999px, 65px, 0);
+      }
+      95% {
+        clip: rect(70px, 9999px, 87px, 0);
+      }
+      100% {
+        clip: rect(91px, 9999px, 27px, 0);
+      }
+    }
+
+    .glitch:after {
+      content: attr(data-text);
+      position: absolute;
+      left: 2px;
+      text-shadow: -1px 0 red;
+      top: 0;
+      color: white;
+      background: transparent;
+      overflow: hidden;
+      clip: rect(0, 900px, 0, 0);
+      animation: noise-anim 2s infinite linear alternate-reverse;
+    }
+
+    @keyframes noise-anim-2 {
+      0% {
+        clip: rect(61px, 9999px, 17px, 0);
+      }
+      5% {
+        clip: rect(11px, 9999px, 68px, 0);
+      }
+      10% {
+        clip: rect(57px, 9999px, 5px, 0);
+      }
+      15% {
+        clip: rect(85px, 9999px, 53px, 0);
+      }
+      20% {
+        clip: rect(36px, 9999px, 19px, 0);
+      }
+      25% {
+        clip: rect(36px, 9999px, 1px, 0);
+      }
+      30% {
+        clip: rect(76px, 9999px, 98px, 0);
+      }
+      35% {
+        clip: rect(95px, 9999px, 96px, 0);
+      }
+      40% {
+        clip: rect(97px, 9999px, 40px, 0);
+      }
+      45% {
+        clip: rect(62px, 9999px, 30px, 0);
+      }
+      50% {
+        clip: rect(64px, 9999px, 19px, 0);
+      }
+      55% {
+        clip: rect(39px, 9999px, 24px, 0);
+      }
+      60% {
+        clip: rect(19px, 9999px, 95px, 0);
+      }
+      65% {
+        clip: rect(93px, 9999px, 18px, 0);
+      }
+      70% {
+        clip: rect(10px, 9999px, 48px, 0);
+      }
+      75% {
+        clip: rect(63px, 9999px, 57px, 0);
+      }
+      80% {
+        clip: rect(82px, 9999px, 20px, 0);
+      }
+      85% {
+        clip: rect(91px, 9999px, 15px, 0);
+      }
+      90% {
+        clip: rect(25px, 9999px, 86px, 0);
+      }
+      95% {
+        clip: rect(45px, 9999px, 77px, 0);
+      }
+      100% {
+        clip: rect(72px, 9999px, 47px, 0);
+      }
+    }
+
+    .glitch:before {
+      content: attr(data-text);
+      position: absolute;
+      left: -2px;
+      text-shadow: 1px 0 blue;
+      top: 0;
+      color: white;
+      background: transparent;
+      overflow: hidden;
+      clip: rect(0, 900px, 0, 0);
+      animation: noise-anim-2 3s infinite linear alternate-reverse;
+    }
   </style>
 
 </head>
 
 <body>
-  <div id="controls">
+  <div id="body">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-xing" aria-hidden="true"></i></a>
+      <div class="overlay-content">
+        <a href="/pages/about">About</a>
+        <a href="/pages/FIRST">FIRST </a>
+        <a href="/pages/sponsors">Sponsors </a>
+        <a href="/pages/seasons">Seasons </a>
+        <a href="/pages/contact-us">Contact </a>
+        <!-- <a href="/pages/upload">Upload </a>
+      <a href="/pages/social">Social* </a> -->
+      </div>
+    </div>
+
+    <span class="openNavbtn" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="error-tpl">
+            <h1>
+            Oops!
+          </h1>
+            <h2>
+            <span class="glitch" data-text="404">404</span> Not Found</h2>
+            <div class="error-details">
+              Sorry, an error has occured, Requested page not found!
+            </div>
+            <div class="error-actions">
+              <a href="/index" class="btn btn-primary btn-lg"><i class="fa home fa-grav" aria-hidden="true"></i>
+            Take Me Home  </a>
+
+              <a href="/contact-us" class="btn btn-primary btn-lg"><i class="fa contact fa-question-circle" aria-hidden="true"></i></span> Contact Support </a>
+            </div>
+
+            <div class="quotes">
+              <span style="color:white;" id="quoteDisplay"><span class="quotation">"</span>The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.<span class="quotation">"</span> <br />- Helen
+              Keller
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        var quotes = [
+          '<span class="quotation">\"</span>I love you the more in that I believe you had liked me for my own sake and for nothing else.<span class="quotation">\"</span> <br />- John Keats',
+          '<span class="quotation">\"</span></i>But man is not made for defeat. A man can be destroyed but not defeated.<span class="quotation">\"</span> <br />- Ernest Hemingway',
+          '<span class="quotation">\"</span>When you reach the end of your rope, tie a knot in it and hang on.<span class="quotation">\"</span> <br />- Franklin D. Roosevelt',
+          '<span class="quotation">\"</span>There is nothing permanent except change.<span class="quotation">\"</span> <br />- Heraclitus',
+          '<span class="quotation">\"</span>You cannot shake hands with a clenched fist.<span class="quotation">\"</span> <br />- Indira Gandhi',
+          '<span class="quotation">\"</span>Let us sacrifice our today so that our children can have a better tomorrow.<span class="quotation">\"</span> <br />- A. P. J. Abdul Kalam',
+          '<span class="quotation">\"</span>It is better to be feared than loved, if you cannot be both.<span class="quotation">\"</span> <br />- Niccolo Machiavelli',
+          '<span class="quotation">\"</span>The most difficult thing is the decision to act, the rest is merely tenacity. The fears are paper tigers. You can do anything you decide to do. You can act to change and control your life; and the procedure, the process is its own reward.<span class="quotation">\"</span> <br />- Amelia Earhart',
+          '<span class="quotation">\"</span>Do not mind anything that anyone tells you about anyone else. Judge everyone and everything for yourself.<span class="quotation">\"</span> <br />- Henry James',
+          '<span class="quotation">\"</span>Learning never exhausts the mind.<span class="quotation">\"</span> <br />- Leonardo da Vinci',
+          '<span class="quotation">\"</span>There is no charm equal to tenderness of heart.<span class="quotation">\"</span> <br />- Jane Austen',
+          '<span class="quotation">\"</span>All that we see or seem is but a dream within a dream.<span class="quotation">\"</span> <br />- Edgar Allan Poe',
+          '<span class="quotation">\"</span>Lord, make me an instrument of thy peace. Where there is hatred, let me sow love.<span class="quotation">\"</span> <br />- Francis of Assisi',
+          '<span class="quotation">\"</span>Today you are you! That is truer than true! There is no one alive who is you-er than you!<span class="quotation">\"</span> <br />- Dr. Seuss',
+          '<span class="quotation">\"</span>Education is the most powerful weapon which you can use to change the world. <br />- Nelson Mandela',
+          '<span class="quotation">\"</span>Change your thoughts and you change your world.<span class="quotation">\"</span> <br />- Norman Vincent Peale',
+          '<span class="quotation">\"</span>In three words I can sum up everything I\'ve learned about life: it goes on.<span class="quotation">\"</span> <br />- Robert Frost',
+          '<span class="quotation">\"</span>Love isn\'t something you find. Love is something that finds you.<span class="quotation">\"</span> <br />- Loretta Young',
+          '<span class="quotation">\"</span>Don\'t walk behind me; I may not lead. Don\'t walk in front of me; I may not follow. Just walk beside me and be my friend.<span class="quotation">\"</span> <br />- Albert Camus',
+          '<span class="quotation">\"</span>Do all things with love.<span class="quotation">\"</span> <br />- Og Mandino',
+          '<span class="quotation">\"</span>Success is not final, failure is not fatal: it is the courage to continue that counts.<span class="quotation">\"</span> <br />- Winston Churchill',
+          '<span class="quotation">\"</span>Do not go where the path may lead, go instead where there is no path and leave a trail.<span class="quotation">\"</span> <br />- Ralph Waldo Emerson',
+          '<span class="quotation">\"</span>Love is composed of a single soul inhabiting two bodies.<span class="quotation">\"</span> <br />- Aristotle',
+          '<span class="quotation">\"</span>Where there is love there is life.<span class="quotation">\"</span> <br />- Mahatma Gandhi',
+          '<span class="quotation">\"</span>One of the most beautiful qualities of true friendship is to understand and to be understood.<span class="quotation">\"</span> <br />- Lucius Annaeus Seneca',
+          '<span class="quotation">\"</span>The only thing necessary for the triumph of evil is for good men to do nothing.<span class="quotation">\"</span> <br />- Edmund Burke',
+          '<span class="quotation">\"</span>Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.<span class="quotation">\"</span> <br />- Buddha',
+          '<span class="quotation">\"</span>Don\'t judge each day by the harvest you reap but by the seeds that you plant.<span class="quotation">\"</span> <br />- Robert Louis Stevenson',
+          '<span class="quotation">\"</span>Nothing is impossible, the word itself says \'I\'m possible\'!<span class="quotation">\"</span> <br />- Audrey Hepburn',
+          '<span class="quotation">\"</span>Find a place inside where there\'s joy, and the joy will burn out the pain.<span class="quotation">\"</span> <br />- Joseph Campbell',
+          '<span class="quotation">\"</span>Try to be a rainbow in someone\'s cloud.<span class="quotation">\"</span> <br />- Maya Angelou',
+          '<span class="quotation">\"</span>It is during our darkest moments that we must focus to see the light.<span class="quotation">\"</span> <br />- Aristotle',
+          '<span class="quotation">\"</span>Keep love in your heart. A life without it is like a sunless garden when the flowers are dead.<span class="quotation">\"</span> <br />- Oscar Wilde',
+          '<span class="quotation">\"</span>The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.<span class="quotation">\"</span> <br />- Helen Keller'
+        ];
+
+        function newQuote() {
+          var randomnumber = Math.floor(Math.random() * quotes.length);
+          document.getElementById('quoteDisplay').innerHTML = quotes[randomnumber];
+        }
+        window.onload = setInterval(newQuote, 10000);
+      </script>
+      <div class="holder">
+        <div class="clr"></div>
+        <div class="bar b1"></div>
+        <div class="bar b2"></div>
+        <div class="bar b3"></div>
+        <div class="bar b4"></div>
+        <div class="bar b5"></div>
+        <div class="bar b6"></div>
+        <div class="bar b7"></div>
+        <div class="bar b8"></div>
+        <div class="bar b9"></div>
+      </div>
+      <div class="code-area">
+        <span style="color: #777;font-style:italic;">
+    // 404 page not found.
+  </span>
+        <span>
+    <span style="color:#d65562;">
+      if
+    </span> (
+        <span style="color:#4ca8ef;">!</span><span style="font-style: italic;color:#bdbdbd;">found</span>) {
+        </span>
+        <span>
+    <span style="padding-left: 15px;class="quotation"">
+       <i style="width: 10px;display:inline-block"></i>throw
+    </span>
+        <span>
+      (<span style="color: #a6a61f">"(╯°□°)╯︵ ┻━┻"</span>);
+        </span>
+        <span style="display:block">}</span>
+        </span>
+      </div>
+    </div>
   </div>
-  <div id="title">
-    <h1>UH-OH, You seem lost </h1>
-  </div>
-  <div id="goback">
-    Go back home
-    <a href="/index"><button type="button" name="Home">SDHS_Robotics</button></a>
-  </div>
-  <div id="directory">
-    Optionally move to another directory: <br><br>
-    <a href="/pages/about"><button>Robotics/About </button></a>
-    <a href="/pages/FIRST"><button>Robotics/FIRST </button></a>
-    <a href="/pages/sponsors"><button>Robotics/Sponsors </button></a>
-    <a href="/pages/seasons"><button>Robotics/Seasons </button></a>
-    <a href="/pages/contact-us"><button>Robotics/Contact </button></a>
-    <hr style="border-color:gray;border-left:100px solid red;border-right:100px solid red;">
-    <a href="/pages/upload"><button>Robotics/upload </button></a>
-    <a href="/pages/social"><button>Robotics/Social* </button></a>
-  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 
