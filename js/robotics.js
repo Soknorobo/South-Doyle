@@ -1,6 +1,9 @@
 // $(document).ready(function() {
 //   $('[data-toggle="tooltip"]').tooltip();
 // });
+$(document).ready(function() {
+   $('#progress').show();
+});
 
 $(document).on("scroll", function() {
   if ($(document).scrollTop() > 0) {
@@ -61,6 +64,7 @@ function init() {
   }
 }
 window.onload = init;
+
 $(document).ready(function() {
   $({
     property: 0
