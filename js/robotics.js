@@ -74,10 +74,11 @@ $(document).ready(function() {
       if (_percent == 105) {
         $("#progress").addClass("done");
       }
-    },
-    complete: function() {
-      $("#progress").hide();
     }
+    // ,
+    // complete: function() {
+    //   $("#progress").hide();
+    // }
   });
 });
 

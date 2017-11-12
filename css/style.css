@@ -8,11 +8,14 @@
 /*font-family: 'Yanone Kaffeesatz', sans-serif;*/
 
 /* latin- apparently  */
+
 @font-face {
   font-family: 'Yanone Kaffeesatz';
   font-style: normal;
   font-weight: 400;
   src: url("https://fonts.gstatic.com/s/yanonekaffeesatz/v9/YDAoLskQQ5MOAgvHUQCcLWjF_m7mVnhXExjNED3rUtY.woff2?#iefix") format('woff2');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* cyrillic */
@@ -304,23 +307,27 @@ footer {
   color: gold;
   background: lightgray;
 }
- /*progress bar*/
+
+/*progress bar*/
+
 #progress {
   position: fixed;
+  opacity: 1;
   z-index: 99999;
   top: 0;
   left: -10px;
   width: 0%;
   height: 2px;
-  background:red;
+  background: red;
   border-radius: 5px;
   -webkit-transition: width 50ms ease-out, opacity 40ms linear;
   -webkit-transition: width 50ms ease-out, opacity 40ms linear;
   transition: width 50ms ease-out, opacity 40ms linear;
 }
 
+/*
 #progress.done {
-  opacity: 0
+  opacity: 0;
 }
 
 #progress dd, #progress dt {
@@ -374,7 +381,7 @@ footer {
 #progress.waiting dd, #progress.waiting dt {
   -webkit-animation: pulse 2s ease-in-out infinite;
   animation: pulse 2s ease-out infinite
-}
+}*/
 
 /* Full-width input fields */
 
@@ -628,7 +635,6 @@ span.psw {
   box-shadow: 0 0 10px 5px rgb(61, 71, 82);
 }
 
-
 #up_scroll:hover {
   color: red;
 }
@@ -655,9 +661,10 @@ span.psw {
   background: transparent;
 }
 
-.nav>li>a:focus, .nav>li>a:hover{
-  background-color:transparent
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: transparent
 }
+
 .navbar-nav>li>a {
   font-size: 15px;
 }
@@ -718,6 +725,7 @@ header {
 a {
   color: #DDD1C8;
   text-decoration: none;
+  border: none;
   outline: none;
 }
 
@@ -753,8 +761,6 @@ a:hover {
   font-weight: bolder;
   color: #DDD1C8;
 }
-
-
 
 .info-content, .robots {
   margin: 0 auto;
@@ -1518,7 +1524,7 @@ a:hover {
 }
 
 .year:after {
-  content: '^';
+  content: '-';
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -1593,7 +1599,6 @@ a:hover {
 }
 
 /*tags that identify the tabs within the tab container*/
-
 
 #top_down_SDHS {
   width: 100%;
@@ -1704,9 +1709,7 @@ a:hover {
   }
 }
 
-
 /*resources*/
-
 
 .tabsresource {
   position: relative;
@@ -1987,7 +1990,6 @@ a:hover {
     display: block;
   }
 }
-
 
 /*contact-us*/
 
@@ -2272,4 +2274,5 @@ a:hover {
 The navy and light blue will be used for divs and header/footer elements
 the red is an accent color
 Borders and lines will be the Red*/
+
 }
