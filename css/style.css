@@ -325,7 +325,7 @@ footer {
   transition: width 50ms ease-out, opacity 40ms linear;
 }
 
-/*
+
 #progress.done {
   opacity: 0;
 }
@@ -381,7 +381,7 @@ footer {
 #progress.waiting dd, #progress.waiting dt {
   -webkit-animation: pulse 2s ease-in-out infinite;
   animation: pulse 2s ease-out infinite
-}*/
+}
 
 /* Full-width input fields */
 
