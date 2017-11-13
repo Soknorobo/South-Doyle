@@ -1,3 +1,5 @@
+<!-- // ⟁ \\ -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SDHS_Robotics Error</title>
-
+  
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -91,6 +94,14 @@
       text-align: center;
     }
 
+    .error-tpl h1 {
+      color: #f39c12;
+    }
+
+    .error-tpl h2 {
+      color: #48beef;
+    }
+
     .error-actions {
       margin-top: 15px;
       margin-bottom: 15px;
@@ -99,6 +110,10 @@
     .error-actions .btn {
       margin-right: 10px;
       margin-bottom: 10px;
+    }
+
+    .error-details {
+      color: #ae81ff;
     }
 
     /* Styles of the 404 page of my website. */
@@ -238,10 +253,12 @@
     }
 
     .bar {
-      width: 2px;
+      width: 5px;
       height: 40px;
       margin: 2px;
-      float: left;
+      /*float: left;*/
+      opacity: .5;
+      border-radius: 4px;
     }
 
     .b1 {
@@ -469,7 +486,7 @@
 
 
     .quotes {
-      background: #212121;
+      background: #081421;
       border-radius: 5px;
       font-size: 15px;
       font-style: italic;
@@ -648,11 +665,35 @@
       clip: rect(0, 900px, 0, 0);
       animation: noise-anim-2 3s infinite linear alternate-reverse;
     }
+
+    #quoteDisplay {
+      color: white;
+      padding: 0 10px;
+    }
+
+    .if {
+      color: #d65562;
+    }
+
+    .notFound {
+      color: #4ca8ef;
+    }
+
+    .found {
+      font-style: italic;
+      color: #bdbdbd;
+    }
+
+    .quotationglitch {
+      padding-left: 15px;
+      color: #2796ec;
+    }
   </style>
 
 </head>
 
 <body>
+
   <div id="body">
     <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-xing" aria-hidden="true"></i></a>
@@ -699,8 +740,8 @@
             </div>
 
             <div class="quotes">
-              <span style="color:white;" id="quoteDisplay"><span class="quotation">"</span>The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.<span class="quotation">"</span> <br />- Helen
-              Keller
+              <span id="quoteDisplay">
+                <!-- Quote Goes here -->
               </span>
             </div>
           </div>
@@ -723,7 +764,7 @@
           '<span class="quotation">\"</span>All that we see or seem is but a dream within a dream.<span class="quotation">\"</span> <br />- Edgar Allan Poe',
           '<span class="quotation">\"</span>Lord, make me an instrument of thy peace. Where there is hatred, let me sow love.<span class="quotation">\"</span> <br />- Francis of Assisi',
           '<span class="quotation">\"</span>Today you are you! That is truer than true! There is no one alive who is you-er than you!<span class="quotation">\"</span> <br />- Dr. Seuss',
-          '<span class="quotation">\"</span>Education is the most powerful weapon which you can use to change the world. <br />- Nelson Mandela',
+          '<span class="quotation">\"</span>Education is the most powerful weapon which you can use to change the world.<span class="quotation">\"</span> <br />- Nelson Mandela',
           '<span class="quotation">\"</span>Change your thoughts and you change your world.<span class="quotation">\"</span> <br />- Norman Vincent Peale',
           '<span class="quotation">\"</span>In three words I can sum up everything I\'ve learned about life: it goes on.<span class="quotation">\"</span> <br />- Robert Frost',
           '<span class="quotation">\"</span>Love isn\'t something you find. Love is something that finds you.<span class="quotation">\"</span> <br />- Loretta Young',
@@ -749,8 +790,13 @@
           var randomnumber = Math.floor(Math.random() * quotes.length);
           document.getElementById('quoteDisplay').innerHTML = quotes[randomnumber];
         }
-        window.onload = setInterval(newQuote, 10000);
+
+        window.onload = function() {
+          newQuote();
+          setInterval(newQuote, 10000);
+        }
       </script>
+
       <div class="holder">
         <div class="clr"></div>
         <div class="bar b1"></div>
@@ -764,17 +810,17 @@
         <div class="bar b9"></div>
       </div>
       <div class="code-area">
-        <span style="color: #777;font-style:italic;">
+        <span>
     // 404 page not found.
   </span>
         <span>
-    <span style="color:#d65562;">
+    <span class="if">
       if
     </span> (
-        <span style="color:#4ca8ef;">!</span><span style="font-style: italic;color:#bdbdbd;">found</span>) {
+        <span class="notFound">!</span><span class="found">found</span>) {
         </span>
         <span>
-    <span style="padding-left: 15px;class="quotation"">
+    <span class="quotationglitch">
        <i style="width: 10px;display:inline-block"></i>throw
     </span>
         <span>

@@ -1,9 +1,4 @@
-// $(document).ready(function() {
-//   $('[data-toggle="tooltip"]').tooltip();
-// });
-$(document).ready(function() {
-   $('#progress').show();
-});
+// ⟁ \\
 
 $(document).on("scroll", function() {
   if ($(document).scrollTop() > 0) {
@@ -65,26 +60,19 @@ function init() {
 }
 window.onload = init;
 
-$(document).ready(function() {
-  $({
-    property: 0
-  }).animate({
-    property: 105
-  }, {
-    duration: 2000,
-    step: function() {
-      var _percent = Math.round(this.property);
-      $('#progress').css('width', _percent + "%");
-      if (_percent == 105) {
-        $("#progress").addClass("done");
-      }
-    }
-    // ,
-    // complete: function() {
-    //   $("#progress").hide();
-    // }
-  });
-});
+$( document ).ready(function() {
+       $({property: 0}).animate({property: 105}, {
+           duration: 4000,
+           step: function() {
+               var _percent = Math.round(this.property);
+               $('#progress').css('width',  _percent+"%");
+               if(_percent == 105) {
+                   $("#progress").addClass("done");
+               }
+           }
+
+       });
+   });
 
 // scrolling
 // ?
