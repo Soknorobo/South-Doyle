@@ -515,9 +515,11 @@ span.psw {
 }
 
 .login_modal-content {
-  background-color: #fefefe;
+  background-color: ghostwhite;
   margin: 5% auto 15% auto;
   border: 1px solid #888;
+  border-radius: 5px;
+  border: none;
   width: 80%;
 }
 
