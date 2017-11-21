@@ -122,9 +122,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  -webkit-box-shadow: inset 0 0 0 2000px #242842;
-  box-shadow: inset 0 0 0 2000px #192c4f;
-  /*background: #192c4f;*/
+  background: #192c4f;
   opacity: 1;
   overflow: hidden;
   z-index: -1;
@@ -136,7 +134,7 @@
   width: 100%;
   position: absolute;
   overflow: hidden;
-  cursor: url("../images/robot_icon.png"), default;
+  cursor:pointer;
 }
 
 /*.imageSplash h1 {
@@ -150,9 +148,9 @@
   font-size: 10vw;
   z-index: 3;
   text-shadow: 0 2px 10px black;
-}*/
+}
 
-/*#splashtitle {
+#splashtitle {
   text-align: center;
 }*/
 
@@ -1468,6 +1466,10 @@ a:hover {
 
 .tabsabout input[name="tab-control"]:nth-of-type(4):checked~.content>.content-tab:nth-child(4) {
   display: block;
+}
+
+.Team_Members_Names{
+  color: antiquewhite;
 }
 
 @-webkit-keyframes content {
