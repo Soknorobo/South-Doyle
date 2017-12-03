@@ -234,7 +234,7 @@
 
       <form id="loginform" class="login_modal-content animate">
         <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close login_modal">&times;</span>
+          <span style="z-index:901;" onclick="document.getElementById('id01').style.display='none'" class="close" title="Close login_modal"><i class="fa fa-times" aria-hidden="true"></i></span>
 
           <h3>LOGIN </h3>
         </div>
@@ -245,7 +245,7 @@
           <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
 
           <label><b>Password</b></label>
-          <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+          <input id="password" type="password" autocomplete="current-password" placeholder="Enter Password" name="psw" required>
 
           <button class="loginbtn" type="submit">Login</button>
           <input type="checkbox" checked="checked"> Remember me
@@ -255,6 +255,8 @@
           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
           <span class="psw"><a href="#">Forgot password?</a></span>
         </div>
+        <img style="width: 100%;z-index: 900;position: fixed;top: 0;left: 0;" src="/images/devlp.png" alt="asdf">
+
       </form>
     </div>
 
