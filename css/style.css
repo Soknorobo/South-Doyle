@@ -979,6 +979,9 @@ a:hover {
   color: #fff;
   text-align: center;
 }
+#FIRST-font {
+  color: white;
+}
 
 .FIRSTDiv {
   padding: 0 0 0 0;
@@ -995,6 +998,9 @@ a:hover {
 .FIRST-img, .FIRST-img-us {
   -webkit-animation: startBigger 1s ease-in-out;
   animation: startBigger 1s ease-in-out;
+    height: 100%;
+    width: 100%;
+
 }
 
 @-webkit-keyframes startBigger {
@@ -1527,6 +1533,15 @@ a:hover {
   .tabsabout .content .content-tab h2 {
     display: block;
   }
+}
+.txtbgabout {
+  background-color: #262a46;
+  border-radius: 5px;
+  margin-top:20px;
+  text-shadow:5px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+
 }
 
 .year:after {
