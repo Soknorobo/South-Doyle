@@ -775,8 +775,6 @@ a:hover {
   margin-bottom: 20px;
   background: #24283F;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .cardbacgound {
@@ -1225,6 +1223,38 @@ a:hover {
 
 /*About*/
 
+@-webkit-keyframes rotate_left_right {
+0% {
+-webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+}
+50%{
+-webkit-transform:rotate(45deg);
+        transform:rotate(45deg);
+}
+100%{
+-webkit-transform:rotate(180deg);
+        transform:rotate(180deg);
+}
+
+}
+
+@keyframes rotate_left_right {
+0% {
+-webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+}
+50%{
+-webkit-transform:rotate(45deg);
+        transform:rotate(45deg);
+}
+100%{
+-webkit-transform:rotate(180deg);
+        transform:rotate(180deg);
+}
+
+}
+
 .tabsabout {
   position: relative;
   background: #242842;
@@ -1533,15 +1563,6 @@ a:hover {
   .tabsabout .content .content-tab h2 {
     display: block;
   }
-}
-.txtbgabout {
-  background-color: #262a46;
-  border-radius: 5px;
-  margin-top:20px;
-  text-shadow:5px;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 10px;
-
 }
 
 .year:after {
