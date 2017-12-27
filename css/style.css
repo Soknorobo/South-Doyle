@@ -9,6 +9,7 @@
 
 /*font-family: 'Yanone Kaffeesatz', sans-serif;*/
 
+/* latin- apparently  */
 
 @font-face {
   font-family: 'Yanone Kaffeesatz';
@@ -162,12 +163,6 @@
   position: absolute;
   cursor: s-resize;
 }
-#down-splash-arrow{
-  font-size: 30px;
-  -webkit-animation: updown 2.5s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
-          animation: updown 2.5s cubic-bezier(0.18, 0.89, 0.32, 1.28) infinite;
-
-}
 
 #splabel {
   color: #fff;
@@ -185,56 +180,50 @@
   animation-delay: 1.5s;
 }
 
-
 @-webkit-keyframes updown {
   0% {
-    -webkit-transform: rotate(0deg) translateY(-6px);
-            transform: rotate(0deg) translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
   }
   25% {
-    -webkit-transform: rotate(0deg) translateY(-3px);
-            transform: rotate(0deg) translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
   }
   50% {
-    -webkit-transform: rotate(0deg) translateY(0px);
-            transform: rotate(0deg) translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
   }
   75% {
-    -webkit-transform: rotate(0deg) translateY(3px);
-            transform: rotate(0deg) translateY(3px);
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
   }
   100% {
-    -webkit-transform: rotate(360deg) translateY(-6px);
-            transform: rotate(360deg) translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
   }
 }
-
 
 @keyframes updown {
   0% {
-    -webkit-transform: rotate(0deg) translateY(-6px);
-            transform: rotate(0deg) translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
   }
   25% {
-    -webkit-transform: rotate(0deg) translateY(-3px);
-            transform: rotate(0deg) translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
   }
   50% {
-    -webkit-transform: rotate(0deg) translateY(0px);
-            transform: rotate(0deg) translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
   }
   75% {
-    -webkit-transform: rotate(0deg) translateY(3px);
-            transform: rotate(0deg) translateY(3px);
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
   }
   100% {
-    -webkit-transform: rotate(360deg) translateY(-6px);
-            transform: rotate(360deg) translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
   }
-}
-
-.resource_social{
-  font-size: 30px;
 }
 
 .down-splash {
