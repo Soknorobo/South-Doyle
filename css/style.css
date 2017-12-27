@@ -821,7 +821,7 @@ a:hover {
 
 @media only screen and (min-width: 900px) {
   #ytvid {
-    width: 800px;
+    width: 67%;
     margin: 0 auto;
   }
 }
@@ -904,20 +904,6 @@ a:hover {
   padding: 50px;
 }
 
-@media only screen and (max-width: 767px) {
-  .platinum-img {
-    border: 20px solid #e5e4e2;
-  }
-  .gold-img {
-    border: 20px solid #CFB53B;
-  }
-  .silver-img {
-    border: 20px solid #C0C0C0;
-  }
-  .donors-img {
-    border: 20px solid seagreen;
-  }
-}
 
 .platinum-img, .gold-img, .silver-img, .donors-img {
   margin: 0 auto;
@@ -1056,7 +1042,20 @@ a:hover {
   }
 }
 
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+  background-color: #242842;
+  border-color: #242842;
+}
+
 @media only screen and (max-width: 767px) {
+  .platinum-img, .gold-img, .silver-img, .donors-img {
+    border-radius: 100%;
+    background: #DDD1C8;
+    max-width: 200px;
+    margin: 0 auto;
+    -webkit-transition: 2s all ease-in-out;
+    transition: 2s all ease-in-out;
+  }
   .FIRST-img-us {
     margin: 0 auto;
     border-radius: 10%;
@@ -1082,16 +1081,17 @@ a:hover {
     -webkit-transition: 2s all ease-in-out;
     transition: 2s all ease-in-out;
   }
-}
-
-@media only screen and (max-width: 767px) {
-  .platinum-img, .gold-img, .silver-img, .donors-img {
-    border-radius: 100%;
-    background: #DDD1C8;
-    max-width: 200px;
-    margin: 0 auto;
-    -webkit-transition: 2s all ease-in-out;
-    transition: 2s all ease-in-out;
+  .platinum-img {
+    border: 20px solid #e5e4e2;
+  }
+  .gold-img {
+    border: 20px solid #CFB53B;
+  }
+  .silver-img {
+    border: 20px solid #C0C0C0;
+  }
+  .donors-img {
+    border: 20px solid seagreen;
   }
 }
 
@@ -1282,6 +1282,10 @@ a:hover {
   .tabsabout {
     margin: 0px;
   }
+
+  .tabsresource {
+    margin: 0px;
+  }
 }
 
 .tabsabout input[name="tab-control"] {
@@ -1428,12 +1432,6 @@ a:hover {
   fill: #428BFF;
 }
 
-@media (max-width: 600px) {
-  .tabsabout input[name="tab-control"]:nth-of-type(1):checked~ul>li:nth-child(1)>label {
-    background: rgba(0, 0, 0, 0.08);
-  }
-}
-
 .tabsabout input[name="tab-control"]:nth-of-type(1):checked~.slider {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
@@ -1450,12 +1448,6 @@ a:hover {
 
 .tabsabout input[name="tab-control"]:nth-of-type(2):checked~ul>li:nth-child(2)>label svg {
   fill: #428BFF;
-}
-
-@media (max-width: 600px) {
-  .tabsabout input[name="tab-control"]:nth-of-type(2):checked~ul>li:nth-child(2)>label {
-    background: rgba(0, 0, 0, 0.08);
-  }
 }
 
 .tabsabout input[name="tab-control"]:nth-of-type(2):checked~.slider {
@@ -1476,12 +1468,6 @@ a:hover {
   fill: #428BFF;
 }
 
-@media (max-width: 600px) {
-  .tabsabout input[name="tab-control"]:nth-of-type(3):checked~ul>li:nth-child(3)>label {
-    background: rgba(0, 0, 0, 0.08);
-  }
-}
-
 .tabsabout input[name="tab-control"]:nth-of-type(3):checked~.slider {
   -webkit-transform: translateX(200%);
   transform: translateX(200%);
@@ -1498,12 +1484,6 @@ a:hover {
 
 .tabsabout input[name="tab-control"]:nth-of-type(4):checked~ul>li:nth-child(4)>label svg {
   fill: #428BFF;
-}
-
-@media (max-width: 600px) {
-  .tabsabout input[name="tab-control"]:nth-of-type(4):checked~ul>li:nth-child(4)>label {
-    background: rgba(0, 0, 0, 0.08);
-  }
 }
 
 .tabsabout input[name="tab-control"]:nth-of-type(4):checked~.slider {
@@ -1542,37 +1522,6 @@ a:hover {
     opacity: 1;
     -webkit-transform: translateY(0%);
     transform: translateY(0%);
-  }
-}
-
-@media (max-width: 1000px) {
-  .tabsabout ul li label {
-    white-space: initial;
-  }
-  .tabsabout ul li label br {
-    display: initial;
-  }
-  .tabsabout ul li label svg {
-    height: 1.5em;
-  }
-}
-
-@media (max-width: 600px) {
-  .tabsabout ul li label {
-    padding: 5px;
-    border-radius: 5px;
-  }
-  .tabsabout ul li label span {
-    display: none;
-  }
-  .tabsabout .slider {
-    display: none;
-  }
-  .tabsabout .content {
-    margin-top: 20px;
-  }
-  .tabsabout .content .content-tab h2 {
-    display: block;
   }
 }
 
@@ -1734,28 +1683,46 @@ a:hover {
   }
 }
 
-@media (max-width: 1200px) {
+@media  only screen and (max-width: 1200px) {
   .photos {
     -webkit-column-count: 4;
     column-count: 4;
   }
 }
 
-@media (max-width: 1000px) {
+@media  only screen and (max-width: 1000px) {
   .photos {
     -webkit-column-count: 3;
     column-count: 3;
   }
+  .tabsabout ul li label {
+    white-space: initial;
+  }
+  .tabsabout ul li label br {
+    display: initial;
+  }
+  .tabsabout ul li label svg {
+    height: 1.5em;
+  }
+  .tabsresource ul li label {
+    white-space: initial;
+  }
+  .tabsresource ul li label br {
+    display: initial;
+  }
+  .tabsresource ul li label svg {
+    height: 1.5em;
+  }
 }
 
-@media (max-width: 800px) {
+@media  only screen and (max-width: 800px) {
   .photos {
     -webkit-column-count: 2;
     column-count: 2;
   }
 }
 
-@media (max-width: 500px) {
+@media  only screen and (max-width: 500px) {
   .photos {
     -webkit-column-count: 1;
     column-count: 1;
@@ -1776,11 +1743,6 @@ a:hover {
   overflow: scroll;
 }
 
-@media only screen and (max-width:700px) {
-  .tabsresource {
-    margin: 0px;
-  }
-}
 
 .tabsresource input[name="tab-control"] {
   display: none;
@@ -1926,12 +1888,6 @@ a:hover {
   fill: #428BFF;
 }
 
-@media (max-width: 600px) {
-  .tabsresource input[name="tab-control"]:nth-of-type(1):checked~ul>li:nth-child(1)>label {
-    background: rgba(0, 0, 0, 0.08);
-  }
-}
-
 .tabsresource input[name="tab-control"]:nth-of-type(1):checked~.slider {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
@@ -1950,11 +1906,6 @@ a:hover {
   fill: #428BFF;
 }
 
-@media (max-width: 600px) {
-  .tabsresource input[name="tab-control"]:nth-of-type(2):checked~ul>li:nth-child(2)>label {
-    background: rgba(0, 0, 0, 0.08);
-  }
-}
 
 .tabsresource input[name="tab-control"]:nth-of-type(2):checked~.slider {
   -webkit-transform: translateX(100%);
@@ -1972,12 +1923,6 @@ a:hover {
 
 .tabsresource input[name="tab-control"]:nth-of-type(3):checked~ul>li:nth-child(3)>label svg {
   fill: #428BFF;
-}
-
-@media (max-width: 600px) {
-  .tabsresource input[name="tab-control"]:nth-of-type(3):checked~ul>li:nth-child(3)>label {
-    background: rgba(0, 0, 0, 0.08);
-  }
 }
 
 .tabsresource input[name="tab-control"]:nth-of-type(3):checked~.slider {
@@ -1998,12 +1943,6 @@ a:hover {
   fill: #428BFF;
 }
 
-@media (max-width: 600px) {
-  .tabsresource input[name="tab-control"]:nth-of-type(4):checked~ul>li:nth-child(4)>label {
-    background: rgba(0, 0, 0, 0.08);
-  }
-}
-
 .tabsresource input[name="tab-control"]:nth-of-type(4):checked~.slider {
   -webkit-transform: translateX(300%);
   transform: translateX(300%);
@@ -2013,19 +1952,8 @@ a:hover {
   display: block;
 }
 
-@media (max-width: 1000px) {
-  .tabsresource ul li label {
-    white-space: initial;
-  }
-  .tabsresource ul li label br {
-    display: initial;
-  }
-  .tabsresource ul li label svg {
-    height: 1.5em;
-  }
-}
 
-@media (max-width: 600px) {
+@media  only screen and (max-width: 600px) {
   .tabsresource ul li label {
     padding: 5px;
     border-radius: 5px;
@@ -2042,6 +1970,18 @@ a:hover {
   .tabsresource .content .content-tab h2 {
     display: block;
   }
+  .tabsresource input[name="tab-control"]:nth-of-type(4):checked~ul>li:nth-child(4)>label {
+    background: rgba(0, 0, 0, 0.08);
+  }
+  .tabsresource input[name="tab-control"]:nth-of-type(3):checked~ul>li:nth-child(3)>label {
+    background: rgba(0, 0, 0, 0.08);
+  }
+  .tabsresource input[name="tab-control"]:nth-of-type(2):checked~ul>li:nth-child(2)>label {
+    background: rgba(0, 0, 0, 0.08);
+  }
+  .tabsresource input[name="tab-control"]:nth-of-type(1):checked~ul>li:nth-child(1)>label {
+    background: rgba(0, 0, 0, 0.08);
+  }
 }
 
 /*contact-us*/
@@ -2053,13 +1993,7 @@ a:hover {
 #form {
   width: 100%;
   height: 1123px;
-  margin-top: -205px;
-}
-
-@media only screen and (max-width: 660px) {
-  #form {
-    height: 1045px;
-  }
+  margin-top: -100px;
 }
 
 /*footer and other information*/
@@ -2243,6 +2177,9 @@ a:hover {
   }
   .footer-expanded .footer-center i {
     margin-left: 0;
+  }
+  #form {
+    height: 1045px;
   }
 }
 
