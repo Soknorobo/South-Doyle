@@ -2011,7 +2011,7 @@ a:hover {
 
 .footer-expanded {
   background-color: #212121;
-  background-image: url(../images/christmas/mountain.svg);
+  background-image: url(../images/naturalblack.png);
   background-attachment: fixed;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -2021,7 +2021,6 @@ a:hover {
   overflow: hidden;
   text-align: justify;
   padding: 55px 50px;
-  color: #212121;
 }
 
 .footer-expanded .footer-left, .footer-expanded .footer-center, .footer-expanded .footer-right {
@@ -2033,10 +2032,6 @@ a:hover {
 
 .footer-expanded .footer-left {
   width: 40%;
-}
-
-.footer-expanded .footer-center {
-  color: black;
 }
 
 /* Robotics logo if we ever get one*/
@@ -2057,7 +2052,7 @@ a:hover {
 /* Footer links */
 
 .footer-expanded .footer-links {
-  color: #212121;
+  color: #ffffff;
   margin: 20px 0 12px;
   padding: 0;
 }
@@ -2086,13 +2081,9 @@ a:hover {
   width: 35%;
 }
 
-.footer-expanded .footer-center a{
-  color: black;
-}
-
 .footer-expanded .footer-center i {
   background-color: #33383b;
-  color: #212121;
+  color: #ffffff;
   font-size: 25px;
   width: 38px;
   height: 38px;
@@ -2110,7 +2101,7 @@ a:hover {
 
 .footer-expanded .footer-center p {
   display: inline-block;
-  color: #212121;
+  color: #ffffff;
   vertical-align: middle;
   margin: 0;
 }
@@ -2135,6 +2126,7 @@ a:hover {
 
 .footer-expanded .footer-Robotics-about {
   line-height: 20px;
+  color: #92999f;
   font-size: 13px;
   font-weight: normal;
   margin: 0;
@@ -2142,6 +2134,7 @@ a:hover {
 
 .footer-expanded .footer-Robotics-about span {
   display: block;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;
