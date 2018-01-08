@@ -63,6 +63,38 @@
   box-sizing: border-box;
 }
 
+.south_red {
+  color: #7E1F21;
+}
+
+.quoteDisplay {
+  color: #4ca8ef;
+}
+
+.south_blue, .fa-copyright {
+  color: #303C88;
+}
+
+.fa-youtube-play {
+  color: #ff0000;
+}
+
+.fa-twitter {
+  color: #1DA1F2;
+}
+
+.fa-instagram {
+  color: #8a3ab9;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-github {
+  color: #6e5494;
+}
+
 .imageSplash {
   position: fixed;
   top: 0;
@@ -134,7 +166,7 @@
   width: 100%;
   position: absolute;
   overflow: hidden;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 /*.imageSplash h1 {
@@ -223,6 +255,44 @@
   100% {
     -webkit-transform: translateY(-6px);
     transform: translateY(-6px);
+  }
+}
+
+.beat {
+  -webkit-animation: beat .25s infinite alternate;
+  animation: beat .25s infinite alternate;
+}
+
+@-webkit-keyframes beat {
+  to {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+}
+
+@keyframes beat {
+  to {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+}
+
+.skew {
+  -webkit-animation: skew .25s infinite alternate;
+  animation: skew .25s infinite alternate;
+}
+
+@-webkit-keyframes skew {
+  to {
+    -webkit-transform: skewY(20deg);
+    transform: skewY(20deg);
+  }
+}
+
+@keyframes skew {
+  to {
+    -webkit-transform: skewY(20deg);
+    transform: skewY(20deg);
   }
 }
 
@@ -324,7 +394,6 @@ footer {
   -webkit-transition: width 50ms ease-out, opacity 40ms linear;
   transition: width 50ms ease-out, opacity 40ms linear;
 }
-
 
 #progress.done {
   opacity: 0;
@@ -893,7 +962,6 @@ a:hover {
   padding: 50px;
 }
 
-
 .platinum-img, .gold-img, .silver-img, .donors-img {
   margin: 0 auto;
   max-width: 200px;
@@ -963,6 +1031,7 @@ a:hover {
   color: #fff;
   text-align: center;
 }
+
 #FIRST-font {
   color: white;
 }
@@ -982,9 +1051,8 @@ a:hover {
 .FIRST-img, .FIRST-img-us {
   -webkit-animation: startBigger 1s ease-in-out;
   animation: startBigger 1s ease-in-out;
-    height: 100%;
-    width: 100%;
-
+  height: 100%;
+  width: 100%;
 }
 
 @-webkit-keyframes startBigger {
@@ -1031,9 +1099,13 @@ a:hover {
   }
 }
 
-.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
   background-color: #242842;
   border-color: #242842;
+}
+
+.list-group-item-ind {
+  text-align: justify;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1223,36 +1295,39 @@ a:hover {
 
 /*About*/
 
-@-webkit-keyframes rotate_left_right {
-0% {
--webkit-transform:rotate(0deg);
-        transform:rotate(0deg);
-}
-50%{
--webkit-transform:rotate(45deg);
-        transform:rotate(45deg);
-}
-100%{
--webkit-transform:rotate(180deg);
-        transform:rotate(180deg);
+.rotate_left_right {
+  -webkit-animation: rotate_left_right .5s infinite alternate;
+  animation: rotate_left_right .5s infinite alternate;
 }
 
+@-webkit-keyframes rotate_left_right {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+  100% {
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+  }
 }
 
 @keyframes rotate_left_right {
-0% {
--webkit-transform:rotate(0deg);
-        transform:rotate(0deg);
-}
-50%{
--webkit-transform:rotate(45deg);
-        transform:rotate(45deg);
-}
-100%{
--webkit-transform:rotate(180deg);
-        transform:rotate(180deg);
-}
-
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+  100% {
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+  }
 }
 
 .tabsabout {
@@ -1271,7 +1346,6 @@ a:hover {
   .tabsabout {
     margin: 0px;
   }
-
   .tabsresource {
     margin: 0px;
   }
@@ -1484,7 +1558,7 @@ a:hover {
   display: block;
 }
 
-.Team_Members_Names{
+.Team_Members_Names {
   color: antiquewhite;
 }
 
@@ -1645,8 +1719,6 @@ a:hover {
   /* Just in case there are inline attributes */
   width: 100% !important;
   height: auto !important;
-  -webkit-filter: blur(20px);
-  filter: blur(20px);
   padding: 3px;
 }
 
@@ -1672,14 +1744,14 @@ a:hover {
   }
 }
 
-@media  only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .photos {
     -webkit-column-count: 4;
     column-count: 4;
   }
 }
 
-@media  only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .photos {
     -webkit-column-count: 3;
     column-count: 3;
@@ -1704,14 +1776,14 @@ a:hover {
   }
 }
 
-@media  only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .photos {
     -webkit-column-count: 2;
     column-count: 2;
   }
 }
 
-@media  only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .photos {
     -webkit-column-count: 1;
     column-count: 1;
@@ -1719,12 +1791,13 @@ a:hover {
 }
 
 /*resources*/
-.frc_manual_2018_div{
+
+.frc_manual_2018_div {
   text-align: center;
 }
 
-.frc_manual_2018_img{
-  height: 300px;
+.frc_manual_2018_img {
+  height: 10em;
 }
 
 .tabsresource {
@@ -1739,6 +1812,13 @@ a:hover {
   overflow: scroll;
 }
 
+.resource_social {
+  padding-bottom: 20px;
+}
+
+.resource_social .fa {
+  back
+}
 
 .tabsresource input[name="tab-control"] {
   display: none;
@@ -1902,7 +1982,6 @@ a:hover {
   fill: #428BFF;
 }
 
-
 .tabsresource input[name="tab-control"]:nth-of-type(2):checked~.slider {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
@@ -1948,8 +2027,7 @@ a:hover {
   display: block;
 }
 
-
-@media  only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .tabsresource ul li label {
     padding: 5px;
     border-radius: 5px;
@@ -2015,7 +2093,6 @@ a:hover {
   box-sizing: border-box;
   width: 100%;
   overflow: hidden;
-  text-align: justify;
   padding: 55px 50px;
 }
 
@@ -2027,7 +2104,7 @@ a:hover {
 /* Footer left */
 
 .footer-expanded .footer-left {
-  width: 40%;
+  width: 35%;
 }
 
 /* Robotics logo if we ever get one*/
@@ -2035,6 +2112,8 @@ a:hover {
 .footer-expanded h3 {
   color: #303C88;
   margin: 0;
+  font-size: 30px;
+  font-style: oblique;
 }
 
 .footer-expanded h3 span {
@@ -2074,7 +2153,8 @@ a:hover {
 /* Footer Center */
 
 .footer-expanded .footer-center {
-  width: 35%;
+  width: 40%;
+  font-size: 16px;
 }
 
 .footer-expanded .footer-center i {
@@ -2105,7 +2185,7 @@ a:hover {
 .footer-expanded .footer-center p span {
   display: block;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 2;
 }
 
@@ -2122,7 +2202,7 @@ a:hover {
 
 .footer-expanded .footer-Robotics-about {
   line-height: 20px;
-  color: #92999f;
+  color: #fff;
   font-size: 13px;
   font-weight: normal;
   margin: 0;
@@ -2131,7 +2211,7 @@ a:hover {
 .footer-expanded .footer-Robotics-about span {
   display: block;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: bold;
   margin-bottom: 20px;
 }
