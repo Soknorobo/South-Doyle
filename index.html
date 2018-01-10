@@ -42,7 +42,7 @@
 
   <!-- Tab Titile
 ========================================================================== -->
-  <title>SDHS Robotics - Team For the win #6517</title>
+  <title>SDHS Robotics - Team For the win #6517 | South Doyle High School Robotics</title>
 </head>
 
 <body>
@@ -52,13 +52,10 @@
     <input id="clickScroll" type="checkbox" class="clickScroll" aria-hidden="true"></input>
     <div class="imageSplash">
 
-      <video id="splashImage" height="100%" autoplay loop preload poster="./images/South-Doyle V2.jpg">
+      <video id="splashImage" height="100%" playsinline autoplay loop muted preload poster="./images/South-Doyle V2.jpg">
           <source src="./images/vid/South-Doyle V2.mp4" type="video/mp4">
-            <source src="./images/vid/South-Doyle V2.webp" type="video/webp">
-             Your broser doesn't support the video Formats.
-             1. Please Consider using a supported broser.  and
-             2. Please Contact Us and be sure to specify your browser.
-          </video>
+             ERROR ENCOUNTERED: Your broser doesn't support MP4 video Format.
+      </video>
 
       <!-- blurred div on top for future -->
       <div id="blursplash"></div>
@@ -81,6 +78,8 @@
     </div>
   </div>
   <script>
+    document.getElementById('splashImage').play();
+
     // splash screen
     var splash = document.getElementById("splash-screen");
     splash.addEventListener("touchstart", MouseWheelHandler, {
@@ -169,7 +168,7 @@
           <li class="sidebar-items" title="Robotics/About">
             <span>
                                 <a href="./pages/FIRST" class="hamburger is-closed">
-                                    <img style="width:15px;" src="images/sponsors/FIRSTnotext.png" alt="f ">
+                                    <img style="width:15px;" src="sponsors/FIRSTnotext.png" alt="f ">
                                     FIRST Robotics
                                 </a>
                             </span>

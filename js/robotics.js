@@ -1,7 +1,7 @@
 // ⟁ \\
 
 $(document).on("scroll", function() {
-  if ($(document).scrollTop() > 0) {
+  if ($(document).scrollTop() > 50) {
     document.getElementById("logo").style.fontSize = "35px";
     document.getElementById("logo").style.padding = "4px 0px 0px 0px";
     document.getElementById("heading").style.background = "#303C88";
