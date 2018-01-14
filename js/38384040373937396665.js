@@ -37,9 +37,20 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
+
 function activateCheats() {
   var audio = new Audio('resource/Beep-Beep-Im-a-Sheep.mp3');
-  audio.play();
 
-  alert("...cheats activated...");
+  var ask = confirm("                                   TEAM FOR THE WIN\n                                                #6517\n                                  #################\n                                  ...CHEATS ACTIVATED...\n\n              Is it ok to play the easter egg music right now?");
+
+  if (ask == true) {
+
+    document.getElementById('body').style.background = "#f44336";
+    document.getElementById('header').style.background = "linear-gradient(0deg, #f44337 0%, #520000 100%)";
+    audio.play();
+    alert("                             ENJOY THE MUSIC!");
+  } else {
+    txt = "You pressed Cancel!";
+  }
+
 }
