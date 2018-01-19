@@ -1,12 +1,13 @@
-# South-Doyle Robotics
-<b>https://www.soknorobo.com</b>
+# South-Doyle Robotics  
+> https://www.soknorobo.com
 
 >**_" Hello World! "_**
 >**- Mohammad Islam, Brandon Walters, Joel Smith, Adam McDaniel**
 
 * Find us at the <a href="https://www.thebluealliance.com/team/6517" target=""> Blue Alliance Webpage</a>
 
-<center>**South Doyle Robotics Webpage**</center>
+>South Doyle Robotics Webpage
+
 <a href="https://www.soknorobo.com" target=""> <img src="https://github.com/South-Doyle/South-Doyle/blob/master/images/South-Doyle%20V2.png?raw=true" width="100%" alt="[Image of Soknorobo]"> </a>
 
 
