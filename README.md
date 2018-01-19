@@ -19,9 +19,7 @@
     }
 ```
 
-<span style="color:#f00">
 Why not check out our socials while we fix the 404
-</span>
 ¯\\\_(ツ)\_/¯ 
 
 > * <a href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w" aria-hidden="true">YouTube</i></a>
