@@ -10,10 +10,7 @@
 
 <a href="https://www.soknorobo.com" target=""> <img src="https://github.com/South-Doyle/South-Doyle/blob/master/images/South-Doyle%20V2.png?raw=true" width="100%"  target="_blank" alt="[Image of Soknorobo]"> </a>
 
-
 <hr>  
-Roses are <span style="color:red">red</span>, violets are <span style="color:blue">blue</span>.
-
 
 ```javascript
     // 404 page not found.
@@ -22,7 +19,9 @@ Roses are <span style="color:red">red</span>, violets are <span style="color:blu
     }
 ```
 
+<span style="color:#f00">
 Why not check out our socials while we fix the 404
+</span>
 ¯\\\_(ツ)\_/¯ 
 
 > * <a href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w" aria-hidden="true">YouTube</i></a>
