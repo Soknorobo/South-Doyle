@@ -501,6 +501,7 @@ span.psw {
 }
 
 #login {
+  visibility: hidden;
   position: fixed;
   top: 10px;
   right: 5px;
@@ -533,7 +534,8 @@ span.psw {
 #upload {
   position: fixed;
   top: 10px;
-  right: 60px;
+  /* right: 60px; */
+  right: 17px;
   border: none;
   opacity: .6;
   outline: none;
@@ -643,7 +645,8 @@ span.psw {
 }
 
 .container-fluid {
-  margin: 0 90px
+  /* margin: 0 90px; */
+  margin: 0px 54px;
 }
 
 header {
