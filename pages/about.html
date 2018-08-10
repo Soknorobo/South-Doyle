@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic needs
+=========================================================================== -->
+  <!--Tab Icon-->
+  <link rel="icon" href="../images/img.png">
+  <link rel="canonical" href="https://soknorobo.com/" />
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#242842">
+  <meta name="description" content="Achievements | Team members | mentors | Robots">
+  <meta name='copyright' content='South Doyle High School'>
+  <meta name="author" content="SOUTH-DOYLE HIGH SCHOOL">
+  <meta name='owner' content='South-Doyle High School'>
+  <meta name="robots" CONTENT="all">
+  <meta name="revisit-after" content="7 days">
+  <meta property="og:title" content="Soknorobo" />
+  <meta property="og:description" content="Achievements | Team members | mentors | Robots" />
+  <meta property="og:url" content="http://soknorobo.com/" />
+  <meta property="og:image" content="https://github.com/South-Doyle/South-Doyle/blob/master/images/img.png?raw=true" />
+  <meta content="/images/img.png" itemprop="image">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="SDHS Robotics, South Doyle Robotics, Soknorobo,Soknorobo.com, Sokno, Robotics, SDHS,SDHS Robotics,SDHS_Robotics, sdhs,FI RST,FIRST Robotics,competition,robots,south, south Doyle, Doyle, Knoxville,6517,#6517,team6517, team#6517,team #6517,Tweets from South Doyle Robotics,FIRST Robotics,South Doyle Robotics,Team, TeamFTW,FTW, The Blue Alliance,robot,Knox County Schools,Argosy Foundation,Consolidated Nuclear Security,UT-Battelle,TVA,Spencer Pro Diesel,Jupiter Entertainment,DeRoyal,Ryerson Steel,SoKno Market,Red Arrow Industries LLC ">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- CSS
+========================================================================== -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet"> -->
+  <!-- this css is for bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- this css is for the whole site made by us -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <!-- this css is for the sidebar -->
+  <link rel="stylesheet" type="text/css" href="../css/sidebar.css" />
+  <!-- this css adds icons which can be found by googling awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- All scripts goes here
+  	==========================================================================-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- fancybox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+  <!-- all other javascript by us -->
+  <script src="../js/robotics.js"></script>
+  <!-- Tab Titile
+========================================================================== -->
+  <title>About | Soknorobo.com</title>
+</head>
+
+<body>
+
+  <!-- Header
+========================================================================== -->
+  <header>
+    <div id="heading">
+      <nav class="nav navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <h1 id="logo">
+          <a id="logo-sp" href="../index"><span id="title_logo">TeamFTW</span></a>
+          </h1>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../index">HOME</a></li>
+              <li><a href="../pages/FIRST">FIRST</a></li>
+              <li><a href="../pages/sponsors">SPONSORS</a></li>
+              <li><a href="../pages/seasons">SEASONS</a></li>
+              <li><a href="../pages/contact-us">CONTACT US</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+  </header>
+  <!-- Body Class
+========================================================================== -->
+  <div id="body">
+    <!-- About Us
+    ========================================================================== -->
+    <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <div id="id01" class="login_modal">
+      <form id="loginform" class="login_modal-content animate">
+        <div class="imgcontainer">
+          <span style="z-index:901;" onclick="document.getElementById('id01').style.display='none'" class="close" title="Close login_modal"><i class="fa fa-times" aria-hidden="true"></i></span>
+          <h3>LOGIN </h3>
+        </div>
+        <div class="containerlgn">
+          <label>
+              <b>Username</b>
+          </label>
+          <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+          <label>
+              <b>Password</b>
+          </label>
+          <input id="password" type="password" autocomplete="current-password" placeholder="Enter Password" name="psw" required>
+          <button class="loginbtn" type="submit">Login</button>
+          <input type="checkbox" checked="checked">Remember me
+
+
+        </div>
+        <div class="containerlgn" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">
+                            <a href="#">Forgot password?</a>
+                        </span>
+        </div>
+        <img style="width: 100%; opacity: 0.8;z-index: 900;position: fixed;top: 0;left: 0;" src="/images/devlop.png" alt="asdf">
+
+      </form>
+    </div>
+    <script>
+      // Get the login_modal
+      var login_modal = document.getElementById('id01');
+
+      // When the user clicks anywhere outside of the login_modal, close it
+      window.onclick = function(event) {
+        if (event.target == login_modal) {
+          login_modal.style.display = "none";
+        }
+      }
+    </script>
+    <button type="button" id="upload" data-toggle="modal" data-target="#upload_modal" data-keyboard="true">
+                <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+            </button>
+    <div class="container" id="upload_popup">
+      <!-- Modal -->
+      <div class="modal fade" id="upload_modal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content" id="upload_content">
+            <button type="button" class="btn btn-default" data-dismiss="modal" style="float:right;background:black;color:white;outline:none;border:none;">
+                                <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                            </button>
+            <div href="#upload_frame">
+              <iframe id="upload_frame" title="upload US FORM" src="https://script.google.com/macros/s/AKfycbz-PiadwHLL4TJQi_2v39xPgo_HUYf9pWnRvjq-S-c3QSKvhVY/exec" width="100%" height="570px">
+              NOT WORKING ....STILL IN PROGESS...</iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="About">
+      <div class="info">
+
+        <h3 class="info_sub">
+          About us
+        </h3>
+        <div style="background:#242943;border-radius:3px;" class="container">
+          <h3 style="color:white;">
+              <center>
+                  We are <span class="south_blue">South</span>
+                  <span class="south_red">Doyle's</span>
+                  Team FTW, Winner of the Battle for the Bluegrass 2017 Robotics Competition at Lynn Camp High School in Corbin, Kentucky. Winners of The <span class="quoteDisplay">"Highest Rookie Seed"</span> award and <span class="quoteDisplay">"Rookie All Star Award"</span> at the 2017 Smokey Mountain Regional Tournament.
+
+
+              </center>
+          </h3>
+        </div>
+      </div>
+      <div class="tabsabout">
+        <input type="radio" id="tab1" name="tab-control" checked>
+        <input type="radio" id="tab2" name="tab-control">
+        <input type="radio" id="tab3" name="tab-control">
+        <input type="radio" id="tab4" name="tab-control">
+        <ul>
+          <li title="AWARDS">
+            <label for="tab1" role="button">
+                                    <i class="rotate_left_right fa fa-trophy" aria-hidden="true"></i>
+                                    <br>
+                                    <span>Awards</span>
+                                </label>
+          </li>
+          <li title="TEAM MEMBERS">
+            <label for="tab2" role="button">
+                                    <i class="skew fa fa-users" aria-hidden="true"></i>
+                                    <br>
+                                    <span>Team Members</span>
+                                </label>
+          </li>
+          <li title="TEAM">
+            <label for="tab3" role="button">
+                                    <i class="beat fa fa-user-md" aria-hidden="true"></i>
+                                    <br>
+                                    <span>Mentors</span>
+                                </label>
+          </li>
+          <li title="ROBOTS">
+            <label for="tab4" role="button">
+                                    <i class="fa rotate fa-cog" aria-hidden="true"></i>
+                                    <br>
+                                    <span>Robots</span>
+                                </label>
+          </li>
+          <!--
+          <li title="Returns"><label for="tab4" role="button">
+              <br><span></span></label></li> -->
+        </ul>
+        <div class="slider">
+          <div class="indicator"></div>
+        </div>
+        <div class="content">
+          <!-- Awards -->
+          <div class="content-tab">
+            <div class="year" data-toggle="collapse" data-target="#2017_2018" aria-expanded="true">2017-2018
+            </div>
+            <div id="2017_2018" aria-expanded="true" class="collapse in" style="">
+              <div class="info-content">
+                <!-- story text -->
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <a data-fancybox="Awards" href="../images/IMG_20171104_173323.jpg">
+                                                <img id="team" data-src="../images/IMG_20171104_173323.jpg" src="../lowimages/IMG_20171104_173323.jpg" alt="Can't load image...">
+                                            </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 txtbgabout">
+                  <p class="cardtext">We are slowly but surely making our way to the top as we not only improve our stragies but also the amount of support we recieved is undescribable. This year, our true hard work and dedication have paid off, We came in 1st, Winner of
+                    the Battle for the BlueGrass 2017 Robotics Compeition at Lynn Camp High School.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="year" data-toggle="collapse" data-target="#2016_2017" aria-expanded="true">2016-2017
+            </div>
+            <div id="2016_2017" aria-expanded="true" class="collapse in" style="">
+              <div class="info-content">
+                <!-- story text -->
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                  <p class="cardtext txtbgabout">The South-Doyle Robotics team competed at the Smoky Mountain Regional Tournament and won big! Our students earned the Rookie All-Star and Highest Seeded Rookie team award out of 48 schools competing. This earned us a qualifying spot
+                    at the World Championship in Houston, TX, and a chance to represent South-Doyle on the international stage.
+                  </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <a data-fancybox="Awards" href="../images/team.jpg">
+                                                <img id="team" data-src="../images/team.jpg" src="../lowimages/team.jpg" alt="Can't load image...">
+                                            </a>
+                </div>
+              </div>
+              <!-- achievement card -->
+              <div class="info-content">
+                <!-- achievement text -->
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <a data-fancybox="Awards" href="../images/trophies.jpg">
+                                                <img id="trophie" data-src="../images/trophies.jpg" src="../lowimages/trophies.jpg" alt="Can't load image...">
+                                            </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                  <p class="cardtext txtbgabout">Our students designed, engineered, programmed, and built a robot that could deftly compete with even veteran team. Our highest ranking in the tournament was 12th seed and we were in the running to be top 8 alliance captains. We had students
+                    running to help team on our alliance in their pit, rewriting code, fixing parts, and discussing strategy. Mentors and students combined have put in over 1500 hours of hard work, and exercised several brain cells this season too!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- team members -->
+          <div class="Team_Members_Names content-tab">
+            <ol>
+              <div class="Team_Members_Names_col col-xs-6 col-md-3 col-lg-3 col-sm-3">
+                <li>Adam Johnson</li>
+                <li>Adam Massie</li>
+                <li>Adam Miller</li>
+                <li>Addison Cable</li>
+                <li>Alix Harris</li>
+                <li>Alvin Winter</li>
+                <li>Amanda Hubbard</li>
+                <li>Andy G.</li>
+                <li>April Hubbard</li>
+                <li>Austin Hardin</li>
+                <li>Beth Redding</li>
+                <li>Brandon Walters</li>
+                <li>Whitney McVeigh</li>
+                <li>Mohammad Islam</li>
+              </div>
+
+              <div class="Team_Members_Names_col col-xs-6 col-md-3 col-lg-3 col-sm-3">
+                <li>Caden Bins</li>
+                <li>Caleb McGhee</li>
+                <li>Christopher Jackson</li>
+                <li>David Chalmers</li>
+                <li>Deanna King</li>
+                <li>Devon Williford</li>
+                <li>Dillon McClendon</li>
+                <li>Emily Smith</li>
+                <li>Ewan Johnson</li>
+                <li>Hayden Spain</li>
+                <li>Joel Smith</li>
+                <li>Kailey Garrison</li>
+                <li>Kamuran Yalcin</li>
+                <li>Katie DeVinney</li>
+              </div>
+
+              <div class="Team_Members_Names_col col-xs-6 col-md-3 col-lg-3 col-sm-3">
+                <li>Adam McDaniel</li>
+                <li>Lana McDaniel</li>
+                <li>Leonardo Garcia</li>
+                <li>Lisa Hardin</li>
+                <li>Logan Nunn</li>
+                <li>Logan Wrinkle</li>
+                <li>Madison Farmer</li>
+                <li>Marley Harriman</li>
+                <li>Mason Dalton</li>
+                <li>Mason Strader</li>
+                <li>Melody Hubbard</li>
+                <li>Michel DeVinney</li>
+                <li>Michel Redding</li>
+                <li>Mike Soare</li>
+              </div>
+
+              <div class="Team_Members_Names_col col-xs-6 col-md-3 col-lg-3 col-sm-3">
+                <li>Moira Webb</li>
+                <li>Noah Miller</li>
+                <li>Pan Nunn</li>
+                <li>Preston Maynard</li>
+                <li>Rich Spencer</li>
+                <li>Robert Croce</li>
+                <li>Sarah Correa</li>
+                <li>Shawn Nunn</li>
+                <li>Shawn O'Brien</li>
+                <li>Shelly Johnson</li>
+                <li>Steven Johnson</li>
+                <li>Stian Romberg</li>
+                <li>Tandy Strader</li>
+                <li>Taz Bowman</li>
+                <li>Thomas Akers</li>
+              </div>
+            </ol>
+          </div>
+
+
+          <!-- Team -->
+          <div class="content-tab">
+            <div>
+              <h3>Teachers and Mentors</h3>
+            </div>
+            <div class="year" data-toggle="collapse" data-target="#mentor" aria-expanded="true">Joel Smith
+            </div>
+            <div id="mentor" aria-expanded="true" class="collapse in" style="">
+              <div class="info-content">
+                <!-- story text -->
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                  <a data-fancybox="Mentors" href="../images/mentor_prof/joel_smith.jpg">
+                                                <img id="team" src="../images/mentor_prof/joel_smith.jpg" alt="Can't load image...">
+                                            </a>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                  <h3 id="FIRST-font">Joel Smith</h3>
+                  <p class="cardtext">TEACHER HS SCIENCE <br> SOUTH DOYLE HIGH SCHOOL <br> <a href="mailto:support@soknorobo.com" target="_blank">support@soknorobo.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="year" data-toggle="collapse" data-target="#mentor1" aria-expanded="true">Adam Massie
+            </div>
+            <div id="mentor1" aria-expanded="true" class="collapse in" style="">
+              <div class="info-content">
+                <!-- story text -->
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                  <a data-fancybox="Mentors" href="../images/mentor_prof/adam_massie.jpg">
+                                                <img id="team" src="../images/mentor_prof/adam_massie.jpg" alt="Can't load image...">
+                                            </a>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                  <h3 id="FIRST-font">Adam Massie</h3>
+                  <p class="cardtext">
+                    TEACHER HS MATHEMATICS <br> SOUTH DOYLE HIGH SCHOOL <br> <a href="mailto:adam.massie@knoxschools.org" target="_blank">adam.massie@knoxschools.org</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="year" data-toggle="collapse" data-target="#mentor2" aria-expanded="true">Michael DeVinney
+            </div>
+            <div id="mentor2" aria-expanded="true" class="collapse in" style="">
+              <div class="info-content">
+                <!-- story text -->
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                  <a data-fancybox="Mentors" href="../images/mentor_prof/michael_devinney.jpg">
+                                                <img id="team" src="../images/mentor_prof/michael_devinney.jpg"  alt="Can't load image...">
+                                            </a>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                  <h3 id="FIRST-font">Michael DeVinney</h3>
+                  <p class="cardtext">
+                    Research and Development Engineer <br> Y-12 National Security Complex <br> Company NameY-12 National Security Complex <br> <a href="mailto:michael.devinney@gmail.com" target="_blank">michael.devinney@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="year" data-toggle="collapse" data-target="#mentor3" aria-expanded="true">Jim McDaniel
+            </div>
+            <div id="mentor3" aria-expanded="true" class="collapse in" style="">
+              <div class="info-content">
+                <!-- story text -->
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                  <a data-fancybox="Mentors" href="../images/mentor_prof/jim_mcdaniel.jpg">
+                                                <img id="team" src="../images/mentor_prof/jim_mcdaniel.jpg" alt="Can't load image...">
+                                            </a>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                  <h3 id="FIRST-font">Jim McDaniel </h3>
+                  <p class="cardtext">Engineering mentor, advisor to project managers, photographer/chronicler, shuttle/truck driver, carpenter, machinist, material procurer, and occasional cheerleader. <br> <a href="mailto:jim-mcdaniel@att.net" target="_blank">jim-mcdaniel@att.net</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="year" data-toggle="collapse" data-target="#mentor4" aria-expanded="true">Dillon McLendon
+            </div>
+            <div id="mentor4" aria-expanded="true" class="collapse in" style="">
+              <div class="info-content">
+                <!-- story text -->
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                  <a data-fancybox="Mentors" href="../images/mentor_prof/Dillon_McLendon.jpg">
+                                                <img id="team" src="../images/mentor_prof/Dillon_McLendon.jpg" alt="Can't load image...">
+                                            </a>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                  <h3 id="FIRST-font">Dillon McLendon</h3>
+                  <p class="cardtext"><a href="mailto:dillon.mcclendon@gmail.com" target="_blank">dillon.mcclendon@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="year" data-toggle="collapse" data-target="#mentor5" aria-expanded="true">Kathleen McNamara
+            </div>
+            <div id="mentor5" aria-expanded="true" class="collapse in" style="">
+              <div class="info-content">
+                <!-- story text -->
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                  <a data-fancybox="Mentors" href="../images/mentor_prof/KATHLEEN_MCNAMARA.jpg">
+                                                <img id="team" src="../images/mentor_prof/KATHLEEN_MCNAMARA.jpg" alt="Can't load image...">
+                                            </a>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                  <h3 id="FIRST-font">Kathleen McNamara</h3>
+                  <p class="cardtext"> <a href="mailto:kathleen.mcnamara@knoxschools.org" target="_blank">kathleen.mcnamara@knoxschools.org</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Robots -->
+          <div class="content-tab">
+            <!--  -->
+            <div class="year" data-toggle="collapse" data-target="#robots2017_2018" aria-expanded="true">2017-2018
+            </div>
+
+            <div id="robots2017_2018" aria-expanded="true" class="collapse in" style="">
+              <div class="robots">
+                <!-- story text -->
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                  <a data-fancybox="robots" href="../images/hiro_beta.jpg">
+                                                <img id="trophie" data-src="../images/hiro_beta.jpg" src="../images/hiro_beta.jpg" alt="our COOL robot image">
+                                            </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                  <h3 id="FIRST-font">2017-2018</h3>
+                  <h3 id="FIRST-font">Robot Name: Hiro Beta</h3>
+                  <h4 class="cardtext">The glorious testing bot to test and implement necessary changes to alpha bot. This robot is being currently tested for the smokey mountain regional. It may not loog good now, but it will be better soon.</h4>
+                </div>
+
+              </div>
+              <div class="robots">
+                <!-- story text -->
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                  <h3 id="FIRST-font">2017-2018</h3>
+                  <h3 id="FIRST-font">Robot Name: Hogarth V.2</h3>
+                  <h4 class="cardtext">Despite all the stuggles this robot, with the help of our awesome driver and the support of our team, not only earned us a qualifying spot but also managed to get 1st at the Battle For The BlueGrass Robotics Competition at at Lynn Camp High School.</h4>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                  <a data-fancybox="robots" href="../images/2017_11_06 12_33 PM.png">
+                                                <img id="trophie" data-src="../images/2017_11_06 12_33 PM.png" src="../lowimages/2017_11_06 12_33 PM.png" alt="our COOL robot image">
+                                            </a>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="year" data-toggle="collapse" data-target="#robots2016_2017" aria-expanded="true">2016-2017
+            </div>
+            <div id="robots2016_2017" aria-expanded="true" class="collapse in" style="">
+              <div class="robots">
+                <!-- story text -->
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                  <a data-fancybox="robots" href="../images/robot_1.jpg">
+                                                <img id="trophie" data-src="../images/robot_1.jpg" src="../lowimages/robot_1.jpg" alt="our COOL robot image">
+                                            </a>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                  <h3 id="FIRST-font">2016-2017</h3>
+                  <h3 id="FIRST-font">Robot Name: Hogarth</h3>
+                  <h4 class="cardtext">Our rookie season has been full of ups and downs (our robot climbs, so in this case it is meant literally), and we powered through each hurdle with dedication and heart. In our rookie season we built a robot and a team that raised the eye of veteran competitors and Judges this weekend at Thompson-Boling Arena in Knoxville TN</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    </div>
+  </div>
+  <!-- #/About Us
+    ========================================================================== -->
+  <!--fancy-sidebar
+	==========================================================================-->
+  <!-- sidebar navigation -->
+  <div id="wrapper">
+    <div class="overlay hamburger is-closed" data-toggle="offcanvas"></div>
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav" data-toggle="offcanvas">
+        <li class="sidebar-brand">
+          <a href="#" onclick="topFunction();" id="sidebar_Robotics" class="hamburger is-closed">
+                                <i class="fa fa-smile-o" style="color:green;" aria-hidden="true"></i>
+                                Robotics
+
+
+                            </a>
+        </li>
+        <!-- active tab -->
+        <!-- same as navbar-nav -->
+        <li class="sidebar-items" class="active" title="Robotics/Home">
+          <span>
+                                <a href="../index" class="hamburger is-closed">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                    Home
+
+                                </a>
+                            </span>
+        </li>
+        <!-- Inactive tabs -->
+
+        <li class="sidebar-items" title="Robotics/About">
+          <span>
+                                <a href="../pages/FIRST" class="hamburger is-closed">
+                                    <img style="width:15px;" src="../images/sponsors/FIRSTnotext.png" alt="f ">FIRST Robotics
+
+
+                                </a>
+                            </span>
+        </li>
+        <li class="sidebar-items" title="Robotics/About">
+          <span>
+                                <a href="../pages/sponsors" class="hamburger is-closed">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                    Sponsors
+
+
+                                </a>
+                            </span>
+        </li>
+        <li class="sidebar-items" title="Robotics/Seasons">
+          <span>
+                                <a href="../pages/seasons" class="hamburger is-closed">
+                                    <i class="fa fa-users" aria-hidden="true"></i>
+                                    Seasons
+
+                                </a>
+                            </span>
+        </li>
+        <li class="sidebar-items" title="Robotics/Contact Us">
+          <span>
+                                <a href="../pages/contact-us" class="hamburger is-closed">
+                                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                    Contact US
+
+                                </a>
+                            </span>
+        </li>
+      </ul>
+      </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+    <div id="page-content-wrapper">
+      <!-- <button type="button" class="hamburger is-closed" data-toggle="offcanvas"> -->
+      <div id="menu_button">
+        <button type="button" id="hamburger" aria-hidden="true" class="hamburger is-closed" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+        </button>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+  <!-- /#wrapper -->
+  </div>
+  <!--/#fancy-sidebar
+==========================================================================-->
+  <!--Footer
+==========================================================================-->
+  <div class="line"></div>
+  <footer class="footer-expanded">
+    <div class="footer-left">
+      <h3>
+            Team<span>FTW</span>
+        </h3>
+      <p class="footer-links">
+        <a href="../index">Home</a> ·
+        <a href="../pages/about">About</a> ·
+        <a href="../pages/FIRST">FIRST</a> ·
+        <a href="../pages/sponsors">Sponsors</a> ·
+        <a href="../pages/seasons">Seasons</a> ·
+        <a href="../pages/contact-us">Contact Us</a> ·
+        <a href="../pages/resource">Resource</a>
+      </p>
+      <p class="footer-Robotics-name">
+        South-Doyle Robotics <i class="fa fa-copyright" aria-hidden="true"></i> 2017
+
+      </p>
+    </div>
+    <div class="footer-center">
+      <div>
+        <a href="https://www.knoxschools.org/southdoylehs" target="_blank" aria-hidden="true">
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                <p>South-Doyle High School
+
+            </a>
+        </p>
+      </div>
+      <div>
+        <a href="https://goo.gl/maps/YqMqu23H3eJ2" target="_blank" aria-hidden="true">
+        <i class="fa fa-map-marker"></i>
+        <p>
+            <span>2020 Tipton Station Road,</span>
+            Knoxville, TN 37920
+
+    </a>
+        </p>
+      </div>
+      <div>
+        <a href="tel:8655774475">
+        <i class="fa fa-phone"></i>
+        <p>865.577.4475</p>
+    </a>
+      </div>
+      <div>
+        <a href="mailto:support@soknorobo.com" target="_blank">
+        <i class="fa fa-envelope"></i>
+        <p>support@soknorobo.com</p>
+    </a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-Robotics-about">
+        <span>About Us</span> WE ARE THE TEAM "FOR THE WIN"!
+
+
+      </p>
+      <div class="footer-icons">
+
+        <a href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w" target="_blank" aria-hidden="true"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/sdhs_robotics?lang=en" target="_blank" aria-hidden="true"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/southdoylerobotics/?hl=en" target="_blank" aria-hidden="true"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/teamftw6517" target="_blank" aria-hidden="true"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://github.com/South-Doyle/South-Doyle" target="_blank" aria-hidden="true"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+
+      </div>
+      <p class="footer-Robotics-about">
+        <br>Website created by: <br> <a href="https://mohammad.soknorobo.com/">Mohammad Islam</a>, Brandon Walters.
+
+
+      </p>
+    </div>
+    <!-- scroll to top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa fa-angle-up fa-2x" id="up_scroll" aria-hidden="true"></i>
+</button>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+          document.getElementById("myBtn").style.visibility = "visible";
+
+        } else {
+          document.getElementById("myBtn").style.visibility = "hidden";
+
+        }
+      }
+    </script>
+    <!-- fancybox -->
+    <script>
+      $(document).ready(function() {
+        $(".fancybox").fancybox({
+          openEffect: 'none',
+          closeEffect: 'none'
+        });
+      });
+    </script>
+  </footer>
+
+</body>
+
+</html>
