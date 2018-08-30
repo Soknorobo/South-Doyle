@@ -2,7 +2,7 @@
 > https://www.soknorobo.com
 
 >**_" Hello World! "_**
->**- Mohammad Islam, Brandon Walters, Joel Smith, Adam McDaniel**
+>**- Mohammad Islam**
 
 * Find us at the <a href="https://www.thebluealliance.com/team/6517" target="_blank"> Blue Alliance Webpage</a>
 
