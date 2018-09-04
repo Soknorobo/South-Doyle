@@ -17,6 +17,14 @@ body {
   background: #65c0ba;
 }
 
+.south_blue{
+  color: #303C88
+}
+
+.south_red{
+  color: orangered
+}
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -186,7 +194,7 @@ textarea.form-control {
 
 .site-hero .scroll-down {
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   font: bolder;
   left: 50%;
   text-align: center;
