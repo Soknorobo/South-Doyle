@@ -68,7 +68,7 @@
                         <li class="active"><a href="about.html" class="animsition-link">About Us</a></li>
                         <li><a href="sponsors.html" class="animsition-link">Sponsors</a></li>
                         <li><a href="gallery.html" class="animsition-link">Gallery</a></li>
-                        <li><a href="contact.html" class="animsition-link">Contact</a></li>
+                        <li><a href="contact.html" class="animsition-link">Contact</a></li>                         <li><a href="calendar.html" class="animsition-link">Calendar</a></li>
                       </ul>
                     </div>
                   </div>
@@ -193,261 +193,34 @@
           </div>
         </div>
 
-        <div class="row">
+        <div id="names" class="row">
 
+        <script>
+        names = [ "Adam Mcdaniel","Addison Cable","Addison Cable","Andrew Nguyen","Austin Tindell","Carl Triana","Ewan Johnson","Grace Sdhs","Grace Washam","Hannah Lenhart","Harrison Candino","Hayden Spain","Holly Everett","Kailey Garrison","Kathleen Mcnamara","Melody Hubbard","Michael Phelps","Michael Phelps","Mohammad Islam","Naya Brinsaon","Noah Miller","Sarah Correa","Sarah Mcdaniel","Sarah Mcdaniel","Taniya Brinson","The No Life","Thomas Akers","Vicky Chakpuang"]
+                  
+        String.prototype.format = function () {
+          var i = 0, args = arguments;
+          return this.replace(/{}/g, function () {
+            return typeof args[i] != 'undefined' ? args[i++] : '';
+          });
+        };
 
-    
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Adam Mcdaniel</center></h2>
-              </div>
-            </div>
-          </div> 
+        var name_html;
 
+        for(var i=0; i< names.length; i++){
+           var new_div = document.createElement("div"); 
+           new_div.classList.add("col-lg-4")
+           new_div.classList.add("col-md-6") 
+           new_div.classList.add("col-sm-6") 
+           new_div.classList.add("col-12") 
+           new_div.classList.add("post") 
+           new_div.setAttribute("data-aos", "fade-up")
+           new_div.setAttribute("data-aos-delay", "100")
+           new_div.innerHTML = '<div class="media media-custom d-block mb-4"> <div class="media-body"> <h2 class="mt-0 mb-3"><center> {} </center></h2> </div> </div>'.format(names[i])
+            document.getElementById("names").appendChild(new_div)
+          }
 
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Addison Cable</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Addison Cable</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Andrew Nguyen</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Austin Tindell</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Carl Triana</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Ewan Johnson</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Grace Sdhs</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Grace Washam</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Hannah Lenhart</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Harrison Candino</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Hayden Spain</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Holly Everett</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Kailey Garrison</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Kathleen Mcnamara</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Melody Hubbard</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Michael Phelps</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Michael Phelps</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Mohammad Islam</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Naya Brinsaon</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Noah Miller</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Sarah Correa</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Sarah Mcdaniel</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Sarah Mcdaniel</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Taniya Brinson</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>The No Life</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Thomas Akers</center></h2>
-              </div>
-            </div>
-          </div> 
-
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-            <div class="media media-custom d-block mb-4">
-              <div class="media-body">
-                <h2 class="mt-0 mb-3"><center>Vicky Chakpuang</center></h2>
-              </div>
-            </div>
-          </div> 
-
+        </script>
 
         </div>
       </div>
@@ -465,6 +238,7 @@
               <li><a href="./sponsors.html">Sponsors</a> </li>
               <li><a href="./gallery.html">Seasons</a> </li>
               <li><a href="./contact.html">Contact Us</a> </li>
+              <li><a href="./calendar.html">Calendar</a> </li>
             </ul>
           </div>
           <div class="col-md-3 mb-5">
