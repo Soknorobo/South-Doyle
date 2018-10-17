@@ -25,6 +25,10 @@ body {
   color: orangered
 }
 
+img {
+  border-radius: 2%;
+}
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -846,7 +850,8 @@ textarea.form-control {
 }
 
 .footer-section {
-    background: #212121;
+    background: rgb(0, 5, 43);
+    /* background: #212121; */
     color: #fff;
     background-image: url(../img/hypnotize.png);
 }
