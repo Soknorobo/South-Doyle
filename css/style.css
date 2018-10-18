@@ -1,5 +1,5 @@
 body {
-  background: #fff;
+  background: #ebfdff;
   font-family: "Mukta Mahee", arial, sans-serif;
   font-weight: 200;
   font-size: 18px;
@@ -13,7 +13,7 @@ body {
 }
 
 ::selection {
-  color: #fff;
+  color: rgb(0, 0, 0);
   background: #65c0ba;
 }
 
@@ -38,6 +38,11 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+#player{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1, h2, h3, h4, h5 {

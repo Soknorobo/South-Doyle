@@ -45,6 +45,7 @@
 </head>
 
 <body>
+
   <div class="js-animsition animsition" id="site-wrap" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
 
     <header class="site-header">
@@ -199,12 +200,12 @@
       </div>
     </section>
 
-    
+
 
     <!-- END section -->
 
     <footer class="section footer-section">
-      
+
       <div class="container">
         <div class="row mb-4">
           <div class="col-md-3 mb-5">
@@ -240,9 +241,33 @@
           </div>
         </div>
         <div class="row bordertop text-center pt-5">
-          <p class="col-md-12">&copy; Copyright 2018. All Rights Reserved. <br>South-Doyle Robotics<i class="fa fa-copyright"
-              aria-hidden="true"></i> 2018
-          </p>
+          
+            <p id="copyright" class="col-md-12">
+            </p> 
+
+            <!-- <p class="col-md-12">&copy; Copyright 2018. All Rights Reserved. <br>South-Doyle Robotics<i class="fa fa-copyright" aria-hidden="true"></i> 2018
+            </p>  -->
+         
+
+          <script>
+            String.prototype.format = function () {
+              var i = 0,
+                args = arguments;
+              return this.replace(/{}/g, function () {
+                return typeof args[i] != 'undefined' ? args[i++] : '';
+              });
+            };
+
+
+            var time = new Date();
+            //time.getFullYear();
+
+            var copy = document.getElementById("copyright");
+            //new_div.setAttribute("data-aos-delay", "100")
+            copy.innerHTML =
+              '&copy; Copyright 2017-{}. All Rights Reserved. <br>South-Doyle Robotics<i class="fa fa-copyright" aria-hidden="true"></i> {}'.format(time.getFullYear(), time.getFullYear())
+          </script>
+
 
           <p class="col-md-12 social">
             <a target="_blank" href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w" aria-hidden="true">
@@ -265,7 +290,7 @@
         </div>
       </div>
 
-    
+
     </footer>
 
   </div> <!-- .animsition -->
