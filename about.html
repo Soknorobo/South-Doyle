@@ -340,31 +340,55 @@
         </div>
 
         <!-- Copyright -->
-        <div class="row bordertop text-center pt-5">
-          <p class="col-md-12">&copy; Copyright 2018. All Rights Reserved. <br>South-Doyle Robotics<i class="fa fa-copyright"
-              aria-hidden="true"></i> 2018
-          </p>
+<div class="row bordertop text-center pt-5">
 
-          <!-- Socials -->
-          <p class="col-md-12 social">
-            <a target="_blank" href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w" aria-hidden="true">
-              <i class="fa fa-youtube-play" aria-hidden="true"></i>
-            </a>
-            <a target="_blank" href="https://twitter.com/sdhs_robotics?lang=en" aria-hidden="true">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a target="_blank" href="https://www.instagram.com/southdoylerobotics/?hl=en" aria-hidden="true">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a target="_blank" href="https://www.facebook.com/teamftw6517" aria-hidden="true">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a target="_blank" href="https://github.com/South-Doyle/South-Doyle" aria-hidden="true">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
+  <p id="copyright" class="col-md-12">
+  </p>
 
-          </p>
-        </div>
+  <!-- <p class="col-md-12">&copy; Copyright 2018. All Rights Reserved. <br>South-Doyle Robotics<i class="fa fa-copyright" aria-hidden="true"></i> 2018
+            </p>  -->
+
+
+  <script>
+    String.prototype.format = function () {
+      var i = 0,
+        args = arguments;
+      return this.replace(/{}/g, function () {
+        return typeof args[i] != 'undefined' ? args[i++] : '';
+      });
+    };
+
+
+    var time = new Date();
+    //time.getFullYear();
+
+    var copy = document.getElementById("copyright");
+    //new_div.setAttribute("data-aos-delay", "100")
+    copy.innerHTML =
+      '&copy; Copyright 2017-{}. All Rights Reserved. <br>South-Doyle Robotics<i class="fa fa-copyright" aria-hidden="true"></i> {}'
+      .format(time.getFullYear(), time.getFullYear())
+  </script>
+
+
+  <p class="col-md-12 social">
+    <a target="_blank" href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w" aria-hidden="true">
+      <i class="fa fa-youtube-play" aria-hidden="true"></i>
+    </a>
+    <a target="_blank" href="https://twitter.com/sdhs_robotics?lang=en" aria-hidden="true">
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+    </a>
+    <a target="_blank" href="https://www.instagram.com/southdoylerobotics/?hl=en" aria-hidden="true">
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+    </a>
+    <a target="_blank" href="https://www.facebook.com/teamftw6517" aria-hidden="true">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+    </a>
+    <a target="_blank" href="https://github.com/South-Doyle/South-Doyle" aria-hidden="true">
+      <i class="fa fa-github" aria-hidden="true"></i>
+    </a>
+
+  </p>
+</div>
       </div>
     </footer>
 

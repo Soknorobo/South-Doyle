@@ -241,13 +241,13 @@
           </div>
         </div>
         <div class="row bordertop text-center pt-5">
-          
-            <p id="copyright" class="col-md-12">
-            </p> 
 
-            <!-- <p class="col-md-12">&copy; Copyright 2018. All Rights Reserved. <br>South-Doyle Robotics<i class="fa fa-copyright" aria-hidden="true"></i> 2018
+          <p id="copyright" class="col-md-12">
+          </p>
+
+          <!-- <p class="col-md-12">&copy; Copyright 2018. All Rights Reserved. <br>South-Doyle Robotics<i class="fa fa-copyright" aria-hidden="true"></i> 2018
             </p>  -->
-         
+
 
           <script>
             String.prototype.format = function () {
@@ -265,7 +265,8 @@
             var copy = document.getElementById("copyright");
             //new_div.setAttribute("data-aos-delay", "100")
             copy.innerHTML =
-              '&copy; Copyright 2017-{}. All Rights Reserved. <br>South-Doyle Robotics<i class="fa fa-copyright" aria-hidden="true"></i> {}'.format(time.getFullYear(), time.getFullYear())
+              '&copy; Copyright 2017-{}. All Rights Reserved. <br>South-Doyle Robotics<i class="fa fa-copyright" aria-hidden="true"></i> {}'
+              .format(time.getFullYear(), time.getFullYear())
           </script>
 
 
