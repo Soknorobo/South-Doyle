@@ -510,7 +510,7 @@ textarea.form-control {
 }
 
 .bg-pattern {
-  background: #e9ecef url("../img/round.png");
+  background: #e9ecef url("../img/old_mixed/round.png");
 }
 
 .slider-section {
@@ -858,7 +858,7 @@ textarea.form-control {
     background: rgb(0, 5, 43);
     /* background: #212121; */
     color: #fff;
-    background-image: url(../img/hypnotize.png);
+    background-image: url(../img/old_mixed/hypnotize.png);
 }
 
 .footer-section h3 {
