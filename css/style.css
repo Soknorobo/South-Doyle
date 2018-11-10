@@ -29,6 +29,13 @@ img {
   border-radius: 2%;
 }
 
+.sponsor_img{
+  /* border-radius: 50%; */
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
