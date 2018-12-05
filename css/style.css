@@ -1,4 +1,5 @@
 body {
+  /* background: #333333; */
   background: #ebfdff;
   font-family: "Mukta Mahee", arial, sans-serif;
   font-weight: 200;
@@ -53,7 +54,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5 {
-  color: #000;
+  color: #ed1e24;
   font-family: "Abril Fatface", times, serif;
 }
 
