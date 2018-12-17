@@ -102,32 +102,7 @@
     </section>
     <!-- END section -->
 
-    <!--  -->
 
-    <div id="bkgOverlay" class="backgroundOverlay"></div>
-
-    <div id="delayedPopup" class="delayedPopupWindow">
-      <!-- This is the close button -->
-      <a href="#" id="btnClose" title="Click here to close this deal box.">[ X ]</a>
-      <!-- This is the left side of the popup for the description -->
-      <div class="formDescription">
-        <h2>Team 6517
-          <br>
-<span style="color: #122243; font-weight: bold;">SoKno
-          </span>
-<span style="color: #971520; font-weight: bold;"> Robo
-          </span>
-        </h2>
-        <p>To support South Doyle Robotics - SoKno Robo</p>
-        Please navigate to our <a href="https://www.snap-raise.com/fundraisers/south-doyle-robotics-sokno-robo-2018">SnapRaise
-          Website.</a>
-        <br>
-        Thank you so much for helping us meet our goal!
-      </div>
-
-    </div>
-
-    <!--  -->
     <section class="section" id="next-section">
       <div class="container">
         <div class="row align-items-center">
@@ -329,6 +304,48 @@
   <script src="js/animsition.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
+
+    <!--  -->
+    <div id="bkgOverlay" class="backgroundOverlay"></div>
+    <div id="delayedPopup" class="delayedPopupWindow">
+      <!-- This is the close button -->
+      <a href="#" id="btnClose" title="Click here to close this deal box.">[ X ]</a>
+      <!-- This is the left side of the popup for the description -->
+      <div class="formDescription">
+        <h2>Team 6517
+          <br>
+          <span style="color: #122243; font-weight: bold;">SoKno
+          </span>
+          <span style="color: #971520; font-weight: bold;"> Robo
+          </span>
+        </h2>
+        <p>To support South Doyle Robotics - SoKno Robo</p>
+        Please navigate to our <a href="https://www.snap-raise.com/fundraisers/south-doyle-robotics-sokno-robo-2018">SnapRaise
+          Website.</a>
+        <br>
+        Thank you so much for helping us meet our goal!
+      </div>
+    </div>
+    <!--  -->
+
+  <script>
+    $(document).ready(function () {
+        $("#bkgOverlay").delay(4800).fadeIn(400);
+        $("#delayedPopup").delay(5000).fadeIn(400);
+
+        $("#btnClose").click(function (e) {
+          HideDialog();
+          e.preventDefault();
+        });
+      });
+
+      function HideDialog() {
+        $("#bkgOverlay").fadeOut(400);
+        $("#delayedPopup").fadeOut(300);
+      }
+
+  </script>
+
 </body>
 
 </html>

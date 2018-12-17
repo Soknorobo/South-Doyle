@@ -4,20 +4,6 @@ AOS.init({
   once: true
 });
 
-$(document).ready(function () {
-  $("#bkgOverlay").delay(4800).fadeIn(400);
-  $("#delayedPopup").delay(5000).fadeIn(400);
-
-  $("#btnClose").click(function (e) {
-    HideDialog();
-    e.preventDefault();
-  });
-});
-
-function HideDialog() {
-  $("#bkgOverlay").fadeOut(400);
-  $("#delayedPopup").fadeOut(300);
-}
 
 (function ($) {
 

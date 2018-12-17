@@ -84,11 +84,11 @@ h1, h2, h3, h4, h5 {
   display: none;
   position: fixed;
   width: auto;
-  max-width: 480px;
+  max-width: 400px;
   height: 370px;
   top: 50%;
   left: 50%;
-  margin-left: -207px;
+  margin-left: -200px;
   margin-top: -180px;
   background-color: #efefef;
   border: 2px solid #333;
@@ -128,55 +128,6 @@ h1, h2, h3, h4, h5 {
   line-height: 40px;
 }
 
-/*   This is the signup form body  */
-#delayedPopup #mc_embed_signup {
-  float: left;
-  width: 100%;
-  padding: 1%;
-  display: block;
-  font-size: 16px;
-  color: #666;
-  margin-left: 1%;
-}
-
-/*   This is the styling for the signup form inputs  */
-#delayedPopup #mc-embedded-subscribe-form input {
-  width: 100%;
-  height: 30px;
-  font-size: 18px;
-  padding: 3px;
-  margin-bottom: 5px;
-}
-
-/*   This is the styling for the signup form inputs when they are being hovered with the mouse  */
-#delayedPopup #mc-embedded-subscribe-form input:hover {
-  border: solid 2px #40c348;
-  box-shadow: 0 1px 3px #AAAAAA;
-}
-
-/*   This is the styling for the signup form inputs when they are focused  */
-#delayedPopup #mc-embedded-subscribe-form input:focus {
-  border: solid 2px #40c348;
-  box-shadow: none;
-}
-
-/*   This is the styling for the signup form submit button  */
-#delayedPopup #mc-embedded-subscribe {
-  width: 100% !important;
-  height: 40px !important;
-  margin: 10px auto 0 auto;
-  background: #5D9E62;
-  border: none;
-  color: #fff;
-}
-
-/*   This is the styling for the signup form submit button hover state  */
-#delayedPopup #mc-embedded-subscribe:hover {
-  background: #40c348;
-  color: #fff;
-  box-shadow: none !important;
-  cursor: pointer;
-}
 /*  */
 
 .container-fluid {
