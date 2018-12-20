@@ -59,77 +59,6 @@ h1, h2, h3, h4, h5 {
   font-family: "Abril Fatface", times, serif;
 }
 
-/*  */
-
-.backgroundOverlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: #000000;
-  opacity: .85;
-  filter: alpha(opacity=85);
-  -moz-opacity: .85;
-  z-index: 101;
-  display: none;
-}
-
-/*   This is the Popup Window   */
-.delayedPopupWindow {
-  display: none;
-  position: fixed;
-  width: auto;
-  max-width: 400px;
-  height: 370px;
-  top: 50%;
-  left: 50%;
-  margin-left: -200px;
-  margin-top: -180px;
-  background-color: #efefef;
-  border: 2px solid #333;
-  z-index: 102;
-  padding: 10px 20px;
-}
-
-/*   This is the closing button  */
-#btnClose {
-  width: 100%;
-  display: block;
-  text-align: right;
-  text-decoration: none;
-  color: #BCBCBC;
-}
-
-/*   This is the closing button hover state  */
-#btnClose:hover {
-  color: #c90c12;
-}
-
-/*   This is the description headline and paragraph for the form   */
-#delayedPopup>div.formDescription {
-  float: left;
-  display: block;
-  width: 100%;
-  padding: 1% 3%;
-  font-size: 18px;
-  color: #666;
-  clear: left;
-}
-
-/*   This is the styling for the form's headline   */
-#delayedPopup>div.formDescription h2 {
-  color: #444444;
-  font-size: 36px;
-  line-height: 40px;
-}
-
-/*  */
-
 .container-fluid {
   max-width: 1600px;
 }
@@ -283,7 +212,7 @@ textarea.form-control {
 
 .site-hero .scroll-down {
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   font: bolder;
   left: 50%;
   text-align: center;
