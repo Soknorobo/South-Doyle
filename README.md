@@ -8,7 +8,7 @@
 
 >South Doyle Robotics Webpage
 
-<a href="https://www.soknorobo.com" target=""> <img src="https://raw.githubusercontent.com/Atikul10152002/South-Doyle/img/old_mixed/South-Doyle.png" width="100%"  target="_blank" alt="[Image of Soknorobo]"> </a>
+<a href="https://www.soknorobo.com" target=""> <img src="https://soknorobo.com/img/old_mixed/South-Doyle.png" width="100%"  target="_blank" alt="[Image of Soknorobo]"> </a>
 
 <hr>  
 
