@@ -62,9 +62,11 @@ window.mainloop()
 
 filename = os.path.dirname(os.path.abspath(__file__))
 
+print(filename)
 
 with open(os.path.join(filename,"blog.html"), "r") as f:
     fileContents = f.readlines()
+
 
 with open(os.path.join(filename, "blog.html"), "w+") as f:
     lines = f.readlines()
