@@ -1,6 +1,6 @@
 #! bin/bash python3
 from __future__ import print_function
-import os
+import os, sys
 try:
     from tkinter import *
 except:
@@ -60,9 +60,8 @@ btn.grid(column=0, row=9)
 imgAdd.focus()
 window.mainloop()
 
-filename = os.path.dirname(os.path.abspath(__file__))
+filename = os.path.dirname(sys.argv[0])
 
-print(filename)
 
 with open(os.path.join(filename,"blog.html"), "r") as f:
     fileContents = f.readlines()
