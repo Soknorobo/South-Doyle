@@ -60,10 +60,13 @@ btn.grid(column=0, row=9)
 imgAdd.focus()
 window.mainloop()
 
-with open("blog.html", "r") as f:
+filename = os.path.dirname(os.path.abspath(__file__))
+
+
+with open(os.path.join(filename,"blog.html"), "r") as f:
     fileContents = f.readlines()
 
-with open("blog.html", "w+") as f:
+with open(os.path.join(filename, "blog.html"), "w+") as f:
     lines = f.readlines()
     for line in fileContents:
         f.writelines(line)
