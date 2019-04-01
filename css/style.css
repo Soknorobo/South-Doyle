@@ -339,6 +339,12 @@ textarea.form-control {
   cursor: pointer;
 }
 
+.three-line-menu {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+}
+
 .site-menu-toggle span {
   display: block;
   position: absolute;

@@ -13,12 +13,12 @@ body {
 	line-height: 1.8;
 	color: gray('600');
 }
-::-moz-selection { 
+::-moz-selection {
   color: $white;
   background: $primary;
 }
 ::selection {
-  color: $white; 
+  color: $white;
   background: $primary;
 }
 a {
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5 {
 	}
 	&.btn-outline-primary {
 		&:hover {
-			// border: 
+			// border:
 		}
 	}
 	&.btn-primary {
@@ -179,6 +179,7 @@ textarea.form-control {
 
 	}
 }
+
 // Hero
 .full-height {
 	height: 100vh;
@@ -188,7 +189,7 @@ textarea.form-control {
 	background-size: cover;
 	background-position: center center;
 	height: 100vh;
-	min-height: 700px;	
+	min-height: 700px;
 	width: 100%;
 	.scroll-down {
 		position: absolute;
@@ -212,7 +213,7 @@ textarea.form-control {
 			content: "";
 			position: absolute;
 			height: 100vh;
-			min-height: 700px;	
+			min-height: 700px;
 			top: 0;
 			left: 0;
 			bottom: 0;
@@ -360,10 +361,10 @@ textarea.form-control {
 .lead {
 	@include media-breakpoint-down(md) {
 		font-size: 16px;
-	}	
+	}
 }
 .visit-section {
-	
+
 	.visit {
 
 		position: relative;
@@ -384,7 +385,7 @@ textarea.form-control {
 			font-size: 20px;
 			margin-bottom: 0;
 		}
-		
+
 		&:hover, &:focus {
 			top: -1;
 		}
@@ -553,7 +554,7 @@ textarea.form-control {
 		box-shadow: 0 2px 5px -2px rgba(0,0,0,.1);
 		&:hover, &:focus {
 			box-shadow: 0 10px 30px -10px rgba(0,0,0,.1);
-		}	
+		}
 		a {
 			color: $black;
 			&:hover {
@@ -565,7 +566,7 @@ textarea.form-control {
 		}
 		h2 {
 			font-size: 26px;
-		}			
+		}
 	}
 }
 
@@ -577,7 +578,7 @@ textarea.form-control {
 	}
 }
 
-// Owl Carousel 
+// Owl Carousel
 .owl-carousel {
 
 
@@ -587,7 +588,7 @@ textarea.form-control {
 			opacity: 1;
 		}
 	}
-	
+
 	.owl-nav {
 		position: absolute;
 		top: 50%;
@@ -607,7 +608,7 @@ textarea.form-control {
 			}
 		}
 		.owl-prev {
-			
+
 			left: 30px!important;
 		}
 		.owl-next {
@@ -650,9 +651,9 @@ textarea.form-control {
 			background-repeat: no-repeat;
 			background-position: center center;
 			height: calc(100vh - 117px);
-			min-height: 700px;	
+			min-height: 700px;
 			position: relative;
-			
+
 			.slider-text {
 				color: $white;
 				height: calc(100vh - 117px);
@@ -686,7 +687,7 @@ textarea.form-control {
 				}
 			}
 		}
-		
+
 		.owl-dots {
 			position: absolute;
 			bottom: 100px;
@@ -706,9 +707,9 @@ textarea.form-control {
 					border: 2px solid rgba(255,255,255,1);
 					// background: $pr;
 					background: none;
-					span {	
+					span {
 						// background: rgba(0,0,0,1);
-					}	
+					}
 				}
 			}
 
@@ -720,7 +721,7 @@ textarea.form-control {
 			padding-top: 0!important;
 			padding-bottom: 0!important;
 		}
-		
+
 		.owl-stage-outer {
 			padding-top: 30px;
 			padding-bottom: 30px;
@@ -728,7 +729,7 @@ textarea.form-control {
 		.slider-item {
 			height: inherit;
 			min-height: inherit;
-			
+
 			img {
 				margin-bottom: 0;
 
@@ -777,7 +778,7 @@ textarea.form-control {
 		text-align: center;
 		display: inline-block;
 	}
-} 
+}
 
 .footer-section {
 	background: lighten($black, 10%);
@@ -865,7 +866,7 @@ textarea.form-control {
 	text-align: center;
 	img {
 		width: 70px;
-	}	
+	}
 }
 
 .side-box {
@@ -886,7 +887,7 @@ textarea.form-control {
 		a {
 			> div {
 				margin-top: -10px;
-				
+
 			}
 			.meta {
 				font-size: 13px;
@@ -945,7 +946,7 @@ textarea.form-control {
 				color: $primary;
 				font-weight: bold;
 			}
-			
+
 		}
 	}
 
@@ -988,9 +989,9 @@ textarea.form-control {
 		}
 		&.active {
 			.page-link {
-				
+
 				background: $primary;
-				
+
 				box-shadow: 0 2px 7px 0  rgba(0,0,0,.2);
 			}
 		}
