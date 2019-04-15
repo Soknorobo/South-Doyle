@@ -1,11 +1,12 @@
 body {
   /* background: #333333; */
-  background: #ebfdff;
+  /* backgrounhsl(186, 100%, 96%), 100%, 96%)dff; */
+  background:rgba(63, 81, 181, 0.19);
   font-family: "Mukta Mahee", arial, sans-serif;
   font-weight: 200;
   font-size: 18px;
   line-height: 1.8;
-  color: #6c757d;
+  color: #000;
 }
 
 
@@ -43,10 +44,12 @@ a {
   -o-transition: .3s all ease;
   transition: .3s all ease;
   text-decoration: none;
+  color: #2196f3;
 }
 
 a:hover {
   text-decoration: none;
+  color: #ff6b6b;
 }
 
 #player {
