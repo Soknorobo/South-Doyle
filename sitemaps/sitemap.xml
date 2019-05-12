@@ -6,39 +6,52 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
   <loc>https://soknorobo.com/</loc>
-  <lastmod>2018-10-16T03:36:18+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <lastmod>2019-05-12T23:22:54+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://soknorobo.com/about</loc>
-  <lastmod>2018-10-16T03:36:18+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <loc>https://soknorobo.com/index.html</loc>
+  <lastmod>2019-05-12T23:22:54+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://soknorobo.com/first</loc>
-  <lastmod>2018-10-16T03:36:18+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <loc>https://soknorobo.com/first.html</loc>
+  <lastmod>2019-05-12T23:22:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://soknorobo.com/sponsors</loc>
-  <lastmod>2018-10-16T03:36:18+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <loc>https://soknorobo.com/about.html</loc>
+  <lastmod>2019-05-12T23:22:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://soknorobo.com/gallery</loc>
-  <lastmod>2018-10-16T03:36:18+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <loc>https://soknorobo.com/sponsors.html</loc>
+  <lastmod>2019-05-12T23:22:54+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://soknorobo.com/contact</loc>
-  <lastmod>2018-10-16T03:36:18+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <loc>https://soknorobo.com/gallery.html</loc>
+  <lastmod>2019-05-12T23:22:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://soknorobo.com/index</loc>
-  <lastmod>2018-10-16T03:36:18+00:00</lastmod>
-  <changefreq>daily</changefreq>
+  <loc>https://soknorobo.com/contact.html</loc>
+  <lastmod>2019-05-12T23:22:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://soknorobo.com/blog.html</loc>
+  <lastmod>2019-05-12T23:22:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://soknorobo.com/calendar.html</loc>
+  <lastmod>2019-05-12T23:22:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
