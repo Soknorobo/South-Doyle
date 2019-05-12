@@ -8,9 +8,9 @@
 
 >South Doyle Robotics Webpage
 
-<a href="https://www.soknorobo.com" target=""> <img src="https://soknorobo.com/img/old_mixed/South-Doyle.jpg" width="100%"  target="_blank" alt="[Image of Soknorobo]"> </a>
+<a href="https://www.soknorobo.com" target=""> <img src="https://soknorobo.com/img/logos/South-Doyle.jpg" width="100%"  target="_blank" alt="[Image of Soknorobo]"> </a>
 
-<hr>  
+<hr>
 
 ```javascript
     // 404 page not found.
@@ -20,7 +20,7 @@
 ```
 
 Why not check out our socials while we fix the 404
-¯\\\_(ツ)\_/¯ 
+¯\\\_(ツ)\_/¯
 
 
 > * <a href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w" aria-hidden="true">YouTube</i></a>
