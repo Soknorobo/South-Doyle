@@ -7,14 +7,14 @@ body {
   /* background: #333333; */
   /* backgrounhsl(186, 100%, 96%), 100%, 96%)dff; */
   background: rgba(63, 81, 181, 0.19);
+  background-image:url(../img/old_mixed/asfalt.png);
+  background-repeat: repeat;
   font-family: "Mukta Mahee", arial, sans-serif;
   font-weight: 200;
   font-size: 18px;
   line-height: 1.8;
   color: #000;
-
 }
-
 
 ::-moz-selection {
   color: #fff;
@@ -162,6 +162,32 @@ textarea.form-control {
   text-shadow: -4px 4px 0 #4b5282, -8px 8px 0 #424b87, -12px 12px 0 #303C88;
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
+  animation: txtshd 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-animation: txtshd 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes txtshd {
+  from {
+    text-shadow: none
+  }
+
+  to {
+    text-shadow: -4px 4px 0 #4b5282,
+      -8px 8px 0 #424b87,
+      -12px 12px 0 #303C88;
+  }
+}
+
+@-webkit-keyframes txtshd {
+  from {
+    text-shadow: none
+  }
+
+  to {
+    text-shadow: -4px 4px 0 #4b5282,
+      -8px 8px 0 #424b87,
+      -12px 12px 0 #303C88;
+  }
 }
 
 .site-navbar {
@@ -270,6 +296,27 @@ textarea.form-control {
   left: 0;
   bottom: 0;
   right: 0;
+  animation: bkunshadow 2s linear;
+  -webkit-animation: bkunshadow 2s linear;
+}
+
+@keyframes bkunshadow {
+  from {
+    background: rgba(255, 255, 255, .5);
+  }
+
+  to {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+@-webkit-keyframes bkunshadow{
+    from {
+      background: rgba(255, 255, 255, .5);
+    }
+
+    to {
+      background: rgba(0, 0, 0, 0.1);
+    }
 }
 
 .site-hero .btn-primary {
