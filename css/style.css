@@ -1,14 +1,12 @@
-
 html,
 body {
   overflow-x: hidden;
-
 }
 
 body {
   /* background: #333333; */
   /* backgrounhsl(186, 100%, 96%), 100%, 96%)dff; */
-  background:rgba(63, 81, 181, 0.19);
+  background: rgba(63, 81, 181, 0.19);
   font-family: "Mukta Mahee", arial, sans-serif;
   font-weight: 200;
   font-size: 18px;
@@ -78,7 +76,7 @@ h5 {
   font-family: "Abril Fatface", times, serif;
 }
 
-.text-justify{
+.text-justify {
   text-align: justify;
 }
 
@@ -297,7 +295,7 @@ textarea.form-control {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 555px) {
   .index-pre-hero {
     display: none;
     visibility: hidden;
@@ -390,14 +388,46 @@ textarea.form-control {
 
 .site-menu-toggle span:nth-child(1) {
   top: 0px;
+  background: inear-gradient(92deg, #f35626, #feab3a);
+  background: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  animation: hue 40s infinite linear;
+  -webkit-animation: hue 40s infinite linear;
 }
 
 .site-menu-toggle span:nth-child(2) {
   top: 10px;
+  background: inear-gradient(62deg, #f35626, #feab3a);
+  background: -webkit-linear-gradient(72deg, #f35626, #feab3a);
+  animation: hue 40s infinite linear;
+  -webkit-animation: hue 40s infinite linear;
 }
 
 .site-menu-toggle span:nth-child(3) {
   top: 20px;
+  background: inear-gradient(32deg, #f35626, #feab3a);
+  background: -webkit-linear-gradient(32deg, #f35626, #feab3a);
+  animation: hue 40s infinite linear;
+  -webkit-animation: hue 40s infinite linear;
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(360deg);
+  }
 }
 
 .site-menu-toggle.open span:nth-child(1) {
