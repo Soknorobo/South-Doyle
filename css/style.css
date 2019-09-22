@@ -7,7 +7,6 @@ body {
   /* background: #333333; */
   /* backgrounhsl(186, 100%, 96%), 100%, 96%)dff; */
   background: rgba(63, 81, 181, 0.19);
-  background-image:url(../img/old_mixed/asfalt.png);
   background-repeat: repeat;
   font-family: "Mukta Mahee", arial, sans-serif;
   font-weight: 200;
@@ -125,6 +124,174 @@ h5 {
   outline: none;
 }
 
+.animsition,
+.animsition-overlay {
+  position: relative;
+  opacity: 0;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animsition-overlay-slide {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+}
+
+.animsition-loading,
+.animsition-loading:after {
+  width: 32px;
+  height: 32px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -16px;
+  margin-left: -16px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.animsition-loading {
+  background-color: transparent;
+  border-top: 5px solid rgba(255, 5, 5, 0.452);
+  border-right: 5px solid rgba(253, 36, 188, 0.644);
+  border-bottom: 5px solid rgba(38, 0, 255, 0.404);
+  border-left: 5px solid rgba(255, 255, 255, 0.514);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-duration: .6s;
+  animation-duration: .6s;
+  -webkit-animation-name: animsition-loading;
+  animation-name: animsition-loading;
+}
+
+
+
+@-webkit-keyframes animsition-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes animsition-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation-name: fade-out;
+  animation-name: fade-out;
+}
+
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  animation-name: rubberBand;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+
+
 .form-control {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -162,8 +329,8 @@ textarea.form-control {
   text-shadow: -4px 4px 0 #4b5282, -8px 8px 0 #424b87, -12px 12px 0 #303C88;
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
-  animation: txtshd 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  -webkit-animation: txtshd 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: txtshd 2.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-animation: txtshd 2.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 @keyframes txtshd {
@@ -274,8 +441,9 @@ textarea.form-control {
   transform: translateX(-50%);
   text-transform: uppercase;
   font-size: 0.4em;
-  color: #ff6b6b;
+  color: #f35626;
 }
+
 
 .site-hero .scroll-down>span {
   position: relative;
@@ -435,7 +603,7 @@ textarea.form-control {
 
 .site-menu-toggle span:nth-child(1) {
   top: 0px;
-  background: inear-gradient(92deg, #f35626, #feab3a);
+  background: linear-gradient(92deg, #f35626, #feab3a);
   background: -webkit-linear-gradient(92deg, #f35626, #feab3a);
   animation: hue 40s infinite linear;
   -webkit-animation: hue 40s infinite linear;
@@ -443,7 +611,7 @@ textarea.form-control {
 
 .site-menu-toggle span:nth-child(2) {
   top: 10px;
-  background: inear-gradient(62deg, #f35626, #feab3a);
+  background: linear-gradient(62deg, #f35626, #feab3a);
   background: -webkit-linear-gradient(72deg, #f35626, #feab3a);
   animation: hue 40s infinite linear;
   -webkit-animation: hue 40s infinite linear;
@@ -451,7 +619,7 @@ textarea.form-control {
 
 .site-menu-toggle span:nth-child(3) {
   top: 20px;
-  background: inear-gradient(32deg, #f35626, #feab3a);
+  background: linear-gradient(32deg, #f35626, #feab3a);
   background: -webkit-linear-gradient(32deg, #f35626, #feab3a);
   animation: hue 40s infinite linear;
   -webkit-animation: hue 40s infinite linear;
@@ -459,11 +627,11 @@ textarea.form-control {
 
 @keyframes hue {
   from {
-    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
   }
 
   to {
-    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
   }
 }
 
@@ -1003,6 +1171,7 @@ textarea.form-control {
   text-align: center;
   display: inline-block;
 }
+
 
 .footer-section {
   background: #060B27;
