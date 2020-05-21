@@ -204,68 +204,100 @@
   </div>
 </section>
 
-    <footer class="section footer-section">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-md-3 mb-5">
-            <h3>Quick Link</h3>
-            <ul class="list-unstyled link">
-              <li><a href="./index.html">Home</a> </li>
-              <li><a href="./about.html">About</a> </li>
-              <li><a href="./first.html">FIRST</a> </li>
-              <li><a href="./sponsors.html">Sponsors</a> </li>
-              <li><a href="./gallery.html">Seasons</a> </li>
-              <li><a href="./contact.html">Contact Us</a> </li>                         <li><a href="./blog.html">Blogs</a> </li>
+  <footer class="section footer-section">
 
-              <li><a href="./calendar.html">Calendar</a> </li>
-            </ul>
-          </div>
-          <div class="col-md-3 mb-5">
-            <h3>Support</h3>
-            <ul class="list-unstyled link">
-              <li><a href="https://goo.gl/maps/3fJY4yQrWiP2" target="_blank">Our Location</a></li>
-            </ul>
-            <p><span class="d-block"><h3>Email:</h3></span> <span> <a href="mailto:support@soknorobo.com">
-                  <p>support@soknorobo.com</p>
-                </a></span></p>
-          </div>
-          <div class="col-md-3 mb-5 pr-md-5 contact-info">
-            <h3>Contact Info</h3>
-            <p><span class="d-block">Address:</span> <span> 2020 Tipton Station Rd, Knoxville, TN 37920</span></p>
-            <p><span class="d-block">Phone:</span> <span> (865) 577-4475</span></p>
-          </div>
-          <div class="col-md-3 mb-5">
-            <h3>Creators</h3>
-            <a href="https://mohammad.soknorobo.com/">Mohammad Islam / Abir / Alberto</a>
-            </form>
-          </div>
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-3 mb-5">
+          <h3>Quick Link</h3>
+          <ul class="list-unstyled link">
+            <li><a href="./index.html">Home</a> </li>
+            <li><a href="./about.html">About</a> </li>
+            <li><a href="./first.html">FIRST</a> </li>
+            <li><a href="./sponsors.html">Sponsors</a> </li>
+            <li><a href="./gallery.html">Seasons</a> </li>
+            <li><a href="./contact.html">Contact Us</a> </li>
+            <li><a href="./blog.html">Blogs</a> </li>
+
+            <li><a href="./calendar.html">Calendar</a> </li>
+          </ul>
         </div>
-        <div class="row bordertop text-center pt-5">
-          <p class="col-md-12">&copy; Copyright 2018. All Rights Reserved. <br>South-Doyle Robotics<i class="fa fa-copyright"
-              aria-hidden="true"></i> 2018
-          </p>
-
-          <p class="col-md-12 social">
-            <a target="_blank" href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w" aria-hidden="true">
-              <i class="fa fa-youtube-play" aria-hidden="true"></i>
-            </a>
-            <a target="_blank" href="https://twitter.com/sdhs_robotics?lang=en" aria-hidden="true">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a target="_blank" href="https://www.instagram.com/southdoylerobotics/?hl=en" aria-hidden="true">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a target="_blank" href="https://www.facebook.com/teamftw6517" aria-hidden="true">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a target="_blank" href="https://github.com/South-Doyle/South-Doyle" aria-hidden="true">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-
-          </p>
+        <div class="col-md-3 mb-5">
+          <h3>Support</h3>
+          <ul class="list-unstyled link">
+            <li><a href="https://goo.gl/maps/3fJY4yQrWiP2" target="_blank">Our Location</a></li>
+          </ul>
+          <p><span class="d-block">
+              <h3>Email:</h3>
+            </span> <span> <a href="mailto:support@soknorobo.com">
+                <p>support@soknorobo.com</p>
+              </a></span></p>
+        </div>
+        <div class="col-md-3 mb-5 pr-md-5 contact-info">
+          <h3>Contact Info</h3>
+          <p><span class="d-block">Address:</span> <span> 2020 Tipton Station Rd, Knoxville, TN 37920</span></p>
+          <p><span class="d-block">Phone:</span> <span> (865) 577-4475</span></p>
+        </div>
+        <div class="col-md-3 mb-5">
+          <h3>Creators</h3>
+          <a href="https://mohammad.soknorobo.com/">Mohammad Islam / Abir / Alberto</a>
+          </form>
         </div>
       </div>
-    </footer>
+      <div class="row bordertop text-center pt-5">
+
+        <p id="copyright" class="col-md-12">
+        </p>
+
+        <!-- <p class="col-md-12">&copy; Copyright 2018. All Rights Reserved. <br>South-Doyle Robotics<i class="fa fa-copyright" aria-hidden="true"></i> 2018
+            </p>  -->
+
+
+        <script>
+          String.prototype.format = function () {
+            var i = 0,
+              args = arguments;
+            return this.replace(/{}/g, function () {
+              return typeof args[i] != 'undefined' ? args[i++] : '';
+            });
+          };
+
+
+          var time = new Date();
+          //time.getFullYear();
+
+          var copy = document.getElementById("copyright");
+          //new_div.setAttribute("data-aos-delay", "100")
+          copy.innerHTML =
+            '&copy; Copyright 2017-{}. All Rights Reserved. <br>South-Doyle Robotics<i class="fa fa-copyright" aria-hidden="true"></i> {}'
+            .format(time.getFullYear(), time.getFullYear())
+        </script>
+
+
+        <p class="col-md-12 social">
+          <a target="_blank" href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w" aria-hidden="true">
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/sdhs_robotics?lang=en" aria-hidden="true">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/southdoylerobotics/?hl=en" aria-hidden="true">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/teamftw6517" aria-hidden="true">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a target="_blank" href="https://github.com/South-Doyle/South-Doyle" aria-hidden="true">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+
+        </p>
+      </div>
+    </div>
+
+
+  </footer>
+
   </div> <!-- .animsition -->
 
   <script src="js/jquery-3.2.1.min.js"></script>
