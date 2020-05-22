@@ -55,11 +55,10 @@
       <div class="container-fluid">
         <div class="row">
           <!-- Site Header -->
-          <div class="col-4 site-logo" data-aos="fade"><a href="index.html" class="animsition-link">Team #6517</a></div>
+          <div class="col-4 site-logo" data-aos="fade"><a href="./index" class="animsition-link">Team #6517</a></div>
           <div class="col-8">
 
-            <div class="site-menu-toggle js-site-menu-toggle
- three-line-menu" data-aos="fade">
+            <div class="site-menu-toggle js-site-menu-toggle three-line-menu" data-aos="fade">
               <span></span>
               <span></span>
               <span></span>
@@ -73,15 +72,15 @@
                   <div class="row full-height align-items-center">
                     <div class="col-md-12 justify-content-center">
                       <ul class="list-unstyled menu">
-                        <li><a href="index.html" class="animsition-link">Home</a></li>
-                        <li><a href="first.html" class="animsition-link">FIRST</a></li>
+                        <li><a href="./index" class="animsition-link">Home</a></li>
+                        <li><a href="./first" class="animsition-link">FIRST</a></li>
                         <!-- Active Tab -->
-                        <li class="active"><a href="about.html" class="animsition-link">About</a></li>
-                        <li><a href="sponsors.html" class="animsition-link">Sponsors</a></li>
-                        <li><a href="gallery.html" class="animsition-link">Gallery</a></li>
-                        <li><a href="contact.html" class="animsition-link">Contact</a></li>
-                        <li><a href="blog.html" class="animsition-link">Blogs</a></li>
-                        <li><a href="calendar.html" class="animsition-link">Calendar</a></li>
+                        <li class="active"><a href="./about" class="animsition-link">About</a></li>
+                        <li><a href="./sponsors" class="animsition-link">Sponsors</a></li>
+                        <li><a href="./gallery" class="animsition-link">Gallery</a></li>
+                        <li><a href="./contact" class="animsition-link">Contact</a></li>
+                        <!-- <li><a href="./blog" class="animsition-link">Blogs</a></li> -->
+                        <li><a href="./calendar" class="animsition-link">Calendar</a></li>
                       </ul>
                     </div>
                   </div>
@@ -255,16 +254,11 @@
 
         <script>
           names = [
-            "Anna Butler",
-            "Morgan Campbell",
             "Zoe Campbell",
             "Harrison Candino",
             "Vicky Chakpuang",
-            "Brannasia Clegg",
             "Hannah Cooper",
             "Ansley Davis",
-            "Ava Davis",
-            "Holly Everett",
             "Kailey Garrison",
             "Hal Hart",
             "Benjamin Holder",
@@ -272,19 +266,12 @@
             "Mohammad Islam",
             "Desina Manning",
             "Adam Mcdaniel",
-            "Sarah Mcdaniel",
             "Noah Miller",
-            "Grayce Montgomery",
             "Dominick Murray",
             "Alexia Patty",
             "Michael Phelps",
-            "Maxwell Shenandoah",
             "Mason Strader",
-            "Kaleb Styles",
             "Austin Tindell",
-            "Tyler Waldrop",
-            "Natalie Washam",
-            "Hunter Young",
           ]
 
           String.prototype.format = function () {
@@ -306,7 +293,7 @@
             new_div.setAttribute("data-aos", "fade-up")
             new_div.setAttribute("data-aos-delay", "100")
             new_div.innerHTML =
-              '<div class="media media-custom d-block mb-4"> <div class="media-body"> <h2 class="mt-0 mb-3"><center> <i style="color: green; font-size: 17px; position: fixed; top: 10%; left: 80%;" class="fa fa-caret-up" aria-hidden="true"></i> {} </center></h2> </div> </div>'
+              '<div class="media media-custom d-block mb-4"> <div class="media-body"> <h2 class="mt-0 mb-3"><center> {} </center></h2> </div> </div>'
               .format(names[i])
             document.getElementById("names").appendChild(new_div)
           }
@@ -325,15 +312,15 @@
         <div class="col-md-3 mb-5">
           <h3>Quick Link</h3>
           <ul class="list-unstyled link">
-            <li><a href="./index.html">Home</a> </li>
-            <li><a href="./about.html">About</a> </li>
-            <li><a href="./first.html">FIRST</a> </li>
-            <li><a href="./sponsors.html">Sponsors</a> </li>
-            <li><a href="./gallery.html">Seasons</a> </li>
-            <li><a href="./contact.html">Contact Us</a> </li>
-            <li><a href="./blog.html">Blogs</a> </li>
+            <li><a href="./index">Home</a> </li>
+            <li><a href="./about">About</a> </li>
+            <li><a href="./first">FIRST</a> </li>
+            <li><a href="./sponsors">Sponsors</a> </li>
+            <li><a href="./gallery">Seasons</a> </li>
+            <li><a href="./contact">Contact Us</a> </li>
+            <!-- <li><a href="./blog">Blogs</a> </li> -->
 
-            <li><a href="./calendar.html">Calendar</a> </li>
+            <li><a href="./calendar">Calendar</a> </li>
           </ul>
         </div>
 
@@ -360,8 +347,13 @@
         <!-- Creator -->
         <div class="col-md-3 mb-5">
           <h3>Creators</h3>
-          <a href="https://mohammad.soknorobo.com/">Mohammad Islam / Abir / Alberto</a>
-          </form>
+          <div>
+          <a target="_blank" href="https://github.com/a-abir" aria-hidden="true">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://mohammad.soknorobo.com/">Abir </a>
+          </div>
+          
         </div>
 
       </div>
@@ -371,10 +363,6 @@
 
         <p id="copyright" class="col-md-12">
         </p>
-
-        <!-- <p class="col-md-12">&copy; Copyright 2018. All Rights Reserved. <br>South-Doyle Robotics<i class="fa fa-copyright" aria-hidden="true"></i> 2018
-            </p>  -->
-
 
         <script>
           String.prototype.format = function () {
