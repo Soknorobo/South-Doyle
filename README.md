@@ -4,11 +4,11 @@
 >**_" Hello World! "_**
 >**- Abrian Abir**
 
-* Find us at the <a href="https://www.thebluealliance.com/team/6517" target="_blank"> Blue Alliance Webpage</a>
+* Find us at the <a href="https://www.thebluealliance.com/team/6517" target="_blank" rel="noopener noreferrer"> Blue Alliance Webpage</a>
 
 >South Doyle Robotics Webpage
 
-<a href="https://www.soknorobo.com" target=""> <img src="https://soknorobo.com/img/logos/South-Doyle.jpg" width="100%"  target="_blank" alt="[Image of Soknorobo]"> </a>
+<a href="https://www.soknorobo.com" target=""> <img src="https://soknorobo.com/img/logos/South-Doyle.jpg" width="100%"  target="_blank" rel="noopener noreferrer" alt="[Image of Soknorobo]"> </a>
 
 <hr>
 
