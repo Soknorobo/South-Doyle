@@ -49,7 +49,7 @@ a {
   -o-transition: .3s all ease;
   transition: .3s all ease;
   text-decoration: none;
-  color: #2196f3;
+  color: #006bc1;
 }
 
 a:hover {
@@ -63,7 +63,7 @@ a:hover {
 }
 
 .quoteDisplay {
-  color: #ff9800;
+  color: #8b5503;
 }
 
 h1,
@@ -165,8 +165,8 @@ h5 {
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-duration: .6s;
-  animation-duration: .6s;
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
   -webkit-animation-name: animsition-loading;
   animation-name: animsition-loading;
 }
@@ -283,7 +283,7 @@ h5 {
 }
 
 .animated {
-  animation-duration: 1s;
+  animation-duration: 1000ms;
   animation-fill-mode: both;
 }
 .animated.infinite {
@@ -366,7 +366,7 @@ textarea.form-control {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #fff;
+  background: #343a40;
   min-height: 300px;
   overflow-y: scroll;
 }
@@ -380,7 +380,7 @@ textarea.form-control {
 }
 
 .site-navbar nav .menu li a {
-  color: #000;
+  color: whitesmoke;
   font-size: 40px;
   padding: 5px 10px;
   position: relative;
@@ -457,7 +457,7 @@ textarea.form-control {
 }
 
 .site-hero.overlay:before {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.25);
   content: "";
   position: absolute;
   height: 100vh;
@@ -476,7 +476,7 @@ textarea.form-control {
   }
 
   to {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.25);
   }
 }
 @-webkit-keyframes bkunshadow{
@@ -485,7 +485,7 @@ textarea.form-control {
     }
 
     to {
-      background: rgba(0, 0, 0, 0.1);
+      background: rgba(0, 0, 0, 0.25);
     }
 }
 
