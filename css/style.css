@@ -326,9 +326,7 @@ textarea.form-control {
   font-weight: bold;
   line-height: 1;
   font-family: unset;
-  text-shadow: -4px 4px 0 #4b5282,
-  -8px 8px 0 #424b87,
-  -12px 12px 0 #303C88;
+  text-shadow: -2px 2px 0 #4b5282, -3px 3px 0 #424b87, -4px 4px 0 #303c88;
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
   animation: txtshd 2.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -341,9 +339,7 @@ textarea.form-control {
   }
 
   to {
-    text-shadow: -4px 4px 0 #4b5282,
-      -8px 8px 0 #424b87,
-      -12px 12px 0 #303C88;
+    text-shadow: -2px 2px 0 #4b5282, -3px 3px 0 #424b87, -4px 4px 0 #303c88;
   }
 }
 
@@ -353,9 +349,7 @@ textarea.form-control {
   }
 
   to {
-    text-shadow: -4px 4px 0 #4b5282,
-      -8px 8px 0 #424b87,
-      -12px 12px 0 #303C88;
+    text-shadow: -2px 2px 0 #4b5282, -3px 3px 0 #424b87, -4px 4px 0 #303c88;
   }
 }
 
