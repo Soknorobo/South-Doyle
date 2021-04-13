@@ -6,7 +6,7 @@ body {
 body {
   /* background: #333333; */
   /* backgrounhsl(186, 100%, 96%), 100%, 96%)dff; */
-  background: rgba(63, 81, 181, 0.25);
+  /* background: rgba(63, 81, 181, 0.25); */
   background-repeat: repeat;
   font-family: "Mukta Mahee", arial, sans-serif;
   font-weight: 200;
@@ -1227,7 +1227,8 @@ textarea.form-control {
 }
 
 .footer-section a {
-  color: rgba(255, 255, 255, 0.7);
+  /* color: rgba(255, 255, 255, 0.7); */
+  color: white;
 }
 
 .footer-section a:hover {
@@ -1235,7 +1236,8 @@ textarea.form-control {
 }
 
 .footer-section p {
-  color: rgba(255, 255, 255, 0.5);
+  /* color: rgba(255, 255, 255, 0.5); */
+  color: white;
 }
 
 .footer-section .bordertop {
