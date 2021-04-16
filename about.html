@@ -90,8 +90,6 @@
         </div>
       </div>
     </header>
-    <!-- END head -->
-
 
     <section class="site-hero overlay page-inside" style="background-image: url(./img/site_top_img/about.jpg)">
       <div class="container">
@@ -116,8 +114,6 @@
         <!-- <a href="#" class="scroll-down">Scroll Down</a> -->
       </div>
     </section>
-    <!-- END section -->
-
 
     <section class="section">
       <div class="container">
@@ -196,7 +192,6 @@
             </div>
           </div>
 
-
           <!-- END col -->
           <div class="col-md-3" data-aos="fade-up" data-aos-delay="250">
             <div class="testimonial">
@@ -205,8 +200,8 @@
                   alt="We are Soknorobo -- South Knoxville Robotics | Soknorbo.com" class="rounded-circle">
               </div>
               <blockquote>
-                <p>Spanish Instructor <br> Softball Coach<br> <a
-                    href="https://www.knoxschools.org/southdoylehs" target="_blank" rel="noopener
+                <p>Spanish Instructor <br> Softball Coach<br> <a href="https://www.knoxschools.org/southdoylehs"
+                    target="_blank" rel="noopener
                     noreferrer">South-Doyle</a>
                   <br> Assistant Mentor<br> <a href="mailto:kathleen.mcnamara@knoxschools.org" target="_blank"
                     rel="noopener noreferrer">Email</a>
@@ -217,7 +212,6 @@
           </div>
           <!-- END col -->
 
-
           <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
             <div class="testimonial">
               <div class="author-image mb-3">
@@ -226,8 +220,8 @@
               </div>
               <blockquote>
 
-                <p>Math Instructor<br> Soccer Coach<br> <a
-                    href="https://www.knoxschools.org/southdoylehs" target="_blank" rel="noopener
+                <p>Math Instructor<br> Soccer Coach<br> <a href="https://www.knoxschools.org/southdoylehs"
+                    target="_blank" rel="noopener
                     noreferrer">South-Doyle</a>
                   <br> Assistant Mentor<br>
                   <a href="mailto:Adam.Massie@knoxschools.org" target="_blank" rel="noopener noreferrer">Email</a>
@@ -241,88 +235,22 @@
       </div>
     </section>
 
-    <!-- END col -->
-
-
-  </div>
-  </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-center text-center mb-5">
-        <div class="col-md-8">
-          <h2 class="heading" data-aos="fade-up">Team</h2>
+    <section class="section slider-section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-8">
+            <h3 data-aos="fade-up" style="color:var(--bs-blue);">Soknorobo</h3>
+            <h4 class="lead" data-aos="fade-up" data-aos-delay="100">We are South Doyle Robotics</h4>
+          </div>
         </div>
       </div>
 
-      <div id="names" class="row">
+    </section>
+  </div>
 
-        <script>
-          names = [
-            "Zoe Campbell",
-            "Harrison Candino",
-            "Vicky Chakpuang",
-            "Hannah Cooper",
-            "Ansley Davis",
-            "Kailey Garrison",
-            "Abrian Abir",
-            "Hal Hart",
-            "Benjamin Holder",
-            "James Hubbard",
-            "Desina Manning",
-            "Adam Mcdaniel",
-            "Noah Miller",
-            "Dominick Murray",
-            "Alexia Patty",
-            "Michael Phelps",
-            "Mason Strader",
-            "Austin Tindell",
-          ]
-
-          String.prototype.format = function () {
-            var i = 0,
-              args = arguments;
-            return this.replace(/{}/g, function () {
-              return typeof args[i] != 'undefined' ? args[i++] : '';
-            });
-          };
-
-
-          for (var i = 0; i < names.length; i++) {
-            var new_div = document.createElement("div");
-            new_div.classList.add("col-lg-4")
-            new_div.classList.add("col-md-6")
-            new_div.classList.add("col-sm-6")
-            new_div.classList.add("col-12")
-            new_div.classList.add("post")
-            new_div.setAttribute("data-aos", "fade-up")
-            new_div.setAttribute("data-aos-delay", "100")
-            new_div.innerHTML =
-              '<div class="media media-custom d-block mb-4"> <div class="media-body"> <h2 class="mt-0 mb-3"><center> {} </center></h2> </div> </div>'
-              .format(names[i])
-            document.getElementById("names").appendChild(new_div)
-          }
-        </script>
-
-      </div>
-    </div>
-  </section>
-
-  <section style="padding:0;" class="section slider-section">
-    <div class="container">
-      <div class="row justify-content-center text-center mb-5">
-        <div class="col-md-8">
-          <h3 data-aos="fade-up" style="color:var(--blue);">Soknorobo</h3>
-          <h4 class="lead" data-aos="fade-up" data-aos-delay="100">We are South Doyle Robotics</h4>
-        </div>
-      </div>
-    </div>
-
-  </section>
 
   <!-- Footer -->
-  <footer class="section footer-section">
+  <footer style="padding: 4em 0 0 0;" class="section footer-section">
 
     <div class="container">
       <div class="row mb-4">
@@ -343,12 +271,12 @@
         <div class="col-md-3 mb-5">
           <h3>Support</h3>
           <ul class="list-unstyled link">
-            <li><a href="https://goo.gl/maps/3fJY4yQrWiP2" target="_blank" rel="noopener noreferrer">Our Location</a>
-            </li>
+            <li><a href="https://goo.gl/maps/3fJY4yQrWiP2" target="_blank" rel="noopener noreferrer">Our
+                Location</a></li>
           </ul>
           <p><span class="d-block">
               <h3>Email:</h3>
-            </span> <span> <a href="mailto:support@soknorobo.com">
+            </span> <span> <a target="_blank" rel="noopener noreferrer" href="mailto:support@soknorobo.com">
                 <p>support@soknorobo.com</p>
               </a></span></p>
         </div>
@@ -362,39 +290,28 @@
           <h3>Creators</h3>
 
           <div>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/a-abir" >
-              <i class="icon icon-github" ></i>
-              Abrian Abir</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/a-abir">
+              <i class="icon icon-github"></i> Abrian Abir</a>
           </div>
 
           <div>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/med-jed" >
-              <i class="icon icon-github" ></i>
-              Vicky Chakpuang</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/med-jed">
+              <i class="icon icon-github"></i> Vicky Chakpuang</a>
           </div>
           <div>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Noah-MIller-1" >
-              <i class="icon icon-github" ></i>
-              Noah Miller</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Noah-MIller-1">
+              <i class="icon icon-github"></i>Noah Miller</a>
           </div>
           <div>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/kaileygarrison" >
-              <i class="icon icon-github" ></i>
-              Kailey Garrison</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/kaileygarrison">
+              <i class="icon icon-github"></i>Kailey Garrison</a>
           </div>
-
-
 
         </div>
       </div>
-      <div class="row bordertop text-center pt-5">
-
+      <div class="row bordertop text-center pt-4">
         <p id="copyright" class="col-md-12">
         </p>
-
-
-
-
         <script>
           String.prototype.format = function () {
             var i = 0,
@@ -403,8 +320,6 @@
               return typeof args[i] != 'undefined' ? args[i++] : '';
             });
           };
-
-
           var time = new Date();
           //time.getFullYear();
 
@@ -417,30 +332,25 @@
 
 
         <p class="col-md-12 social">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w"
-            >
-            <i class="icon icon-youtube-play" ></i>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w">
+            <i class="icon icon-youtube-play"></i>
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/sdhs_robotics?lang=en"
-            >
-            <i class="icon icon-twitter" ></i>
+          <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/sdhs_robotics?lang=en">
+            <i class="icon icon-twitter"></i>
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/southdoylerobotics/?hl=en"
-            >
-            <i class="icon icon-instagram" ></i>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/southdoylerobotics/?hl=en">
+            <i class="icon icon-instagram"></i>
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/teamftw6517" >
-            <i class="icon icon-facebook" ></i>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/teamftw6517">
+            <i class="icon icon-facebook"></i>
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/South-Doyle/South-Doyle"
-            >
-            <i class="icon icon-github" ></i>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/South-Doyle/South-Doyle">
+            <i class="icon icon-github"></i>
           </a>
 
         </p>
       </div>
     </div>
-
 
   </footer>
 
@@ -448,8 +358,7 @@
 
   <!-- JavaScripts -->
   <script src="js/jquery-3.2.1.min.js"></script>
-  
-  <script  async src="js/bootstrap.min.js"></script>
+  <script async src="js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script defer src="js/jquery.fancybox.min.js"></script>
   <script src="js/animsition.min.js"></script>

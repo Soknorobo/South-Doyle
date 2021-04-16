@@ -10,7 +10,6 @@ AOS.init({
 (function ($) {
 
   'use strict';
-
   $('.site-menu-toggle').click(function () {
     var $this = $(this);
     if ($('body').hasClass('menu-open')) {
@@ -23,7 +22,6 @@ AOS.init({
       $('body').addClass('menu-open');
     }
   });
-
 
   var $root = $('html, body');
 
@@ -55,8 +53,6 @@ AOS.init({
     console.log('show');
   });
 
-
-
   // home slider
   $('.home-slider').owlCarousel({
     loop: true,
@@ -68,7 +64,7 @@ AOS.init({
     autoplayHoverPause: true,
     items: 1,
     autoheight: true,
-    navText: ["<span class='ion-chevron-left'></span>", "<span class='ion-chevron-right'></span>"],
+    navText: ["<span class='icon-angle-circled-left'></span>", "<span class='icon-angle-circled-right'></span>"],
     responsive: {
       0: {
         items: 1,
@@ -97,7 +93,7 @@ AOS.init({
     nav: true,
     autoplayHoverPause: true,
     items: 3,
-    navText: ["<span class='ion-chevron-left'></span>", "<span class='ion-chevron-right'></span>"],
+    navText: ["<span class='icon-angle-circled-left'></span>", "<span class='icon-angle-circled-right'></span>"],
     responsive: {
       0: {
         items: 1,
@@ -127,7 +123,7 @@ AOS.init({
     nav: true,
     autoplayHoverPause: true,
     items: 4,
-    navText: ["<span class='ion-chevron-left'></span>", "<span class='ion-chevron-right'></span>"],
+    navText: ["<span class='icon-angle-circled-left'></span>", "<span class='icon-angle-circled-right'></span>"],
     responsive: {
       0: {
         items: 1,
