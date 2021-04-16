@@ -27,11 +27,13 @@ body {
 }
 
 .south_red {
-  color: #ff4500
+  color: #8a000d
 }
 
 img {
-  border-radius: 2%
+  border-radius: 2%;
+  width: 100%; /* or max-width: 100%; */
+  height: auto;
 }
 
 .sponsor_img {
@@ -42,10 +44,10 @@ img {
 
 @font-face {
   font-family: fontello;
-  src: url(../fonts/fontello/font/fontello.eot?5483826);
-  src: url(../fonts/fontello/font/fontello.eot?5483826#iefix) format('embedded-opentype'), url(../fonts/fontello/font/fontello.woff?5483826) format('woff'), url(../fonts/fontello/font/fontello.ttf?5483826) format('truetype'), url(../fonts/fontello/font/fontello.svg?5483826#fontello) format('svg');
+  src: url(../fonts/fontello/font/fontello.eot);
+  src: url(../fonts/fontello/font/fontello.eot) format('embedded-opentype'), url(../fonts/fontello/font/fontello.woff) format('woff'), url(../fonts/fontello/font/fontello.ttf) format('truetype'), url(../fonts/fontello/font/fontello.svg) format('svg');
   font-weight: 400;
-  font-style: normal
+  font-style: swap;
 }
 
 .icon {
@@ -98,6 +100,12 @@ h5 {
 
 .container-fluid {
   max-width: 1600px
+}
+
+.slight-shadow {
+  border-radius: 20px;
+  background-color: whitesmoke;
+  padding: 1.5em;
 }
 
 .btn {
@@ -367,11 +375,11 @@ h5 {
 }
 
 .site-navbar nav .menu li a:hover {
-  color: #65c0ba
+  color: #26c4e4
 }
 
 .site-navbar nav .menu li.active a {
-  color: #65c0ba
+  color: #26c4e4
 }
 
 .site-navbar nav .menu li.active a:before {
@@ -952,51 +960,52 @@ h5 {
 
 .footer-section {
   background: #060b27;
-  color: #fff
+  color: #fff;
+  border-radius: 2% 2% 0 0;
 }
 
 .footer-section h3 {
-  color: #fff;
+  color: #ffd0c1;
   font-size: 18px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .footer-section a {
-  color: #fff
+  color: #fff;
 }
 
 .footer-section a:hover {
-  color: #fff
+  color: #fff;
 }
 
 .footer-section p {
-  color: #fff
+  color: #fff;
 }
 
 .footer-section .bordertop {
   border-top: 1px solid rgba(255, 255, 255, .1);
-  padding-top: 20px
+  padding-top: 20px;
 }
 
 .footer-section .contact-info span.d-block {
   font-style: italic;
-  color: #fff
+  color: #fff;
 }
 
 .footer-section .social a {
   font-size: 18px;
-  padding: 10px
+  padding: 10px;
 }
 
 .footer-section .link li {
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 .contact-section .contact-info p {
   font-family: "Abril Fatface", times, serif;
   color: #000;
   font-size: 30px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 .contact-section .contact-info p .d-block {
@@ -1005,5 +1014,5 @@ h5 {
   font-family: "Mukta Mahee", arial, sans-serif;
   text-transform: uppercase;
   color: #65c0ba;
-  font-weight: 700
+  font-weight: 700;
 }
