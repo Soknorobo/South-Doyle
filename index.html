@@ -7,7 +7,7 @@
   <link rel="icon" href="img/logos/img.png">
   <link rel="canonical" href="https://soknorobo.com/index />
 
-  <meta charset="utf-8">
+  <meta charset=" utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <meta name="theme-color" content="#242842">
@@ -123,7 +123,7 @@
             </a>
             <img class="card-img-top"
               style="max-width: 400px; margin:0 auto; -webkit-filter: invert(1); filter: invert(1);"
-              src="https://info.firstinspires.org/hubfs/2020microsite/gamechanges-id.svg" alt="First Game Changers">
+              src="./img/logos/gamechangers-home-logo.svg" alt="First Game Changers">
             <div class="card-body" style="text-align: center;">
               <h3 class="card-title"> FIRST Game Changers | 2020-2021</h3>
               <a target="_blank" rel="noopener noreferrer" href="https://info.firstinspires.org/infinite-recharge"
@@ -141,7 +141,8 @@
               <h2 class="mb-8"> FIRST Rise | Infinite Recharge 2020</h2>
               <p> Sadly, the 2020 FIRST Robotics season was cancelled. But, we'll continue to fight through the current
                 crisis and help our community recover.</p> <small> We are Soknorobo. We are <a target="_blank"
-                    rel="noopener noreferrer" href="https://info.firstinspires.org/2021season?utm_source=rise&utm_medium=redirect&utm_campaign=fir-registration-021"><i>Game
+                  rel="noopener noreferrer"
+                  href="https://info.firstinspires.org/2021season?utm_source=rise&utm_medium=redirect&utm_campaign=fir-registration-021"><i>Game
                     Changers</i></a>
                 .</small>
             </div>
@@ -363,25 +364,24 @@
               <h3>Creators</h3>
 
               <div>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/a-abir" >
-                  <i class="icon icon-github" ></i>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/a-abir">
+                  <i class="icon icon-github"></i>
                   Abrian Abir</a>
               </div>
 
               <div>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/med-jed" >
-                  <i class="icon icon-github" ></i>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/med-jed">
+                  <i class="icon icon-github"></i>
                   Vicky Chakpuang</a>
               </div>
               <div>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Noah-MIller-1" >
-                  <i class="icon icon-github" ></i>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Noah-MIller-1">
+                  <i class="icon icon-github"></i>
                   Noah Miller</a>
               </div>
               <div>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/kaileygarrison"
-                  >
-                  <i class="icon icon-github" ></i>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/kaileygarrison">
+                  <i class="icon icon-github"></i>
                   Kailey Garrison</a>
               </div>
 
@@ -411,24 +411,20 @@
 
             <p class="col-md-12 social">
               <a target="_blank" rel="noopener noreferrer"
-                href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w" >
-                <i class="icon icon-youtube-play" ></i>
+                href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w">
+                <i class="icon icon-youtube-play"></i>
               </a>
-              <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/sdhs_robotics?lang=en"
-                >
-                <i class="icon icon-twitter" ></i>
+              <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/sdhs_robotics?lang=en">
+                <i class="icon icon-twitter"></i>
               </a>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/southdoylerobotics/?hl=en"
-                >
-                <i class="icon icon-instagram" ></i>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/southdoylerobotics/?hl=en">
+                <i class="icon icon-instagram"></i>
               </a>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/teamftw6517"
-                >
-                <i class="icon icon-facebook" ></i>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/teamftw6517">
+                <i class="icon icon-facebook"></i>
               </a>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/South-Doyle/South-Doyle"
-                >
-                <i class="icon icon-github" ></i>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/South-Doyle/South-Doyle">
+                <i class="icon icon-github"></i>
               </a>
 
             </p>
@@ -441,13 +437,23 @@
 
 
   <script src="js/jquery-3.2.1.min.js"></script>
-  
+
   <script async src="js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script defer src="js/jquery.fancybox.min.js"></script>
   <script src="js/animsition.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    $(function () {
+      setTimeout(function () {
+        var jumpPos = $('#next-section').offset().top;
+        if ($(document).scrollTop() <= jumpPos) $('html, body').animate({
+          scrollTop: jumpPos
+        }, 1000);
+      }, 5000);
+    });
+  </script>
 
 </body>
 
