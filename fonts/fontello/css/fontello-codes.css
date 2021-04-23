@@ -1,9 +1,1 @@
-
-.icon-play:before { content: '\e800'; } /* '' */
-.icon-twitter:before { content: '\f099'; } /* '' */
-.icon-facebook:before { content: '\f09a'; } /* '' */
-.icon-github:before { content: '\f09b'; } /* '' */
-.icon-angle-circled-left:before { content: '\f137'; } /* '' */
-.icon-angle-circled-right:before { content: '\f138'; } /* '' */
-.icon-youtube-play:before { content: '\f16a'; } /* '' */
-.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-play:before{content:'\e800'}.icon-twitter:before{content:'\f099'}.icon-facebook:before{content:'\f09a'}.icon-github:before{content:'\f09b'}.icon-angle-circled-left:before{content:'\f137'}.icon-angle-circled-right:before{content:'\f138'}.icon-youtube-play:before{content:'\f16a'}.icon-instagram:before{content:'\f16d'}

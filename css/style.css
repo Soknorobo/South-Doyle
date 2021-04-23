@@ -32,8 +32,8 @@ body {
 
 img {
   border-radius: 2%;
-  width: 100%; /* or max-width: 100%; */
-  height: auto;
+  width: 100%;
+  height: auto
 }
 
 .sponsor_img {
@@ -47,7 +47,7 @@ img {
   src: url(../fonts/fontello/font/fontello.eot);
   src: url(../fonts/fontello/font/fontello.eot) format('embedded-opentype'), url(../fonts/fontello/font/fontello.woff) format('woff'), url(../fonts/fontello/font/fontello.ttf) format('truetype'), url(../fonts/fontello/font/fontello.svg) format('svg');
   font-weight: 400;
-  font-style: swap;
+  font-style: swap
 }
 
 .icon {
@@ -105,7 +105,7 @@ h5 {
 .slight-shadow {
   border-radius: 20px;
   background-color: whitesmoke;
-  padding: 1.5em;
+  padding: 1.5em
 }
 
 .btn {
@@ -127,7 +127,7 @@ h5 {
 }
 
 .btn.btn-primary {
-  background: 0 0;
+  background: 0;
   border-width: 2px
 }
 
@@ -473,13 +473,13 @@ h5 {
   font-weight: 700
 }
 
-@media (max-width:991.98px) {
+@media(max-width:991.98px) {
   .site-hero-inner .heading {
     font-size: 40px
   }
 }
 
-@media (max-width:555px) {
+@media(max-width:555px) {
   .index-pre-hero {
     display: none;
     visibility: hidden
@@ -493,7 +493,7 @@ h5 {
   line-height: 1.5
 }
 
-@media (max-width:991.98px) {
+@media(max-width:991.98px) {
   .site-hero-inner .sub-heading {
     font-size: 18px
   }
@@ -613,13 +613,13 @@ h5 {
   padding: 4em 0 4em 0
 }
 
-@media (max-width:991.98px) {
+@media(max-width:991.98px) {
   .section {
     padding: 3em 0
   }
 }
 
-@media (max-width:991.98px) {
+@media(max-width:991.98px) {
   .lead {
     font-size: 16px
   }
@@ -699,7 +699,7 @@ h5 {
   margin-bottom: 30px
 }
 
-@media (max-width:991.98px) {
+@media(max-width:991.98px) {
 
   .heading-serif,
   .slider-section .heading,
@@ -718,7 +718,7 @@ h5 {
   border-radius: 3%
 }
 
-@media (max-width:991.98px) {
+@media(max-width:991.98px) {
 
   .half .image,
   .half .text {
@@ -733,7 +733,7 @@ h5 {
   border-radius: 3%
 }
 
-@media (max-width:991.98px) {
+@media(max-width:991.98px) {
   .half .image {
     height: 300px;
     border-radius: 3%
@@ -744,7 +744,7 @@ h5 {
   padding: 100px 7%
 }
 
-@media (max-width:991.98px) {
+@media(max-width:991.98px) {
   .half .text {
     padding-top: 50px;
     padding-bottom: 50px
@@ -755,7 +755,7 @@ h5 {
   font-size: 40px
 }
 
-@media (max-width:991.98px) {
+@media(max-width:991.98px) {
   .half .text h2 {
     font-size: 30px
   }
@@ -782,17 +782,17 @@ h5 {
 }
 
 .owl-carousel .owl-item {
-  opacity: .4;
+  opacity: .4
 }
 
 .owl-carousel .owl-item.active {
-  opacity: 1;
+  opacity: 1
 }
 
 .owl-carousel .owl-nav {
   position: absolute;
   top: 50%;
-  width: 100%;
+  width: 100%
 }
 
 .owl-carousel .owl-nav .owl-prev,
@@ -801,7 +801,7 @@ h5 {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  margin-top: -10px;
+  margin-top: -10px
 }
 
 .owl-carousel .owl-nav .owl-prev:hover,
@@ -810,24 +810,24 @@ h5 {
 .owl-carousel .owl-nav .owl-next:hover,
 .owl-carousel .owl-nav .owl-next:focus,
 .owl-carousel .owl-nav .owl-next:active {
-  outline: none;
+  outline: 0
 }
 
 .owl-carousel .owl-nav .owl-prev span:before,
 .owl-carousel .owl-nav .owl-next span:before {
-  font-size: 40px;
+  font-size: 40px
 }
 
 .owl-carousel .owl-nav .owl-prev {
-  left: 30px !important;
+  left: 30px !important
 }
 
 .owl-carousel .owl-nav .owl-next {
-  right: 30px !important;
+  right: 30px !important
 }
 
 .owl-carousel .owl-dots {
-  text-align: center;
+  text-align: center
 }
 
 .owl-carousel .owl-dots .owl-dot {
@@ -835,12 +835,12 @@ h5 {
   width: 10px;
   height: 10px;
   margin: 5px;
-  border-radius: 50%;
+  border-radius: 50%
 }
 
 .owl-carousel.home-slider {
   z-index: 1;
-  position: relative;
+  position: relative
 }
 
 .owl-carousel.home-slider .owl-nav {
@@ -848,13 +848,12 @@ h5 {
   visibility: hidden;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
-  transition: .3s all ease;
+  transition: .3s all ease
 }
 
 .owl-carousel.home-slider .owl-nav button {
-  color: #fff;
+  color: #fff
 }
-
 
 .owl-carousel.home-slider .slider-item {
   background-size: cover;
@@ -862,13 +861,13 @@ h5 {
   background-position: center center;
   height: calc(100vh - 117px);
   min-height: 700px;
-  position: relative;
+  position: relative
 }
 
 .owl-carousel.home-slider .owl-dots {
   position: absolute;
   bottom: 100px;
-  width: 100%;
+  width: 100%
 }
 
 .owl-carousel.home-slider .owl-dots .owl-dot {
@@ -882,41 +881,41 @@ h5 {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  background: #fff;
+  background: #fff
 }
 
 .owl-carousel.home-slider .owl-dots .owl-dot.active {
   border: 2px solid white;
-  background: none;
+  background: 0
 }
 
 .owl-carousel.major-caousel {
   -webkit-box-shadow: 0 10px 70px -10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 10px 70px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 70px -10px rgba(0, 0, 0, 0.2)
 }
 
 .owl-carousel.major-caousel .owl-stage-outer {
   padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-bottom: 0 !important
 }
 
 .owl-carousel.major-caousel .owl-stage-outer {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 30px
 }
 
 .owl-carousel.major-caousel .slider-item {
   height: inherit;
-  min-height: inherit;
+  min-height: inherit
 }
 
 .owl-carousel.major-caousel .slider-item img {
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 
 .owl-carousel.major-caousel .owl-nav {
   opacity: 1;
-  visibility: visible;
+  visibility: visible
 }
 
 .owl-carousel.major-caousel .owl-nav .owl-prev,
@@ -924,7 +923,7 @@ h5 {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #495057;
+  color: #495057
 }
 
 .owl-carousel.major-caousel .owl-nav .owl-prev:hover,
@@ -932,80 +931,80 @@ h5 {
 .owl-carousel.major-caousel .owl-nav .owl-next:hover,
 .owl-carousel.major-caousel .owl-nav .owl-next:focus {
   color: #6c757d;
-  outline: none;
+  outline: 0
 }
 
 .owl-carousel.major-caousel .owl-nav .owl-prev.disabled,
 .owl-carousel.major-caousel .owl-nav .owl-next.disabled {
-  color: #dee2e6;
+  color: #dee2e6
 }
 
 .owl-carousel.major-caousel .owl-nav .owl-prev {
-  left: -60px !important;
+  left: -60px !important
 }
 
 .owl-carousel.major-caousel .owl-nav .owl-next {
-  right: -60px !important;
+  right: -60px !important
 }
 
 .owl-carousel.major-caousel .owl-dots {
-  bottom: 50px !important;
+  bottom: 50px !important
 }
 
-@media (max-width: 991.98px) {
+@media(max-width:991.98px) {
   .owl-carousel.major-caousel .owl-dots {
-    bottom: 10px !important;
+    bottom: 10px !important
   }
 }
 
 .footer-section {
   background: #060b27;
   color: #fff;
-  border-radius: 2% 2% 0 0;
+  border-radius: 2% 2% 0 0
 }
 
 .footer-section h3 {
   color: #ffd0c1;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 20px
 }
 
 .footer-section a {
-  color: #fff;
+  color: #fff
 }
 
 .footer-section a:hover {
-  color: #fff;
+  color: #fff
 }
 
 .footer-section p {
-  color: #fff;
+  color: #fff
 }
 
 .footer-section .bordertop {
   border-top: 1px solid rgba(255, 255, 255, .1);
-  padding-top: 20px;
+  padding-top: 20px
 }
 
 .footer-section .contact-info span.d-block {
   font-style: italic;
-  color: #fff;
+  color: #fff
 }
 
 .footer-section .social a {
   font-size: 18px;
-  padding: 10px;
+  padding: 10px
 }
 
 .footer-section .link li {
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .contact-section .contact-info p {
   font-family: "Abril Fatface", times, serif;
   color: #000;
   font-size: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 30px
 }
 
 .contact-section .contact-info p .d-block {
@@ -1014,5 +1013,5 @@ h5 {
   font-family: "Mukta Mahee", arial, sans-serif;
   text-transform: uppercase;
   color: #65c0ba;
-  font-weight: 700;
+  font-weight: 700
 }
