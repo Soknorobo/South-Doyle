@@ -382,11 +382,11 @@ h5 {
 }
 
 .site-navbar nav .menu li a:hover {
-  color: #26c4e4
+  color: #d93b1b
 }
 
 .site-navbar nav .menu li.active a {
-  color: #26c4e4
+  color: #d93b1b
 }
 
 .site-navbar nav .menu li.active a:before {
@@ -519,12 +519,12 @@ h5 {
 
 .page-inside,
 .page-inside .site-hero-inner {
-  height: 70vh;
+  height: 50vh;
   min-height: 500px
 }
 
 .page-inside.overlay:before {
-  height: 70vh;
+  height: 50vh;
   min-height: 500px
 }
 
