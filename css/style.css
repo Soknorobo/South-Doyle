@@ -33,7 +33,12 @@ body {
 img {
   border-radius: 2%;
   width: 100%;
-  height: auto
+  height: auto;
+  user-select: none;
+}
+
+iframe {
+    user-select: none;  
 }
 
 .sponsor_img {
@@ -307,7 +312,8 @@ h5 {
   top: 0;
   width: 100%;
   padding: 15px 0;
-  z-index: 2
+  z-index: 2;
+  user-select: none;
 }
 
 .line-height1 {
@@ -356,7 +362,8 @@ h5 {
   bottom: 0;
   background: #343a40;
   min-height: 300px;
-  overflow-y: hidden
+  overflow-y: hidden;
+  user-select: none;
 }
 
 .site-navbar nav {
@@ -396,7 +403,8 @@ h5 {
   background-position: center center;
   height: 100vh;
   min-height: 700px;
-  width: 100%
+  width: 100%;
+  user-select: none;
 }
 
 .site-hero .scroll-down {
@@ -548,7 +556,7 @@ h5 {
 .site-menu-toggle span {
   display: block;
   position: absolute;
-  height: 2px;
+  height: 5px;
   width: 100%;
   background: #000;
   border-radius: 9px;
@@ -567,26 +575,26 @@ h5 {
 
 .site-menu-toggle span:nth-child(1) {
   top: 0;
-  background: linear-gradient(92deg, #f35626, #feab3a);
+  /* background: linear-gradient(92deg, #f35626, #feab3a);
   background: -webkit-linear-gradient(92deg, #f35626, #feab3a);
   animation: hue 40s infinite linear;
-  -webkit-animation: hue 40s infinite linear
+  -webkit-animation: hue 40s infinite linear */
 }
 
 .site-menu-toggle span:nth-child(2) {
   top: 10px;
-  background: linear-gradient(62deg, #f35626, #feab3a);
+  /* background: linear-gradient(62deg, #f35626, #feab3a);
   background: -webkit-linear-gradient(72deg, #f35626, #feab3a);
   animation: hue 40s infinite linear;
-  -webkit-animation: hue 40s infinite linear
+  -webkit-animation: hue 40s infinite linear */
 }
 
 .site-menu-toggle span:nth-child(3) {
   top: 20px;
-  background: linear-gradient(32deg, #f35626, #feab3a);
+  /* background: linear-gradient(32deg, #f35626, #feab3a);
   background: -webkit-linear-gradient(32deg, #f35626, #feab3a);
   animation: hue 40s infinite linear;
-  -webkit-animation: hue 40s infinite linear
+  -webkit-animation: hue 40s infinite linear */
 }
 
 @keyframes hue {
@@ -960,7 +968,12 @@ h5 {
 .footer-section {
   background: #060b27;
   color: #fff;
-  border-radius: 2% 2% 0 0
+  border-radius: 20px 20px 0 0;
+}
+
+.slider-item img{
+  height: 100%;
+  width: 100%;
 }
 
 .footer-section h3 {

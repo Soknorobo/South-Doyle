@@ -23,7 +23,7 @@ Why not check out our socials while we fix the 404
 ¯\\\_(ツ)\_/¯
 
 
-> * <a href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w" >YouTube</i></a>
+> * <a aria-label="Youtube" href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w" >YouTube</i></a>
 > * <a href="https://twitter.com/sdhs_robotics?lang=en" >Twitter</a>
 > * <a href="https://www.instagram.com/southdoylerobotics/?hl=en" >Instagram</a>
 > * <a href="https://www.facebook.com/teamftw6517" >Facebook</a>
