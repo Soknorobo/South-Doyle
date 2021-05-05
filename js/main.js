@@ -13,18 +13,18 @@ AOS.init({
     var $this = $(this);
     if ($('body').hasClass('menu-open')) {
       $this.removeClass('open');
-      $('.js-site-navbar').fadeOut(400);
+      $('.js-site-navbar').fadeOut(200);
       $('body').removeClass('menu-open');
-      $('html, body').css({
-        overflow: 'auto',
-      });
+      // $('html, body').css({
+      //   overflow: 'auto',
+      // });
     } else {
       $this.addClass('open');
-      $('.js-site-navbar').fadeIn(400);
+      $('.js-site-navbar').fadeIn(200);
       $('body').addClass('menu-open');
-      $('html, body').css({
-        overflow: 'hidden',
-      });
+      // $('html, body').css({
+      //   overflow: 'hidden',
+      // });
     }
   });
 
@@ -55,7 +55,7 @@ AOS.init({
         items: 1,
         nav: false
       },
-      600: {
+      500: {
         items: 1,
         nav: false
       },
@@ -84,7 +84,7 @@ AOS.init({
         items: 1,
         nav: false
       },
-      600: {
+      500: {
         items: 2,
         nav: false
       },
@@ -114,7 +114,7 @@ AOS.init({
         items: 1,
         nav: false
       },
-      600: {
+      500: {
         items: 3,
         nav: false
       },
