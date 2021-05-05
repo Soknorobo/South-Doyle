@@ -15,16 +15,10 @@ AOS.init({
       $this.removeClass('open');
       $('.js-site-navbar').fadeOut(200);
       $('body').removeClass('menu-open');
-      // $('html, body').css({
-      //   overflow: 'auto',
-      // });
     } else {
       $this.addClass('open');
       $('.js-site-navbar').fadeIn(200);
       $('body').addClass('menu-open');
-      // $('html, body').css({
-      //   overflow: 'hidden',
-      // });
     }
   });
 
