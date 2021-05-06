@@ -1,1 +1,72 @@
-@font-face{font-family:fontello;src:url(../font/fontello.eot?68048666);src:url(../font/fontello.eot?68048666#iefix) format('embedded-opentype'),url(../font/fontello.woff2?68048666) format('woff2'),url(../font/fontello.woff?68048666) format('woff'),url(../font/fontello.ttf?68048666) format('truetype'),url(../font/fontello.svg?68048666#fontello) format('svg');font-weight:400;font-style:normal}[class*=" icon-"]:before,[class^=icon-]:before{font-family:fontello;font-style:normal;font-weight:400;speak:never;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-play:before{content:'\e800'}.icon-twitter:before{content:'\f099'}.icon-facebook:before{content:'\f09a'}.icon-github:before{content:'\f09b'}.icon-angle-circled-left:before{content:'\f137'}.icon-angle-circled-right:before{content:'\f138'}.icon-youtube-play:before{content:'\f16a'}.icon-instagram:before{content:'\f16d'}
+@font-face {
+    font-family: fontello;
+    src: url(../font/fontello.eot?68048666);
+    src: url(../font/fontello.eot?68048666#iefix) format('embedded-opentype'), url(../font/fontello.woff2?68048666) format('woff2'), url(../font/fontello.woff?68048666) format('woff'), url(../font/fontello.ttf?68048666) format('truetype'), url(../font/fontello.svg?68048666#fontello) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+[class*=" icon-"]:before,
+[class^=icon-]:before {
+    font-family: fontello;
+    font-style: normal;
+    font-weight: 400;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-play:before {
+    content: '\e800'
+}
+
+.icon-twitter:before {
+    color: #1DA1F2;
+    content: '\f099'
+}
+
+.icon-facebook:before {
+    color: #4267B2;
+    content: '\f09a'
+}
+
+.icon-github:before {
+    color: #7d58b3;
+    content: '\f09b'
+}
+
+.icon-angle-circled-left:before {
+    content: '\f137'
+}
+
+.icon-angle-circled-right:before {
+    content: '\f138'
+}
+
+.icon-youtube-play:before {
+    color: #FF0000;
+    content: '\f16a'
+}
+
+.icon-instagram:before {
+    color: #5851db;
+    background-color: #5851db;
+    background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    /* background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);  */
+    content: '\f16d';
+}
