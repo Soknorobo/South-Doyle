@@ -93,11 +93,10 @@
         <div class="row site-hero-inner justify-content-center align-items-center">
           <div class="col-md-10 text-center">
             <h1 class="heading" data-aos="fade-up">FIRST </h1>
-            <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">
-              <span style="background: aliceblue; color: black; padding: 8px; border-radius: 6px;"> <span
-                  style="color: red">F</span>or <span style="color: red">I</span>nspiration and <span
-                  style="color: red">R</span>ecognition of <span style="color: red">S</span>cience and <span
-                  style="color: red">T</span>echnology</span>
+            <p class="sub-heading mb-5 site_subtext" data-aos="fade-up" data-aos-delay="100">
+              <span style="color: #670000;">F</span>or <span style="color: #670000;">I</span>nspiration and <span
+                style="color: #670000;">R</span>ecognition of <span style="color: #670000;">S</span>cience and <span
+                style="color: #670000;">T</span>echnology
             </p>
           </div>
         </div>
@@ -232,109 +231,114 @@
   </section>
   <!-- END section -->
 
-<footer style="padding: 4em 0 0 0;" class="section footer-section">
+  <footer style="padding: 4em 0 0 0;" class="section footer-section">
 
-  <div class="container">
-    <div class="row mb-4">
-      <div class="col-md-3 mb-5">
-        <h3>Quick Link</h3>
-        <ul class="list-unstyled link">
-          <li><a href="./index">Home</a> </li>
-          <li><a href="./about">About</a> </li>
-          <li><a href="./first">FIRST</a> </li>
-          <li><a href="./sponsors">Sponsors</a> </li>
-          <li><a href="./gallery">Seasons</a> </li>
-          <li><a href="./contact">Contact</a> </li>
-          <!-- <li><a href="./blog">Blogs</a> </li> -->
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-3 mb-5">
+          <h3>Quick Link</h3>
+          <ul class="list-unstyled link">
+            <li><a href="./index">Home</a> </li>
+            <li><a href="./about">About</a> </li>
+            <li><a href="./first">FIRST</a> </li>
+            <li><a href="./sponsors">Sponsors</a> </li>
+            <li><a href="./gallery">Seasons</a> </li>
+            <li><a href="./contact">Contact</a> </li>
+            <!-- <li><a href="./blog">Blogs</a> </li> -->
 
-          <li><a href="./calendar">Calendar</a> </li>
-        </ul>
+            <li><a href="./calendar">Calendar</a> </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-5">
+          <h3>Support</h3>
+          <ul class="list-unstyled link">
+            <li><a href="https://goo.gl/maps/3fJY4yQrWiP2" target="_blank" rel="noopener noreferrer">Our
+                Location</a></li>
+          </ul>
+          <p><span class="d-block">
+              <h3>Email:</h3>
+            </span> <span> <a target="_blank" rel="noopener noreferrer" href="mailto:support@soknorobo.com">
+                <p>support@soknorobo.com</p>
+              </a></span></p>
+        </div>
+
+        <div class="col-md-3 mb-5 pr-md-5 contact-info">
+          <h3>Contact Info</h3>
+          <p><span class="d-block">Address:</span> <span> 2020 Tipton Station Rd, <br> Knoxville, TN 37920</span></p>
+          <p><span class="d-block">Phone:</span> <span> (865) 577-4475</span></p>
+        </div>
+        <div class="col-md-3 mb-5">
+          <h3>Creators</h3>
+
+          <div>
+            <a target="_blank" rel="noopener noreferrer" aria-label="GitHub" href="https://github.com/a-abir">
+              Abrian Abir</a>
+          </div>
+
+          <div>
+            <a target="_blank" rel="noopener noreferrer" aria-label="GitHub" href="https://github.com/med-jed">
+              Vicky Chakpuang</a>
+          </div>
+          <div>
+            <a target="_blank" rel="noopener noreferrer" aria-label="GitHub" href="https://github.com/Noah-MIller-1">
+              Noah Miller</a>
+          </div>
+          <div>
+            <a target="_blank" rel="noopener noreferrer" aria-label="GitHub" href="https://github.com/kaileygarrison">
+              Kailey Garrison</a>
+          </div>
+
+        </div>
       </div>
-      <div class="col-md-3 mb-5">
-        <h3>Support</h3>
-        <ul class="list-unstyled link">
-          <li><a href="https://goo.gl/maps/3fJY4yQrWiP2" target="_blank" rel="noopener noreferrer">Our
-              Location</a></li>
-        </ul>
-        <p><span class="d-block">
-            <h3>Email:</h3>
-          </span> <span> <a target="_blank" rel="noopener noreferrer" href="mailto:support@soknorobo.com">
-              <p>support@soknorobo.com</p>
-            </a></span></p>
-      </div>
+      <div class="row bordertop text-center pt-4">
+        <p id="copyright" class="col-md-12">
+        </p>
+        <script>
+          String.prototype.format = function () {
+            var i = 0,
+              args = arguments;
+            return this.replace(/{}/g, function () {
+              return typeof args[i] != 'undefined' ? args[i++] : '';
+            });
+          };
+          var time = new Date();
+          //time.getFullYear();
 
-      <div class="col-md-3 mb-5 pr-md-5 contact-info">
-        <h3>Contact Info</h3>
-        <p><span class="d-block">Address:</span> <span> 2020 Tipton Station Rd, <br> Knoxville, TN 37920</span></p>
-        <p><span class="d-block">Phone:</span> <span> (865) 577-4475</span></p>
-      </div>
-      <div class="col-md-3 mb-5">
-        <h3>Creators</h3>
+          var copy = document.getElementById("copyright");
+          //new_div.setAttribute("data-aos-delay", "100")
+          copy.innerHTML =
+            '&copy; Copyright 2017-{}. All Rights Reserved. <br>South-Doyle Robotics &copy; {}'
+            .format(time.getFullYear(), time.getFullYear())
+        </script>
 
-        <div>
-          <a target="_blank" rel="noopener noreferrer" aria-label="GitHub" href="https://github.com/a-abir">
-            Abrian Abir</a>
-        </div>
 
-        <div>
-          <a target="_blank" rel="noopener noreferrer" aria-label="GitHub" href="https://github.com/med-jed">
-            Vicky Chakpuang</a>
-        </div>
-        <div>
-          <a target="_blank" rel="noopener noreferrer" aria-label="GitHub" href="https://github.com/Noah-MIller-1">
-            Noah Miller</a>
-        </div>
-        <div>
-          <a target="_blank" rel="noopener noreferrer" aria-label="GitHub" href="https://github.com/kaileygarrison">
-            Kailey Garrison</a>
-        </div>
+        <p class="col-md-12 social">
+          <a target="_blank" rel="noopener noreferrer" aria-label="Youtube"
+            href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w">
+            <i class="icon icon-youtube-play"></i>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" aria-label="Twitter"
+            href="https://twitter.com/sdhs_robotics?lang=en">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+            href="https://www.instagram.com/southdoylerobotics/?hl=en">
+            <i class="icon icon-instagram"></i>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+            href="https://www.facebook.com/teamftw6517">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+            href="https://github.com/South-Doyle/South-Doyle">
+            <i class="icon icon-github"></i>
+          </a>
 
+        </p>
       </div>
     </div>
-    <div class="row bordertop text-center pt-4">
-      <p id="copyright" class="col-md-12">
-      </p>
-      <script>
-        String.prototype.format = function () {
-          var i = 0,
-            args = arguments;
-          return this.replace(/{}/g, function () {
-            return typeof args[i] != 'undefined' ? args[i++] : '';
-          });
-        };
-        var time = new Date();
-        //time.getFullYear();
 
-        var copy = document.getElementById("copyright");
-        //new_div.setAttribute("data-aos-delay", "100")
-        copy.innerHTML =
-          '&copy; Copyright 2017-{}. All Rights Reserved. <br>South-Doyle Robotics &copy; {}'
-          .format(time.getFullYear(), time.getFullYear())
-      </script>
-
-
-      <p class="col-md-12 social">
-        <a target="_blank" rel="noopener noreferrer" aria-label="Youtube" href="https://www.youtube.com/channel/UCwQdQT0tgBDQ1AdbN2fPf2w">
-          <i class="icon icon-youtube-play"></i>
-        </a>
-        <a target="_blank" rel="noopener noreferrer" aria-label="Twitter" href="https://twitter.com/sdhs_robotics?lang=en">
-          <i class="icon icon-twitter"></i>
-        </a>
-        <a target="_blank" rel="noopener noreferrer" aria-label="Instagram" href="https://www.instagram.com/southdoylerobotics/?hl=en">
-          <i class="icon icon-instagram"></i>
-        </a>
-        <a target="_blank" rel="noopener noreferrer" aria-label="Facebook" href="https://www.facebook.com/teamftw6517">
-          <i class="icon icon-facebook"></i>
-        </a>
-        <a target="_blank" rel="noopener noreferrer" aria-label="GitHub" href="https://github.com/South-Doyle/South-Doyle">
-          <i class="icon icon-github"></i>
-        </a>
-
-      </p>
-    </div>
-  </div>
-
-</footer>
+  </footer>
 
   </div> <!-- .animsition -->
 

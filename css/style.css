@@ -38,13 +38,17 @@ img {
 }
 
 iframe {
-    user-select: none;  
+  user-select: none;
 }
 
 .sponsor_img {
   margin: 0 auto;
   height: auto;
-  width: 90%
+  width: 90%;
+  padding: 10px;
+  box-shadow: -1px -1px 2px 0px #07fffc4d;
+  border: 10px solid #fbfbfb;
+  border-radius: 25%;
 }
 
 @font-face {
@@ -97,6 +101,14 @@ h4,
 h5 {
   color: #333;
   font-family: "Abril Fatface", times, serif
+}
+
+.site_subtext {
+  background: aliceblue;
+  color: black;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #00e0ff5c;
 }
 
 .text-justify {
@@ -382,11 +394,15 @@ h5 {
 }
 
 .site-navbar nav .menu li a:hover {
-  color: #d93b1b
+  color: #fd8d2d;
+}
+
+.site-navbar nav .menu li.active a:hover {
+  color: #fd8d2d;
 }
 
 .site-navbar nav .menu li.active a {
-  color: #d93b1b
+  color: #ff8d76
 }
 
 .site-navbar nav .menu li.active a:before {
@@ -971,7 +987,7 @@ h5 {
   border-radius: 20px 20px 0 0;
 }
 
-.slider-item img{
+.slider-item img {
   height: 100%;
   width: 100%;
 }
