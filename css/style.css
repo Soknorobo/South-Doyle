@@ -47,8 +47,7 @@ iframe {
   width: 90%;
   padding: 10px;
   box-shadow: -1px -1px 2px 0px #07fffc4d;
-  border: 10px solid #fbfbfb;
-  border-radius: 25%;
+  border-radius: 20%;
 }
 
 @font-face {
